@@ -315,7 +315,7 @@ H.I.: +0, H.V.: -1</characteristic>
     </profile>
     <profile name="Self-Destruct" typeId="7e76-2916-e877-fd40" typeName="Abilities (Action)" hidden="false" id="621a-ca31-1eda-c8f4">
       <characteristics>
-        <characteristic name="Description" typeId="3437-636f-e6aa-d7ea">At the beginning of your next Attacking Phase, this unit is targeted by the weapon profile &quot;H-03 Explosion,&quot; then is destroyed.</characteristic>
+        <characteristic name="Description" typeId="3437-636f-e6aa-d7ea">At the beginning of your next Attacking Phase, this unit is targeted by the weapon profile &quot;H-03 Explosion,&quot; then is destroyed.  (Note: the Area of Effect ability of that weapon means you will be targeting all enemies in range of the area of effect.  Because this unit will be destroyed anyway, you may skip to the attacking of enemies within range.)</characteristic>
       </characteristics>
     </profile>
     <profile name="Sprint" typeId="7e76-2916-e877-fd40" typeName="Abilities (Action)" hidden="false" id="e39a-2a59-97b9-8afe">

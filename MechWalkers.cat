@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="e48c-ab19-6449-78c7" name="MechWalkers" gameSystemId="sys-4d6c-ac3c-296b-de59" gameSystemRevision="2" revision="1" authorName="SyPhase" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <sharedProfiles>
+    <profile name="Oxen Longhaul" typeId="a0cc-e27d-0e47-b400" typeName="Unit" hidden="false" id="fc48-91b9-0a96-93d8">
+      <characteristics>
+        <characteristic name="HP" typeId="1d43-35c4-2ad8-ee02">40</characteristic>
+        <characteristic name="MV" typeId="aa14-e1fc-a33b-8e17">6&quot;</characteristic>
+        <characteristic name="SV" typeId="24b4-ca44-ffb5-c3f4">3+</characteristic>
+        <characteristic name="Footprint" typeId="0743-ed86-8e70-b53c">Medium</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Energy Shields" typeId="4720-4964-f773-3509" typeName="Abilities (Passive)" hidden="false" id="e9ec-6737-15af-faa3">
+      <characteristics>
+        <characteristic name="Description" typeId="bc7d-10a5-15e8-e96d">While this unit has shields remaining, friendly infantry units within 3&quot; of this unit cannot be targeted by ranged weapons.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Two Blaster Cannons" typeId="35f7-4412-69cb-9d6a" typeName="Weapons" hidden="false" id="4221-e05b-238d-cc95">
+      <characteristics>
+        <characteristic name="Range" typeId="8723-19bb-bcce-5f94">16&quot;</characteristic>
+        <characteristic name="Attacks" typeId="0a3b-93a6-7ca6-c930">4</characteristic>
+        <characteristic name="Accuracy" typeId="4bca-fe29-753e-511f">3+</characteristic>
+        <characteristic name="Armor Piercing" typeId="46da-1060-daef-3f00">L.I.: -1, L.V.: +3
+H.I.: 0, H.V.: +1</characteristic>
+        <characteristic name="Damage" typeId="f994-dfa3-122c-9cc5">3</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+  <sharedSelectionEntries>
+    <selectionEntry type="unit" import="true" name="Oxen Longhaul Unit" hidden="false" id="aa31-dcba-388d-0914" subType="unit-group">
+      <costs>
+        <cost name="points" typeId="b94c-fcb8-4a07-acd7" value="440"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="892b-3ede-432c-1fff" id="769a-c6cb-a119-bfe2" primary="true" name="Vehicle"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="unit" import="true" name="Oxen Longhauls" hidden="false" id="ac23-6b82-f3bc-7ffe">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Oxen Longhaul" hidden="false" id="53b5-2522-0daa-c81f">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="2 Blaster Cannons" hidden="false" id="4dc4-bda2-c803-01f2">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="55d3-a83b-49a6-8f23-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="55d3-a83b-49a6-8f23-max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Two Blaster Cannons" id="e04f-685b-14d5-56ca" hidden="false" type="profile" targetId="4221-e05b-238d-cc95"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9aea-a889-0c9e-8271-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9aea-a889-0c9e-8271-max"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Special Ability (Energy Shields)" hidden="false" id="759d-36ca-31c1-e12a">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="79e3-7c4d-a724-8aa0-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="79e3-7c4d-a724-8aa0-max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Energy Shields" id="e758-efbb-94bb-8945" hidden="false" type="profile" targetId="e9ec-6737-15af-faa3"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <infoLinks>
+            <infoLink name="Crush-" id="384e-9ab2-8bb4-06be" hidden="false" type="rule" targetId="ab49-c483-f2a1-aac8">
+              <modifiers>
+                <modifier type="set" value="Crush 4" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="4d2e-3bd3-48e3-2149-min"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="4d2e-3bd3-48e3-2149-max"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <entryLinks>
+    <entryLink import="true" name="Oxen Longhaul Unit" hidden="false" id="1e71-266c-366e-048c" targetId="aa31-dcba-388d-0914" type="selectionEntry"/>
+  </entryLinks>
+</catalogue>
