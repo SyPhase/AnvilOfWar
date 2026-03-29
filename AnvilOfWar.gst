@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-4d6c-ac3c-296b-de59" name="AnvilOfWar" battleScribeVersion="2.03" revision="1" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Pierce Kester" authorContact="bulletgiraffe@gmail.com" authorUrl="bulletgiraffe.com">
+<gameSystem id="sys-4d6c-ac3c-296b-de59" name="AnvilOfWar" battleScribeVersion="2.03" revision="2" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Pierce Kester" authorContact="bulletgiraffe@gmail.com" authorUrl="bulletgiraffe.com" publicationId="5911-3a66-ec62-32e6">
   <categoryEntries>
     <categoryEntry name="Infantry" id="86d7-e31a-0e12-cc05" hidden="false"/>
     <categoryEntry name="Vehicle" id="892b-3ede-432c-1fff" hidden="false"/>
@@ -9,31 +9,26 @@
   <forceEntries>
     <forceEntry name="Galactic Conquest" id="2936-ac7b-690d-0867" hidden="false">
       <categoryLinks>
-        <categoryLink name="Faction Leader" hidden="false" id="62fa-03cd-fccd-2afb" targetId="0214-30a6-f341-ee7f">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2ba8-53f2-32ff-1409-min"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2ba8-53f2-32ff-1409-max"/>
-          </constraints>
-        </categoryLink>
+        <categoryLink name="Faction Leader" hidden="false" id="270e-f516-3444-217a" targetId="0214-30a6-f341-ee7f"/>
+        <categoryLink name="Hero" hidden="false" id="1e3c-b26d-347a-e0c3" targetId="0a6c-1e81-5f9d-3240"/>
+        <categoryLink name="Infantry" hidden="false" id="716e-3e0f-6e70-7f94" targetId="86d7-e31a-0e12-cc05"/>
+        <categoryLink name="Vehicle" hidden="false" id="6929-4402-aa89-689d" targetId="892b-3ede-432c-1fff"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry name="Skirmish" id="42b1-ad19-3497-d664" hidden="false">
       <categoryLinks>
-        <categoryLink name="Infantry" hidden="false" id="9ce0-b3c9-afb1-147f" targetId="86d7-e31a-0e12-cc05">
+        <categoryLink name="Faction Leader" hidden="false" id="1d39-0ba6-6b69-12c8" targetId="0214-30a6-f341-ee7f">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0ae0-8b33-3cb1-865e"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="936e-b61f-292e-8573"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Hero" hidden="false" id="264c-0aae-bf97-f1f5" targetId="0a6c-1e81-5f9d-3240">
+        <categoryLink name="Hero" hidden="false" id="223a-a1e9-b803-ce0b" targetId="0a6c-1e81-5f9d-3240"/>
+        <categoryLink name="Infantry" hidden="false" id="ade6-8517-3190-9892" targetId="86d7-e31a-0e12-cc05">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b249-9984-1385-6506"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ede9-8696-9b24-d2b5"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Faction Leader" hidden="false" id="103a-bf62-b84d-1220" targetId="0214-30a6-f341-ee7f">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ebe0-87df-918f-d3df"/>
-          </constraints>
-        </categoryLink>
+        <categoryLink name="Vehicle" hidden="false" id="7848-469f-6739-5a4e" targetId="892b-3ede-432c-1fff"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -137,4 +132,7 @@
       </characteristics>
     </profile>
   </sharedProfiles>
+  <publications>
+    <publication name="GitHub" id="5911-3a66-ec62-32e6" hidden="false" publisherUrl="https://github.com/SyPhase/AnvilOfWar" publisher="GitHub"/>
+  </publications>
 </gameSystem>
