@@ -1,108 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="28e4-ed51-3991-19d2" name="Cybernetica" gameSystemId="sys-4d6c-ac3c-296b-de59" gameSystemRevision="1" revision="2" authorName="SyPhase" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="28e4-ed51-3991-19d2" name="Cybernetica" gameSystemId="sys-4d6c-ac3c-296b-de59" gameSystemRevision="1" revision="3" authorName="SyPhase" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
-    <selectionEntry type="unit" import="true" name="F-12 War-Machines" hidden="false" id="f8df-6f61-734e-0d78">
-      <infoLinks>
-        <infoLink name="F-12 War-Machine" id="725d-7f33-4680-c875" hidden="false" type="profile" targetId="bcb9-8613-bada-5d6d"/>
-      </infoLinks>
-      <selectionEntries>
-        <selectionEntry type="model" import="true" name="F-12 War-Machine" hidden="false" id="0cf2-01c5-1670-0072">
-          <constraints>
-            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="4840-b44f-755c-6910-max-min"/>
-            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="4840-b44f-755c-6910-max-max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="F-12 Blaster" hidden="false" id="065e-6bdc-f3b7-ac31">
-              <infoLinks>
-                <infoLink name="F-12 Blaster" id="25e8-36b0-8c23-aef3" hidden="false" type="profile" targetId="7d2e-a261-0004-613b"/>
-              </infoLinks>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6e0e-76f6-9c93-0303-max-min"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6e0e-76f6-9c93-0303-max-max"/>
-              </constraints>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="F-12 Rocket" hidden="false" id="bcda-019d-38a7-4cea">
-              <infoLinks>
-                <infoLink name="F-12 Rocket" id="fec9-99fe-f189-8415" hidden="false" type="profile" targetId="8aaf-4252-fa64-b622"/>
-              </infoLinks>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5e26-f9a7-7e82-b012-max-min"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5e26-f9a7-7e82-b012-max-max"/>
-              </constraints>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Special Ability (Sprint)" hidden="false" id="715f-c4e4-742c-8515">
-          <infoLinks>
-            <infoLink name="Sprint" id="fc91-66cb-29e2-05a8" hidden="false" type="profile" targetId="e39a-2a59-97b9-8afe"/>
-          </infoLinks>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ff3f-13d9-e554-d02d-min"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ff3f-13d9-e554-d02d-max"/>
-          </constraints>
-        </selectionEntry>
-      </selectionEntries>
-      <costs>
-        <cost name="points" typeId="b94c-fcb8-4a07-acd7" value="100"/>
-      </costs>
-      <categoryLinks>
-        <categoryLink targetId="86d7-e31a-0e12-cc05" id="3ee1-dd21-1a38-75a5" primary="true" name="Infantry"/>
-      </categoryLinks>
-    </selectionEntry>
-    <selectionEntry type="unit" import="true" name="H-03 Helltreads" hidden="false" id="6fe0-bdd3-ce65-3e72">
-      <infoLinks>
-        <infoLink name="H-03 Helltreads" id="b45c-5ff6-9015-7f17" hidden="false" type="profile" targetId="74c0-7fb5-4562-7f4c"/>
-        <infoLink name="Crush-" id="8ade-41bd-670c-8ed9" hidden="false" type="rule" targetId="ab49-c483-f2a1-aac8">
-          <modifiers>
-            <modifier type="set" value="Crush 2" field="name"/>
-          </modifiers>
-        </infoLink>
-      </infoLinks>
-      <selectionEntries>
-        <selectionEntry type="model" import="true" name="H-03 Helltread" hidden="false" id="82f9-0a43-bc1a-88f4">
-          <constraints>
-            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="2cde-a587-6632-813a-max-min"/>
-            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="2cde-a587-6632-813a-max-max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="H-03 Twin-Blasters" hidden="false" id="9f60-642d-5ec4-8e92">
-              <infoLinks>
-                <infoLink name="H-03 Twin-Blasters" id="f4c5-2408-1047-fd5f" hidden="false" type="profile" targetId="2b25-7867-3ab6-536e"/>
-              </infoLinks>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="daea-e1be-2b0c-73f7-max-min"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="daea-e1be-2b0c-73f7-max-max"/>
-              </constraints>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="H-03 Explosion" hidden="true" id="bddc-95b8-6597-d283">
-              <infoLinks>
-                <infoLink name="H-03 Explosion" id="c894-fedc-f836-2a05" hidden="false" type="profile" targetId="17ee-aef3-544e-a7ae"/>
-              </infoLinks>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a16d-86bf-da17-b9a9-max-min"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a16d-86bf-da17-b9a9-max-max"/>
-              </constraints>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Special Ability (Self-Destruct)" hidden="false" id="0f20-de29-7de3-98a0">
-          <infoLinks>
-            <infoLink name="Self-Destruct" id="0451-7fb9-b92f-53e2" hidden="false" type="profile" targetId="621a-ca31-1eda-c8f4"/>
-          </infoLinks>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bbad-c8d8-1602-abd2-min"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bbad-c8d8-1602-abd2-max"/>
-          </constraints>
-        </selectionEntry>
-      </selectionEntries>
-      <costs>
-        <cost name="points" typeId="b94c-fcb8-4a07-acd7" value="220"/>
-      </costs>
-      <categoryLinks>
-        <categoryLink targetId="892b-3ede-432c-1fff" id="c568-6f9d-52e7-5cdc" primary="true" name="Vehicle"/>
-      </categoryLinks>
-    </selectionEntry>
-    <selectionEntry type="unit" import="true" name="F-00 Officer Unit" hidden="false" id="b707-2e8a-b341-2b3b" page="(Has some kind of officer buff ability)">
+    <selectionEntry type="unit" import="true" name="F-00 Officer Squad" hidden="false" id="b707-2e8a-b341-2b3b" page="(Has some kind of officer buff ability)">
       <infoLinks>
         <infoLink name="F-00 Officer" id="f4ed-7b72-8b21-8afb" hidden="false" type="profile" targetId="dff9-f94a-90e7-afeb"/>
         <infoLink name="Presence-" id="e0d2-8591-d3b7-b510" hidden="false" type="rule" targetId="c94f-5f31-a078-81ee">
@@ -151,8 +50,7 @@
             <infoLink name="Cyber-Command" id="9884-9d90-4e27-b226" hidden="false" type="profile" targetId="3e96-5bbe-6070-660b"/>
           </infoLinks>
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6904-fffb-9e7a-010c-min"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6904-fffb-9e7a-010c-max"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6904-fffb-9e7a-010c"/>
           </constraints>
         </selectionEntry>
       </selectionEntries>
@@ -162,6 +60,178 @@
       <categoryLinks>
         <categoryLink targetId="86d7-e31a-0e12-cc05" id="6fb6-6db6-e524-77ab" primary="false" name="Infantry"/>
         <categoryLink targetId="0a6c-1e81-5f9d-3240" id="c8ea-3f9c-bd41-2b9f" primary="true" name="Hero"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="F-12 War-Machines Unit" hidden="false" id="8575-14ae-8f9a-c4a2" subType="unit-group">
+      <costs>
+        <cost name="points" typeId="b94c-fcb8-4a07-acd7" value="100"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="unit" import="true" name="F-12 War-Machines Squad" hidden="false" id="a4a1-00f6-4ca4-ee53" sortIndex="1">
+          <infoLinks>
+            <infoLink name="F-12 War-Machine" id="b396-15e7-88e9-f52a" hidden="false" type="profile" targetId="bcb9-8613-bada-5d6d"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="F-12 War-Machine" hidden="false" id="86fa-e876-c529-1852">
+              <constraints>
+                <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="7c42-4142-e69c-1dfa-min"/>
+                <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="7c42-4142-e69c-1dfa-max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="F-12 Blaster" hidden="false" id="9e64-059b-b0c9-8476">
+                  <infoLinks>
+                    <infoLink name="F-12 Blaster" id="9082-ec4c-0c43-78e2" hidden="false" type="profile" targetId="7d2e-a261-0004-613b"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d7d9-9225-422e-ef92-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d7d9-9225-422e-ef92-max"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="F-12 Rocket" hidden="false" id="a83e-07a1-cb1a-e419">
+                  <infoLinks>
+                    <infoLink name="F-12 Rocket" id="c640-43d4-a9da-93dc" hidden="false" type="profile" targetId="8aaf-4252-fa64-b622"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="873e-f199-9df0-4f65-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="873e-f199-9df0-4f65-max"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Special Ability (Sprint)" hidden="false" id="4120-3923-c811-5cb0">
+              <infoLinks>
+                <infoLink name="Sprint" id="f6fa-22c3-68ab-d524" hidden="false" type="profile" targetId="e39a-2a59-97b9-8afe"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="52ec-ce12-0ab0-f552-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="52ec-ce12-0ab0-f552-max"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink targetId="86d7-e31a-0e12-cc05" id="6470-7419-17a2-f7b0" primary="false" name="Infantry"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4e16-2291-1725-f08a-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4e16-2291-1725-f08a-max"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="F-12 War-Machines Squad" hidden="false" id="fad3-0e52-cd6b-1ac7" sortIndex="2">
+          <infoLinks>
+            <infoLink name="F-12 War-Machine" id="b104-b2f8-6d22-d687" hidden="false" type="profile" targetId="bcb9-8613-bada-5d6d"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="F-12 War-Machine" hidden="false" id="52bd-5f7e-1fdb-c8d2">
+              <constraints>
+                <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="058b-35ff-fba2-87f7-min"/>
+                <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="058b-35ff-fba2-87f7-max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="F-12 Blaster" hidden="false" id="953d-f58d-2bd1-3be1">
+                  <infoLinks>
+                    <infoLink name="F-12 Blaster" id="dc8c-eb42-a5b8-3933" hidden="false" type="profile" targetId="7d2e-a261-0004-613b"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="92e3-2962-b9d6-ab7c-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="92e3-2962-b9d6-ab7c-max"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="F-12 Rocket" hidden="false" id="0626-769d-d77f-0c9b">
+                  <infoLinks>
+                    <infoLink name="F-12 Rocket" id="77f7-fe04-92f4-675f" hidden="false" type="profile" targetId="8aaf-4252-fa64-b622"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a431-b751-6a71-68ee-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a431-b751-6a71-68ee-max"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Special Ability (Sprint)" hidden="false" id="eccd-07a1-8ebe-8ed1">
+              <infoLinks>
+                <infoLink name="Sprint" id="5deb-0d9f-eca3-315c" hidden="false" type="profile" targetId="e39a-2a59-97b9-8afe"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="929d-b5ff-6c85-0b0a-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="929d-b5ff-6c85-0b0a-max"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Infantry" hidden="false" id="a186-b3d5-7f8e-e5e6" targetId="86d7-e31a-0e12-cc05" primary="false"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5ac0-58ae-c8d8-4b7a-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5ac0-58ae-c8d8-4b7a-max"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="86d7-e31a-0e12-cc05" id="40f2-69d7-481d-3318" primary="true" name="Infantry"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="H-03 Helltreads Unit" hidden="false" id="384a-7cc4-f1f9-560e" subType="unit-group">
+      <selectionEntries>
+        <selectionEntry type="unit" import="true" name="H-03 Helltreads" hidden="false" id="c105-3e16-0c9c-df76">
+          <infoLinks>
+            <infoLink name="H-03 Helltreads" id="62bd-7249-1164-5a28" hidden="false" type="profile" targetId="74c0-7fb5-4562-7f4c"/>
+            <infoLink name="Crush-" id="ab36-bea1-2beb-da97" hidden="false" type="rule" targetId="ab49-c483-f2a1-aac8">
+              <modifiers>
+                <modifier type="set" value="Crush 2" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="H-03 Helltread" hidden="false" id="456e-ffbc-d383-f27e">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d4b4-8ba4-68d0-fc03-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d4b4-8ba4-68d0-fc03-max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="H-03 Twin-Blasters" hidden="false" id="20a0-3621-9962-b46b">
+                  <infoLinks>
+                    <infoLink name="H-03 Twin-Blasters" id="4edd-30d0-ea15-8ac8" hidden="false" type="profile" targetId="2b25-7867-3ab6-536e"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dbd5-ff92-8aa7-8e9f-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dbd5-ff92-8aa7-8e9f-max"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="H-03 Explosion" hidden="true" id="e323-f70e-52f5-cffd">
+                  <infoLinks>
+                    <infoLink name="H-03 Explosion" id="35f5-4fb2-36ea-2566" hidden="false" type="profile" targetId="17ee-aef3-544e-a7ae"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="c313-3ea8-2253-c6e3-min"/>
+                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="c313-3ea8-2253-c6e3-max"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Special Ability (Self-Destruct)" hidden="false" id="0872-1827-200b-6f87">
+              <infoLinks>
+                <infoLink name="Self-Destruct" id="13c4-0e1a-42cf-e37b" hidden="false" type="profile" targetId="621a-ca31-1eda-c8f4"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5b2d-2124-e132-81ec-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5b2d-2124-e132-81ec-max"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="points" typeId="b94c-fcb8-4a07-acd7" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="ce9a-6ca3-3c60-7ff7-max-min"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="ce9a-6ca3-3c60-7ff7-max-max"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="points" typeId="b94c-fcb8-4a07-acd7" value="220"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="892b-3ede-432c-1fff" id="fc0a-4120-ccba-aafa" primary="true" name="Vehicle"/>
       </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -260,8 +330,8 @@ H.I.: +0, H.V.: -1</characteristic>
     </profile>
   </sharedProfiles>
   <entryLinks>
-    <entryLink import="true" name="F-12 War-Machines" hidden="false" id="53a0-e0ec-5d7d-ded2" targetId="f8df-6f61-734e-0d78" type="selectionEntry"/>
-    <entryLink import="true" name="H-03 Helltreads" hidden="false" id="3384-b9fd-30e6-431d" targetId="6fe0-bdd3-ce65-3e72" type="selectionEntry"/>
-    <entryLink import="true" name="F-00 Officer Unit" hidden="false" id="2142-28fb-8abb-af7f" targetId="b707-2e8a-b341-2b3b" type="selectionEntry"/>
+    <entryLink import="true" name="F-00 Officer Squad" hidden="false" id="2142-28fb-8abb-af7f" targetId="b707-2e8a-b341-2b3b" type="selectionEntry"/>
+    <entryLink import="true" name="F-12 War-Machines Unit" hidden="false" id="8e8c-2e1e-f209-47bd" targetId="8575-14ae-8f9a-c4a2" type="selectionEntry"/>
+    <entryLink import="true" name="H-03 Helltreads Unit" hidden="false" id="404f-6483-3fad-2d93" targetId="384a-7cc4-f1f9-560e" type="selectionEntry"/>
   </entryLinks>
 </catalogue>
