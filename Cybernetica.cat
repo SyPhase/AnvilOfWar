@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="28e4-ed51-3991-19d2" name="Cybernetica" gameSystemId="sys-4d6c-ac3c-296b-de59" gameSystemRevision="1" revision="1" authorName="SyPhase" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="28e4-ed51-3991-19d2" name="Cybernetica" gameSystemId="sys-4d6c-ac3c-296b-de59" gameSystemRevision="1" revision="2" authorName="SyPhase" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="F-12 War-Machines" hidden="false" id="f8df-6f61-734e-0d78">
       <infoLinks>
@@ -8,8 +8,8 @@
       <selectionEntries>
         <selectionEntry type="model" import="true" name="F-12 War-Machine" hidden="false" id="0cf2-01c5-1670-0072">
           <constraints>
-            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="4840-b44f-755c-6910-min"/>
-            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="4840-b44f-755c-6910-max"/>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="4840-b44f-755c-6910-max-min"/>
+            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="4840-b44f-755c-6910-max-max"/>
           </constraints>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="F-12 Blaster" hidden="false" id="065e-6bdc-f3b7-ac31">
@@ -17,8 +17,8 @@
                 <infoLink name="F-12 Blaster" id="25e8-36b0-8c23-aef3" hidden="false" type="profile" targetId="7d2e-a261-0004-613b"/>
               </infoLinks>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6e0e-76f6-9c93-0303-min"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6e0e-76f6-9c93-0303-max"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6e0e-76f6-9c93-0303-max-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6e0e-76f6-9c93-0303-max-max"/>
               </constraints>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="F-12 Rocket" hidden="false" id="bcda-019d-38a7-4cea">
@@ -26,11 +26,20 @@
                 <infoLink name="F-12 Rocket" id="fec9-99fe-f189-8415" hidden="false" type="profile" targetId="8aaf-4252-fa64-b622"/>
               </infoLinks>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5e26-f9a7-7e82-b012-min"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5e26-f9a7-7e82-b012-max"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5e26-f9a7-7e82-b012-max-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5e26-f9a7-7e82-b012-max-max"/>
               </constraints>
             </selectionEntry>
           </selectionEntries>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Special Ability (Sprint)" hidden="false" id="715f-c4e4-742c-8515">
+          <infoLinks>
+            <infoLink name="Sprint" id="fc91-66cb-29e2-05a8" hidden="false" type="profile" targetId="e39a-2a59-97b9-8afe"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ff3f-13d9-e554-d02d-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ff3f-13d9-e554-d02d-max"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -43,12 +52,17 @@
     <selectionEntry type="unit" import="true" name="H-03 Helltreads" hidden="false" id="6fe0-bdd3-ce65-3e72">
       <infoLinks>
         <infoLink name="H-03 Helltreads" id="b45c-5ff6-9015-7f17" hidden="false" type="profile" targetId="74c0-7fb5-4562-7f4c"/>
+        <infoLink name="Crush-" id="8ade-41bd-670c-8ed9" hidden="false" type="rule" targetId="ab49-c483-f2a1-aac8">
+          <modifiers>
+            <modifier type="set" value="Crush 2" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="H-03 Helltread" hidden="false" id="82f9-0a43-bc1a-88f4">
           <constraints>
-            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="2cde-a587-6632-813a-min"/>
-            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="2cde-a587-6632-813a-max"/>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="2cde-a587-6632-813a-max-min"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="2cde-a587-6632-813a-max-max"/>
           </constraints>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="H-03 Twin-Blasters" hidden="false" id="9f60-642d-5ec4-8e92">
@@ -56,20 +70,29 @@
                 <infoLink name="H-03 Twin-Blasters" id="f4c5-2408-1047-fd5f" hidden="false" type="profile" targetId="2b25-7867-3ab6-536e"/>
               </infoLinks>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="daea-e1be-2b0c-73f7-min"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="daea-e1be-2b0c-73f7-max"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="daea-e1be-2b0c-73f7-max-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="daea-e1be-2b0c-73f7-max-max"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="H-03 Explosion" hidden="false" id="bddc-95b8-6597-d283">
+            <selectionEntry type="upgrade" import="true" name="H-03 Explosion" hidden="true" id="bddc-95b8-6597-d283">
               <infoLinks>
                 <infoLink name="H-03 Explosion" id="c894-fedc-f836-2a05" hidden="false" type="profile" targetId="17ee-aef3-544e-a7ae"/>
               </infoLinks>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a16d-86bf-da17-b9a9-min"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a16d-86bf-da17-b9a9-max"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a16d-86bf-da17-b9a9-max-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a16d-86bf-da17-b9a9-max-max"/>
               </constraints>
             </selectionEntry>
           </selectionEntries>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Special Ability (Self-Destruct)" hidden="false" id="0f20-de29-7de3-98a0">
+          <infoLinks>
+            <infoLink name="Self-Destruct" id="0451-7fb9-b92f-53e2" hidden="false" type="profile" targetId="621a-ca31-1eda-c8f4"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bbad-c8d8-1602-abd2-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bbad-c8d8-1602-abd2-max"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -82,9 +105,14 @@
     <selectionEntry type="unit" import="true" name="F-00 Officer Unit" hidden="false" id="b707-2e8a-b341-2b3b" page="(Has some kind of officer buff ability)">
       <infoLinks>
         <infoLink name="F-00 Officer" id="f4ed-7b72-8b21-8afb" hidden="false" type="profile" targetId="dff9-f94a-90e7-afeb"/>
+        <infoLink name="Presence-" id="e0d2-8591-d3b7-b510" hidden="false" type="rule" targetId="c94f-5f31-a078-81ee">
+          <modifiers>
+            <modifier type="set" value="Presence 2" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="F-00 Officer" hidden="false" id="d932-7e1d-d3fc-b860">
+        <selectionEntry type="model" import="true" name="F-00 Officer" hidden="false" id="d932-7e1d-d3fc-b860" sortIndex="1">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5c78-66bd-16a4-bbca-min"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5c78-66bd-16a4-bbca-max"/>
@@ -101,7 +129,7 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="F-00 Bodyguard" hidden="false" id="31a8-55c7-fe8b-6163">
+        <selectionEntry type="model" import="true" name="F-00 Bodyguard" hidden="false" id="31a8-55c7-fe8b-6163" sortIndex="2">
           <constraints>
             <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="e5dc-b710-a1a5-7c2e-min"/>
             <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="e5dc-b710-a1a5-7c2e-max"/>
@@ -118,9 +146,18 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Special Ability (Cyber-Command)" hidden="false" id="9e54-3273-0d73-2e9f" sortIndex="3">
+          <infoLinks>
+            <infoLink name="Cyber-Command" id="9884-9d90-4e27-b226" hidden="false" type="profile" targetId="3e96-5bbe-6070-660b"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6904-fffb-9e7a-010c-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6904-fffb-9e7a-010c-max"/>
+          </constraints>
+        </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="points" typeId="b94c-fcb8-4a07-acd7" value="240"/>
+        <cost name="points" typeId="b94c-fcb8-4a07-acd7" value="180"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="86d7-e31a-0e12-cc05" id="6fb6-6db6-e524-77ab" primary="false" name="Infantry"/>
@@ -142,8 +179,8 @@
         <characteristic name="Range" typeId="8723-19bb-bcce-5f94">10&quot;</characteristic>
         <characteristic name="Attacks" typeId="0a3b-93a6-7ca6-c930">2</characteristic>
         <characteristic name="Accuracy" typeId="4bca-fe29-753e-511f">3+</characteristic>
-        <characteristic name="Armor Piercing" typeId="46da-1060-daef-3f00">+2 +1
-+0 -1</characteristic>
+        <characteristic name="Armor Piercing" typeId="46da-1060-daef-3f00">L.I.: +2, L.V.: +1
+H.I.: +0, H.V.: -1</characteristic>
         <characteristic name="Damage" typeId="f994-dfa3-122c-9cc5">1</characteristic>
       </characteristics>
     </profile>
@@ -152,8 +189,8 @@
         <characteristic name="Range" typeId="8723-19bb-bcce-5f94">14&quot;</characteristic>
         <characteristic name="Attacks" typeId="0a3b-93a6-7ca6-c930">1</characteristic>
         <characteristic name="Accuracy" typeId="4bca-fe29-753e-511f">4+</characteristic>
-        <characteristic name="Armor Piercing" typeId="46da-1060-daef-3f00">-3 +3
--1 +2</characteristic>
+        <characteristic name="Armor Piercing" typeId="46da-1060-daef-3f00">L.I.: -3, L.V.: +3
+H.I.: -1, H.V.: +2</characteristic>
         <characteristic name="Damage" typeId="f994-dfa3-122c-9cc5">2</characteristic>
       </characteristics>
       <comment>[Explosive 1]</comment>
@@ -171,8 +208,8 @@
         <characteristic name="Range" typeId="8723-19bb-bcce-5f94">10&quot;</characteristic>
         <characteristic name="Attacks" typeId="0a3b-93a6-7ca6-c930">4</characteristic>
         <characteristic name="Accuracy" typeId="4bca-fe29-753e-511f">3+</characteristic>
-        <characteristic name="Armor Piercing" typeId="46da-1060-daef-3f00">+2 +1
-+0 -1</characteristic>
+        <characteristic name="Armor Piercing" typeId="46da-1060-daef-3f00">L.I.: +2, L.V.: +1
+H.I.: +0, H.V.: -1</characteristic>
         <characteristic name="Damage" typeId="f994-dfa3-122c-9cc5">1</characteristic>
       </characteristics>
       <comment>[Full-Auto-2]</comment>
@@ -182,8 +219,8 @@
         <characteristic name="Range" typeId="8723-19bb-bcce-5f94">2&quot;</characteristic>
         <characteristic name="Attacks" typeId="0a3b-93a6-7ca6-c930">6</characteristic>
         <characteristic name="Accuracy" typeId="4bca-fe29-753e-511f">4+</characteristic>
-        <characteristic name="Armor Piercing" typeId="46da-1060-daef-3f00">+3 +3
-+1 +0</characteristic>
+        <characteristic name="Armor Piercing" typeId="46da-1060-daef-3f00">L.I.: +3, L.V.: +3
+H.I.: +1, H.V.: +0</characteristic>
         <characteristic name="Damage" typeId="f994-dfa3-122c-9cc5">2</characteristic>
       </characteristics>
       <comment>[Area of Effect 8&quot;]</comment>
@@ -200,10 +237,25 @@
       <characteristics>
         <characteristic name="Range" typeId="8723-19bb-bcce-5f94">10&quot;</characteristic>
         <characteristic name="Attacks" typeId="0a3b-93a6-7ca6-c930">2</characteristic>
-        <characteristic name="Accuracy" typeId="4bca-fe29-753e-511f">2+</characteristic>
-        <characteristic name="Armor Piercing" typeId="46da-1060-daef-3f00">+2 +1
-+0 -1</characteristic>
+        <characteristic name="Accuracy" typeId="4bca-fe29-753e-511f">3+</characteristic>
+        <characteristic name="Armor Piercing" typeId="46da-1060-daef-3f00">L.I.: +2, L.V.: +1
+H.I.: +0, H.V.: -1</characteristic>
         <characteristic name="Damage" typeId="f994-dfa3-122c-9cc5">1</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Self-Destruct" typeId="7e76-2916-e877-fd40" typeName="Abilities (Action)" hidden="false" id="621a-ca31-1eda-c8f4">
+      <characteristics>
+        <characteristic name="Description" typeId="3437-636f-e6aa-d7ea">At the beginning of your next Attacking Phase, this unit is targeted by the weapon profile &quot;H-03 Explosion,&quot; then is destroyed.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Sprint" typeId="7e76-2916-e877-fd40" typeName="Abilities (Action)" hidden="false" id="e39a-2a59-97b9-8afe">
+      <characteristics>
+        <characteristic name="Description" typeId="3437-636f-e6aa-d7ea">This unit may make a move of up to 5&quot;.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Cyber-Command" typeId="4720-4964-f773-3509" typeName="Abilities (Passive)" hidden="false" id="3e96-5bbe-6070-660b">
+      <characteristics>
+        <characteristic name="Description" typeId="bc7d-10a5-15e8-e96d">While this unit is on the battlefield, improve the range characteristic of ranged weapons by 4&quot; on weapons equipped by friendly Cybernetica units.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

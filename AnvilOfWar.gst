@@ -38,7 +38,7 @@
     </costType>
   </costTypes>
   <profileTypes>
-    <profileType name="Unit" id="a0cc-e27d-0e47-b400" hidden="false">
+    <profileType name="Unit" id="a0cc-e27d-0e47-b400" hidden="false" kind="model">
       <characteristicTypes>
         <characteristicType name="HP" id="1d43-35c4-2ad8-ee02"/>
         <characteristicType name="MV" id="aa14-e1fc-a33b-8e17"/>
@@ -56,14 +56,19 @@
         <characteristicType name="Damage" id="f994-dfa3-122c-9cc5"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Special Abilities" id="7e76-2916-e877-fd40" hidden="false">
+    <profileType name="Abilities (Action)" id="7e76-2916-e877-fd40" hidden="false" kind="ability">
       <characteristicTypes>
         <characteristicType name="Description" id="3437-636f-e6aa-d7ea"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Weapon Abilities" id="ed56-95ac-5582-8023" hidden="false">
+    <profileType name="Weapon Abilities" id="ed56-95ac-5582-8023" hidden="false" kind="ability">
       <characteristicTypes>
         <characteristicType name="Description" id="c7ce-7c70-361a-78df"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType name="Abilities (Passive)" id="4720-4964-f773-3509" hidden="false" kind="ability">
+      <characteristicTypes>
+        <characteristicType name="Description" id="bc7d-10a5-15e8-e96d"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>
