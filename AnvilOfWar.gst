@@ -56,7 +56,7 @@
         <characteristicType name="Damage" id="f994-dfa3-122c-9cc5"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Abilities (Action)" id="7e76-2916-e877-fd40" hidden="false" kind="ability">
+    <profileType name="Abilities (Action)" id="7e76-2916-e877-fd40" hidden="false" kind="weapon">
       <characteristicTypes>
         <characteristicType name="Description" id="3437-636f-e6aa-d7ea"/>
       </characteristicTypes>
