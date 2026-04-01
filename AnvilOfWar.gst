@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-4d6c-ac3c-296b-de59" name="AnvilOfWar" battleScribeVersion="2.03" revision="3" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Pierce Kester" authorContact="bulletgiraffe@gmail.com" authorUrl="bulletgiraffe.com" publicationId="5911-3a66-ec62-32e6">
+<gameSystem id="sys-4d6c-ac3c-296b-de59" name="AnvilOfWar" battleScribeVersion="2.03" revision="4" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Pierce Kester" authorContact="bulletgiraffe@gmail.com" authorUrl="bulletgiraffe.com" publicationId="5911-3a66-ec62-32e6">
   <categoryEntries>
     <categoryEntry name="Infantry" id="86d7-e31a-0e12-cc05" hidden="false"/>
     <categoryEntry name="Vehicle" id="892b-3ede-432c-1fff" hidden="false"/>
@@ -57,6 +57,7 @@
         <characteristicType name="Acc" id="4bca-fe29-753e-511f" kind="annotation"/>
         <characteristicType name="AP" id="46da-1060-daef-3f00" kind="annotation"/>
         <characteristicType name="D" id="f994-dfa3-122c-9cc5" kind="annotation"/>
+        <characteristicType name="Abilities" id="3c47-c04c-8dfd-a691" kind="longText"/>
       </characteristicTypes>
     </profileType>
     <profileType name="Active (Special Abilities)" id="7e76-2916-e877-fd40" hidden="false" kind="weapon">
@@ -83,10 +84,12 @@
     <rule name="Resist-" id="e899-0aa0-f2bb-f89d" hidden="false">
       <description>When units with [RESIST-KEYWORD X] are attacked by a unit of the corresponding [KEYWORD], subtract &apos;X&apos; from the attacking weapon&apos;s damage characteristic down to a minimum of 1 damage.</description>
       <comment>Unit Rule.</comment>
+      <alias>Resist</alias>
     </rule>
     <rule name="Presence-" id="c94f-5f31-a078-81ee" hidden="false">
       <description>For units with [PRESENCE-X], when counting models in the Securing Phase, count each model &apos;X&apos; times instead of once.</description>
       <comment>Unit Rule.</comment>
+      <alias>Presence</alias>
     </rule>
     <rule name="Stealthy" id="99b4-c1b6-4f40-4104" hidden="false">
       <description>When ranged weapons (besides area of effect weapons) target a unit with [STEALTHY], worsen the accuracy of the attacking weapon by 1 (accuracy threshold characteristic +1).</description>
@@ -95,6 +98,7 @@
     <rule name="Crush-" id="ab49-c483-f2a1-aac8" hidden="false">
       <description>When a unit with [CRUSH-X] moves over an enemy unit, that enemy unit takes &apos;X&apos; damage.</description>
       <comment>Unit Rule.</comment>
+      <alias>Crush</alias>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -117,21 +121,26 @@
       <characteristics>
         <characteristic name="Description" typeId="c7ce-7c70-361a-78df">When weapons with [ANTI-KEYWORD X] target a unit of [KEYWORD] type, increase the damage of that weapon&apos;s attack by &apos;X.&apos;</characteristic>
       </characteristics>
+      <alias>Anti</alias>
     </profile>
     <profile name="Full-Auto-" typeId="ed56-95ac-5582-8023" typeName="Weapon Abilities" hidden="false" id="67df-4cd7-46d6-6f39">
       <characteristics>
         <characteristic name="Description" typeId="c7ce-7c70-361a-78df">When weapons with [FULL-AUTO X] target a unit within half that weapon&apos;s range, increase this weapon&apos;s attacks characteristic by &apos;x.&apos;</characteristic>
       </characteristics>
+      <alias>Full-Auto</alias>
+      <alias>Full Auto</alias>
     </profile>
     <profile name="Explosive-" typeId="ed56-95ac-5582-8023" typeName="Weapon Abilities" hidden="false" id="8b6a-3304-f70a-39f5">
       <characteristics>
         <characteristic name="Description" typeId="c7ce-7c70-361a-78df">For each critical hit a weapon with [EXPLOSIVE-X] rolls, add &apos;x&apos; to the number of successful hits in the pool.</characteristic>
       </characteristics>
+      <alias>Explosive</alias>
     </profile>
     <profile name="Area of Effect-" typeId="ed56-95ac-5582-8023" typeName="Weapon Abilities" hidden="false" id="56b7-65cc-8fd1-b35f">
       <characteristics>
         <characteristic name="Description" typeId="c7ce-7c70-361a-78df">After completing the attack sequence with an [AREA OF EFFECT-X] weapon against a target, that weapon also resolves the attack sequence against each enemy unit within &apos;x&apos;&quot; of the target.  Those attacks do not have [AREA OF EFFECT-X] unless otherwise specified.</characteristic>
       </characteristics>
+      <alias>Area of Effect</alias>
       <alias>AoE</alias>
     </profile>
     <profile name="Dangerous" typeId="ed56-95ac-5582-8023" typeName="Weapon Abilities" hidden="false" id="426f-ee4f-6590-abf1">

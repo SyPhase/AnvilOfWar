@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="28e4-ed51-3991-19d2" name="Cybernetica" gameSystemId="sys-4d6c-ac3c-296b-de59" gameSystemRevision="1" revision="4" authorName="SyPhase" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="28e4-ed51-3991-19d2" name="Cybernetica" gameSystemId="sys-4d6c-ac3c-296b-de59" gameSystemRevision="1" revision="5" authorName="SyPhase" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="F-00 Officer Squad" hidden="false" id="b707-2e8a-b341-2b3b" page="(Has some kind of officer buff ability)">
       <infoLinks>
@@ -260,6 +260,7 @@
         <characteristic name="AP" typeId="46da-1060-daef-3f00">+2, +1
 +0, -1</characteristic>
         <characteristic name="D" typeId="f994-dfa3-122c-9cc5">1</characteristic>
+        <characteristic name="Abilities" typeId="3c47-c04c-8dfd-a691"/>
       </characteristics>
     </profile>
     <profile name="F-12 Rocket" typeId="35f7-4412-69cb-9d6a" typeName="Weapons" hidden="false" id="8aaf-4252-fa64-b622">
@@ -270,6 +271,7 @@
         <characteristic name="AP" typeId="46da-1060-daef-3f00">-3, +3
 -1, +2</characteristic>
         <characteristic name="D" typeId="f994-dfa3-122c-9cc5">2</characteristic>
+        <characteristic name="Abilities" typeId="3c47-c04c-8dfd-a691">Explosive 1</characteristic>
       </characteristics>
       <comment>[Explosive 1]</comment>
     </profile>
@@ -290,6 +292,7 @@
         <characteristic name="AP" typeId="46da-1060-daef-3f00">+2, +1
 +0, -1</characteristic>
         <characteristic name="D" typeId="f994-dfa3-122c-9cc5">1</characteristic>
+        <characteristic name="Abilities" typeId="3c47-c04c-8dfd-a691">Full-Auto 2</characteristic>
       </characteristics>
       <comment>[Full-Auto-2]</comment>
     </profile>
@@ -301,6 +304,7 @@
         <characteristic name="AP" typeId="46da-1060-daef-3f00">+3, +3
 +1, +0</characteristic>
         <characteristic name="D" typeId="f994-dfa3-122c-9cc5">2</characteristic>
+        <characteristic name="Abilities" typeId="3c47-c04c-8dfd-a691">Area of Effect 8&quot;</characteristic>
       </characteristics>
       <comment>[Area of Effect 8&quot;]</comment>
     </profile>
@@ -321,6 +325,7 @@
         <characteristic name="AP" typeId="46da-1060-daef-3f00">+2, +1
 +0, -1</characteristic>
         <characteristic name="D" typeId="f994-dfa3-122c-9cc5">1</characteristic>
+        <characteristic name="Abilities" typeId="3c47-c04c-8dfd-a691"/>
       </characteristics>
     </profile>
     <profile name="Self-Destruct" typeId="7e76-2916-e877-fd40" typeName="Active (Special Abilities)" hidden="false" id="621a-ca31-1eda-c8f4">
