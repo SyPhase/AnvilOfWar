@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="28e4-ed51-3991-19d2" name="Cybernetica" gameSystemId="sys-4d6c-ac3c-296b-de59" gameSystemRevision="1" revision="3" authorName="SyPhase" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="28e4-ed51-3991-19d2" name="Cybernetica" gameSystemId="sys-4d6c-ac3c-296b-de59" gameSystemRevision="1" revision="4" authorName="SyPhase" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="F-00 Officer Squad" hidden="false" id="b707-2e8a-b341-2b3b" page="(Has some kind of officer buff ability)">
       <infoLinks>
@@ -60,6 +60,7 @@
       <categoryLinks>
         <categoryLink targetId="86d7-e31a-0e12-cc05" id="6fb6-6db6-e524-77ab" primary="false" name="Infantry"/>
         <categoryLink targetId="0a6c-1e81-5f9d-3240" id="c8ea-3f9c-bd41-2b9f" primary="true" name="Hero"/>
+        <categoryLink targetId="b9c5-1770-e28a-db52" id="ad78-8aa3-9c4a-c49b" primary="false" name="Heavy"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="F-12 War-Machines Unit" hidden="false" id="8575-14ae-8f9a-c4a2" subType="unit-group">
@@ -110,6 +111,7 @@
           </selectionEntries>
           <categoryLinks>
             <categoryLink targetId="86d7-e31a-0e12-cc05" id="6470-7419-17a2-f7b0" primary="false" name="Infantry"/>
+            <categoryLink targetId="b9c5-1770-e28a-db52" id="6939-017c-6c70-ae28" primary="false" name="Heavy"/>
           </categoryLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4e16-2291-1725-f08a-min"/>
@@ -159,6 +161,7 @@
           </selectionEntries>
           <categoryLinks>
             <categoryLink name="Infantry" hidden="false" id="a186-b3d5-7f8e-e5e6" targetId="86d7-e31a-0e12-cc05" primary="false"/>
+            <categoryLink targetId="b9c5-1770-e28a-db52" id="95fe-44ab-552c-906b" primary="false" name="Heavy"/>
           </categoryLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5ac0-58ae-c8d8-4b7a-min"/>
@@ -225,6 +228,10 @@
             <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="ce9a-6ca3-3c60-7ff7-max-min"/>
             <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="ce9a-6ca3-3c60-7ff7-max-max"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink targetId="59ea-6f10-a33e-30f1" id="46b7-3a1e-7a8f-94ef" primary="false" name="Light"/>
+            <categoryLink targetId="892b-3ede-432c-1fff" id="4d5c-ae4a-24d7-602a" primary="false" name="Vehicle"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -238,92 +245,95 @@
   <sharedProfiles>
     <profile name="F-12 War-Machine" typeId="a0cc-e27d-0e47-b400" typeName="Unit" hidden="false" id="bcb9-8613-bada-5d6d">
       <characteristics>
-        <characteristic name="HP" typeId="1d43-35c4-2ad8-ee02">2</characteristic>
-        <characteristic name="MV" typeId="aa14-e1fc-a33b-8e17">5&quot;</characteristic>
         <characteristic name="SV" typeId="24b4-ca44-ffb5-c3f4">3+</characteristic>
-        <characteristic name="Footprint" typeId="0743-ed86-8e70-b53c">Small</characteristic>
+        <characteristic name="DS" typeId="1535-83cf-b8fe-b1ce">0</characteristic>
+        <characteristic name="HP" typeId="a109-7c01-200f-cc2d">2</characteristic>
+        <characteristic name="MV" typeId="6972-eaad-7147-252f">5&quot;</characteristic>
+        <characteristic name="Footprint" typeId="1a99-d265-660f-2eb3">Small</characteristic>
       </characteristics>
     </profile>
     <profile name="F-12 Blaster" typeId="35f7-4412-69cb-9d6a" typeName="Weapons" hidden="false" id="7d2e-a261-0004-613b">
       <characteristics>
-        <characteristic name="Range" typeId="8723-19bb-bcce-5f94">10&quot;</characteristic>
-        <characteristic name="Attacks" typeId="0a3b-93a6-7ca6-c930">2</characteristic>
-        <characteristic name="Accuracy" typeId="4bca-fe29-753e-511f">3+</characteristic>
-        <characteristic name="Armor Piercing" typeId="46da-1060-daef-3f00">L.I.: +2, L.V.: +1
-H.I.: +0, H.V.: -1</characteristic>
-        <characteristic name="Damage" typeId="f994-dfa3-122c-9cc5">1</characteristic>
+        <characteristic name="R" typeId="8723-19bb-bcce-5f94">10&quot;</characteristic>
+        <characteristic name="Att" typeId="0a3b-93a6-7ca6-c930">2</characteristic>
+        <characteristic name="Acc" typeId="4bca-fe29-753e-511f">3+</characteristic>
+        <characteristic name="AP" typeId="46da-1060-daef-3f00">+2, +1
++0, -1</characteristic>
+        <characteristic name="D" typeId="f994-dfa3-122c-9cc5">1</characteristic>
       </characteristics>
     </profile>
     <profile name="F-12 Rocket" typeId="35f7-4412-69cb-9d6a" typeName="Weapons" hidden="false" id="8aaf-4252-fa64-b622">
       <characteristics>
-        <characteristic name="Range" typeId="8723-19bb-bcce-5f94">14&quot;</characteristic>
-        <characteristic name="Attacks" typeId="0a3b-93a6-7ca6-c930">1</characteristic>
-        <characteristic name="Accuracy" typeId="4bca-fe29-753e-511f">4+</characteristic>
-        <characteristic name="Armor Piercing" typeId="46da-1060-daef-3f00">L.I.: -3, L.V.: +3
-H.I.: -1, H.V.: +2</characteristic>
-        <characteristic name="Damage" typeId="f994-dfa3-122c-9cc5">2</characteristic>
+        <characteristic name="R" typeId="8723-19bb-bcce-5f94">14&quot;</characteristic>
+        <characteristic name="Att" typeId="0a3b-93a6-7ca6-c930">1</characteristic>
+        <characteristic name="Acc" typeId="4bca-fe29-753e-511f">4+</characteristic>
+        <characteristic name="AP" typeId="46da-1060-daef-3f00">-3, +3
+-1, +2</characteristic>
+        <characteristic name="D" typeId="f994-dfa3-122c-9cc5">2</characteristic>
       </characteristics>
       <comment>[Explosive 1]</comment>
     </profile>
     <profile name="H-03 Helltreads" typeId="a0cc-e27d-0e47-b400" typeName="Unit" hidden="false" id="74c0-7fb5-4562-7f4c">
       <characteristics>
-        <characteristic name="HP" typeId="1d43-35c4-2ad8-ee02">5</characteristic>
-        <characteristic name="MV" typeId="aa14-e1fc-a33b-8e17">10&quot;</characteristic>
         <characteristic name="SV" typeId="24b4-ca44-ffb5-c3f4">4+</characteristic>
-        <characteristic name="Footprint" typeId="0743-ed86-8e70-b53c">Medium</characteristic>
+        <characteristic name="DS" typeId="1535-83cf-b8fe-b1ce">0</characteristic>
+        <characteristic name="HP" typeId="a109-7c01-200f-cc2d">5</characteristic>
+        <characteristic name="MV" typeId="6972-eaad-7147-252f">10&quot;</characteristic>
+        <characteristic name="Footprint" typeId="1a99-d265-660f-2eb3">Medium</characteristic>
       </characteristics>
     </profile>
     <profile name="H-03 Twin-Blasters" typeId="35f7-4412-69cb-9d6a" typeName="Weapons" hidden="false" id="2b25-7867-3ab6-536e">
       <characteristics>
-        <characteristic name="Range" typeId="8723-19bb-bcce-5f94">10&quot;</characteristic>
-        <characteristic name="Attacks" typeId="0a3b-93a6-7ca6-c930">4</characteristic>
-        <characteristic name="Accuracy" typeId="4bca-fe29-753e-511f">3+</characteristic>
-        <characteristic name="Armor Piercing" typeId="46da-1060-daef-3f00">L.I.: +2, L.V.: +1
-H.I.: +0, H.V.: -1</characteristic>
-        <characteristic name="Damage" typeId="f994-dfa3-122c-9cc5">1</characteristic>
+        <characteristic name="R" typeId="8723-19bb-bcce-5f94">10&quot;</characteristic>
+        <characteristic name="Att" typeId="0a3b-93a6-7ca6-c930">4</characteristic>
+        <characteristic name="Acc" typeId="4bca-fe29-753e-511f">3+</characteristic>
+        <characteristic name="AP" typeId="46da-1060-daef-3f00">+2, +1
++0, -1</characteristic>
+        <characteristic name="D" typeId="f994-dfa3-122c-9cc5">1</characteristic>
       </characteristics>
       <comment>[Full-Auto-2]</comment>
     </profile>
     <profile name="H-03 Explosion" typeId="35f7-4412-69cb-9d6a" typeName="Weapons" hidden="false" id="17ee-aef3-544e-a7ae">
       <characteristics>
-        <characteristic name="Range" typeId="8723-19bb-bcce-5f94">2&quot;</characteristic>
-        <characteristic name="Attacks" typeId="0a3b-93a6-7ca6-c930">6</characteristic>
-        <characteristic name="Accuracy" typeId="4bca-fe29-753e-511f">4+</characteristic>
-        <characteristic name="Armor Piercing" typeId="46da-1060-daef-3f00">L.I.: +3, L.V.: +3
-H.I.: +1, H.V.: +0</characteristic>
-        <characteristic name="Damage" typeId="f994-dfa3-122c-9cc5">2</characteristic>
+        <characteristic name="R" typeId="8723-19bb-bcce-5f94">2&quot;</characteristic>
+        <characteristic name="Att" typeId="0a3b-93a6-7ca6-c930">6</characteristic>
+        <characteristic name="Acc" typeId="4bca-fe29-753e-511f">4+</characteristic>
+        <characteristic name="AP" typeId="46da-1060-daef-3f00">+3, +3
++1, +0</characteristic>
+        <characteristic name="D" typeId="f994-dfa3-122c-9cc5">2</characteristic>
       </characteristics>
       <comment>[Area of Effect 8&quot;]</comment>
     </profile>
     <profile name="F-00 Officer" typeId="a0cc-e27d-0e47-b400" typeName="Unit" hidden="false" id="dff9-f94a-90e7-afeb">
       <characteristics>
-        <characteristic name="HP" typeId="1d43-35c4-2ad8-ee02">3</characteristic>
-        <characteristic name="MV" typeId="aa14-e1fc-a33b-8e17">5&quot;</characteristic>
         <characteristic name="SV" typeId="24b4-ca44-ffb5-c3f4">3+</characteristic>
-        <characteristic name="Footprint" typeId="0743-ed86-8e70-b53c">Small</characteristic>
+        <characteristic name="DS" typeId="1535-83cf-b8fe-b1ce">0</characteristic>
+        <characteristic name="HP" typeId="a109-7c01-200f-cc2d">3</characteristic>
+        <characteristic name="MV" typeId="6972-eaad-7147-252f">5&quot;</characteristic>
+        <characteristic name="Footprint" typeId="1a99-d265-660f-2eb3">Small</characteristic>
       </characteristics>
     </profile>
     <profile name="F-00 Blaster" typeId="35f7-4412-69cb-9d6a" typeName="Weapons" hidden="false" id="1990-7de7-b83f-9ae0">
       <characteristics>
-        <characteristic name="Range" typeId="8723-19bb-bcce-5f94">10&quot;</characteristic>
-        <characteristic name="Attacks" typeId="0a3b-93a6-7ca6-c930">2</characteristic>
-        <characteristic name="Accuracy" typeId="4bca-fe29-753e-511f">3+</characteristic>
-        <characteristic name="Armor Piercing" typeId="46da-1060-daef-3f00">L.I.: +2, L.V.: +1
-H.I.: +0, H.V.: -1</characteristic>
-        <characteristic name="Damage" typeId="f994-dfa3-122c-9cc5">1</characteristic>
+        <characteristic name="R" typeId="8723-19bb-bcce-5f94">10&quot;</characteristic>
+        <characteristic name="Att" typeId="0a3b-93a6-7ca6-c930">2</characteristic>
+        <characteristic name="Acc" typeId="4bca-fe29-753e-511f">3+</characteristic>
+        <characteristic name="AP" typeId="46da-1060-daef-3f00">+2, +1
++0, -1</characteristic>
+        <characteristic name="D" typeId="f994-dfa3-122c-9cc5">1</characteristic>
       </characteristics>
     </profile>
-    <profile name="Self-Destruct" typeId="7e76-2916-e877-fd40" typeName="Abilities (Action)" hidden="false" id="621a-ca31-1eda-c8f4">
+    <profile name="Self-Destruct" typeId="7e76-2916-e877-fd40" typeName="Active (Special Abilities)" hidden="false" id="621a-ca31-1eda-c8f4">
       <characteristics>
         <characteristic name="Description" typeId="3437-636f-e6aa-d7ea">At the beginning of your next Attacking Phase, this unit is targeted by the weapon profile &quot;H-03 Explosion,&quot; then is destroyed.  (Note: the Area of Effect ability of that weapon means you will be targeting all enemies in range of the area of effect.  Because this unit will be destroyed anyway, you may skip to the attacking of enemies within range.)</characteristic>
       </characteristics>
     </profile>
-    <profile name="Sprint" typeId="7e76-2916-e877-fd40" typeName="Abilities (Action)" hidden="false" id="e39a-2a59-97b9-8afe">
+    <profile name="Sprint" typeId="7e76-2916-e877-fd40" typeName="Active (Special Abilities)" hidden="false" id="e39a-2a59-97b9-8afe">
       <characteristics>
         <characteristic name="Description" typeId="3437-636f-e6aa-d7ea">This unit may make a move of up to 5&quot;.</characteristic>
       </characteristics>
     </profile>
-    <profile name="Cyber-Command" typeId="4720-4964-f773-3509" typeName="Abilities (Passive)" hidden="false" id="3e96-5bbe-6070-660b">
+    <profile name="Cyber-Command" typeId="4720-4964-f773-3509" typeName="Passive (Special Abilities)" hidden="false" id="3e96-5bbe-6070-660b">
       <characteristics>
         <characteristic name="Description" typeId="bc7d-10a5-15e8-e96d">While this unit is on the battlefield, improve the range characteristic of ranged weapons by 4&quot; on weapons equipped by friendly Cybernetica units.</characteristic>
       </characteristics>

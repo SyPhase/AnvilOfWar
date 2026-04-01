@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-4d6c-ac3c-296b-de59" name="AnvilOfWar" battleScribeVersion="2.03" revision="2" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Pierce Kester" authorContact="bulletgiraffe@gmail.com" authorUrl="bulletgiraffe.com" publicationId="5911-3a66-ec62-32e6">
+<gameSystem id="sys-4d6c-ac3c-296b-de59" name="AnvilOfWar" battleScribeVersion="2.03" revision="3" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Pierce Kester" authorContact="bulletgiraffe@gmail.com" authorUrl="bulletgiraffe.com" publicationId="5911-3a66-ec62-32e6">
   <categoryEntries>
     <categoryEntry name="Infantry" id="86d7-e31a-0e12-cc05" hidden="false"/>
     <categoryEntry name="Vehicle" id="892b-3ede-432c-1fff" hidden="false"/>
     <categoryEntry name="Hero" id="0a6c-1e81-5f9d-3240" hidden="false"/>
     <categoryEntry name="Faction Leader" id="0214-30a6-f341-ee7f" hidden="false"/>
+    <categoryEntry name="Light" id="59ea-6f10-a33e-30f1" hidden="false"/>
+    <categoryEntry name="Heavy" id="b9c5-1770-e28a-db52" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Galactic Conquest" id="2936-ac7b-690d-0867" hidden="false">
@@ -40,33 +42,34 @@
   <profileTypes>
     <profileType name="Unit" id="a0cc-e27d-0e47-b400" hidden="false" kind="model">
       <characteristicTypes>
-        <characteristicType name="HP" id="1d43-35c4-2ad8-ee02"/>
-        <characteristicType name="MV" id="aa14-e1fc-a33b-8e17"/>
         <characteristicType name="SV" id="24b4-ca44-ffb5-c3f4"/>
-        <characteristicType name="Footprint" id="0743-ed86-8e70-b53c"/>
+        <characteristicType name="DS" id="1535-83cf-b8fe-b1ce"/>
+        <characteristicType name="HP" id="a109-7c01-200f-cc2d"/>
+        <characteristicType name="MV" id="6972-eaad-7147-252f"/>
+        <characteristicType name="Footprint" id="1a99-d265-660f-2eb3"/>
       </characteristicTypes>
       <comment>Should Footprint be elsewhere?</comment>
     </profileType>
     <profileType name="Weapons" id="35f7-4412-69cb-9d6a" hidden="false" kind="weapon">
       <characteristicTypes>
-        <characteristicType name="Range" id="8723-19bb-bcce-5f94"/>
-        <characteristicType name="Attacks" id="0a3b-93a6-7ca6-c930"/>
-        <characteristicType name="Accuracy" id="4bca-fe29-753e-511f"/>
-        <characteristicType name="Armor Piercing" id="46da-1060-daef-3f00"/>
-        <characteristicType name="Damage" id="f994-dfa3-122c-9cc5"/>
+        <characteristicType name="R" id="8723-19bb-bcce-5f94" kind="annotation"/>
+        <characteristicType name="Att" id="0a3b-93a6-7ca6-c930" kind="annotation"/>
+        <characteristicType name="Acc" id="4bca-fe29-753e-511f" kind="annotation"/>
+        <characteristicType name="AP" id="46da-1060-daef-3f00" kind="annotation"/>
+        <characteristicType name="D" id="f994-dfa3-122c-9cc5" kind="annotation"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Abilities (Action)" id="7e76-2916-e877-fd40" hidden="false" kind="weapon">
+    <profileType name="Active (Special Abilities)" id="7e76-2916-e877-fd40" hidden="false" kind="weapon">
       <characteristicTypes>
         <characteristicType name="Description" id="3437-636f-e6aa-d7ea"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Weapon Abilities" id="ed56-95ac-5582-8023" hidden="false" kind="ability">
+    <profileType name="Weapon Abilities" id="ed56-95ac-5582-8023" hidden="false" kind="tag">
       <characteristicTypes>
         <characteristicType name="Description" id="c7ce-7c70-361a-78df"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Abilities (Passive)" id="4720-4964-f773-3509" hidden="false" kind="ability">
+    <profileType name="Passive (Special Abilities)" id="4720-4964-f773-3509" hidden="false" kind="ability">
       <characteristicTypes>
         <characteristicType name="Description" id="bc7d-10a5-15e8-e96d"/>
       </characteristicTypes>

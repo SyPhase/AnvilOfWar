@@ -1,27 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="e48c-ab19-6449-78c7" name="MechWalkers" gameSystemId="sys-4d6c-ac3c-296b-de59" gameSystemRevision="2" revision="1" authorName="SyPhase" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="e48c-ab19-6449-78c7" name="MechWalkers" gameSystemId="sys-4d6c-ac3c-296b-de59" gameSystemRevision="2" revision="2" authorName="SyPhase" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedProfiles>
     <profile name="Oxen Longhaul" typeId="a0cc-e27d-0e47-b400" typeName="Unit" hidden="false" id="fc48-91b9-0a96-93d8">
       <characteristics>
-        <characteristic name="HP" typeId="1d43-35c4-2ad8-ee02">40</characteristic>
-        <characteristic name="MV" typeId="aa14-e1fc-a33b-8e17">6&quot;</characteristic>
         <characteristic name="SV" typeId="24b4-ca44-ffb5-c3f4">3+</characteristic>
-        <characteristic name="Footprint" typeId="0743-ed86-8e70-b53c">Medium</characteristic>
+        <characteristic name="DS" typeId="1535-83cf-b8fe-b1ce"/>
+        <characteristic name="HP" typeId="a109-7c01-200f-cc2d"/>
+        <characteristic name="MV" typeId="6972-eaad-7147-252f"/>
+        <characteristic name="Footprint" typeId="1a99-d265-660f-2eb3"/>
       </characteristics>
     </profile>
-    <profile name="Energy Shields" typeId="4720-4964-f773-3509" typeName="Abilities (Passive)" hidden="false" id="e9ec-6737-15af-faa3">
+    <profile name="Energy Shields" typeId="4720-4964-f773-3509" typeName="Passive (Special Abilities)" hidden="false" id="e9ec-6737-15af-faa3">
       <characteristics>
         <characteristic name="Description" typeId="bc7d-10a5-15e8-e96d">While this unit has shields remaining, friendly infantry units within 3&quot; of this unit cannot be targeted by ranged weapons.</characteristic>
       </characteristics>
     </profile>
     <profile name="Two Blaster Cannons" typeId="35f7-4412-69cb-9d6a" typeName="Weapons" hidden="false" id="4221-e05b-238d-cc95">
       <characteristics>
-        <characteristic name="Range" typeId="8723-19bb-bcce-5f94">16&quot;</characteristic>
-        <characteristic name="Attacks" typeId="0a3b-93a6-7ca6-c930">4</characteristic>
-        <characteristic name="Accuracy" typeId="4bca-fe29-753e-511f">3+</characteristic>
-        <characteristic name="Armor Piercing" typeId="46da-1060-daef-3f00">L.I.: -1, L.V.: +3
+        <characteristic name="R" typeId="8723-19bb-bcce-5f94">16&quot;</characteristic>
+        <characteristic name="Att" typeId="0a3b-93a6-7ca6-c930">4</characteristic>
+        <characteristic name="Acc" typeId="4bca-fe29-753e-511f">3+</characteristic>
+        <characteristic name="AP" typeId="46da-1060-daef-3f00">L.I.: -1, L.V.: +3
 H.I.: 0, H.V.: +1</characteristic>
-        <characteristic name="Damage" typeId="f994-dfa3-122c-9cc5">3</characteristic>
+        <characteristic name="D" typeId="f994-dfa3-122c-9cc5">3</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
