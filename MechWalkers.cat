@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="e48c-ab19-6449-78c7" name="MechWalkers" gameSystemId="sys-4d6c-ac3c-296b-de59" gameSystemRevision="2" revision="6" authorName="SyPhase" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="e48c-ab19-6449-78c7" name="MechWalkers" gameSystemId="sys-4d6c-ac3c-296b-de59" gameSystemRevision="2" revision="7" authorName="SyPhase" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedProfiles>
     <profile name="Oxen Longhaul" typeId="a0cc-e27d-0e47-b400" typeName="Unit" hidden="false" id="fc48-91b9-0a96-93d8">
       <characteristics>
         <characteristic name="SV" typeId="24b4-ca44-ffb5-c3f4">3+</characteristic>
-        <characteristic name="DS" typeId="1535-83cf-b8fe-b1ce"/>
-        <characteristic name="HP" typeId="a109-7c01-200f-cc2d"/>
-        <characteristic name="MV" typeId="6972-eaad-7147-252f"/>
-        <characteristic name="Footprint" typeId="1a99-d265-660f-2eb3"/>
+        <characteristic name="DS" typeId="1535-83cf-b8fe-b1ce">8</characteristic>
+        <characteristic name="HP" typeId="a109-7c01-200f-cc2d">15</characteristic>
+        <characteristic name="MV" typeId="6972-eaad-7147-252f">5&quot;</characteristic>
+        <characteristic name="Footprint" typeId="1a99-d265-660f-2eb3">Medium</characteristic>
       </characteristics>
     </profile>
     <profile name="Energy Shields" typeId="4720-4964-f773-3509" typeName="Passive (Special Abilities)" hidden="false" id="e9ec-6737-15af-faa3">
@@ -20,116 +20,123 @@
         <characteristic name="R" typeId="8723-19bb-bcce-5f94">16&quot;</characteristic>
         <characteristic name="Att" typeId="0a3b-93a6-7ca6-c930">4</characteristic>
         <characteristic name="Acc" typeId="4bca-fe29-753e-511f">3+</characteristic>
-        <characteristic name="AP" typeId="46da-1060-daef-3f00">L.I.: -1, L.V.: +3
-H.I.: 0, H.V.: +1</characteristic>
+        <characteristic name="AP" typeId="46da-1060-daef-3f00">-1, +3
++0, +1</characteristic>
         <characteristic name="D" typeId="f994-dfa3-122c-9cc5">3</characteristic>
         <characteristic name="Abilities" typeId="3c47-c04c-8dfd-a691"/>
       </characteristics>
     </profile>
+    <profile name="Support Engineer" typeId="a0cc-e27d-0e47-b400" typeName="Unit" hidden="false" id="1d4a-712d-1dc3-09c4">
+      <characteristics>
+        <characteristic name="SV" typeId="24b4-ca44-ffb5-c3f4">5+</characteristic>
+        <characteristic name="DS" typeId="1535-83cf-b8fe-b1ce">0</characteristic>
+        <characteristic name="HP" typeId="a109-7c01-200f-cc2d">1</characteristic>
+        <characteristic name="MV" typeId="6972-eaad-7147-252f">6&quot;</characteristic>
+        <characteristic name="Footprint" typeId="1a99-d265-660f-2eb3">Small</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Unscheduled Rapid Reassembly" typeId="7e76-2916-e877-fd40" typeName="Active (Special Abilities)" hidden="false" id="1f49-30c9-8359-f875">
+      <characteristics>
+        <characteristic name="Description" typeId="3437-636f-e6aa-d7ea">One friendly vehicle squad within 3&quot; of this squad regains up to D3 HP.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Engineer&apos;s Pistol" typeId="35f7-4412-69cb-9d6a" typeName="Weapons" hidden="false" id="0909-b8b4-1211-49ca">
+      <characteristics>
+        <characteristic name="R" typeId="8723-19bb-bcce-5f94">10&quot;</characteristic>
+        <characteristic name="Att" typeId="0a3b-93a6-7ca6-c930">1</characteristic>
+        <characteristic name="Acc" typeId="4bca-fe29-753e-511f">5+</characteristic>
+        <characteristic name="AP" typeId="46da-1060-daef-3f00">+0, +0
++0, -1</characteristic>
+        <characteristic name="D" typeId="f994-dfa3-122c-9cc5">1</characteristic>
+        <characteristic name="Abilities" typeId="3c47-c04c-8dfd-a691"/>
+      </characteristics>
+    </profile>
+    <profile name="Engineer&apos;s Shotgun" typeId="35f7-4412-69cb-9d6a" typeName="Weapons" hidden="false" id="7cc3-4f11-a74b-f2b3">
+      <characteristics>
+        <characteristic name="R" typeId="8723-19bb-bcce-5f94">6&quot;</characteristic>
+        <characteristic name="Att" typeId="0a3b-93a6-7ca6-c930">2</characteristic>
+        <characteristic name="Acc" typeId="4bca-fe29-753e-511f">4+</characteristic>
+        <characteristic name="AP" typeId="46da-1060-daef-3f00">+2, +0
++1, -1</characteristic>
+        <characteristic name="D" typeId="f994-dfa3-122c-9cc5">1</characteristic>
+        <characteristic name="Abilities" typeId="3c47-c04c-8dfd-a691"/>
+      </characteristics>
+    </profile>
+    <profile name="Shield Rechargers" typeId="7e76-2916-e877-fd40" typeName="Active (Special Abilities)" hidden="false" id="0f40-92d5-5627-814c">
+      <characteristics>
+        <characteristic name="Description" typeId="3437-636f-e6aa-d7ea">One friendly vehicle squad within 3&quot; of this squad regains up to 2 DS.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Combat Engineer" typeId="a0cc-e27d-0e47-b400" typeName="Unit" hidden="false" id="58b6-311c-a66c-0b41">
+      <characteristics>
+        <characteristic name="SV" typeId="24b4-ca44-ffb5-c3f4">4+</characteristic>
+        <characteristic name="DS" typeId="1535-83cf-b8fe-b1ce">0</characteristic>
+        <characteristic name="HP" typeId="a109-7c01-200f-cc2d">1</characteristic>
+        <characteristic name="MV" typeId="6972-eaad-7147-252f">6&quot;</characteristic>
+        <characteristic name="Footprint" typeId="1a99-d265-660f-2eb3">Small</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Combat Disembarkation" typeId="4720-4964-f773-3509" typeName="Passive (Special Abilities)" hidden="false" id="ce9e-2572-95e6-2182">
+      <characteristics>
+        <characteristic name="Description" typeId="bc7d-10a5-15e8-e96d">When this unit is destroyed, before removing it from the battlefield, roll a D6. On a 3+, set up a Combat Engineer Squad as close as possible to this unit.  Then, remove this unit from the battlefield.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Rhinoceros Longhaul" typeId="a0cc-e27d-0e47-b400" typeName="Unit" hidden="false" id="4e94-c1af-d2fd-e1a7">
+      <characteristics>
+        <characteristic name="SV" typeId="24b4-ca44-ffb5-c3f4">2+</characteristic>
+        <characteristic name="DS" typeId="1535-83cf-b8fe-b1ce">20</characteristic>
+        <characteristic name="HP" typeId="a109-7c01-200f-cc2d">30</characteristic>
+        <characteristic name="MV" typeId="6972-eaad-7147-252f">5&quot;</characteristic>
+        <characteristic name="Footprint" typeId="1a99-d265-660f-2eb3">Large</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="War Cannons" typeId="35f7-4412-69cb-9d6a" typeName="Weapons" hidden="false" id="d4cc-b8e6-44e3-178a">
+      <characteristics>
+        <characteristic name="R" typeId="8723-19bb-bcce-5f94">20&quot;</characteristic>
+        <characteristic name="Att" typeId="0a3b-93a6-7ca6-c930">2</characteristic>
+        <characteristic name="Acc" typeId="4bca-fe29-753e-511f">5+</characteristic>
+        <characteristic name="AP" typeId="46da-1060-daef-3f00">+0, +5
++2, +4</characteristic>
+        <characteristic name="D" typeId="f994-dfa3-122c-9cc5">10</characteristic>
+        <characteristic name="Abilities" typeId="3c47-c04c-8dfd-a691">Steady</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Heavy Blaster Cannons" typeId="35f7-4412-69cb-9d6a" typeName="Weapons" hidden="false" id="de61-b5aa-f677-bc36">
+      <characteristics>
+        <characteristic name="R" typeId="8723-19bb-bcce-5f94">24&quot;</characteristic>
+        <characteristic name="Att" typeId="0a3b-93a6-7ca6-c930">6</characteristic>
+        <characteristic name="Acc" typeId="4bca-fe29-753e-511f">3+</characteristic>
+        <characteristic name="AP" typeId="46da-1060-daef-3f00">+0, +3
++1, +3</characteristic>
+        <characteristic name="D" typeId="f994-dfa3-122c-9cc5">6</characteristic>
+        <characteristic name="Abilities" typeId="3c47-c04c-8dfd-a691"/>
+      </characteristics>
+    </profile>
+    <profile name="Heavy Blaster Cannons (Stationary)" typeId="35f7-4412-69cb-9d6a" typeName="Weapons" hidden="false" id="0cbb-fc51-3da1-715b">
+      <characteristics>
+        <characteristic name="R" typeId="8723-19bb-bcce-5f94">24&quot;</characteristic>
+        <characteristic name="Att" typeId="0a3b-93a6-7ca6-c930">12</characteristic>
+        <characteristic name="Acc" typeId="4bca-fe29-753e-511f">3+</characteristic>
+        <characteristic name="AP" typeId="46da-1060-daef-3f00">+0, +3
++1, +3</characteristic>
+        <characteristic name="D" typeId="f994-dfa3-122c-9cc5">6</characteristic>
+        <characteristic name="Abilities" typeId="3c47-c04c-8dfd-a691">Stationary</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <sharedSelectionEntries>
-    <selectionEntry type="unit" import="true" name="Oxen Longhaul Unit" hidden="false" id="aa31-dcba-388d-0914" subType="unit-group">
+    <selectionEntry type="unit" import="true" name="Oxen Longhaul Unit" hidden="false" id="e7b1-acb8-f43c-b4d9" subType="unit-group">
       <costs>
-        <cost name="points" typeId="b94c-fcb8-4a07-acd7" value="380"/>
         <cost name="Unit Capacity" typeId="f7d6-c8d5-b008-4866" value="2"/>
+        <cost name="currency" typeId="2439-1aa3-efd7-29d0" value="380"/>
       </costs>
       <categoryLinks>
-        <categoryLink targetId="892b-3ede-432c-1fff" id="769a-c6cb-a119-bfe2" primary="true" name="Vehicle"/>
+        <categoryLink targetId="892b-3ede-432c-1fff" id="4ba4-87cd-6479-4b6e" primary="true" name="Vehicle"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="unit" import="true" name="Oxen Longhauls" hidden="false" id="ac23-6b82-f3bc-7ffe">
+        <selectionEntry type="unit" import="true" name="Oxen Longhaul Squad" hidden="false" id="7365-cf82-7017-ed68">
           <selectionEntries>
-            <selectionEntry type="model" import="true" name="Oxen Longhaul" hidden="false" id="53b5-2522-0daa-c81f">
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Dual Blaster Cannons" hidden="false" id="4dc4-bda2-c803-01f2">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="55d3-a83b-49a6-8f23-min"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="55d3-a83b-49a6-8f23-max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink name="Dual Blaster Cannons" id="e04f-685b-14d5-56ca" hidden="false" type="profile" targetId="4221-e05b-238d-cc95"/>
-                  </infoLinks>
-                </selectionEntry>
-              </selectionEntries>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9aea-a889-0c9e-8271-min"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9aea-a889-0c9e-8271-max"/>
-              </constraints>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Special Ability (Energy Shields)" hidden="false" id="759d-36ca-31c1-e12a">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="79e3-7c4d-a724-8aa0-min"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="79e3-7c4d-a724-8aa0-max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink name="Energy Shields" id="e758-efbb-94bb-8945" hidden="false" type="profile" targetId="e9ec-6737-15af-faa3"/>
-              </infoLinks>
-            </selectionEntry>
-          </selectionEntries>
-          <infoLinks>
-            <infoLink name="Crush-" id="384e-9ab2-8bb4-06be" hidden="false" type="rule" targetId="ab49-c483-f2a1-aac8">
-              <modifiers>
-                <modifier type="set" value="Crush 4" field="name"/>
-              </modifiers>
-            </infoLink>
-          </infoLinks>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4d2e-3bd3-48e3-2149-min"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4d2e-3bd3-48e3-2149-max"/>
-          </constraints>
-          <categoryLinks>
-            <categoryLink targetId="892b-3ede-432c-1fff" id="428c-b0a4-188f-f01f" primary="false" name="Vehicle"/>
-            <categoryLink targetId="b9c5-1770-e28a-db52" id="bd60-a01a-6196-f940" primary="false" name="Heavy"/>
-          </categoryLinks>
-        </selectionEntry>
-        <selectionEntry type="unit" import="true" name="Oxen Longhauls" hidden="false" id="a9ff-20c8-c7f9-50a3">
-          <selectionEntries>
-            <selectionEntry type="model" import="true" name="Oxen Longhaul" hidden="false" id="a88b-a4f1-633e-abd2">
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Dual Blaster Cannons" hidden="false" id="b088-8a84-8eb5-a6b7">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8450-6e44-cd4f-f169"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="54fb-c76a-d56d-c744"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink name="Dual Blaster Cannons" id="d6de-cd58-e997-54e6" hidden="false" type="profile" targetId="4221-e05b-238d-cc95"/>
-                  </infoLinks>
-                </selectionEntry>
-              </selectionEntries>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="48c5-4283-21d0-028e"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0205-bab8-e45a-ed11"/>
-              </constraints>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Special Ability (Energy Shields)" hidden="false" id="8855-592c-bc10-25f0">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="783d-9582-6bd8-05f1"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4ee9-6635-58ea-7b57"/>
-              </constraints>
-              <infoLinks>
-                <infoLink name="Energy Shields" id="7df9-e54c-01c7-896a" hidden="false" type="profile" targetId="e9ec-6737-15af-faa3"/>
-              </infoLinks>
-            </selectionEntry>
-          </selectionEntries>
-          <infoLinks>
-            <infoLink name="Crush-" id="a0bb-6013-2a97-ba82" hidden="false" type="rule" targetId="ab49-c483-f2a1-aac8">
-              <modifiers>
-                <modifier type="set" value="Crush 4" field="name"/>
-              </modifiers>
-            </infoLink>
-          </infoLinks>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7cf3-e713-184e-81b4"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="591c-4f8e-f078-9bd7"/>
-          </constraints>
-          <categoryLinks>
-            <categoryLink name="Vehicle" hidden="false" id="f4f6-f5ff-da4e-e966" targetId="892b-3ede-432c-1fff" primary="false"/>
-            <categoryLink name="Heavy" hidden="false" id="9417-a02d-cc84-b360" targetId="b9c5-1770-e28a-db52" primary="false"/>
-          </categoryLinks>
-        </selectionEntry>
-        <selectionEntry type="unit" import="true" name="Oxen Longhauls" hidden="false" id="7365-cf82-7017-ed68">
-          <selectionEntries>
-            <selectionEntry type="model" import="true" name="Oxen Longhaul" hidden="false" id="455d-0fa4-ab91-70fe">
+            <selectionEntry type="model" import="true" name="Oxen Longhaul" hidden="false" id="455d-0fa4-ab91-70fe" sortIndex="1">
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Dual Blaster Cannons" hidden="false" id="eed5-891b-45e8-1394">
                   <constraints>
@@ -146,7 +153,7 @@ H.I.: 0, H.V.: +1</characteristic>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5e1d-e88d-00f4-651d"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Special Ability (Energy Shields)" hidden="false" id="47fa-c733-cdd2-6f64">
+            <selectionEntry type="upgrade" import="true" name="Special Ability (Energy Shields)" hidden="false" id="47fa-c733-cdd2-6f64" sortIndex="2">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9d74-ee77-cb40-dc9d"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ba4c-5b62-b21f-16ee"/>
@@ -162,6 +169,7 @@ H.I.: 0, H.V.: +1</characteristic>
                 <modifier type="set" value="Crush 4" field="name"/>
               </modifiers>
             </infoLink>
+            <infoLink name="Oxen Longhaul" id="6632-8fe6-e902-b843" hidden="false" type="profile" targetId="fc48-91b9-0a96-93d8"/>
           </infoLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4e50-c68e-5f19-1f6b"/>
@@ -172,10 +180,407 @@ H.I.: 0, H.V.: +1</characteristic>
             <categoryLink name="Heavy" hidden="false" id="64b2-a518-e50f-ca5f" targetId="b9c5-1770-e28a-db52" primary="false"/>
           </categoryLinks>
         </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Oxen Longhaul Squad" hidden="false" id="3382-1e5f-f072-c535">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Oxen Longhaul" hidden="false" id="c05b-fad0-57dc-bcfa" sortIndex="1">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Dual Blaster Cannons" hidden="false" id="2c1b-c693-95f1-3bd5">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a3e8-ee7c-6df0-4bef"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="42cb-ad4b-da92-9d2c"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Dual Blaster Cannons" id="9806-5054-39dd-d45e" hidden="false" type="profile" targetId="4221-e05b-238d-cc95"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9621-2eab-6de9-0a5c"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2950-a8b6-3b12-499b"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Special Ability (Energy Shields)" hidden="false" id="b010-dd03-9d1b-116c" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f74c-5308-6ff5-aee2"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f33f-5762-2724-1666"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Energy Shields" id="7d77-59db-3d56-371c" hidden="false" type="profile" targetId="e9ec-6737-15af-faa3"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <infoLinks>
+            <infoLink name="Crush-" id="e789-04e1-eea0-f4a9" hidden="false" type="rule" targetId="ab49-c483-f2a1-aac8">
+              <modifiers>
+                <modifier type="set" value="Crush 4" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Oxen Longhaul" id="071b-b1e4-6d85-5e27" hidden="false" type="profile" targetId="fc48-91b9-0a96-93d8"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="da9f-ab3d-13f3-2254"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9a0e-3ea5-6ed6-2e43"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink name="Vehicle" hidden="false" id="a6c5-02a3-5cec-1cc8" targetId="892b-3ede-432c-1fff" primary="false"/>
+            <categoryLink name="Heavy" hidden="false" id="3bc4-1792-fda1-b528" targetId="b9c5-1770-e28a-db52" primary="false"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Oxen Longhaul Squad" hidden="false" id="6425-1b13-ea84-e5de">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Oxen Longhaul" hidden="false" id="5403-7836-8346-b730" sortIndex="1">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Dual Blaster Cannons" hidden="false" id="7000-c4af-357b-907f">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="89b8-c8a5-21fe-99cb"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0fd1-ab11-fe4f-2ff5"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Dual Blaster Cannons" id="c14c-94d6-1fb7-c464" hidden="false" type="profile" targetId="4221-e05b-238d-cc95"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="96ad-e954-9d7e-da8d"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9730-e21e-7457-61d5"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Special Ability (Energy Shields)" hidden="false" id="3863-4be3-5394-5878" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a78a-40a7-e343-8afa"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ed9-d2a5-7ed1-e990"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Energy Shields" id="c461-972a-3f10-976e" hidden="false" type="profile" targetId="e9ec-6737-15af-faa3"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <infoLinks>
+            <infoLink name="Crush-" id="2359-dda7-6aab-036b" hidden="false" type="rule" targetId="ab49-c483-f2a1-aac8">
+              <modifiers>
+                <modifier type="set" value="Crush 4" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Oxen Longhaul" id="9356-d7d7-489f-9336" hidden="false" type="profile" targetId="fc48-91b9-0a96-93d8"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="56f4-2296-c719-d466"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6ce5-dd07-ee94-2788"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink name="Vehicle" hidden="false" id="c9c2-a0a6-5053-2a65" targetId="892b-3ede-432c-1fff" primary="false"/>
+            <categoryLink name="Heavy" hidden="false" id="9691-1bd0-7206-a5bd" targetId="b9c5-1770-e28a-db52" primary="false"/>
+          </categoryLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Support Engineer Unit" hidden="false" id="0458-f7ad-ad23-b4f8" subType="unit-group">
+      <costs>
+        <cost name="Unit Capacity" typeId="f7d6-c8d5-b008-4866" value="1"/>
+        <cost name="currency" typeId="2439-1aa3-efd7-29d0" value="60"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="86d7-e31a-0e12-cc05" id="30c2-cbc3-409a-d3b3" primary="true" name="Infantry"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="unit" import="true" name="Support Engineer Squad" hidden="false" id="4262-5642-1613-6c6c">
+          <categoryLinks>
+            <categoryLink name="Infantry" hidden="false" id="6ab8-faf7-b4dd-e9d9" targetId="86d7-e31a-0e12-cc05" primary="false"/>
+            <categoryLink name="Light" hidden="false" id="369b-4db0-7b89-363d" targetId="59ea-6f10-a33e-30f1" primary="false"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6d8d-3903-2ae7-d616"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="38e2-7785-790a-ebf5"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Support Engineer" id="15c2-2f6f-a89a-786b" hidden="false" type="profile" targetId="1d4a-712d-1dc3-09c4"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Special Ability (Unscheduled Rapid Reassembly)" hidden="false" id="2cd7-56cd-6944-ba77" sortIndex="2">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6be6-a8bc-4fd5-0804"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="10ce-85f4-5f61-75e8"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Unscheduled Rapid Reassembly" id="81b7-99bf-d507-75d4" hidden="false" type="profile" targetId="1f49-30c9-8359-f875"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Support Engineer" hidden="false" id="b1ef-205a-d132-021b" sortIndex="1">
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="d0a9-bf93-2aeb-24f9"/>
+                <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="a793-cdeb-8f69-e378"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Engineer&apos;s Pistol" hidden="false" id="492a-f3ad-510c-4d93">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c345-7b0c-1cbe-b2ef"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3181-a79e-df29-6b69"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Engineer&apos;s Pistol" id="9274-77a0-adc0-6180" hidden="false" type="profile" targetId="0909-b8b4-1211-49ca"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Support Engineer Squad" hidden="false" id="6757-282d-9f60-e598">
+          <categoryLinks>
+            <categoryLink name="Infantry" hidden="false" id="ba02-0c40-989b-4873" targetId="86d7-e31a-0e12-cc05" primary="false"/>
+            <categoryLink name="Light" hidden="false" id="7ff3-f8a1-eb21-36b6" targetId="59ea-6f10-a33e-30f1" primary="false"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6155-3de3-0010-964a"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eff2-1784-71a4-f607"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Support Engineer" id="7c1e-90ba-5b14-a112" hidden="false" type="profile" targetId="1d4a-712d-1dc3-09c4"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Special Ability (Unscheduled Rapid Reassembly)" hidden="false" id="d88a-0f58-8f40-0b96" sortIndex="2">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ba78-3c0c-2824-2e54"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="173d-0d20-3df4-f984"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Unscheduled Rapid Reassembly" id="6ffc-fb04-c7fa-4d6b" hidden="false" type="profile" targetId="1f49-30c9-8359-f875"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Support Engineer" hidden="false" id="8071-1805-7088-0ec3" sortIndex="1">
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="df46-a230-e27c-b6cd"/>
+                <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="8226-5740-a2d7-feaf"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Engineer&apos;s Pistol" hidden="false" id="5fd3-3d2f-8ac2-9e1b">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7bf2-5bd6-05b6-96b2"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c03d-1403-2833-0579"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Engineer&apos;s Pistol" id="3e01-2511-c002-ad61" hidden="false" type="profile" targetId="0909-b8b4-1211-49ca"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Support Engineer Squad" hidden="false" id="a673-a045-6f80-5df2">
+          <categoryLinks>
+            <categoryLink name="Infantry" hidden="false" id="f0b0-b183-9b17-11e6" targetId="86d7-e31a-0e12-cc05" primary="false"/>
+            <categoryLink name="Light" hidden="false" id="537d-0929-6922-9596" targetId="59ea-6f10-a33e-30f1" primary="false"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dd74-2410-2825-3706"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c176-c573-8969-6f06"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Support Engineer" id="5d92-efb0-5750-f6ff" hidden="false" type="profile" targetId="1d4a-712d-1dc3-09c4"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Special Ability (Unscheduled Rapid Reassembly)" hidden="false" id="931e-206e-a5d7-4992" sortIndex="2">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b279-550d-e5e0-08e9"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ebe4-f4a3-a4c7-c84e"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Unscheduled Rapid Reassembly" id="1fd5-cec9-732a-2341" hidden="false" type="profile" targetId="1f49-30c9-8359-f875"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Support Engineer" hidden="false" id="ac5d-aeab-227e-bdb7" sortIndex="1">
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="7d83-33f0-4c9f-d990"/>
+                <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="df63-3850-5b57-8b44"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Engineer&apos;s Pistol" hidden="false" id="7040-c924-ccf3-d06d">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="511b-f2ba-89a3-320f"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="89b0-ddc4-e40b-bd15"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Engineer&apos;s Pistol" id="57c8-5ea5-0a0a-f141" hidden="false" type="profile" targetId="0909-b8b4-1211-49ca"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Combat Engineer Unit" hidden="false" id="81af-32d6-3356-25db" subType="unit-group">
+      <costs>
+        <cost name="Unit Capacity" typeId="f7d6-c8d5-b008-4866" value="1"/>
+        <cost name="currency" typeId="2439-1aa3-efd7-29d0" value="90"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="86d7-e31a-0e12-cc05" id="d95b-d963-2bda-84b9" primary="true" name="Infantry"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="unit" import="true" name="Combat Engineer Squad" hidden="false" id="99fb-46bb-948a-94bd">
+          <categoryLinks>
+            <categoryLink name="Infantry" hidden="false" id="2359-95a7-0cb6-a70e" targetId="86d7-e31a-0e12-cc05" primary="false"/>
+            <categoryLink name="Light" hidden="false" id="0657-be41-e5e2-8b44" targetId="59ea-6f10-a33e-30f1" primary="false"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6ffb-e765-a096-132d"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5766-65cc-e571-3bfd"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Combat Engineer" id="f199-902c-c2bc-6f96" hidden="false" type="profile" targetId="58b6-311c-a66c-0b41"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Special Ability (Shield Rechargers)" hidden="false" id="eb2c-ca62-f112-c57c" sortIndex="2">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0910-ae83-ef61-ee3b"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="172f-6176-262a-d259"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Shield Rechargers" id="1a59-db3b-f612-2d25" hidden="false" type="profile" targetId="0f40-92d5-5627-814c"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Combat Engineer" hidden="false" id="c8fc-de2b-27f3-9ebc" sortIndex="1">
+              <constraints>
+                <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="6ef3-2942-d902-ed80"/>
+                <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="5331-da64-935f-38dd"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Engineer&apos;s Shotgun" hidden="false" id="8c10-53ff-aa13-8a43">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6366-27fb-1e52-6292"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b104-992f-15eb-5582"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Engineer&apos;s Shotgun" id="2aec-659b-d930-7c8f" hidden="false" type="profile" targetId="7cc3-4f11-a74b-f2b3"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Combat Engineer Squad" hidden="false" id="7adb-a307-22da-e13f">
+          <categoryLinks>
+            <categoryLink name="Infantry" hidden="false" id="9829-74d9-304c-e823" targetId="86d7-e31a-0e12-cc05" primary="false"/>
+            <categoryLink name="Light" hidden="false" id="0068-5d1a-e83c-2452" targetId="59ea-6f10-a33e-30f1" primary="false"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4f3f-a5e0-f924-f5fd"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eff4-93f3-0ecb-b0bf"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Combat Engineer" id="b721-fdab-a054-23a6" hidden="false" type="profile" targetId="58b6-311c-a66c-0b41"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Special Ability (Shield Rechargers)" hidden="false" id="9fa2-de7a-baa6-51b7" sortIndex="2">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="faf8-7617-1c79-b93c"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2ac4-8383-aeb1-3528"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Shield Rechargers" id="57e2-e870-9772-527d" hidden="false" type="profile" targetId="0f40-92d5-5627-814c"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Combat Engineer" hidden="false" id="95fc-4a49-f5f3-154f" sortIndex="1">
+              <constraints>
+                <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="4ee2-3d9d-6864-cbb5"/>
+                <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="26fa-507e-533e-bb9f"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Engineer&apos;s Shotgun" hidden="false" id="be85-11b3-40a8-2394">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4638-917a-6a17-9d75"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b800-ccf9-4a19-2950"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Engineer&apos;s Shotgun" id="acc7-e072-009d-0082" hidden="false" type="profile" targetId="7cc3-4f11-a74b-f2b3"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Rhinoceros Longhaul Unit" hidden="false" id="0e80-5182-d61f-7c0a" subType="unit-group">
+      <costs>
+        <cost name="Unit Capacity" typeId="f7d6-c8d5-b008-4866" value="3"/>
+        <cost name="currency" typeId="2439-1aa3-efd7-29d0" value="450"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="892b-3ede-432c-1fff" id="ca64-d337-f77e-364c" primary="true" name="Vehicle"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="unit" import="true" name="Rhinoceros Longhaul Squad" hidden="false" id="078f-2ed7-338a-8ef2">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Rhinoceros Longhaul" hidden="false" id="52e7-4671-0a3b-962e" sortIndex="1">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Heavy Blaster Cannons" hidden="false" id="f31f-2d22-9108-6604" sortIndex="1">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d6a0-a12e-46c8-615f"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6f7c-4b07-35b0-c57f"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Heavy Blaster Cannons" id="9c38-e9e6-8935-6ed7" hidden="false" type="profile" targetId="de61-b5aa-f677-bc36"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Heavy Blaster Cannons (Stationary)" hidden="false" id="46b6-4ce2-d5f9-9c08" sortIndex="2">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9ab2-7a26-4022-0170"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d5f5-3cd7-47d5-9515"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Heavy Blaster Cannons (Stationary)" id="8358-1b68-b902-3945" hidden="false" type="profile" targetId="0cbb-fc51-3da1-715b"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="War Cannons" hidden="false" id="41ad-5dbd-15a4-a774" sortIndex="3">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3881-c2f1-9f93-53ad"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="20fd-32ab-c6bf-4508"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="War Cannons" id="f58d-0e24-ca84-dc15" hidden="false" type="profile" targetId="d4cc-b8e6-44e3-178a"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c8ee-dc31-92e8-4144"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b847-2a73-9142-c43d"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Special Ability (Combat Disembarkation)" hidden="false" id="b4d8-2062-3c12-03e2" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2144-7b66-f4e6-b2d4"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="50d4-1aa4-4956-913c"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Combat Disembarkation" id="5a3f-929d-ffc4-b4f0" hidden="false" type="profile" targetId="ce9e-2572-95e6-2182"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <infoLinks>
+            <infoLink name="Crush-" id="a04c-45db-50a0-e3d6" hidden="false" type="rule" targetId="ab49-c483-f2a1-aac8">
+              <modifiers>
+                <modifier type="set" value="Crush 10" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Rhinoceros Longhaul" id="bcac-c9a8-c0d8-b84d" hidden="false" type="profile" targetId="4e94-c1af-d2fd-e1a7"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1e8a-1202-cf03-c721"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="929f-14d6-47f3-55ad"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink name="Vehicle" hidden="false" id="e646-7c25-8aeb-8f7f" targetId="892b-3ede-432c-1fff" primary="false"/>
+            <categoryLink name="Heavy" hidden="false" id="a659-f785-09b9-065f" targetId="b9c5-1770-e28a-db52" primary="false"/>
+          </categoryLinks>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
-    <entryLink import="true" name="Oxen Longhaul Unit" hidden="false" id="1e71-266c-366e-048c" targetId="aa31-dcba-388d-0914" type="selectionEntry"/>
+    <entryLink import="true" name="Oxen Longhaul Unit" hidden="false" id="1e71-266c-366e-048c" targetId="e7b1-acb8-f43c-b4d9" type="selectionEntry"/>
+    <entryLink import="true" name="Support Engineer Unit" hidden="false" id="1c67-3cef-1ef7-7425" targetId="0458-f7ad-ad23-b4f8" type="selectionEntry"/>
+    <entryLink import="true" name="Combat Engineer Unit" hidden="false" id="a2f6-4aa9-adec-6e3a" targetId="81af-32d6-3356-25db" type="selectionEntry"/>
+    <entryLink import="true" name="Rhinoceros Longhaul Unit" hidden="false" id="b7e0-e167-7ce9-d90c" targetId="0e80-5182-d61f-7c0a" type="selectionEntry"/>
   </entryLinks>
 </catalogue>

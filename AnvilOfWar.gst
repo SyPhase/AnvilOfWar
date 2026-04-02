@@ -85,7 +85,6 @@
         <characteristicType name="MV" id="6972-eaad-7147-252f"/>
         <characteristicType name="Footprint" id="1a99-d265-660f-2eb3"/>
       </characteristicTypes>
-      <comment>Should Footprint be elsewhere?</comment>
     </profileType>
     <profileType name="Weapons" id="35f7-4412-69cb-9d6a" hidden="false" kind="weapon">
       <characteristicTypes>

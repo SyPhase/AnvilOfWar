@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="28e4-ed51-3991-19d2" name="Cybernetica" gameSystemId="sys-4d6c-ac3c-296b-de59" gameSystemRevision="1" revision="9" authorName="SyPhase" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="28e4-ed51-3991-19d2" name="Cybernetica" gameSystemId="sys-4d6c-ac3c-296b-de59" gameSystemRevision="1" revision="10" authorName="SyPhase" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="F-00 Officer Unit" hidden="false" id="00b4-fce6-ccc0-663a" subType="unit-group">
       <categoryLinks>
@@ -463,7 +463,7 @@
       </characteristics>
       <comment>[Explosive 1]</comment>
     </profile>
-    <profile name="H-03 Helltreads" typeId="a0cc-e27d-0e47-b400" typeName="Unit" hidden="false" id="74c0-7fb5-4562-7f4c">
+    <profile name="H-03 Helltread" typeId="a0cc-e27d-0e47-b400" typeName="Unit" hidden="false" id="74c0-7fb5-4562-7f4c">
       <characteristics>
         <characteristic name="SV" typeId="24b4-ca44-ffb5-c3f4">4+</characteristic>
         <characteristic name="DS" typeId="1535-83cf-b8fe-b1ce">0</characteristic>
