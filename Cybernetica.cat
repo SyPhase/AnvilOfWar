@@ -1,68 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="28e4-ed51-3991-19d2" name="Cybernetica" gameSystemId="sys-4d6c-ac3c-296b-de59" gameSystemRevision="1" revision="5" authorName="SyPhase" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="28e4-ed51-3991-19d2" name="Cybernetica" gameSystemId="sys-4d6c-ac3c-296b-de59" gameSystemRevision="1" revision="6" authorName="SyPhase" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
-    <selectionEntry type="unit" import="true" name="F-00 Officer Squad" hidden="false" id="b707-2e8a-b341-2b3b" page="(Has some kind of officer buff ability)">
-      <infoLinks>
-        <infoLink name="F-00 Officer" id="f4ed-7b72-8b21-8afb" hidden="false" type="profile" targetId="dff9-f94a-90e7-afeb"/>
-        <infoLink name="Presence-" id="e0d2-8591-d3b7-b510" hidden="false" type="rule" targetId="c94f-5f31-a078-81ee">
-          <modifiers>
-            <modifier type="set" value="Presence 2" field="name"/>
-          </modifiers>
-        </infoLink>
-      </infoLinks>
-      <selectionEntries>
-        <selectionEntry type="model" import="true" name="F-00 Officer" hidden="false" id="d932-7e1d-d3fc-b860" sortIndex="1">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5c78-66bd-16a4-bbca-min"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5c78-66bd-16a4-bbca-max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="F-00 Blaster" hidden="false" id="8d41-7776-4060-a897">
-              <infoLinks>
-                <infoLink name="F-00 Blaster" id="eec5-74d3-1fe5-9108" hidden="false" type="profile" targetId="1990-7de7-b83f-9ae0"/>
-              </infoLinks>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="588a-4f10-7cef-bcaa-min"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="588a-4f10-7cef-bcaa-max"/>
-              </constraints>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntry>
-        <selectionEntry type="model" import="true" name="F-00 Bodyguard" hidden="false" id="31a8-55c7-fe8b-6163" sortIndex="2">
-          <constraints>
-            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="e5dc-b710-a1a5-7c2e-min"/>
-            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="e5dc-b710-a1a5-7c2e-max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="F-00 Blaster" hidden="false" id="79e2-af75-7093-a445">
-              <infoLinks>
-                <infoLink name="F-00 Blaster" id="5757-d951-ace0-f09b" hidden="false" type="profile" targetId="1990-7de7-b83f-9ae0"/>
-              </infoLinks>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5033-4a10-6902-eb17-min"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5033-4a10-6902-eb17-max"/>
-              </constraints>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Special Ability (Cyber-Command)" hidden="false" id="9e54-3273-0d73-2e9f" sortIndex="3">
-          <infoLinks>
-            <infoLink name="Cyber-Command" id="9884-9d90-4e27-b226" hidden="false" type="profile" targetId="3e96-5bbe-6070-660b"/>
-          </infoLinks>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6904-fffb-9e7a-010c"/>
-          </constraints>
-        </selectionEntry>
-      </selectionEntries>
-      <costs>
-        <cost name="points" typeId="b94c-fcb8-4a07-acd7" value="180"/>
-      </costs>
-      <categoryLinks>
-        <categoryLink targetId="86d7-e31a-0e12-cc05" id="6fb6-6db6-e524-77ab" primary="false" name="Infantry"/>
-        <categoryLink targetId="0a6c-1e81-5f9d-3240" id="c8ea-3f9c-bd41-2b9f" primary="true" name="Hero"/>
-        <categoryLink targetId="b9c5-1770-e28a-db52" id="ad78-8aa3-9c4a-c49b" primary="false" name="Heavy"/>
-      </categoryLinks>
-    </selectionEntry>
     <selectionEntry type="unit" import="true" name="F-12 War-Machines Unit" hidden="false" id="8575-14ae-8f9a-c4a2" subType="unit-group">
       <costs>
         <cost name="points" typeId="b94c-fcb8-4a07-acd7" value="100"/>
@@ -241,6 +179,79 @@
         <categoryLink targetId="892b-3ede-432c-1fff" id="fc0a-4120-ccba-aafa" primary="true" name="Vehicle"/>
       </categoryLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="F-00 Officer Unit" hidden="false" id="f5f0-299c-cff6-930c">
+      <categoryLinks>
+        <categoryLink targetId="0a6c-1e81-5f9d-3240" id="f48d-2366-94e9-18d2" primary="true" name="Hero"/>
+      </categoryLinks>
+      <costs>
+        <cost name="points" typeId="b94c-fcb8-4a07-acd7" value="180"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="unit" import="true" name="F-00 Officer Squad" hidden="false" id="b707-2e8a-b341-2b3b" page="(Has some kind of officer buff ability)">
+          <infoLinks>
+            <infoLink name="F-00 Officer" id="f4ed-7b72-8b21-8afb" hidden="false" type="profile" targetId="dff9-f94a-90e7-afeb"/>
+            <infoLink name="Presence-" id="e0d2-8591-d3b7-b510" hidden="false" type="rule" targetId="c94f-5f31-a078-81ee">
+              <modifiers>
+                <modifier type="set" value="Presence 2" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="F-00 Officer" hidden="false" id="d932-7e1d-d3fc-b860" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5c78-66bd-16a4-bbca-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5c78-66bd-16a4-bbca-max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="F-00 Blaster" hidden="false" id="8d41-7776-4060-a897">
+                  <infoLinks>
+                    <infoLink name="F-00 Blaster" id="eec5-74d3-1fe5-9108" hidden="false" type="profile" targetId="1990-7de7-b83f-9ae0"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="588a-4f10-7cef-bcaa-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="588a-4f10-7cef-bcaa-max"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="F-00 Bodyguard" hidden="false" id="31a8-55c7-fe8b-6163" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="e5dc-b710-a1a5-7c2e-min"/>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="e5dc-b710-a1a5-7c2e-max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="F-00 Blaster" hidden="false" id="79e2-af75-7093-a445">
+                  <infoLinks>
+                    <infoLink name="F-00 Blaster" id="5757-d951-ace0-f09b" hidden="false" type="profile" targetId="1990-7de7-b83f-9ae0"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5033-4a10-6902-eb17-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5033-4a10-6902-eb17-max"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Special Ability (Cyber-Command)" hidden="false" id="9e54-3273-0d73-2e9f" sortIndex="3">
+              <infoLinks>
+                <infoLink name="Cyber-Command" id="9884-9d90-4e27-b226" hidden="false" type="profile" targetId="3e96-5bbe-6070-660b"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6904-fffb-9e7a-010c"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="c8ea-3f9c-bd41-2b9f" targetId="0a6c-1e81-5f9d-3240" primary="false"/>
+            <categoryLink name="Infantry" hidden="false" id="3d77-00cf-602d-9427" targetId="86d7-e31a-0e12-cc05" primary="false"/>
+            <categoryLink name="Heavy" hidden="false" id="1231-167b-7da0-ea59" targetId="b9c5-1770-e28a-db52" primary="false"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2398-3846-638c-e73b"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="669e-3d19-d993-c3fb"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
     <profile name="F-12 War-Machine" typeId="a0cc-e27d-0e47-b400" typeName="Unit" hidden="false" id="bcb9-8613-bada-5d6d">
@@ -345,7 +356,7 @@
     </profile>
   </sharedProfiles>
   <entryLinks>
-    <entryLink import="true" name="F-00 Officer Squad" hidden="false" id="2142-28fb-8abb-af7f" targetId="b707-2e8a-b341-2b3b" type="selectionEntry"/>
+    <entryLink import="true" name="F-00 Officer Unit" hidden="false" id="b0d4-108c-4263-55e0" targetId="f5f0-299c-cff6-930c" type="selectionEntry"/>
     <entryLink import="true" name="F-12 War-Machines Unit" hidden="false" id="8e8c-2e1e-f209-47bd" targetId="8575-14ae-8f9a-c4a2" type="selectionEntry"/>
     <entryLink import="true" name="H-03 Helltreads Unit" hidden="false" id="404f-6483-3fad-2d93" targetId="384a-7cc4-f1f9-560e" type="selectionEntry"/>
   </entryLinks>

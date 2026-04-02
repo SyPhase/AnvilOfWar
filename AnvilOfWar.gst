@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-4d6c-ac3c-296b-de59" name="AnvilOfWar" battleScribeVersion="2.03" revision="4" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Pierce Kester" authorContact="bulletgiraffe@gmail.com" authorUrl="bulletgiraffe.com" publicationId="5911-3a66-ec62-32e6">
+<gameSystem id="sys-4d6c-ac3c-296b-de59" name="AnvilOfWar" battleScribeVersion="2.03" revision="5" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Pierce Kester" authorContact="bulletgiraffe@gmail.com" authorUrl="bulletgiraffe.com" publicationId="5911-3a66-ec62-32e6">
   <categoryEntries>
     <categoryEntry name="Infantry" id="86d7-e31a-0e12-cc05" hidden="false"/>
     <categoryEntry name="Vehicle" id="892b-3ede-432c-1fff" hidden="false"/>
@@ -60,7 +60,7 @@
         <characteristicType name="Abilities" id="3c47-c04c-8dfd-a691" kind="longText"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Active (Special Abilities)" id="7e76-2916-e877-fd40" hidden="false" kind="weapon">
+    <profileType name="Active (Special Abilities)" id="7e76-2916-e877-fd40" hidden="false" kind="ability">
       <characteristicTypes>
         <characteristicType name="Description" id="3437-636f-e6aa-d7ea"/>
       </characteristicTypes>

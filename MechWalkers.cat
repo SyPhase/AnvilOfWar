@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="e48c-ab19-6449-78c7" name="MechWalkers" gameSystemId="sys-4d6c-ac3c-296b-de59" gameSystemRevision="2" revision="3" authorName="SyPhase" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="e48c-ab19-6449-78c7" name="MechWalkers" gameSystemId="sys-4d6c-ac3c-296b-de59" gameSystemRevision="2" revision="4" authorName="SyPhase" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedProfiles>
     <profile name="Oxen Longhaul" typeId="a0cc-e27d-0e47-b400" typeName="Unit" hidden="false" id="fc48-91b9-0a96-93d8">
       <characteristics>
@@ -15,7 +15,7 @@
         <characteristic name="Description" typeId="bc7d-10a5-15e8-e96d">While this unit has shields remaining, friendly infantry units within 3&quot; of this unit cannot be targeted by ranged weapons.</characteristic>
       </characteristics>
     </profile>
-    <profile name="Two Blaster Cannons" typeId="35f7-4412-69cb-9d6a" typeName="Weapons" hidden="false" id="4221-e05b-238d-cc95">
+    <profile name="Dual Blaster Cannons" typeId="35f7-4412-69cb-9d6a" typeName="Weapons" hidden="false" id="4221-e05b-238d-cc95">
       <characteristics>
         <characteristic name="R" typeId="8723-19bb-bcce-5f94">16&quot;</characteristic>
         <characteristic name="Att" typeId="0a3b-93a6-7ca6-c930">4</characteristic>
@@ -40,7 +40,7 @@ H.I.: 0, H.V.: +1</characteristic>
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Oxen Longhaul" hidden="false" id="53b5-2522-0daa-c81f">
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="2 Blaster Cannons" hidden="false" id="4dc4-bda2-c803-01f2">
+                <selectionEntry type="upgrade" import="true" name="Dual Blaster Cannons" hidden="false" id="4dc4-bda2-c803-01f2">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="55d3-a83b-49a6-8f23-min"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="55d3-a83b-49a6-8f23-max"/>
