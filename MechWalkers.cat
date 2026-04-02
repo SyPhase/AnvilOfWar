@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="e48c-ab19-6449-78c7" name="MechWalkers" gameSystemId="sys-4d6c-ac3c-296b-de59" gameSystemRevision="2" revision="4" authorName="SyPhase" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="e48c-ab19-6449-78c7" name="MechWalkers" gameSystemId="sys-4d6c-ac3c-296b-de59" gameSystemRevision="2" revision="5" authorName="SyPhase" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedProfiles>
     <profile name="Oxen Longhaul" typeId="a0cc-e27d-0e47-b400" typeName="Unit" hidden="false" id="fc48-91b9-0a96-93d8">
       <characteristics>
@@ -30,7 +30,7 @@ H.I.: 0, H.V.: +1</characteristic>
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Oxen Longhaul Unit" hidden="false" id="aa31-dcba-388d-0914" subType="unit-group">
       <costs>
-        <cost name="points" typeId="b94c-fcb8-4a07-acd7" value="440"/>
+        <cost name="points" typeId="b94c-fcb8-4a07-acd7" value="380"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="892b-3ede-432c-1fff" id="769a-c6cb-a119-bfe2" primary="true" name="Vehicle"/>
@@ -46,7 +46,7 @@ H.I.: 0, H.V.: +1</characteristic>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="55d3-a83b-49a6-8f23-max"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink name="Two Blaster Cannons" id="e04f-685b-14d5-56ca" hidden="false" type="profile" targetId="4221-e05b-238d-cc95"/>
+                    <infoLink name="Dual Blaster Cannons" id="e04f-685b-14d5-56ca" hidden="false" type="profile" targetId="4221-e05b-238d-cc95"/>
                   </infoLinks>
                 </selectionEntry>
               </selectionEntries>
@@ -73,9 +73,103 @@ H.I.: 0, H.V.: +1</characteristic>
             </infoLink>
           </infoLinks>
           <constraints>
-            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="4d2e-3bd3-48e3-2149-min"/>
-            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="4d2e-3bd3-48e3-2149-max"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4d2e-3bd3-48e3-2149-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4d2e-3bd3-48e3-2149-max"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink targetId="892b-3ede-432c-1fff" id="428c-b0a4-188f-f01f" primary="false" name="Vehicle"/>
+            <categoryLink targetId="b9c5-1770-e28a-db52" id="bd60-a01a-6196-f940" primary="false" name="Heavy"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Oxen Longhauls" hidden="false" id="a9ff-20c8-c7f9-50a3">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Oxen Longhaul" hidden="false" id="a88b-a4f1-633e-abd2">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Dual Blaster Cannons" hidden="false" id="b088-8a84-8eb5-a6b7">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8450-6e44-cd4f-f169"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="54fb-c76a-d56d-c744"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Dual Blaster Cannons" id="d6de-cd58-e997-54e6" hidden="false" type="profile" targetId="4221-e05b-238d-cc95"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="48c5-4283-21d0-028e"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0205-bab8-e45a-ed11"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Special Ability (Energy Shields)" hidden="false" id="8855-592c-bc10-25f0">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="783d-9582-6bd8-05f1"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4ee9-6635-58ea-7b57"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Energy Shields" id="7df9-e54c-01c7-896a" hidden="false" type="profile" targetId="e9ec-6737-15af-faa3"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <infoLinks>
+            <infoLink name="Crush-" id="a0bb-6013-2a97-ba82" hidden="false" type="rule" targetId="ab49-c483-f2a1-aac8">
+              <modifiers>
+                <modifier type="set" value="Crush 4" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7cf3-e713-184e-81b4"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="591c-4f8e-f078-9bd7"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink name="Vehicle" hidden="false" id="f4f6-f5ff-da4e-e966" targetId="892b-3ede-432c-1fff" primary="false"/>
+            <categoryLink name="Heavy" hidden="false" id="9417-a02d-cc84-b360" targetId="b9c5-1770-e28a-db52" primary="false"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Oxen Longhauls" hidden="false" id="7365-cf82-7017-ed68">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Oxen Longhaul" hidden="false" id="455d-0fa4-ab91-70fe">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Dual Blaster Cannons" hidden="false" id="eed5-891b-45e8-1394">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cb26-cba3-77d3-88be"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6e2a-39a2-4a33-f9f8"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Dual Blaster Cannons" id="917f-e17d-e2e1-deb7" hidden="false" type="profile" targetId="4221-e05b-238d-cc95"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="44a2-a5b2-be13-52d2"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5e1d-e88d-00f4-651d"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Special Ability (Energy Shields)" hidden="false" id="47fa-c733-cdd2-6f64">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9d74-ee77-cb40-dc9d"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ba4c-5b62-b21f-16ee"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Energy Shields" id="9cf5-1081-89dd-2592" hidden="false" type="profile" targetId="e9ec-6737-15af-faa3"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <infoLinks>
+            <infoLink name="Crush-" id="753b-7755-f8ee-f916" hidden="false" type="rule" targetId="ab49-c483-f2a1-aac8">
+              <modifiers>
+                <modifier type="set" value="Crush 4" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4e50-c68e-5f19-1f6b"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7822-fa23-4805-95f0"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink name="Vehicle" hidden="false" id="acc4-7fc8-e88f-63b1" targetId="892b-3ede-432c-1fff" primary="false"/>
+            <categoryLink name="Heavy" hidden="false" id="64b2-a518-e50f-ca5f" targetId="b9c5-1770-e28a-db52" primary="false"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
