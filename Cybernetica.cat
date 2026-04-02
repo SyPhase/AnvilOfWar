@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="28e4-ed51-3991-19d2" name="Cybernetica" gameSystemId="sys-4d6c-ac3c-296b-de59" gameSystemRevision="1" revision="7" authorName="SyPhase" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="28e4-ed51-3991-19d2" name="Cybernetica" gameSystemId="sys-4d6c-ac3c-296b-de59" gameSystemRevision="1" revision="8" authorName="SyPhase" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="F-12 War-Machines Unit" hidden="false" id="8575-14ae-8f9a-c4a2" subType="unit-group">
       <costs>
         <cost name="points" typeId="b94c-fcb8-4a07-acd7" value="100"/>
+        <cost name="Unit Capacity" typeId="f7d6-c8d5-b008-4866" value="1"/>
       </costs>
       <selectionEntries>
         <selectionEntry type="unit" import="true" name="F-12 War-Machines Squad" hidden="false" id="a4a1-00f6-4ca4-ee53" sortIndex="1">
@@ -348,6 +349,7 @@
       </selectionEntries>
       <costs>
         <cost name="points" typeId="b94c-fcb8-4a07-acd7" value="220"/>
+        <cost name="Unit Capacity" typeId="f7d6-c8d5-b008-4866" value="1"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="892b-3ede-432c-1fff" id="fc0a-4120-ccba-aafa" primary="true" name="Vehicle"/>
@@ -359,6 +361,7 @@
       </categoryLinks>
       <costs>
         <cost name="points" typeId="b94c-fcb8-4a07-acd7" value="180"/>
+        <cost name="Unit Capacity" typeId="f7d6-c8d5-b008-4866" value="1"/>
       </costs>
       <selectionEntries>
         <selectionEntry type="unit" import="true" name="F-00 Officer Squad" hidden="false" id="b707-2e8a-b341-2b3b" page="(Has some kind of officer buff ability)">

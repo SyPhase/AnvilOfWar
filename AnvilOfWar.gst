@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-4d6c-ac3c-296b-de59" name="AnvilOfWar" battleScribeVersion="2.03" revision="5" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Pierce Kester" authorContact="bulletgiraffe@gmail.com" authorUrl="bulletgiraffe.com" publicationId="5911-3a66-ec62-32e6">
+<gameSystem id="sys-4d6c-ac3c-296b-de59" name="AnvilOfWar" battleScribeVersion="2.03" revision="6" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Pierce Kester" authorContact="bulletgiraffe@gmail.com" authorUrl="bulletgiraffe.com" publicationId="5911-3a66-ec62-32e6">
   <categoryEntries>
     <categoryEntry name="Infantry" id="86d7-e31a-0e12-cc05" hidden="false"/>
     <categoryEntry name="Vehicle" id="892b-3ede-432c-1fff" hidden="false"/>
@@ -9,7 +9,7 @@
     <categoryEntry name="Heavy" id="b9c5-1770-e28a-db52" hidden="false"/>
   </categoryEntries>
   <forceEntries>
-    <forceEntry name="Galactic Conquest" id="2936-ac7b-690d-0867" hidden="false">
+    <forceEntry name="Galactic Conquest" id="2936-ac7b-690d-0867" hidden="false" sortIndex="2">
       <categoryLinks>
         <categoryLink name="Faction Leader" hidden="false" id="270e-f516-3444-217a" targetId="0214-30a6-f341-ee7f"/>
         <categoryLink name="Hero" hidden="false" id="1e3c-b26d-347a-e0c3" targetId="0a6c-1e81-5f9d-3240"/>
@@ -17,7 +17,7 @@
         <categoryLink name="Vehicle" hidden="false" id="6929-4402-aa89-689d" targetId="892b-3ede-432c-1fff"/>
       </categoryLinks>
     </forceEntry>
-    <forceEntry name="Skirmish" id="42b1-ad19-3497-d664" hidden="false">
+    <forceEntry name="Skirmish" id="42b1-ad19-3497-d664" hidden="false" sortIndex="3">
       <categoryLinks>
         <categoryLink name="Faction Leader" hidden="false" id="1d39-0ba6-6b69-12c8" targetId="0214-30a6-f341-ee7f">
           <constraints>
@@ -33,10 +33,26 @@
         <categoryLink name="Vehicle" hidden="false" id="7848-469f-6739-5a4e" targetId="892b-3ede-432c-1fff"/>
       </categoryLinks>
     </forceEntry>
+    <forceEntry name="Planetary Battle" id="b29e-7c80-963e-ca97" hidden="false" sortIndex="1">
+      <costs>
+        <cost name="points" typeId="b94c-fcb8-4a07-acd7" value="0"/>
+        <cost name="Unit Capacity" typeId="f7d6-c8d5-b008-4866" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Faction Leader" hidden="false" id="5423-2360-3b88-988a" targetId="0214-30a6-f341-ee7f"/>
+        <categoryLink name="Hero" hidden="false" id="2a39-aa71-9e8b-3a05" targetId="0a6c-1e81-5f9d-3240"/>
+        <categoryLink name="Infantry" hidden="false" id="3fc1-e119-b81f-94ea" targetId="86d7-e31a-0e12-cc05"/>
+        <categoryLink name="Vehicle" hidden="false" id="4897-fe22-8aa2-14f2" targetId="892b-3ede-432c-1fff"/>
+      </categoryLinks>
+      <comment> Test...</comment>
+    </forceEntry>
   </forceEntries>
   <costTypes>
-    <costType name="points" id="b94c-fcb8-4a07-acd7" defaultCostLimit="500">
-      <comment>currency?</comment>
+    <costType name="currency" id="b94c-fcb8-4a07-acd7" defaultCostLimit="1000">
+      <comment>points</comment>
+    </costType>
+    <costType name="Unit Capacity" id="f7d6-c8d5-b008-4866" defaultCostLimit="10">
+      <comment>Maximum Unit Capacity</comment>
     </costType>
   </costTypes>
   <profileTypes>
