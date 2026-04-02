@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-4d6c-ac3c-296b-de59" name="AnvilOfWar" battleScribeVersion="2.03" revision="6" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Pierce Kester" authorContact="bulletgiraffe@gmail.com" authorUrl="bulletgiraffe.com" publicationId="5911-3a66-ec62-32e6">
+<gameSystem id="sys-4d6c-ac3c-296b-de59" name="AnvilOfWar" battleScribeVersion="2.03" revision="7" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Pierce Kester" authorContact="bulletgiraffe@gmail.com" authorUrl="bulletgiraffe.com" publicationId="5911-3a66-ec62-32e6">
   <categoryEntries>
     <categoryEntry name="Infantry" id="86d7-e31a-0e12-cc05" hidden="false"/>
     <categoryEntry name="Vehicle" id="892b-3ede-432c-1fff" hidden="false"/>
@@ -44,15 +44,15 @@
         <categoryLink name="Infantry" hidden="false" id="3fc1-e119-b81f-94ea" targetId="86d7-e31a-0e12-cc05"/>
         <categoryLink name="Vehicle" hidden="false" id="4897-fe22-8aa2-14f2" targetId="892b-3ede-432c-1fff"/>
       </categoryLinks>
-      <comment> Test...</comment>
+      <comment>Test...</comment>
     </forceEntry>
   </forceEntries>
   <costTypes>
-    <costType name="currency" id="b94c-fcb8-4a07-acd7" defaultCostLimit="1000">
-      <comment>points</comment>
-    </costType>
     <costType name="Unit Capacity" id="f7d6-c8d5-b008-4866" defaultCostLimit="10">
       <comment>Maximum Unit Capacity</comment>
+    </costType>
+    <costType name="currency" id="2439-1aa3-efd7-29d0" defaultCostLimit="1000">
+      <comment>points</comment>
     </costType>
   </costTypes>
   <profileTypes>
