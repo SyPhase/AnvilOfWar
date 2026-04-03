@@ -1,0 +1,721 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="827d-d66f-3aea-6f4a" name="Solar Corps" gameSystemId="sys-4d6c-ac3c-296b-de59" gameSystemRevision="9" revision="1" authorName="SyPhase" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <sharedProfiles>
+    <profile name="Solar Riflemen" typeId="a0cc-e27d-0e47-b400" typeName="Unit" hidden="false" id="87c0-061a-2dd9-d9be">
+      <characteristics>
+        <characteristic name="SV" typeId="24b4-ca44-ffb5-c3f4">5+</characteristic>
+        <characteristic name="DS" typeId="1535-83cf-b8fe-b1ce">0</characteristic>
+        <characteristic name="HP" typeId="a109-7c01-200f-cc2d">1</characteristic>
+        <characteristic name="MV" typeId="6972-eaad-7147-252f">6&quot;</characteristic>
+        <characteristic name="Footprint" typeId="1a99-d265-660f-2eb3">Small</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Solar Rifle" typeId="35f7-4412-69cb-9d6a" typeName="Weapons" hidden="false" id="2489-3153-9601-f6ca">
+      <characteristics>
+        <characteristic name="R" typeId="8723-19bb-bcce-5f94">12&quot;</characteristic>
+        <characteristic name="Att" typeId="0a3b-93a6-7ca6-c930">3</characteristic>
+        <characteristic name="Acc" typeId="4bca-fe29-753e-511f">4+</characteristic>
+        <characteristic name="AP" typeId="46da-1060-daef-3f00">+3, +0
++3, +0</characteristic>
+        <characteristic name="D" typeId="f994-dfa3-122c-9cc5">2</characteristic>
+        <characteristic name="Abilities" typeId="3c47-c04c-8dfd-a691"/>
+      </characteristics>
+    </profile>
+    <profile name="Turret Team" typeId="a0cc-e27d-0e47-b400" typeName="Unit" hidden="false" id="7346-0cef-2752-0c58">
+      <characteristics>
+        <characteristic name="SV" typeId="24b4-ca44-ffb5-c3f4">5+</characteristic>
+        <characteristic name="DS" typeId="1535-83cf-b8fe-b1ce">1</characteristic>
+        <characteristic name="HP" typeId="a109-7c01-200f-cc2d">1</characteristic>
+        <characteristic name="MV" typeId="6972-eaad-7147-252f">6&quot;</characteristic>
+        <characteristic name="Footprint" typeId="1a99-d265-660f-2eb3">Small</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Turret" typeId="35f7-4412-69cb-9d6a" typeName="Weapons" hidden="false" id="5c7b-baf9-f8b1-7ed3">
+      <characteristics>
+        <characteristic name="R" typeId="8723-19bb-bcce-5f94">12&quot;</characteristic>
+        <characteristic name="Att" typeId="0a3b-93a6-7ca6-c930">3</characteristic>
+        <characteristic name="Acc" typeId="4bca-fe29-753e-511f">4+</characteristic>
+        <characteristic name="AP" typeId="46da-1060-daef-3f00">+0, +3
++0, +3</characteristic>
+        <characteristic name="D" typeId="f994-dfa3-122c-9cc5">4</characteristic>
+        <characteristic name="Abilities" typeId="3c47-c04c-8dfd-a691">Stationary, Anti-vehicle 6</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Crawler Tank" typeId="a0cc-e27d-0e47-b400" typeName="Unit" hidden="false" id="772e-2ba9-85d3-a802">
+      <characteristics>
+        <characteristic name="SV" typeId="24b4-ca44-ffb5-c3f4">3+</characteristic>
+        <characteristic name="DS" typeId="1535-83cf-b8fe-b1ce">8</characteristic>
+        <characteristic name="HP" typeId="a109-7c01-200f-cc2d">10</characteristic>
+        <characteristic name="MV" typeId="6972-eaad-7147-252f">6&quot;</characteristic>
+        <characteristic name="Footprint" typeId="1a99-d265-660f-2eb3">Large</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Solar Beamer" typeId="35f7-4412-69cb-9d6a" typeName="Weapons" hidden="false" id="6bfe-0715-9081-8378">
+      <characteristics>
+        <characteristic name="R" typeId="8723-19bb-bcce-5f94">18&quot;</characteristic>
+        <characteristic name="Att" typeId="0a3b-93a6-7ca6-c930">3</characteristic>
+        <characteristic name="Acc" typeId="4bca-fe29-753e-511f">3+</characteristic>
+        <characteristic name="AP" typeId="46da-1060-daef-3f00">+0, +4
++0, +2</characteristic>
+        <characteristic name="D" typeId="f994-dfa3-122c-9cc5">6</characteristic>
+        <characteristic name="Abilities" typeId="3c47-c04c-8dfd-a691">Anti-light-vehicle 6</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Longcannon Obliterator" typeId="a0cc-e27d-0e47-b400" typeName="Unit" hidden="false" id="a2de-0059-bc5c-5dd8">
+      <characteristics>
+        <characteristic name="SV" typeId="24b4-ca44-ffb5-c3f4">4+</characteristic>
+        <characteristic name="DS" typeId="1535-83cf-b8fe-b1ce">0</characteristic>
+        <characteristic name="HP" typeId="a109-7c01-200f-cc2d">20</characteristic>
+        <characteristic name="MV" typeId="6972-eaad-7147-252f">8&quot;</characteristic>
+        <characteristic name="Footprint" typeId="1a99-d265-660f-2eb3">Large</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Solar Obliterator" typeId="35f7-4412-69cb-9d6a" typeName="Weapons" hidden="false" id="1a30-b61b-36d6-824b">
+      <characteristics>
+        <characteristic name="R" typeId="8723-19bb-bcce-5f94">22&quot;</characteristic>
+        <characteristic name="Att" typeId="0a3b-93a6-7ca6-c930">4</characteristic>
+        <characteristic name="Acc" typeId="4bca-fe29-753e-511f">3+</characteristic>
+        <characteristic name="AP" typeId="46da-1060-daef-3f00">-2, +5
+-2, +4</characteristic>
+        <characteristic name="D" typeId="f994-dfa3-122c-9cc5">8</characteristic>
+        <characteristic name="Abilities" typeId="3c47-c04c-8dfd-a691">Anti-vehicle 10</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Hover Tank" typeId="a0cc-e27d-0e47-b400" typeName="Unit" hidden="false" id="6dd2-defd-f327-f22b">
+      <characteristics>
+        <characteristic name="SV" typeId="24b4-ca44-ffb5-c3f4">4+</characteristic>
+        <characteristic name="DS" typeId="1535-83cf-b8fe-b1ce">0</characteristic>
+        <characteristic name="HP" typeId="a109-7c01-200f-cc2d">4</characteristic>
+        <characteristic name="MV" typeId="6972-eaad-7147-252f">10&quot;</characteristic>
+        <characteristic name="Footprint" typeId="1a99-d265-660f-2eb3">Medium</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Solar Repeater" typeId="35f7-4412-69cb-9d6a" typeName="Weapons" hidden="false" id="12ab-f257-1365-4212">
+      <characteristics>
+        <characteristic name="R" typeId="8723-19bb-bcce-5f94">12&quot;</characteristic>
+        <characteristic name="Att" typeId="0a3b-93a6-7ca6-c930">6</characteristic>
+        <characteristic name="Acc" typeId="4bca-fe29-753e-511f">4+</characteristic>
+        <characteristic name="AP" typeId="46da-1060-daef-3f00">+3, +0
++3, +0</characteristic>
+        <characteristic name="D" typeId="f994-dfa3-122c-9cc5">2</characteristic>
+        <characteristic name="Abilities" typeId="3c47-c04c-8dfd-a691"/>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+  <sharedSelectionEntries>
+    <selectionEntry type="unit" import="true" name="Solar Riflemen Unit" hidden="false" id="8489-09ce-ee1e-0bc1" subType="unit-group">
+      <categoryLinks>
+        <categoryLink name="Infantry" hidden="false" id="426b-a15b-ecac-47c4" targetId="86d7-e31a-0e12-cc05" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="unit" import="true" name="Solar Riflemen Squad" hidden="false" id="c74a-0ecb-bee7-dbde">
+          <infoLinks>
+            <infoLink name="Riflemen" id="fd84-55d8-449f-0a52" hidden="false" type="profile" targetId="87c0-061a-2dd9-d9be"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Solar Riflemen" hidden="false" id="cd2e-89d0-3ded-9883">
+              <constraints>
+                <constraint type="min" value="7" field="selections" scope="parent" shared="true" id="cecf-d798-8284-4add"/>
+                <constraint type="max" value="7" field="selections" scope="parent" shared="true" id="33c6-207a-5e72-f58c"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Solar Rifle" hidden="false" id="9ff3-446d-4137-8bef">
+                  <infoLinks>
+                    <infoLink name="Solar Rifle" id="592e-8059-55d2-0d7f" hidden="false" type="profile" targetId="2489-3153-9601-f6ca"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f7df-3432-ac60-d602"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="afd8-ab3d-bc9d-8295"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Infantry" hidden="false" id="e5b9-09d8-f645-a5c0" targetId="86d7-e31a-0e12-cc05" primary="false"/>
+            <categoryLink targetId="59ea-6f10-a33e-30f1" id="40b8-0d29-dc06-febf" primary="false" name="Light"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="09b8-c995-d10c-5255"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b4ef-cbdf-db8c-79d1"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Solar Riflemen Squad" hidden="false" id="4931-6bf0-6d2b-c503">
+          <infoLinks>
+            <infoLink name="Solar Riflemen" id="de1a-e504-cee0-0250" hidden="false" type="profile" targetId="87c0-061a-2dd9-d9be"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Solar Riflemen" hidden="false" id="0cf9-62a4-dca3-d6e4">
+              <constraints>
+                <constraint type="min" value="7" field="selections" scope="parent" shared="true" id="f8bf-af3e-80ae-7466"/>
+                <constraint type="max" value="7" field="selections" scope="parent" shared="true" id="edb0-c242-6a2e-5b80"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Solar Rifle" hidden="false" id="18b6-96e7-3784-4d45">
+                  <infoLinks>
+                    <infoLink name="Solar Rifle" id="4a9b-31e9-dc74-aa08" hidden="false" type="profile" targetId="2489-3153-9601-f6ca"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="87a6-3f0d-20ce-26af"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cf64-ee0b-2239-b288"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Infantry" hidden="false" id="d057-4625-ece1-1e61" targetId="86d7-e31a-0e12-cc05" primary="false"/>
+            <categoryLink name="Light" hidden="false" id="38ba-c9c3-26c1-36f2" targetId="59ea-6f10-a33e-30f1" primary="false"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="904e-08cb-13cc-8dff"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ca18-39e1-4b6c-a815"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Solar Riflemen Squad" hidden="false" id="fb67-f1b7-b38c-b205">
+          <infoLinks>
+            <infoLink name="Solar Riflemen" id="77b1-3722-bc5d-81c1" hidden="false" type="profile" targetId="87c0-061a-2dd9-d9be"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Solar Riflemen" hidden="false" id="42b3-8b48-c1ec-3b1c">
+              <constraints>
+                <constraint type="min" value="7" field="selections" scope="parent" shared="true" id="d10c-e00d-7bb3-016d"/>
+                <constraint type="max" value="7" field="selections" scope="parent" shared="true" id="1643-c601-9511-0f22"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Solar Rifle" hidden="false" id="93cd-6c3e-209a-b41f">
+                  <infoLinks>
+                    <infoLink name="Solar Rifle" id="3ede-8e76-4524-6207" hidden="false" type="profile" targetId="2489-3153-9601-f6ca"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7b9e-0690-b312-a13f"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d21a-fe05-4bf0-8d86"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Infantry" hidden="false" id="ca08-8582-da62-76f1" targetId="86d7-e31a-0e12-cc05" primary="false"/>
+            <categoryLink name="Light" hidden="false" id="f7d5-a2c5-af81-3ef6" targetId="59ea-6f10-a33e-30f1" primary="false"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8f96-4492-761d-537b"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="de35-7171-d96d-87a1"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Unit Capacity" typeId="f7d6-c8d5-b008-4866" value="1"/>
+        <cost name="currency" typeId="2439-1aa3-efd7-29d0" value="140"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Turret Team Unit" hidden="false" id="cc88-e083-cbd5-932b" subType="unit-group">
+      <categoryLinks>
+        <categoryLink name="Infantry" hidden="false" id="8b8c-612e-d6c6-1fe2" targetId="86d7-e31a-0e12-cc05" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="unit" import="true" name="Turret Team Squad" hidden="false" id="a905-2888-d66c-a73a">
+          <infoLinks>
+            <infoLink name="Turret Team" id="a320-7c0e-3830-2f07" hidden="false" type="profile" targetId="7346-0cef-2752-0c58"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Turret Team" hidden="false" id="5d68-2918-4efa-6ce0">
+              <constraints>
+                <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="4407-44e5-a38c-c408"/>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="2cca-8a56-3823-2da0"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Turret" hidden="false" id="d6d9-3740-8668-770a">
+                  <infoLinks>
+                    <infoLink name="Turret" id="53b0-aa2a-4c18-2028" hidden="false" type="profile" targetId="5c7b-baf9-f8b1-7ed3"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bc42-ffa5-5384-924b"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f567-76af-75d3-f5a4"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Infantry" hidden="false" id="3129-d67e-130e-41c2" targetId="86d7-e31a-0e12-cc05" primary="false"/>
+            <categoryLink targetId="b9c5-1770-e28a-db52" id="1319-5b8a-9c09-5301" primary="false" name="Heavy"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2f57-5111-a86f-e47e"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="033c-a53e-9536-fa58"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Turret Team Squad" hidden="false" id="455b-6249-6e09-7fa4">
+          <infoLinks>
+            <infoLink name="Turret Team" id="ac5e-778c-d311-10dd" hidden="false" type="profile" targetId="7346-0cef-2752-0c58"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Turret Team" hidden="false" id="2520-9c0d-d964-caae">
+              <constraints>
+                <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="4910-9255-9bdb-ad93"/>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="fed6-0792-55d0-53a4"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Turret" hidden="false" id="da74-c3ad-00e6-c2e8">
+                  <infoLinks>
+                    <infoLink name="Turret" id="aff5-20da-31d0-5f57" hidden="false" type="profile" targetId="5c7b-baf9-f8b1-7ed3"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="24e9-253a-e5ef-1bda"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6654-7257-b072-bc68"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Infantry" hidden="false" id="cfd6-df76-f667-d89b" targetId="86d7-e31a-0e12-cc05" primary="false"/>
+            <categoryLink name="Heavy" hidden="false" id="12d2-7a64-fc2a-49fb" targetId="b9c5-1770-e28a-db52" primary="false"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ca5d-4af1-3b2b-5449"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8582-72fc-e3b6-7d3a"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Unit Capacity" typeId="f7d6-c8d5-b008-4866" value="1"/>
+        <cost name="currency" typeId="2439-1aa3-efd7-29d0" value="90"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Crawler Tank Unit" hidden="false" id="38fe-6f38-7d85-7614" subType="unit-group">
+      <categoryLinks>
+        <categoryLink targetId="892b-3ede-432c-1fff" id="cd08-9efd-e6ff-d48e" primary="true" name="Vehicle"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="unit" import="true" name="Crawler Tank Squad" hidden="false" id="41f7-641a-69d4-cc49">
+          <infoLinks>
+            <infoLink name="Crawler Tank" id="88d2-18ef-3d2a-225c" hidden="false" type="profile" targetId="772e-2ba9-85d3-a802"/>
+            <infoLink name="Crush-" id="b986-122d-24f3-c5d0" hidden="false" type="rule" targetId="ab49-c483-f2a1-aac8">
+              <modifiers>
+                <modifier type="set" value="Crush 1" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Crawler Tank" hidden="false" id="8a3c-c11c-4459-24db">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="60fd-6765-f9d5-6ee8"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="507c-80fc-c2c5-a7cd"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Solar Beamer" hidden="false" id="6c2f-701c-51e0-4c68">
+                  <infoLinks>
+                    <infoLink name="Solar Beamer" id="0e13-e3bf-479b-a779" hidden="false" type="profile" targetId="6bfe-0715-9081-8378"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c530-e444-049e-b18f"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ac27-0f8b-6a41-998a"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink targetId="b9c5-1770-e28a-db52" id="b148-8db3-3d71-b84a" primary="false" name="Heavy"/>
+            <categoryLink targetId="892b-3ede-432c-1fff" id="af58-9907-b16c-7e4d" primary="false" name="Vehicle"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2cf5-07d8-4b92-4900"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bf91-8cb1-ab88-9139"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Crawler Tank Squad" hidden="false" id="2c18-b515-13b9-4871">
+          <infoLinks>
+            <infoLink name="Crawler Tank" id="228e-dd9c-7092-265c" hidden="false" type="profile" targetId="772e-2ba9-85d3-a802"/>
+            <infoLink name="Crush-" id="37b2-7299-0bbb-215e" hidden="false" type="rule" targetId="ab49-c483-f2a1-aac8">
+              <modifiers>
+                <modifier type="set" value="Crush 1" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Crawler Tank" hidden="false" id="4a60-df3f-03f2-44d8">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5cc2-e60e-540f-8b95"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9a7a-1c08-d5fb-777c"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Solar Beamer" hidden="false" id="8ef5-9614-a43b-7030">
+                  <infoLinks>
+                    <infoLink name="Solar Beamer" id="47e2-a705-e820-f77f" hidden="false" type="profile" targetId="6bfe-0715-9081-8378"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0225-1bfe-8fda-ca7b"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c8fe-26b6-f89d-cdda"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Heavy" hidden="false" id="956f-c8ff-0e4a-13cc" targetId="b9c5-1770-e28a-db52" primary="false"/>
+            <categoryLink name="Vehicle" hidden="false" id="c559-dafd-8f49-ca62" targetId="892b-3ede-432c-1fff" primary="false"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1480-b02d-50b0-7d43"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f7e6-9360-2f5f-5346"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Crawler Tank Squad" hidden="false" id="cf12-aeca-a486-dfc2">
+          <infoLinks>
+            <infoLink name="Crawler Tank" id="d9b4-a2c1-86de-f74f" hidden="false" type="profile" targetId="772e-2ba9-85d3-a802"/>
+            <infoLink name="Crush-" id="4fb4-f353-a569-f6bc" hidden="false" type="rule" targetId="ab49-c483-f2a1-aac8">
+              <modifiers>
+                <modifier type="set" value="Crush 1" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Crawler Tank" hidden="false" id="a1e9-b3f1-3008-a02e">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4bf8-5f4c-0de1-d295"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b2d6-4353-156c-51f2"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Solar Beamer" hidden="false" id="e0b6-674d-61cc-d433">
+                  <infoLinks>
+                    <infoLink name="Solar Beamer" id="d8d9-f20c-bec9-6ce5" hidden="false" type="profile" targetId="6bfe-0715-9081-8378"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="109c-1dcc-d954-2450"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f51b-3d97-844b-b37c"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Heavy" hidden="false" id="1e81-cda0-74c0-cb95" targetId="b9c5-1770-e28a-db52" primary="false"/>
+            <categoryLink name="Vehicle" hidden="false" id="9cf6-5d55-ffdb-7d0e" targetId="892b-3ede-432c-1fff" primary="false"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c32d-a355-474e-57a6"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="736c-2afe-32d2-a8fc"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Crawler Tank Squad" hidden="false" id="33cf-caea-61e9-e556">
+          <infoLinks>
+            <infoLink name="Crawler Tank" id="d147-87b7-813a-199e" hidden="false" type="profile" targetId="772e-2ba9-85d3-a802"/>
+            <infoLink name="Crush-" id="414a-78e5-d74b-6a9a" hidden="false" type="rule" targetId="ab49-c483-f2a1-aac8">
+              <modifiers>
+                <modifier type="set" value="Crush 1" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Crawler Tank" hidden="false" id="9630-cb2a-dac3-8403">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c702-5d42-23c6-adbd"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="512b-fb77-221f-6b8d"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Solar Beamer" hidden="false" id="e21f-fb70-d5cf-9890">
+                  <infoLinks>
+                    <infoLink name="Solar Beamer" id="7ed7-998a-f6f9-cf06" hidden="false" type="profile" targetId="6bfe-0715-9081-8378"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6a26-5120-ca93-162f"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="569d-88c7-f920-2a9e"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Heavy" hidden="false" id="f346-3bc1-9510-2a7c" targetId="b9c5-1770-e28a-db52" primary="false"/>
+            <categoryLink name="Vehicle" hidden="false" id="db8b-2ef0-8d00-5667" targetId="892b-3ede-432c-1fff" primary="false"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2065-0045-2669-184d"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c139-edc5-b526-a751"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Unit Capacity" typeId="f7d6-c8d5-b008-4866" value="2"/>
+        <cost name="currency" typeId="2439-1aa3-efd7-29d0" value="370"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Longcannon Obliterator Unit" hidden="false" id="be8c-ee36-0bdd-6bf0" subType="unit-group">
+      <categoryLinks>
+        <categoryLink targetId="892b-3ede-432c-1fff" id="b36a-3a71-2d2f-7aa1" primary="true" name="Vehicle"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="unit" import="true" name="Longcannon Obliterator Squad" hidden="false" id="77bd-3d26-13b7-9470">
+          <infoLinks>
+            <infoLink name="Longcannon Obliterator" id="1539-ea53-0b9d-1f61" hidden="false" type="profile" targetId="a2de-0059-bc5c-5dd8"/>
+            <infoLink name="Resist-" id="40be-efe2-1b95-10c0" hidden="false" type="rule" targetId="e899-0aa0-f2bb-f89d">
+              <modifiers>
+                <modifier type="set" value="Resist vehicle 2" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Crush-" id="3333-2b7d-cb05-5d55" hidden="false" type="rule" targetId="ab49-c483-f2a1-aac8">
+              <modifiers>
+                <modifier type="set" value="Crush 2" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Longcannon Obliterator" hidden="false" id="f8e0-6e8a-57d2-2fe9">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5ede-37a4-ec96-92a7"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4676-e166-6bed-669e"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Solar Beamer" hidden="false" id="f930-5b4c-b5a3-ea68">
+                  <infoLinks>
+                    <infoLink name="Solar Obliterator" id="548a-a414-8bde-7730" hidden="false" type="profile" targetId="1a30-b61b-36d6-824b"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="52bb-23d6-317c-6a56"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7721-369f-d47b-20a9"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink targetId="b9c5-1770-e28a-db52" id="7ca6-5e31-e32d-e064" primary="false" name="Heavy"/>
+            <categoryLink targetId="892b-3ede-432c-1fff" id="900d-b2ca-4e35-2244" primary="false" name="Vehicle"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="30f8-a8a3-4b4f-6d57"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3ff2-fd5d-0253-121d"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Longcannon Obliterator Squad" hidden="false" id="8c5f-96ec-076f-84fc">
+          <infoLinks>
+            <infoLink name="Longcannon Obliterator" id="b3d4-3b7d-eff1-b663" hidden="false" type="profile" targetId="a2de-0059-bc5c-5dd8"/>
+            <infoLink name="Resist-" id="3448-933b-9f88-eba3" hidden="false" type="rule" targetId="e899-0aa0-f2bb-f89d">
+              <modifiers>
+                <modifier type="set" value="Resist vehicle 2" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Crush-" id="c0b9-d21a-740c-6e36" hidden="false" type="rule" targetId="ab49-c483-f2a1-aac8">
+              <modifiers>
+                <modifier type="set" value="Crush 2" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Longcannon Obliterator" hidden="false" id="037f-2f0d-8df8-b069">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4a0d-6532-23a3-7a68"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f6e8-d6f1-eee8-708d"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Solar Beamer" hidden="false" id="8853-4d8f-e621-3c80">
+                  <infoLinks>
+                    <infoLink name="Solar Obliterator" id="2032-10b4-24f2-0d99" hidden="false" type="profile" targetId="1a30-b61b-36d6-824b"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7789-9655-5801-70c5"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e195-5ce6-2d97-f3e0"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Heavy" hidden="false" id="0177-f006-8018-3454" targetId="b9c5-1770-e28a-db52" primary="false"/>
+            <categoryLink name="Vehicle" hidden="false" id="73d1-a0bb-385d-e12a" targetId="892b-3ede-432c-1fff" primary="false"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2deb-b479-e260-cb52"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4e5a-5321-a5eb-4259"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Unit Capacity" typeId="f7d6-c8d5-b008-4866" value="3"/>
+        <cost name="currency" typeId="2439-1aa3-efd7-29d0" value="410"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Hover Tank Unit" hidden="false" id="13bf-eeb9-eca4-4b4c" subType="unit-group">
+      <categoryLinks>
+        <categoryLink targetId="892b-3ede-432c-1fff" id="fdc5-8f18-182f-65ac" primary="true" name="Vehicle"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="unit" import="true" name="Hover Tank Squad" hidden="false" id="e444-6afb-671b-5241">
+          <infoLinks>
+            <infoLink name="Hover Tank" id="ffaf-7d6b-6e9a-2543" hidden="false" type="profile" targetId="6dd2-defd-f327-f22b"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Hover Tank" hidden="false" id="e4d6-7e80-193e-ffb6">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e777-a2d1-56f4-e2d5"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="333a-c164-54e2-f824"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Solar Repeater" hidden="false" id="3185-9d4d-e4ab-4828">
+                  <infoLinks>
+                    <infoLink name="Solar Repeater" id="ba59-a90b-823d-16b0" hidden="false" type="profile" targetId="12ab-f257-1365-4212"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c2f9-e4b1-cb97-5ef1"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5eaf-a2ae-a9d8-bf26"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink targetId="892b-3ede-432c-1fff" id="3891-02d5-17be-ccd3" primary="false" name="Vehicle"/>
+            <categoryLink targetId="59ea-6f10-a33e-30f1" id="6348-01b9-50a3-ca83" primary="false" name="Light"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="55d6-11c2-0ded-dde1"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="26f5-8b07-aa93-8a6c"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Hover Tank Squad" hidden="false" id="4697-1330-257b-c87f">
+          <infoLinks>
+            <infoLink name="Hover Tank" id="6a47-5f25-5449-0e01" hidden="false" type="profile" targetId="6dd2-defd-f327-f22b"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Hover Tank" hidden="false" id="01d1-300c-b647-c5e4">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d9d5-c915-3264-76f0"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6d22-fd5e-dc97-9137"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Solar Repeater" hidden="false" id="1b3a-3a5d-6dd6-acf8">
+                  <infoLinks>
+                    <infoLink name="Solar Repeater" id="0489-b46c-0cbf-c986" hidden="false" type="profile" targetId="12ab-f257-1365-4212"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4139-f9b2-e164-5146"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="108b-03f6-1e06-144f"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Vehicle" hidden="false" id="9843-ed94-3cef-411d" targetId="892b-3ede-432c-1fff" primary="false"/>
+            <categoryLink name="Light" hidden="false" id="14f4-6b60-fad9-17e9" targetId="59ea-6f10-a33e-30f1" primary="false"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="339c-70e9-2e07-a5a5"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8013-c512-026b-d01e"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Hover Tank Squad" hidden="false" id="1839-14d9-d91b-b657">
+          <infoLinks>
+            <infoLink name="Hover Tank" id="57c8-bedf-c1bf-b377" hidden="false" type="profile" targetId="6dd2-defd-f327-f22b"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Hover Tank" hidden="false" id="a628-a456-600c-180e">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1e90-7cda-bedd-e932"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2d6e-b92d-f773-4387"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Solar Repeater" hidden="false" id="a1a0-5c0d-4806-1ec8">
+                  <infoLinks>
+                    <infoLink name="Solar Repeater" id="ff93-3550-d756-a9c7" hidden="false" type="profile" targetId="12ab-f257-1365-4212"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="af66-75cf-0d26-0b2a"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="36f6-c908-a0a3-ad09"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Vehicle" hidden="false" id="3142-c09d-3e78-daed" targetId="892b-3ede-432c-1fff" primary="false"/>
+            <categoryLink name="Light" hidden="false" id="9be3-8682-32f4-5abe" targetId="59ea-6f10-a33e-30f1" primary="false"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a908-e5d7-370f-b66d"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ce95-140b-9dc1-2a29"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Hover Tank Squad" hidden="false" id="2e77-2d84-43fa-d586">
+          <infoLinks>
+            <infoLink name="Hover Tank" id="99f7-df15-d91a-5bd6" hidden="false" type="profile" targetId="6dd2-defd-f327-f22b"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Hover Tank" hidden="false" id="cbba-38b8-48ba-2e17">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9060-00f5-71a5-58f8"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="35de-194d-7b43-9450"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Solar Repeater" hidden="false" id="7078-2081-0cb7-656f">
+                  <infoLinks>
+                    <infoLink name="Solar Repeater" id="a725-768c-6544-bbff" hidden="false" type="profile" targetId="12ab-f257-1365-4212"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7705-3305-0967-a530"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4077-0932-1ed0-7cc8"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Vehicle" hidden="false" id="f0f9-1cad-b51f-0631" targetId="892b-3ede-432c-1fff" primary="false"/>
+            <categoryLink name="Light" hidden="false" id="4d52-4170-3e43-62b0" targetId="59ea-6f10-a33e-30f1" primary="false"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6b0f-3659-b243-8fce"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9125-d26e-780b-3ced"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Hover Tank Squad" hidden="false" id="8416-3e93-7211-2bc1">
+          <infoLinks>
+            <infoLink name="Hover Tank" id="ba82-8dfb-fc40-67f2" hidden="false" type="profile" targetId="6dd2-defd-f327-f22b"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Hover Tank" hidden="false" id="f2f7-422f-5a9f-2fdf">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="acb0-be5d-383f-34ef"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="912b-d5be-8033-7592"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Solar Repeater" hidden="false" id="7583-d462-0b06-b275">
+                  <infoLinks>
+                    <infoLink name="Solar Repeater" id="b2de-e2dc-c452-0d2f" hidden="false" type="profile" targetId="12ab-f257-1365-4212"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3e1d-a2cd-2a35-aedd"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="46ba-2f6d-faab-3810"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Vehicle" hidden="false" id="07cb-0d01-d8b0-5410" targetId="892b-3ede-432c-1fff" primary="false"/>
+            <categoryLink name="Light" hidden="false" id="2c63-e6cd-33ed-9452" targetId="59ea-6f10-a33e-30f1" primary="false"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ce1a-4fee-e292-dd61"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="43be-4196-db95-c33f"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Unit Capacity" typeId="f7d6-c8d5-b008-4866" value="2"/>
+        <cost name="currency" typeId="2439-1aa3-efd7-29d0" value="330"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <entryLinks>
+    <entryLink import="true" name="Solar Riflemen Unit" hidden="false" id="d3ea-a526-7587-4abf" targetId="8489-09ce-ee1e-0bc1" type="selectionEntry"/>
+    <entryLink import="true" name="Turret Team Unit" hidden="false" id="5765-2212-057b-222b" targetId="cc88-e083-cbd5-932b" type="selectionEntry"/>
+    <entryLink import="true" name="Crawler Tank Unit" hidden="false" id="bde1-1aa6-9309-fa9c" targetId="38fe-6f38-7d85-7614" type="selectionEntry"/>
+    <entryLink import="true" name="Longcannon Obliterator Unit" hidden="false" id="08ff-2b64-e21a-7538" targetId="be8c-ee36-0bdd-6bf0" type="selectionEntry"/>
+    <entryLink import="true" name="Hover Tank Unit" hidden="false" id="bcf3-3fe2-a542-fa9b" targetId="13bf-eeb9-eca4-4b4c" type="selectionEntry"/>
+  </entryLinks>
+</catalogue>
