@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-4d6c-ac3c-296b-de59" name="AnvilOfWar" battleScribeVersion="2.03" revision="8" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Pierce Kester" authorContact="bulletgiraffe@gmail.com" authorUrl="bulletgiraffe.com" publicationId="5911-3a66-ec62-32e6">
+<gameSystem id="sys-4d6c-ac3c-296b-de59" name="Anvil Of War" battleScribeVersion="2.03" revision="9" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Pierce Kester" authorContact="bulletgiraffe@gmail.com" authorUrl="bulletgiraffe.com" publicationId="5911-3a66-ec62-32e6">
   <categoryEntries>
     <categoryEntry name="Infantry" id="86d7-e31a-0e12-cc05" hidden="false"/>
     <categoryEntry name="Vehicle" id="892b-3ede-432c-1fff" hidden="false"/>
@@ -114,25 +114,25 @@
   </profileTypes>
   <sharedRules>
     <rule name="Fly" id="6ff7-85fb-9f68-4584" hidden="false">
-      <description>Units with [FLY] may move over any or all models and terrain but may not end its move on top of any models or impassable terrain.</description>
+      <description>Models in this squad may move over all models and impassable terrain but may not end their move on models. This squad cannot be targeted by Melee weapons.</description>
       <comment>Unit Rule.</comment>
     </rule>
     <rule name="Resist-" id="e899-0aa0-f2bb-f89d" hidden="false">
-      <description>When units with [RESIST-KEYWORD X] are attacked by a unit of the corresponding [KEYWORD], subtract &apos;X&apos; from the attacking weapon&apos;s damage characteristic down to a minimum of 1 damage.</description>
+      <description>When this squad is attacked by a squad matching [keyword type], subtract ‘x’ from the attacking weapon’s damage (D) characteristic down to a minimum of 1 damage.</description>
       <comment>Unit Rule.</comment>
       <alias>Resist</alias>
     </rule>
     <rule name="Presence-" id="c94f-5f31-a078-81ee" hidden="false">
-      <description>For units with [PRESENCE-X], when counting models in the Securing Phase, count each model &apos;X&apos; times instead of once.</description>
+      <description>In the securing phase, when counting infantry models within range of points, count models in this squad ‘x’ times instead of once.</description>
       <comment>Unit Rule.</comment>
       <alias>Presence</alias>
     </rule>
     <rule name="Stealthy" id="99b4-c1b6-4f40-4104" hidden="false">
-      <description>When ranged weapons (besides area of effect weapons) target a unit with [STEALTHY], worsen the accuracy of the attacking weapon by 1 (accuracy threshold characteristic +1).</description>
+      <description>Ranged weapons that target this squad worsen their accuracy by 1 for that attack.</description>
       <comment>Unit Rule.</comment>
     </rule>
     <rule name="Crush-" id="ab49-c483-f2a1-aac8" hidden="false">
-      <description>When a unit with [CRUSH-X] moves over an enemy unit, that enemy unit takes &apos;X&apos; damage.</description>
+      <description>When this squad performs a move, for each enemy squad that this squad moves over, those enemy squads each take ‘x’ damage.</description>
       <comment>Unit Rule.</comment>
       <alias>Crush</alias>
     </rule>
@@ -140,48 +140,48 @@
   <sharedProfiles>
     <profile name="Steady" typeId="ed56-95ac-5582-8023" typeName="Weapon Abilities" hidden="false" id="15ce-b674-f1f2-3638">
       <characteristics>
-        <characteristic name="Description" typeId="c7ce-7c70-361a-78df">If a unit performed a hold action instead of moving this turn, weapons with [STEADY] equipped in that unit improve their accuracy by 1 (accuracy threshold characteristic -1).</characteristic>
+        <characteristic name="Description" typeId="c7ce-7c70-361a-78df">If the equipped squad performed a hold instead of a move this turn, improve this weapon’s accuracy (Acc) characteristic by 1.</characteristic>
       </characteristics>
     </profile>
     <profile name="Stationary" typeId="ed56-95ac-5582-8023" typeName="Weapon Abilities" hidden="false" id="58f9-d481-4347-5d3f">
       <characteristics>
-        <characteristic name="Description" typeId="c7ce-7c70-361a-78df">Weapons with [STATIONARY] cannot be selected to make attacks with if the equipped unit performed a move action this turn.</characteristic>
+        <characteristic name="Description" typeId="c7ce-7c70-361a-78df">If the equipped squad performed a move instead of a hold this turn, this weapon cannot be selected to attack.</characteristic>
       </characteristics>
     </profile>
     <profile name="Indirect" typeId="ed56-95ac-5582-8023" typeName="Weapon Abilities" hidden="false" id="f02a-6e30-e223-408e">
       <characteristics>
-        <characteristic name="Description" typeId="c7ce-7c70-361a-78df">Weapons with [INDIRECT] do not require line of sight to target an enemy unit, however are still required to be in range.</characteristic>
+        <characteristic name="Description" typeId="c7ce-7c70-361a-78df">This weapon does not require line of sight to target an enemy squad within range.</characteristic>
       </characteristics>
     </profile>
     <profile name="Anti-" typeId="ed56-95ac-5582-8023" typeName="Weapon Abilities" hidden="false" id="3ef8-04c7-6b24-f0ba">
       <characteristics>
-        <characteristic name="Description" typeId="c7ce-7c70-361a-78df">When weapons with [ANTI-KEYWORD X] target a unit of [KEYWORD] type, increase the damage of that weapon&apos;s attack by &apos;X.&apos;</characteristic>
+        <characteristic name="Description" typeId="c7ce-7c70-361a-78df">When this weapon targets a squad matching [keyword type], add ‘x’ to its damage (D) characteristic.</characteristic>
       </characteristics>
       <alias>Anti</alias>
     </profile>
     <profile name="Full-Auto-" typeId="ed56-95ac-5582-8023" typeName="Weapon Abilities" hidden="false" id="67df-4cd7-46d6-6f39">
       <characteristics>
-        <characteristic name="Description" typeId="c7ce-7c70-361a-78df">When weapons with [FULL-AUTO X] target a unit within half that weapon&apos;s range, increase this weapon&apos;s attacks characteristic by &apos;x.&apos;</characteristic>
+        <characteristic name="Description" typeId="c7ce-7c70-361a-78df">When this weapon targets an enemy squad within half the range (R) characteristic, add ‘x’ to its attacks (Att) characteristic.</characteristic>
       </characteristics>
       <alias>Full-Auto</alias>
       <alias>Full Auto</alias>
     </profile>
     <profile name="Explosive-" typeId="ed56-95ac-5582-8023" typeName="Weapon Abilities" hidden="false" id="8b6a-3304-f70a-39f5">
       <characteristics>
-        <characteristic name="Description" typeId="c7ce-7c70-361a-78df">For each critical hit a weapon with [EXPLOSIVE-X] rolls, add &apos;x&apos; to the number of successful hits in the pool.</characteristic>
+        <characteristic name="Description" typeId="c7ce-7c70-361a-78df">Each critical hit adds ‘x’ number of extra successful hits to the hit pool.</characteristic>
       </characteristics>
       <alias>Explosive</alias>
     </profile>
     <profile name="Area of Effect-" typeId="ed56-95ac-5582-8023" typeName="Weapon Abilities" hidden="false" id="56b7-65cc-8fd1-b35f">
       <characteristics>
-        <characteristic name="Description" typeId="c7ce-7c70-361a-78df">After completing the attack sequence with an [AREA OF EFFECT-X] weapon against a target, that weapon also resolves the attack sequence against each enemy unit within &apos;x&apos;&quot; of the target.  Those attacks do not have [AREA OF EFFECT-X] unless otherwise specified.</characteristic>
+        <characteristic name="Description" typeId="c7ce-7c70-361a-78df">After this weapon resolves the attack sequence against its target, another attack sequence takes place against each enemy unit within ‘x’ inches of the targeted unit.</characteristic>
       </characteristics>
       <alias>Area of Effect</alias>
       <alias>AoE</alias>
     </profile>
     <profile name="Dangerous" typeId="ed56-95ac-5582-8023" typeName="Weapon Abilities" hidden="false" id="426f-ee4f-6590-abf1">
       <characteristics>
-        <characteristic name="Description" typeId="c7ce-7c70-361a-78df">After completing the attack sequence with a [DANGEROUS] weapon against a target, resolve the attack sequence again but against the unit the weapon is equipped to changing the total number of attacks in the sequence to be the total number of failed hit rolls against the enemy target.  That attack do not have [DANGEROUS].</characteristic>
+        <characteristic name="Description" typeId="c7ce-7c70-361a-78df">After this weapon resolves the attack sequence, resolve the attack sequence again but targeting its own unit in which the total number of attacks to roll is equal to the number of misses made against the enemy unit in the original attack sequence.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

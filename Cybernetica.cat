@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="28e4-ed51-3991-19d2" name="Cybernetica" gameSystemId="sys-4d6c-ac3c-296b-de59" gameSystemRevision="1" revision="11" authorName="SyPhase" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="28e4-ed51-3991-19d2" name="Cybernetica" gameSystemId="sys-4d6c-ac3c-296b-de59" gameSystemRevision="1" revision="12" authorName="SyPhase" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="F-00 Officer Unit" hidden="false" id="00b4-fce6-ccc0-663a" subType="unit-group">
       <categoryLinks>
@@ -179,7 +179,7 @@
       <selectionEntries>
         <selectionEntry type="unit" import="true" name="H-03 Helltread Squad" hidden="false" id="c105-3e16-0c9c-df76">
           <infoLinks>
-            <infoLink name="H-03 Helltreads" id="62bd-7249-1164-5a28" hidden="false" type="profile" targetId="74c0-7fb5-4562-7f4c"/>
+            <infoLink name="H-03 Helltread" id="62bd-7249-1164-5a28" hidden="false" type="profile" targetId="74c0-7fb5-4562-7f4c"/>
             <infoLink name="Crush-" id="ab36-bea1-2beb-da97" hidden="false" type="rule" targetId="ab49-c483-f2a1-aac8">
               <modifiers>
                 <modifier type="set" value="Crush 2" field="name"/>
@@ -237,7 +237,7 @@
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="H-03 Helltread Squad" hidden="false" id="77ea-3448-65b9-5405">
           <infoLinks>
-            <infoLink name="H-03 Helltreads" id="31e4-baa4-e022-ddb6" hidden="false" type="profile" targetId="74c0-7fb5-4562-7f4c"/>
+            <infoLink name="H-03 Helltread" id="31e4-baa4-e022-ddb6" hidden="false" type="profile" targetId="74c0-7fb5-4562-7f4c"/>
             <infoLink name="Crush-" id="4c50-3573-e67e-12d4" hidden="false" type="rule" targetId="ab49-c483-f2a1-aac8">
               <modifiers>
                 <modifier type="set" value="Crush 2" field="name"/>
@@ -295,7 +295,7 @@
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="H-03 Helltread Squad" hidden="false" id="be91-7c48-6aa0-3351">
           <infoLinks>
-            <infoLink name="H-03 Helltreads" id="5d02-78b7-d587-4103" hidden="false" type="profile" targetId="74c0-7fb5-4562-7f4c"/>
+            <infoLink name="H-03 Helltread" id="5d02-78b7-d587-4103" hidden="false" type="profile" targetId="74c0-7fb5-4562-7f4c"/>
             <infoLink name="Crush-" id="47b5-c22e-4499-2f5e" hidden="false" type="rule" targetId="ab49-c483-f2a1-aac8">
               <modifiers>
                 <modifier type="set" value="Crush 2" field="name"/>
@@ -353,7 +353,7 @@
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="H-03 Helltread Squad" hidden="false" id="3eca-95e6-611d-38aa">
           <infoLinks>
-            <infoLink name="H-03 Helltreads" id="c562-980e-c4a7-28c3" hidden="false" type="profile" targetId="74c0-7fb5-4562-7f4c"/>
+            <infoLink name="H-03 Helltread" id="c562-980e-c4a7-28c3" hidden="false" type="profile" targetId="74c0-7fb5-4562-7f4c"/>
             <infoLink name="Crush-" id="bd22-87a4-8439-33c7" hidden="false" type="rule" targetId="ab49-c483-f2a1-aac8">
               <modifiers>
                 <modifier type="set" value="Crush 2" field="name"/>
@@ -779,7 +779,7 @@
     </profile>
     <profile name="Sprint" typeId="7e76-2916-e877-fd40" typeName="Active (Special Abilities)" hidden="false" id="e39a-2a59-97b9-8afe">
       <characteristics>
-        <characteristic name="Description" typeId="3437-636f-e6aa-d7ea">This unit may make a move of up to 5&quot;.</characteristic>
+        <characteristic name="Description" typeId="3437-636f-e6aa-d7ea">This unit may perform a move.</characteristic>
       </characteristics>
     </profile>
     <profile name="Cyber-Command" typeId="4720-4964-f773-3509" typeName="Passive (Special Abilities)" hidden="false" id="3e96-5bbe-6070-660b">
@@ -853,8 +853,8 @@
   </sharedProfiles>
   <entryLinks>
     <entryLink import="true" name="F-00 Officer Unit" hidden="false" id="b0d4-108c-4263-55e0" targetId="00b4-fce6-ccc0-663a" type="selectionEntry"/>
-    <entryLink import="true" name="F-12 War-Machines Unit" hidden="false" id="8e8c-2e1e-f209-47bd" targetId="a719-9466-8ee3-5e09" type="selectionEntry"/>
-    <entryLink import="true" name="H-03 Helltreads Unit" hidden="false" id="404f-6483-3fad-2d93" targetId="bf2a-93d7-a637-0525" type="selectionEntry"/>
+    <entryLink import="true" name="F-12 War-Machine Unit" hidden="false" id="8e8c-2e1e-f209-47bd" targetId="a719-9466-8ee3-5e09" type="selectionEntry"/>
+    <entryLink import="true" name="H-03 Helltread Unit" hidden="false" id="404f-6483-3fad-2d93" targetId="bf2a-93d7-a637-0525" type="selectionEntry"/>
     <entryLink import="true" name="F-15 Rocket-Machine Unit" hidden="false" id="4428-262a-93dd-a0ad" targetId="f771-121f-b83e-6a5d" type="selectionEntry"/>
     <entryLink import="true" name="H-02 Darktread Unit" hidden="false" id="fd6d-3196-ecb7-fb63" targetId="5f5f-de29-0e30-2115" type="selectionEntry"/>
     <entryLink import="true" name="F-77 Scout-Machine Unit" hidden="false" id="8adf-56dc-cecd-443d" targetId="3768-9001-18a1-f2a2" type="selectionEntry"/>

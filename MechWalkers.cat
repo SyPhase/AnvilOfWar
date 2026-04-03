@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="e48c-ab19-6449-78c7" name="MechWalkers" gameSystemId="sys-4d6c-ac3c-296b-de59" gameSystemRevision="2" revision="7" authorName="SyPhase" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="e48c-ab19-6449-78c7" name="MechWalkers" gameSystemId="sys-4d6c-ac3c-296b-de59" gameSystemRevision="2" revision="8" authorName="SyPhase" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedProfiles>
     <profile name="Oxen Longhaul" typeId="a0cc-e27d-0e47-b400" typeName="Unit" hidden="false" id="fc48-91b9-0a96-93d8">
       <characteristics>
@@ -121,6 +121,26 @@
 +1, +3</characteristic>
         <characteristic name="D" typeId="f994-dfa3-122c-9cc5">6</characteristic>
         <characteristic name="Abilities" typeId="3c47-c04c-8dfd-a691">Stationary</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Bronco Strider" typeId="a0cc-e27d-0e47-b400" typeName="Unit" hidden="false" id="5761-abe9-05d6-2ba6">
+      <characteristics>
+        <characteristic name="SV" typeId="24b4-ca44-ffb5-c3f4">3+</characteristic>
+        <characteristic name="DS" typeId="1535-83cf-b8fe-b1ce">0</characteristic>
+        <characteristic name="HP" typeId="a109-7c01-200f-cc2d">6</characteristic>
+        <characteristic name="MV" typeId="6972-eaad-7147-252f">10&quot;</characteristic>
+        <characteristic name="Footprint" typeId="1a99-d265-660f-2eb3">Medium</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Blaster Gun" typeId="35f7-4412-69cb-9d6a" typeName="Weapons" hidden="false" id="0830-92fb-7683-93c4">
+      <characteristics>
+        <characteristic name="R" typeId="8723-19bb-bcce-5f94">12&quot;</characteristic>
+        <characteristic name="Att" typeId="0a3b-93a6-7ca6-c930">4</characteristic>
+        <characteristic name="Acc" typeId="4bca-fe29-753e-511f">3+</characteristic>
+        <characteristic name="AP" typeId="46da-1060-daef-3f00">+2, +0
++1, -1</characteristic>
+        <characteristic name="D" typeId="f994-dfa3-122c-9cc5">2</characteristic>
+        <characteristic name="Abilities" typeId="3c47-c04c-8dfd-a691">Full-auto 2</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
@@ -556,6 +576,15 @@
                 <infoLink name="Combat Disembarkation" id="5a3f-929d-ffc4-b4f0" hidden="false" type="profile" targetId="ce9e-2572-95e6-2182"/>
               </infoLinks>
             </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Special Ability (Energy Shields)" hidden="false" id="f87e-d92b-6821-4449" sortIndex="3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0db9-227d-f3ba-bbb6"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="22c2-b7a1-f575-c094"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Energy Shields" id="6f63-4f77-fcad-687f" hidden="false" type="profile" targetId="e9ec-6737-15af-faa3"/>
+              </infoLinks>
+            </selectionEntry>
           </selectionEntries>
           <infoLinks>
             <infoLink name="Crush-" id="a04c-45db-50a0-e3d6" hidden="false" type="rule" targetId="ab49-c483-f2a1-aac8">
@@ -576,11 +605,171 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Bronco Strider Unit" hidden="false" id="b766-d515-59ac-6729" subType="unit-group">
+      <costs>
+        <cost name="Unit Capacity" typeId="f7d6-c8d5-b008-4866" value="1"/>
+        <cost name="currency" typeId="2439-1aa3-efd7-29d0" value="160"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="892b-3ede-432c-1fff" id="3795-0941-b9af-cc34" primary="true" name="Vehicle"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="unit" import="true" name="Bronco Strider  Squad" hidden="false" id="aea5-3de9-221e-bd7c">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Oxen Longhaul" hidden="false" id="4fe4-ba16-f218-3970" sortIndex="1">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Blaster Gun" hidden="false" id="4597-86a5-20b9-93e6">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9e11-d152-f664-f49d"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aa26-6faa-42f4-6bcf"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Blaster Gun" id="69a1-59c7-404c-2e9d" hidden="false" type="profile" targetId="0830-92fb-7683-93c4"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8086-2524-44ac-a408"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="524a-9353-dd0e-e7a3"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <infoLinks>
+            <infoLink name="Crush-" id="4a65-e0b0-1ae6-235d" hidden="false" type="rule" targetId="ab49-c483-f2a1-aac8">
+              <modifiers>
+                <modifier type="set" value="Crush 1" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Bronco Strider" id="edad-fb40-7b6c-be07" hidden="false" type="profile" targetId="5761-abe9-05d6-2ba6"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c7d7-dbc6-884c-b102"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6e52-3dc1-2ff1-b2b9"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink name="Vehicle" hidden="false" id="6c21-6d89-65c9-926c" targetId="892b-3ede-432c-1fff" primary="false"/>
+            <categoryLink targetId="59ea-6f10-a33e-30f1" id="3891-5da0-3dd5-badd" primary="false" name="Light"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Bronco Strider  Squad" hidden="false" id="27b5-e813-153f-67bd">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Oxen Longhaul" hidden="false" id="d9f3-108a-0871-5fcd" sortIndex="1">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Blaster Gun" hidden="false" id="0ce2-19a6-1a73-8cea">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="312e-9f2e-8162-2c1e"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3eac-da7f-b3af-9ae4"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Blaster Gun" id="b729-8768-f388-bf66" hidden="false" type="profile" targetId="0830-92fb-7683-93c4"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7053-8393-a087-12f2"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="31e5-dab5-d13c-7cea"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <infoLinks>
+            <infoLink name="Crush-" id="1db3-79ca-6c24-68ad" hidden="false" type="rule" targetId="ab49-c483-f2a1-aac8">
+              <modifiers>
+                <modifier type="set" value="Crush 1" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Bronco Strider" id="921f-8bcc-0ae1-9bb0" hidden="false" type="profile" targetId="5761-abe9-05d6-2ba6"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="12a8-5cae-0c18-e7e4"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="76a2-2188-8238-8962"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink name="Vehicle" hidden="false" id="4a88-f017-43ff-49cb" targetId="892b-3ede-432c-1fff" primary="false"/>
+            <categoryLink name="Light" hidden="false" id="3f85-2119-9572-b305" targetId="59ea-6f10-a33e-30f1" primary="false"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Bronco Strider  Squad" hidden="false" id="dc24-63f7-c278-5394">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Oxen Longhaul" hidden="false" id="db18-44e6-b29f-2565" sortIndex="1">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Blaster Gun" hidden="false" id="18f8-2039-9d8d-0fad">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d295-5c5b-a183-5d3f"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="10a1-9d76-df56-3a7a"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Blaster Gun" id="77ed-612c-2be7-b6e7" hidden="false" type="profile" targetId="0830-92fb-7683-93c4"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c328-e947-cc3b-3395"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0b4d-689b-ca95-09c4"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <infoLinks>
+            <infoLink name="Crush-" id="8d6e-a064-47f4-2c93" hidden="false" type="rule" targetId="ab49-c483-f2a1-aac8">
+              <modifiers>
+                <modifier type="set" value="Crush 1" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Bronco Strider" id="65af-ec92-061b-bf6f" hidden="false" type="profile" targetId="5761-abe9-05d6-2ba6"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7242-59db-b502-596c"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1d69-cbb2-af9d-a573"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink name="Vehicle" hidden="false" id="1108-16fd-2e96-a75b" targetId="892b-3ede-432c-1fff" primary="false"/>
+            <categoryLink name="Light" hidden="false" id="7380-fede-3dc8-b758" targetId="59ea-6f10-a33e-30f1" primary="false"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Bronco Strider  Squad" hidden="false" id="fbe9-f1dc-121f-4038">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Oxen Longhaul" hidden="false" id="bba9-8cc8-d64e-8934" sortIndex="1">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Blaster Gun" hidden="false" id="4e8a-2bd6-d7eb-a8f4">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e6cf-a98d-ccd8-30c6"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a4f6-c7e0-9d64-9627"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Blaster Gun" id="f117-04f8-9b69-cf0a" hidden="false" type="profile" targetId="0830-92fb-7683-93c4"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8163-b095-d8f4-8ee6"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ede5-d8e7-47b7-087b"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <infoLinks>
+            <infoLink name="Crush-" id="28ca-0d6a-8ab3-7b13" hidden="false" type="rule" targetId="ab49-c483-f2a1-aac8">
+              <modifiers>
+                <modifier type="set" value="Crush 1" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Bronco Strider" id="57bd-9515-f7fc-82f7" hidden="false" type="profile" targetId="5761-abe9-05d6-2ba6"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aa91-c850-98af-2d04"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f029-a07a-4379-23ad"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink name="Vehicle" hidden="false" id="19fa-aa92-2feb-1573" targetId="892b-3ede-432c-1fff" primary="false"/>
+            <categoryLink name="Light" hidden="false" id="70de-d9cb-7bf4-66b0" targetId="59ea-6f10-a33e-30f1" primary="false"/>
+          </categoryLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Oxen Longhaul Unit" hidden="false" id="1e71-266c-366e-048c" targetId="e7b1-acb8-f43c-b4d9" type="selectionEntry"/>
     <entryLink import="true" name="Support Engineer Unit" hidden="false" id="1c67-3cef-1ef7-7425" targetId="0458-f7ad-ad23-b4f8" type="selectionEntry"/>
     <entryLink import="true" name="Combat Engineer Unit" hidden="false" id="a2f6-4aa9-adec-6e3a" targetId="81af-32d6-3356-25db" type="selectionEntry"/>
     <entryLink import="true" name="Rhinoceros Longhaul Unit" hidden="false" id="b7e0-e167-7ce9-d90c" targetId="0e80-5182-d61f-7c0a" type="selectionEntry"/>
+    <entryLink import="true" name="Bronco Strider Unit" hidden="false" id="a1f4-5622-5296-c540" targetId="b766-d515-59ac-6729" type="selectionEntry"/>
   </entryLinks>
 </catalogue>
