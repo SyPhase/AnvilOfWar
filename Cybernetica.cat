@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="28e4-ed51-3991-19d2" name="Cybernetica" gameSystemId="sys-4d6c-ac3c-296b-de59" gameSystemRevision="1" revision="12" authorName="SyPhase" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="28e4-ed51-3991-19d2" name="Cybernetica" gameSystemId="sys-4d6c-ac3c-296b-de59" gameSystemRevision="1" revision="13" authorName="SyPhase" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
-    <selectionEntry type="unit" import="true" name="F-00 Officer Unit" hidden="false" id="00b4-fce6-ccc0-663a" subType="unit-group">
+    <selectionEntry type="unit" import="true" name="F-00 Admin Unit" hidden="false" id="00b4-fce6-ccc0-663a" subType="unit-group">
       <categoryLinks>
-        <categoryLink targetId="0a6c-1e81-5f9d-3240" id="a2dc-b33f-a26a-979a" primary="true" name="Hero"/>
+        <categoryLink targetId="86d7-e31a-0e12-cc05" id="c827-8860-d4e1-9918" primary="true" name="Infantry"/>
       </categoryLinks>
       <costs>
         <cost name="Unit Capacity" typeId="f7d6-c8d5-b008-4866" value="1"/>
-        <cost name="currency" typeId="2439-1aa3-efd7-29d0" value="180"/>
       </costs>
       <selectionEntries>
-        <selectionEntry type="unit" import="true" name="F-00 Officer Squad" hidden="false" id="b707-2e8a-b341-2b3b" page="(Has some kind of officer buff ability)">
+        <selectionEntry type="unit" import="true" name="F-00 Admin Squad" hidden="false" id="b707-2e8a-b341-2b3b">
           <infoLinks>
-            <infoLink name="F-00 Officer" id="f4ed-7b72-8b21-8afb" hidden="false" type="profile" targetId="dff9-f94a-90e7-afeb"/>
+            <infoLink name="F-00 Admin" id="f4ed-7b72-8b21-8afb" hidden="false" type="profile" targetId="dff9-f94a-90e7-afeb"/>
             <infoLink name="Presence-" id="e0d2-8591-d3b7-b510" hidden="false" type="rule" targetId="c94f-5f31-a078-81ee">
               <modifiers>
                 <modifier type="set" value="Presence 2" field="name"/>
@@ -20,7 +19,7 @@
             </infoLink>
           </infoLinks>
           <selectionEntries>
-            <selectionEntry type="model" import="true" name="F-00 Officer" hidden="false" id="d932-7e1d-d3fc-b860" sortIndex="1">
+            <selectionEntry type="model" import="true" name="F-00 Admin" hidden="false" id="d932-7e1d-d3fc-b860" sortIndex="1">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5c78-66bd-16a4-bbca-min"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5c78-66bd-16a4-bbca-max"/>
@@ -64,9 +63,9 @@
             </selectionEntry>
           </selectionEntries>
           <categoryLinks>
-            <categoryLink name="Hero" hidden="false" id="c8ea-3f9c-bd41-2b9f" targetId="0a6c-1e81-5f9d-3240" primary="false"/>
             <categoryLink name="Infantry" hidden="false" id="3d77-00cf-602d-9427" targetId="86d7-e31a-0e12-cc05" primary="false"/>
             <categoryLink name="Heavy" hidden="false" id="1231-167b-7da0-ea59" targetId="b9c5-1770-e28a-db52" primary="false"/>
+            <categoryLink targetId="9398-0362-f8ff-9b2c" id="7a79-b83b-0ffa-5321" primary="false" name="Small"/>
           </categoryLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2398-3846-638c-e73b"/>
@@ -74,6 +73,7 @@
           </constraints>
         </selectionEntry>
       </selectionEntries>
+      <comment>Squads: 1, Models: 5</comment>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="F-12 War-Machine Unit" hidden="false" id="a719-9466-8ee3-5e09" subType="unit-group">
       <categoryLinks>
@@ -102,19 +102,11 @@
                 </selectionEntry>
               </selectionEntries>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Special Ability (Sprint)" hidden="false" id="4120-3923-c811-5cb0">
-              <infoLinks>
-                <infoLink name="Sprint" id="f6fa-22c3-68ab-d524" hidden="false" type="profile" targetId="e39a-2a59-97b9-8afe"/>
-              </infoLinks>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="52ec-ce12-0ab0-f552-min"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="52ec-ce12-0ab0-f552-max"/>
-              </constraints>
-            </selectionEntry>
           </selectionEntries>
           <categoryLinks>
             <categoryLink name="Infantry" hidden="false" id="6470-7419-17a2-f7b0" targetId="86d7-e31a-0e12-cc05" primary="false"/>
             <categoryLink name="Heavy" hidden="false" id="6939-017c-6c70-ae28" targetId="b9c5-1770-e28a-db52" primary="false"/>
+            <categoryLink targetId="9398-0362-f8ff-9b2c" id="1d7b-8d87-8dbb-5118" primary="false" name="Small"/>
           </categoryLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4e16-2291-1725-f08a-min"/>
@@ -143,19 +135,11 @@
                 </selectionEntry>
               </selectionEntries>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Special Ability (Sprint)" hidden="false" id="3e48-871a-1f78-d2cf">
-              <infoLinks>
-                <infoLink name="Sprint" id="5686-83ae-29d4-68f7" hidden="false" type="profile" targetId="e39a-2a59-97b9-8afe"/>
-              </infoLinks>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fb47-a433-d723-f24f"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a53f-e725-5842-6add"/>
-              </constraints>
-            </selectionEntry>
           </selectionEntries>
           <categoryLinks>
             <categoryLink name="Infantry" hidden="false" id="af6f-fd65-2ff7-b3d4" targetId="86d7-e31a-0e12-cc05" primary="false"/>
             <categoryLink name="Heavy" hidden="false" id="69cd-7fce-d1d2-7d90" targetId="b9c5-1770-e28a-db52" primary="false"/>
+            <categoryLink targetId="9398-0362-f8ff-9b2c" id="0b91-ee8f-abcb-9678" primary="false" name="Small"/>
           </categoryLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="910b-dd01-772d-e434"/>
@@ -165,13 +149,12 @@
       </selectionEntries>
       <costs>
         <cost name="Unit Capacity" typeId="f7d6-c8d5-b008-4866" value="1"/>
-        <cost name="currency" typeId="2439-1aa3-efd7-29d0" value="100"/>
       </costs>
+      <comment>Squads: 2, Models: 5</comment>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="H-03 Helltread Unit" hidden="false" id="bf2a-93d7-a637-0525" subType="unit-group">
       <costs>
         <cost name="Unit Capacity" typeId="f7d6-c8d5-b008-4866" value="1"/>
-        <cost name="currency" typeId="2439-1aa3-efd7-29d0" value="220"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="892b-3ede-432c-1fff" id="2ea0-90ad-4eda-b7ed" primary="true" name="Vehicle"/>
@@ -193,7 +176,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d4b4-8ba4-68d0-fc03-max"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="H-03 Twin-Blasters" hidden="false" id="20a0-3621-9962-b46b">
+                <selectionEntry type="upgrade" import="true" name="H-03 Twin-Blasters" hidden="false" id="20a0-3621-9962-b46b" sortIndex="1">
                   <infoLinks>
                     <infoLink name="H-03 Twin-Blasters" id="4edd-30d0-ea15-8ac8" hidden="false" type="profile" targetId="2b25-7867-3ab6-536e"/>
                   </infoLinks>
@@ -202,7 +185,7 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dbd5-ff92-8aa7-8e9f-max"/>
                   </constraints>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="H-03 Explosion" hidden="true" id="e323-f70e-52f5-cffd">
+                <selectionEntry type="upgrade" import="true" name="H-03 Explosion" hidden="true" id="e323-f70e-52f5-cffd" sortIndex="2">
                   <infoLinks>
                     <infoLink name="H-03 Explosion" id="35f5-4fb2-36ea-2566" hidden="false" type="profile" targetId="17ee-aef3-544e-a7ae"/>
                   </infoLinks>
@@ -233,6 +216,7 @@
           <categoryLinks>
             <categoryLink name="Light" hidden="false" id="46b7-3a1e-7a8f-94ef" targetId="59ea-6f10-a33e-30f1" primary="false"/>
             <categoryLink name="Vehicle" hidden="false" id="4d5c-ae4a-24d7-602a" targetId="892b-3ede-432c-1fff" primary="false"/>
+            <categoryLink targetId="9dbc-8ba4-9d45-609d" id="18ab-4a16-4c51-0bf4" primary="false" name="Medium"/>
           </categoryLinks>
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="H-03 Helltread Squad" hidden="false" id="77ea-3448-65b9-5405">
@@ -291,6 +275,7 @@
           <categoryLinks>
             <categoryLink name="Light" hidden="false" id="7c7e-f06f-a8d8-d4f4" targetId="59ea-6f10-a33e-30f1" primary="false"/>
             <categoryLink name="Vehicle" hidden="false" id="f3b1-24f3-77bf-bbfb" targetId="892b-3ede-432c-1fff" primary="false"/>
+            <categoryLink targetId="9dbc-8ba4-9d45-609d" id="fbb7-4a62-07dc-3bdf" primary="false" name="Medium"/>
           </categoryLinks>
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="H-03 Helltread Squad" hidden="false" id="be91-7c48-6aa0-3351">
@@ -349,6 +334,7 @@
           <categoryLinks>
             <categoryLink name="Light" hidden="false" id="876f-f0ea-3c97-eebc" targetId="59ea-6f10-a33e-30f1" primary="false"/>
             <categoryLink name="Vehicle" hidden="false" id="c506-5552-7a60-e550" targetId="892b-3ede-432c-1fff" primary="false"/>
+            <categoryLink targetId="9dbc-8ba4-9d45-609d" id="d056-112b-2872-b77e" primary="false" name="Medium"/>
           </categoryLinks>
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="H-03 Helltread Squad" hidden="false" id="3eca-95e6-611d-38aa">
@@ -407,9 +393,11 @@
           <categoryLinks>
             <categoryLink name="Light" hidden="false" id="6e09-a633-cdeb-dfca" targetId="59ea-6f10-a33e-30f1" primary="false"/>
             <categoryLink name="Vehicle" hidden="false" id="d491-18e8-3f1d-1c55" targetId="892b-3ede-432c-1fff" primary="false"/>
+            <categoryLink targetId="9dbc-8ba4-9d45-609d" id="7fa8-323f-290a-9843" primary="false" name="Medium"/>
           </categoryLinks>
         </selectionEntry>
       </selectionEntries>
+      <comment>Squads: 4, Models: 1</comment>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="F-15 Rocket-Machine Unit" hidden="false" id="f771-121f-b83e-6a5d" subType="unit-group">
       <categoryLinks>
@@ -442,6 +430,7 @@
           <categoryLinks>
             <categoryLink name="Infantry" hidden="false" id="5a8c-2c89-0d82-c463" targetId="86d7-e31a-0e12-cc05" primary="false"/>
             <categoryLink name="Heavy" hidden="false" id="fd2b-50b4-45a5-c7d2" targetId="b9c5-1770-e28a-db52" primary="false"/>
+            <categoryLink targetId="9398-0362-f8ff-9b2c" id="bd32-9ada-6007-f56f" primary="false" name="Small"/>
           </categoryLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a6dd-a6c6-3068-35ff"/>
@@ -474,6 +463,7 @@
           <categoryLinks>
             <categoryLink name="Infantry" hidden="false" id="ccd0-f73b-068d-8b76" targetId="86d7-e31a-0e12-cc05" primary="false"/>
             <categoryLink name="Heavy" hidden="false" id="7328-e8f5-a2e9-5f9c" targetId="b9c5-1770-e28a-db52" primary="false"/>
+            <categoryLink targetId="9398-0362-f8ff-9b2c" id="f7e8-719c-82cd-f692" primary="false" name="Small"/>
           </categoryLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0b85-50cd-d2aa-0159"/>
@@ -483,13 +473,12 @@
       </selectionEntries>
       <costs>
         <cost name="Unit Capacity" typeId="f7d6-c8d5-b008-4866" value="1"/>
-        <cost name="currency" typeId="2439-1aa3-efd7-29d0" value="80"/>
       </costs>
+      <comment>Squads: 1, Models: 3</comment>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="H-02 Darktread Unit" hidden="false" id="5f5f-de29-0e30-2115" subType="unit-group">
       <costs>
-        <cost name="Unit Capacity" typeId="f7d6-c8d5-b008-4866" value="2"/>
-        <cost name="currency" typeId="2439-1aa3-efd7-29d0" value="250"/>
+        <cost name="Unit Capacity" typeId="f7d6-c8d5-b008-4866" value="1"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="892b-3ede-432c-1fff" id="83b6-5deb-a42e-03d9" primary="true" name="Vehicle"/>
@@ -505,7 +494,7 @@
             </infoLink>
             <infoLink name="Resist-" id="3d16-b38e-3183-fa6f" hidden="false" type="rule" targetId="e899-0aa0-f2bb-f89d">
               <modifiers>
-                <modifier type="set" value="Resist vehicle 4" field="name"/>
+                <modifier type="set" value="Resist vehicle 1" field="name"/>
               </modifiers>
             </infoLink>
           </infoLinks>
@@ -525,15 +514,6 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7c76-92c8-cb8b-1223"/>
                   </constraints>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="H-02 Gatling Blaster" hidden="true" id="872d-f54d-5743-9956">
-                  <infoLinks>
-                    <infoLink name="H-02 Gatling Blaster" id="65df-6a2f-2ffe-5ec7" hidden="false" type="profile" targetId="c9ac-0d36-17bc-1e52"/>
-                  </infoLinks>
-                  <constraints>
-                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="660c-f3f0-d2fd-044f"/>
-                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="a1d4-af13-91fe-4b9e"/>
-                  </constraints>
-                </selectionEntry>
               </selectionEntries>
             </selectionEntry>
           </selectionEntries>
@@ -545,145 +525,262 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6c0b-3ad9-d38a-70d8"/>
           </constraints>
           <categoryLinks>
-            <categoryLink name="Light" hidden="false" id="9cbc-4a28-29b9-e721" targetId="59ea-6f10-a33e-30f1" primary="false"/>
             <categoryLink name="Vehicle" hidden="false" id="5135-93c6-60fe-6ef3" targetId="892b-3ede-432c-1fff" primary="false"/>
+            <categoryLink targetId="b9c5-1770-e28a-db52" id="2846-c847-741b-1441" primary="false" name="Heavy"/>
+            <categoryLink targetId="5436-0243-0990-7af4" id="4524-1959-f98b-9043" primary="false" name="Large"/>
           </categoryLinks>
         </selectionEntry>
       </selectionEntries>
+      <comment>Squads: 1, Models: 1</comment>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="F-77 Scout-Machine Unit" hidden="false" id="3768-9001-18a1-f2a2" subType="unit-group">
+    <selectionEntry type="unit" import="true" name="T-77 Assimilator Unit" hidden="false" id="2e28-a64a-d1d9-1bef" subType="unit-group">
       <categoryLinks>
-        <categoryLink targetId="86d7-e31a-0e12-cc05" id="7f1e-5269-fe88-5fa8" primary="true" name="Infantry"/>
+        <categoryLink targetId="0a6c-1e81-5f9d-3240" id="2d3d-b4d1-10bc-e460" primary="true" name="Hero"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry type="unit" import="true" name="F-77 Scout-Machine Squad" hidden="false" id="b28f-c7ee-1d8b-a507">
-          <infoLinks>
-            <infoLink name="F-77 Scout-Machine" id="b013-e75e-861d-423b" hidden="false" type="profile" targetId="ffc1-f179-749b-17e7"/>
-          </infoLinks>
-          <selectionEntries>
-            <selectionEntry type="model" import="true" name="F-77 Scout-Machine" hidden="false" id="0bed-5553-a299-0abf">
-              <constraints>
-                <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="3acf-8f20-5722-73cf"/>
-                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="ebf3-c030-6c4d-ad99"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="F-77 Repeater" hidden="false" id="e373-46e4-1fe2-cfce">
-                  <infoLinks>
-                    <infoLink name="F-77 Repeater" id="6098-9274-abd8-ce89" hidden="false" type="profile" targetId="414c-dbe6-1037-3ea4"/>
-                  </infoLinks>
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8235-3a46-99f1-1825"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ca95-db58-9122-95cf"/>
-                  </constraints>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Special Ability (Sprint)" hidden="false" id="b703-916d-0c0e-3ea2">
-              <infoLinks>
-                <infoLink name="Sprint" id="cbac-d2ff-2b83-75ca" hidden="false" type="profile" targetId="e39a-2a59-97b9-8afe"/>
-              </infoLinks>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9e1b-0173-d8c4-59b4"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="348e-c0ac-1844-e3eb"/>
-              </constraints>
-            </selectionEntry>
-          </selectionEntries>
-          <categoryLinks>
-            <categoryLink name="Infantry" hidden="false" id="2478-5d89-535f-a5a2" targetId="86d7-e31a-0e12-cc05" primary="false"/>
-            <categoryLink targetId="59ea-6f10-a33e-30f1" id="16f3-5127-c8f8-d942" primary="false" name="Light"/>
-          </categoryLinks>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="92b8-d4ca-127f-32da"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3c0a-7aaf-a44b-1da9"/>
-          </constraints>
-        </selectionEntry>
-        <selectionEntry type="unit" import="true" name="F-77 Scout-Machine Squad" hidden="false" id="7eb2-8fac-e301-1482">
-          <infoLinks>
-            <infoLink name="F-77 Scout-Machine" id="0890-3046-d133-3664" hidden="false" type="profile" targetId="ffc1-f179-749b-17e7"/>
-          </infoLinks>
-          <selectionEntries>
-            <selectionEntry type="model" import="true" name="F-77 Scout-Machine" hidden="false" id="06c1-0b8b-1c53-3883">
-              <constraints>
-                <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="1c7b-3a13-e188-fd95"/>
-                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="855c-e426-80e5-09d5"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="F-77 Repeater" hidden="false" id="2469-de37-fbd2-9335">
-                  <infoLinks>
-                    <infoLink name="F-77 Repeater" id="cb51-a603-dfcb-e237" hidden="false" type="profile" targetId="414c-dbe6-1037-3ea4"/>
-                  </infoLinks>
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1d57-b09e-dea8-27f6"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4143-a5ee-727e-7236"/>
-                  </constraints>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Special Ability (Sprint)" hidden="false" id="9e3f-98e6-bb71-dab1">
-              <infoLinks>
-                <infoLink name="Sprint" id="a032-98be-7448-ae30" hidden="false" type="profile" targetId="e39a-2a59-97b9-8afe"/>
-              </infoLinks>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7f1c-f9aa-e4d9-4320"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1719-c590-6b06-3a90"/>
-              </constraints>
-            </selectionEntry>
-          </selectionEntries>
-          <categoryLinks>
-            <categoryLink name="Infantry" hidden="false" id="be78-4d8e-a4f0-fcdf" targetId="86d7-e31a-0e12-cc05" primary="false"/>
-            <categoryLink name="Light" hidden="false" id="9ccd-e5ad-dca7-1103" targetId="59ea-6f10-a33e-30f1" primary="false"/>
-          </categoryLinks>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c4a3-0e37-5d6f-f366"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ace6-4c74-2136-f748"/>
-          </constraints>
-        </selectionEntry>
-        <selectionEntry type="unit" import="true" name="F-77 Scout-Machine Squad" hidden="false" id="6fff-8489-6467-ca21">
-          <infoLinks>
-            <infoLink name="F-77 Scout-Machine" id="39d1-008a-9b8b-09aa" hidden="false" type="profile" targetId="ffc1-f179-749b-17e7"/>
-          </infoLinks>
-          <selectionEntries>
-            <selectionEntry type="model" import="true" name="F-77 Scout-Machine" hidden="false" id="19d6-f6fd-5bb0-5899">
-              <constraints>
-                <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="dead-5c28-2494-6d8c"/>
-                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="20b8-483d-979d-2bd2"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="F-77 Repeater" hidden="false" id="48b0-d992-101d-90a5">
-                  <infoLinks>
-                    <infoLink name="F-77 Repeater" id="bc0f-ff56-1e25-de93" hidden="false" type="profile" targetId="414c-dbe6-1037-3ea4"/>
-                  </infoLinks>
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c92c-cd0b-8fc7-6610"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a7e8-75a5-b60d-817e"/>
-                  </constraints>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Special Ability (Sprint)" hidden="false" id="ed86-b1c9-ede2-e5c7">
-              <infoLinks>
-                <infoLink name="Sprint" id="1ef8-420b-f2f2-3d9e" hidden="false" type="profile" targetId="e39a-2a59-97b9-8afe"/>
-              </infoLinks>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2250-01df-1a28-45fb"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5bcd-e27e-e57a-f5d3"/>
-              </constraints>
-            </selectionEntry>
-          </selectionEntries>
-          <categoryLinks>
-            <categoryLink name="Infantry" hidden="false" id="4328-d7e1-afbf-e7c7" targetId="86d7-e31a-0e12-cc05" primary="false"/>
-            <categoryLink name="Light" hidden="false" id="988f-372f-3003-fb32" targetId="59ea-6f10-a33e-30f1" primary="false"/>
-          </categoryLinks>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="976c-9bfb-2585-7750"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="267c-dc74-dc88-c071"/>
-          </constraints>
-        </selectionEntry>
-      </selectionEntries>
       <costs>
         <cost name="Unit Capacity" typeId="f7d6-c8d5-b008-4866" value="1"/>
-        <cost name="currency" typeId="2439-1aa3-efd7-29d0" value="80"/>
       </costs>
+      <selectionEntries>
+        <selectionEntry type="unit" import="true" name="T-77 Assimilator Squad" hidden="false" id="0a89-d592-5eb1-a9d8">
+          <infoLinks>
+            <infoLink name="T-77 Assimilator" id="506f-6cc7-60ae-0b40" hidden="false" type="profile" targetId="6d4b-45fd-7be0-77c0"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="T-77 Assimilator" hidden="false" id="46e0-a026-7425-b42e" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cfcd-a39d-85ee-fc1f"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dcb5-b245-5424-480a"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="T-77 Focus Blaster" hidden="false" id="8c76-9d95-190b-653c">
+                  <infoLinks>
+                    <infoLink name="T-77 Focus Blaster" id="9cb2-04e2-14f9-b975" hidden="false" type="profile" targetId="35e5-ef05-d37b-e1b5"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b48c-648d-6472-d3ac"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9941-30a5-284b-ee4f"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Special Ability (Biological Reprogramming)" hidden="false" id="ce46-aa6d-dafd-7f56" sortIndex="3">
+              <infoLinks>
+                <infoLink name="Biological Reprogramming" id="c4d8-89dc-7620-16d7" hidden="false" type="profile" targetId="e39a-2a59-97b9-8afe"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a3ee-b7f0-322f-8e78"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="bd5b-5e02-503d-56f7" targetId="0a6c-1e81-5f9d-3240" primary="false"/>
+            <categoryLink name="Infantry" hidden="false" id="21ea-6195-43ff-3342" targetId="86d7-e31a-0e12-cc05" primary="false"/>
+            <categoryLink name="Heavy" hidden="false" id="9fe0-45c2-0b22-8f86" targetId="b9c5-1770-e28a-db52" primary="false"/>
+            <categoryLink targetId="9398-0362-f8ff-9b2c" id="52c6-5455-b17b-234d" primary="false" name="Small"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1817-522d-3494-a903"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e564-e678-ea0f-9505"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <comment>Squads: 1, Models: 1</comment>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="H-09 Shelltread Unit" hidden="false" id="729c-50c4-b597-a40a" subType="unit-group">
+      <costs>
+        <cost name="Unit Capacity" typeId="f7d6-c8d5-b008-4866" value="1"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="892b-3ede-432c-1fff" id="7a01-1bfc-4499-812b" primary="true" name="Vehicle"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="unit" import="true" name="H-09 Shelltread Squad" hidden="false" id="c27e-9ff1-0e89-5d14">
+          <infoLinks>
+            <infoLink name="H-09 Shelltread" id="0b67-fcf7-6a7f-e72b" hidden="false" type="profile" targetId="1b2c-dc5a-4ca8-51cb"/>
+            <infoLink name="Crush-" id="d553-55f3-ecb3-8d59" hidden="false" type="rule" targetId="ab49-c483-f2a1-aac8">
+              <modifiers>
+                <modifier type="set" value="Crush 3" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="H-09 Shelltread" hidden="false" id="46d7-d151-1914-ca01">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2ad2-34a9-fc06-43b2"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e8b3-a192-0068-ba84"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="H-09 Artillery Battery" hidden="false" id="0bc2-a6b1-61cb-4ece">
+                  <infoLinks>
+                    <infoLink name="H-09 Artillery Battery" id="c3a6-8187-1373-5048" hidden="false" type="profile" targetId="c3da-8b49-76cd-f25e"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cbb4-9721-8368-0d78"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b2bb-1b42-9770-172f"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="points" typeId="b94c-fcb8-4a07-acd7" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a1ff-6885-98e2-6792"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9442-9f16-dced-0d07"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink name="Light" hidden="false" id="8f1d-69cf-e53c-78dc" targetId="59ea-6f10-a33e-30f1" primary="false"/>
+            <categoryLink name="Vehicle" hidden="false" id="3663-b5ab-111d-533f" targetId="892b-3ede-432c-1fff" primary="false"/>
+            <categoryLink targetId="9dbc-8ba4-9d45-609d" id="06c5-288f-7df2-b591" primary="false" name="Medium"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="H-09 Shelltread Squad" hidden="false" id="2882-7196-9baa-1d35">
+          <infoLinks>
+            <infoLink name="H-09 Shelltread" id="2411-14ec-ce7c-678d" hidden="false" type="profile" targetId="1b2c-dc5a-4ca8-51cb"/>
+            <infoLink name="Crush-" id="be9d-b3b6-e719-647c" hidden="false" type="rule" targetId="ab49-c483-f2a1-aac8">
+              <modifiers>
+                <modifier type="set" value="Crush 3" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="H-09 Shelltread" hidden="false" id="956a-0c66-6906-4cd2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5a88-9137-db4c-c166"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="348e-af90-0387-c2c4"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="H-09 Artillery Battery" hidden="false" id="5f96-f72a-64c3-5404">
+                  <infoLinks>
+                    <infoLink name="H-09 Artillery Battery" id="2f24-8cf0-17b6-a288" hidden="false" type="profile" targetId="c3da-8b49-76cd-f25e"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0574-465f-45a6-f8ae"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c751-a58f-9d73-19d1"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="points" typeId="b94c-fcb8-4a07-acd7" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6657-d864-66a1-3bdc"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="950d-a190-d6a9-b3d8"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink name="Light" hidden="false" id="ff3c-32a3-c496-63c8" targetId="59ea-6f10-a33e-30f1" primary="false"/>
+            <categoryLink name="Vehicle" hidden="false" id="2931-5ed5-eb0c-8408" targetId="892b-3ede-432c-1fff" primary="false"/>
+            <categoryLink targetId="9dbc-8ba4-9d45-609d" id="555c-6d1a-e2bc-8e1d" primary="false" name="Medium"/>
+          </categoryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <comment>Squads: 2, Models: 1</comment>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="H-05 Rippertread Unit" hidden="false" id="0f73-51fd-8d98-5956" subType="unit-group">
+      <costs>
+        <cost name="Unit Capacity" typeId="f7d6-c8d5-b008-4866" value="1"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="892b-3ede-432c-1fff" id="6bb7-7247-2492-4404" primary="true" name="Vehicle"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="unit" import="true" name="H-05 Rippertread Squad" hidden="false" id="c962-a645-5c66-8e4a">
+          <infoLinks>
+            <infoLink name="H-05 Rippertread" id="d9ce-9b2f-4ed8-b471" hidden="false" type="profile" targetId="db02-8b66-9dd1-065e"/>
+            <infoLink name="Crush-" id="8080-bf18-8e06-91ac" hidden="false" type="rule" targetId="ab49-c483-f2a1-aac8">
+              <modifiers>
+                <modifier type="set" value="Crush 3" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Resist-" id="78c7-7203-6cbf-7a90" hidden="false" type="rule" targetId="e899-0aa0-f2bb-f89d">
+              <modifiers>
+                <modifier type="set" value="Resist vehicle 1" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="H-05 Rippertread" hidden="false" id="0dcc-2179-b717-87dd">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a1cc-89cc-6988-4100"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="139e-98c3-7372-0df6"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="H-05 Cannon" hidden="false" id="2a36-3784-79c6-372b">
+                  <infoLinks>
+                    <infoLink name="H-05 Cannon" id="4d2b-de42-631b-bbf8" hidden="false" type="profile" targetId="08ab-5981-2182-ed91"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a06d-d0cd-2264-d6bd"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1f83-2dc0-b86c-d072"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="points" typeId="b94c-fcb8-4a07-acd7" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="eb08-129f-62cb-2421"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="47fc-a4db-d614-01d0"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink name="Vehicle" hidden="false" id="962c-95c9-929c-5759" targetId="892b-3ede-432c-1fff" primary="false"/>
+            <categoryLink targetId="b9c5-1770-e28a-db52" id="d869-dffa-4348-1542" primary="false" name="Heavy"/>
+            <categoryLink targetId="5436-0243-0990-7af4" id="7372-c02b-9a5d-3091" primary="false" name="Large"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="H-05 Rippertread Squad" hidden="false" id="70c3-b188-d168-d558">
+          <infoLinks>
+            <infoLink name="H-05 Rippertread" id="bd0f-28bb-6f89-46e3" hidden="false" type="profile" targetId="db02-8b66-9dd1-065e"/>
+            <infoLink name="Crush-" id="5a03-07df-8b58-e42c" hidden="false" type="rule" targetId="ab49-c483-f2a1-aac8">
+              <modifiers>
+                <modifier type="set" value="Crush 3" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Resist-" id="a3d2-a0b5-d036-d96f" hidden="false" type="rule" targetId="e899-0aa0-f2bb-f89d">
+              <modifiers>
+                <modifier type="set" value="Resist vehicle 1" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="H-05 Rippertread" hidden="false" id="8dd3-a3ec-2aaa-1ba9">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ae74-6644-07b0-88f7"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9504-848b-4a0e-6572"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="H-05 Cannon" hidden="false" id="908b-c6c1-e960-642a">
+                  <infoLinks>
+                    <infoLink name="H-05 Cannon" id="5345-013a-22c9-fc14" hidden="false" type="profile" targetId="08ab-5981-2182-ed91"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7e91-442c-235f-d46c"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c2c7-bce4-c5dd-40bd"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="points" typeId="b94c-fcb8-4a07-acd7" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="91f5-f3a9-59c8-dcdd"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6f34-9591-dd94-cc3f"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink name="Vehicle" hidden="false" id="aa5c-43b2-7b66-5673" targetId="892b-3ede-432c-1fff" primary="false"/>
+            <categoryLink name="Heavy" hidden="false" id="befa-d258-df75-fe30" targetId="b9c5-1770-e28a-db52" primary="false"/>
+            <categoryLink targetId="5436-0243-0990-7af4" id="c1f9-53a1-75bc-6082" primary="false" name="Large"/>
+          </categoryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <comment>Squads: 2, Models: 1</comment>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
@@ -691,108 +788,107 @@
       <characteristics>
         <characteristic name="SV" typeId="24b4-ca44-ffb5-c3f4">3+</characteristic>
         <characteristic name="DS" typeId="1535-83cf-b8fe-b1ce">0</characteristic>
-        <characteristic name="HP" typeId="a109-7c01-200f-cc2d">2</characteristic>
-        <characteristic name="MV" typeId="6972-eaad-7147-252f">5&quot;</characteristic>
+        <characteristic name="HP" typeId="a109-7c01-200f-cc2d">1</characteristic>
+        <characteristic name="MV" typeId="6972-eaad-7147-252f">6&quot;</characteristic>
         <characteristic name="Footprint" typeId="1a99-d265-660f-2eb3">Small</characteristic>
       </characteristics>
     </profile>
     <profile name="F-12 Blaster" typeId="35f7-4412-69cb-9d6a" typeName="Weapons" hidden="false" id="7d2e-a261-0004-613b">
       <characteristics>
-        <characteristic name="R" typeId="8723-19bb-bcce-5f94">10&quot;</characteristic>
-        <characteristic name="Att" typeId="0a3b-93a6-7ca6-c930">2</characteristic>
-        <characteristic name="Acc" typeId="4bca-fe29-753e-511f">3+</characteristic>
-        <characteristic name="AP" typeId="46da-1060-daef-3f00">+2, +1
-+0, -1</characteristic>
+        <characteristic name="R" typeId="8723-19bb-bcce-5f94">12&quot;</characteristic>
+        <characteristic name="Att" typeId="0a3b-93a6-7ca6-c930">1</characteristic>
+        <characteristic name="Acc" typeId="4bca-fe29-753e-511f">4+</characteristic>
+        <characteristic name="AP" typeId="46da-1060-daef-3f00">+1, 0
++1, 0</characteristic>
         <characteristic name="D" typeId="f994-dfa3-122c-9cc5">1</characteristic>
         <characteristic name="Abilities" typeId="3c47-c04c-8dfd-a691"/>
       </characteristics>
     </profile>
     <profile name="F-15 Rocket" typeId="35f7-4412-69cb-9d6a" typeName="Weapons" hidden="false" id="8aaf-4252-fa64-b622">
       <characteristics>
-        <characteristic name="R" typeId="8723-19bb-bcce-5f94">14&quot;</characteristic>
+        <characteristic name="R" typeId="8723-19bb-bcce-5f94">18&quot;</characteristic>
         <characteristic name="Att" typeId="0a3b-93a6-7ca6-c930">1</characteristic>
         <characteristic name="Acc" typeId="4bca-fe29-753e-511f">4+</characteristic>
-        <characteristic name="AP" typeId="46da-1060-daef-3f00">-3, +3
+        <characteristic name="AP" typeId="46da-1060-daef-3f00">-1, +2
 -1, +2</characteristic>
-        <characteristic name="D" typeId="f994-dfa3-122c-9cc5">5</characteristic>
+        <characteristic name="D" typeId="f994-dfa3-122c-9cc5">1</characteristic>
         <characteristic name="Abilities" typeId="3c47-c04c-8dfd-a691">Explosive 1</characteristic>
       </characteristics>
       <comment>[Explosive 1]</comment>
     </profile>
     <profile name="H-03 Helltread" typeId="a0cc-e27d-0e47-b400" typeName="Unit" hidden="false" id="74c0-7fb5-4562-7f4c">
       <characteristics>
-        <characteristic name="SV" typeId="24b4-ca44-ffb5-c3f4">4+</characteristic>
+        <characteristic name="SV" typeId="24b4-ca44-ffb5-c3f4">3+</characteristic>
         <characteristic name="DS" typeId="1535-83cf-b8fe-b1ce">0</characteristic>
-        <characteristic name="HP" typeId="a109-7c01-200f-cc2d">5</characteristic>
-        <characteristic name="MV" typeId="6972-eaad-7147-252f">10&quot;</characteristic>
+        <characteristic name="HP" typeId="a109-7c01-200f-cc2d">3</characteristic>
+        <characteristic name="MV" typeId="6972-eaad-7147-252f">12&quot;</characteristic>
         <characteristic name="Footprint" typeId="1a99-d265-660f-2eb3">Medium</characteristic>
       </characteristics>
     </profile>
     <profile name="H-03 Twin-Blasters" typeId="35f7-4412-69cb-9d6a" typeName="Weapons" hidden="false" id="2b25-7867-3ab6-536e">
       <characteristics>
-        <characteristic name="R" typeId="8723-19bb-bcce-5f94">10&quot;</characteristic>
+        <characteristic name="R" typeId="8723-19bb-bcce-5f94">12&quot;</characteristic>
         <characteristic name="Att" typeId="0a3b-93a6-7ca6-c930">4</characteristic>
-        <characteristic name="Acc" typeId="4bca-fe29-753e-511f">3+</characteristic>
-        <characteristic name="AP" typeId="46da-1060-daef-3f00">+2, +1
-+0, -1</characteristic>
+        <characteristic name="Acc" typeId="4bca-fe29-753e-511f">4+</characteristic>
+        <characteristic name="AP" typeId="46da-1060-daef-3f00">+2, 0
++2, 0</characteristic>
         <characteristic name="D" typeId="f994-dfa3-122c-9cc5">1</characteristic>
-        <characteristic name="Abilities" typeId="3c47-c04c-8dfd-a691">Full-Auto 2</characteristic>
+        <characteristic name="Abilities" typeId="3c47-c04c-8dfd-a691"/>
       </characteristics>
-      <comment>[Full-Auto-2]</comment>
     </profile>
     <profile name="H-03 Explosion" typeId="35f7-4412-69cb-9d6a" typeName="Weapons" hidden="false" id="17ee-aef3-544e-a7ae">
       <characteristics>
-        <characteristic name="R" typeId="8723-19bb-bcce-5f94">2&quot;</characteristic>
+        <characteristic name="R" typeId="8723-19bb-bcce-5f94">0&quot;</characteristic>
         <characteristic name="Att" typeId="0a3b-93a6-7ca6-c930">6</characteristic>
         <characteristic name="Acc" typeId="4bca-fe29-753e-511f">4+</characteristic>
-        <characteristic name="AP" typeId="46da-1060-daef-3f00">+3, +3
-+1, +0</characteristic>
-        <characteristic name="D" typeId="f994-dfa3-122c-9cc5">2</characteristic>
+        <characteristic name="AP" typeId="46da-1060-daef-3f00">+3, +1
++3, +1</characteristic>
+        <characteristic name="D" typeId="f994-dfa3-122c-9cc5">1</characteristic>
         <characteristic name="Abilities" typeId="3c47-c04c-8dfd-a691">Area of Effect 8&quot;</characteristic>
       </characteristics>
       <comment>[Area of Effect 8&quot;]</comment>
     </profile>
-    <profile name="F-00 Officer" typeId="a0cc-e27d-0e47-b400" typeName="Unit" hidden="false" id="dff9-f94a-90e7-afeb">
+    <profile name="F-00 Admin" typeId="a0cc-e27d-0e47-b400" typeName="Unit" hidden="false" id="dff9-f94a-90e7-afeb">
       <characteristics>
-        <characteristic name="SV" typeId="24b4-ca44-ffb5-c3f4">3+</characteristic>
+        <characteristic name="SV" typeId="24b4-ca44-ffb5-c3f4">2+</characteristic>
         <characteristic name="DS" typeId="1535-83cf-b8fe-b1ce">0</characteristic>
-        <characteristic name="HP" typeId="a109-7c01-200f-cc2d">3</characteristic>
-        <characteristic name="MV" typeId="6972-eaad-7147-252f">5&quot;</characteristic>
+        <characteristic name="HP" typeId="a109-7c01-200f-cc2d">1</characteristic>
+        <characteristic name="MV" typeId="6972-eaad-7147-252f">6&quot;</characteristic>
         <characteristic name="Footprint" typeId="1a99-d265-660f-2eb3">Small</characteristic>
       </characteristics>
     </profile>
     <profile name="F-00 Blaster" typeId="35f7-4412-69cb-9d6a" typeName="Weapons" hidden="false" id="1990-7de7-b83f-9ae0">
       <characteristics>
-        <characteristic name="R" typeId="8723-19bb-bcce-5f94">10&quot;</characteristic>
-        <characteristic name="Att" typeId="0a3b-93a6-7ca6-c930">2</characteristic>
-        <characteristic name="Acc" typeId="4bca-fe29-753e-511f">3+</characteristic>
-        <characteristic name="AP" typeId="46da-1060-daef-3f00">+2, +1
-+0, -1</characteristic>
+        <characteristic name="R" typeId="8723-19bb-bcce-5f94">12&quot;</characteristic>
+        <characteristic name="Att" typeId="0a3b-93a6-7ca6-c930">1</characteristic>
+        <characteristic name="Acc" typeId="4bca-fe29-753e-511f">4+</characteristic>
+        <characteristic name="AP" typeId="46da-1060-daef-3f00">+1, 0
++1, 0</characteristic>
         <characteristic name="D" typeId="f994-dfa3-122c-9cc5">1</characteristic>
         <characteristic name="Abilities" typeId="3c47-c04c-8dfd-a691"/>
       </characteristics>
     </profile>
     <profile name="Self-Destruct" typeId="7e76-2916-e877-fd40" typeName="Active (Special Abilities)" hidden="false" id="621a-ca31-1eda-c8f4">
       <characteristics>
-        <characteristic name="Description" typeId="3437-636f-e6aa-d7ea">At the beginning of your next Attacking Phase, this unit is targeted by the weapon profile &quot;H-03 Explosion,&quot; then is destroyed.  (Note: the Area of Effect ability of that weapon means you will be targeting all enemies in range of the area of effect.  Because this unit will be destroyed anyway, you may skip to the attacking of enemies within range.)</characteristic>
+        <characteristic name="Description" typeId="3437-636f-e6aa-d7ea">Reduce this squad&apos;s MV characteristic to 0&quot;.  At the beginning of your next Attacking Phase, this unit is targeted by the weapon profile &quot;H-03 Explosion,&quot; then is destroyed.  (Note: the Area of Effect ability of that weapon means you will be targeting all enemies in range of the area of effect.  Because this unit will be destroyed anyway, you may skip attacking itself.)</characteristic>
       </characteristics>
     </profile>
-    <profile name="Sprint" typeId="7e76-2916-e877-fd40" typeName="Active (Special Abilities)" hidden="false" id="e39a-2a59-97b9-8afe">
+    <profile name="Biological Reprogramming" typeId="7e76-2916-e877-fd40" typeName="Active (Special Abilities)" hidden="false" id="e39a-2a59-97b9-8afe">
       <characteristics>
-        <characteristic name="Description" typeId="3437-636f-e6aa-d7ea">This unit may perform a move.</characteristic>
+        <characteristic name="Description" typeId="3437-636f-e6aa-d7ea">Once per battle, if a non-hero enemy infantry squad is within 3&quot; of this squad, you may target that infantry squad to &apos;reprogram.&apos; When you &apos;reprogram&apos; an infantry squad, that squad counts as being destroyed. When it is removed from the battlefield set up a copy of the destroyed infantry squad under your control with the same amount of remaining HP as close as possible to where it was removed from play. That squad remains under your control until destroyed.</characteristic>
       </characteristics>
     </profile>
     <profile name="Cyber-Command" typeId="4720-4964-f773-3509" typeName="Passive (Special Abilities)" hidden="false" id="3e96-5bbe-6070-660b">
       <characteristics>
-        <characteristic name="Description" typeId="bc7d-10a5-15e8-e96d">While this unit is on the battlefield, improve the range characteristic of ranged weapons by 4&quot; on weapons equipped by friendly Cybernetica units.</characteristic>
+        <characteristic name="Description" typeId="bc7d-10a5-15e8-e96d">While this squad is on the battlefield, worsen the AP of attacks targeting squads in your army by 1 to a minimum of 0.</characteristic>
       </characteristics>
     </profile>
     <profile name="F-15 Rocket-Machine" typeId="a0cc-e27d-0e47-b400" typeName="Unit" hidden="false" id="a244-bb5e-536b-7e9a">
       <characteristics>
         <characteristic name="SV" typeId="24b4-ca44-ffb5-c3f4">3+</characteristic>
         <characteristic name="DS" typeId="1535-83cf-b8fe-b1ce">0</characteristic>
-        <characteristic name="HP" typeId="a109-7c01-200f-cc2d">2</characteristic>
-        <characteristic name="MV" typeId="6972-eaad-7147-252f">5&quot;</characteristic>
+        <characteristic name="HP" typeId="a109-7c01-200f-cc2d">1</characteristic>
+        <characteristic name="MV" typeId="6972-eaad-7147-252f">6&quot;</characteristic>
         <characteristic name="Footprint" typeId="1a99-d265-660f-2eb3">Small</characteristic>
       </characteristics>
     </profile>
@@ -800,7 +896,7 @@
       <characteristics>
         <characteristic name="SV" typeId="24b4-ca44-ffb5-c3f4">2+</characteristic>
         <characteristic name="DS" typeId="1535-83cf-b8fe-b1ce">0</characteristic>
-        <characteristic name="HP" typeId="a109-7c01-200f-cc2d">30</characteristic>
+        <characteristic name="HP" typeId="a109-7c01-200f-cc2d">25</characteristic>
         <characteristic name="MV" typeId="6972-eaad-7147-252f">6&quot;</characteristic>
         <characteristic name="Footprint" typeId="1a99-d265-660f-2eb3">Large</characteristic>
       </characteristics>
@@ -808,55 +904,84 @@
     <profile name="H-02 Twin-Cannon" typeId="35f7-4412-69cb-9d6a" typeName="Weapons" hidden="false" id="41eb-7bf8-47e4-743f">
       <characteristics>
         <characteristic name="R" typeId="8723-19bb-bcce-5f94">18&quot;</characteristic>
-        <characteristic name="Att" typeId="0a3b-93a6-7ca6-c930">2</characteristic>
+        <characteristic name="Att" typeId="0a3b-93a6-7ca6-c930">4</characteristic>
         <characteristic name="Acc" typeId="4bca-fe29-753e-511f">3+</characteristic>
-        <characteristic name="AP" typeId="46da-1060-daef-3f00">-1, +4
-+0, +3</characteristic>
-        <characteristic name="D" typeId="f994-dfa3-122c-9cc5">D3+6</characteristic>
-        <characteristic name="Abilities" typeId="3c47-c04c-8dfd-a691">Area of Effect 4&quot;</characteristic>
+        <characteristic name="AP" typeId="46da-1060-daef-3f00">-3, +3
+-3, +3</characteristic>
+        <characteristic name="D" typeId="f994-dfa3-122c-9cc5">3</characteristic>
+        <characteristic name="Abilities" typeId="3c47-c04c-8dfd-a691"/>
       </characteristics>
-      <comment>[Area of Effect 4&quot;]</comment>
     </profile>
-    <profile name="H-02 Gatling Blaster" typeId="35f7-4412-69cb-9d6a" typeName="Weapons" hidden="false" id="c9ac-0d36-17bc-1e52">
+    <profile name="T-77 Assimilator" typeId="a0cc-e27d-0e47-b400" typeName="Unit" hidden="false" id="6d4b-45fd-7be0-77c0">
       <characteristics>
-        <characteristic name="R" typeId="8723-19bb-bcce-5f94">12&quot;</characteristic>
-        <characteristic name="Att" typeId="0a3b-93a6-7ca6-c930">14</characteristic>
-        <characteristic name="Acc" typeId="4bca-fe29-753e-511f">4+</characteristic>
-        <characteristic name="AP" typeId="46da-1060-daef-3f00">+2, +1
-+1, -1</characteristic>
-        <characteristic name="D" typeId="f994-dfa3-122c-9cc5">1</characteristic>
-        <characteristic name="Abilities" typeId="3c47-c04c-8dfd-a691">Full-auto 6</characteristic>
-      </characteristics>
-      <comment>[Full-Auto-2]</comment>
-    </profile>
-    <profile name="F-77 Scout-Machine" typeId="a0cc-e27d-0e47-b400" typeName="Unit" hidden="false" id="ffc1-f179-749b-17e7">
-      <characteristics>
-        <characteristic name="SV" typeId="24b4-ca44-ffb5-c3f4">4+</characteristic>
+        <characteristic name="SV" typeId="24b4-ca44-ffb5-c3f4">2+</characteristic>
         <characteristic name="DS" typeId="1535-83cf-b8fe-b1ce">0</characteristic>
-        <characteristic name="HP" typeId="a109-7c01-200f-cc2d">1</characteristic>
-        <characteristic name="MV" typeId="6972-eaad-7147-252f">8&quot;</characteristic>
+        <characteristic name="HP" typeId="a109-7c01-200f-cc2d">10</characteristic>
+        <characteristic name="MV" typeId="6972-eaad-7147-252f">6&quot;</characteristic>
         <characteristic name="Footprint" typeId="1a99-d265-660f-2eb3">Small</characteristic>
       </characteristics>
     </profile>
-    <profile name="F-77 Repeater" typeId="35f7-4412-69cb-9d6a" typeName="Weapons" hidden="false" id="414c-dbe6-1037-3ea4">
+    <profile name="T-77 Focus Blaster" typeId="35f7-4412-69cb-9d6a" typeName="Weapons" hidden="false" id="35e5-ef05-d37b-e1b5">
       <characteristics>
-        <characteristic name="R" typeId="8723-19bb-bcce-5f94">8&quot;</characteristic>
-        <characteristic name="Att" typeId="0a3b-93a6-7ca6-c930">2</characteristic>
-        <characteristic name="Acc" typeId="4bca-fe29-753e-511f">5+</characteristic>
-        <characteristic name="AP" typeId="46da-1060-daef-3f00">+0, -1
-+0, -1</characteristic>
-        <characteristic name="D" typeId="f994-dfa3-122c-9cc5">1</characteristic>
-        <characteristic name="Abilities" typeId="3c47-c04c-8dfd-a691">Anti infantry 1</characteristic>
+        <characteristic name="R" typeId="8723-19bb-bcce-5f94">12&quot;</characteristic>
+        <characteristic name="Att" typeId="0a3b-93a6-7ca6-c930">4</characteristic>
+        <characteristic name="Acc" typeId="4bca-fe29-753e-511f">3+</characteristic>
+        <characteristic name="AP" typeId="46da-1060-daef-3f00">+2, +1
++2, +1</characteristic>
+        <characteristic name="D" typeId="f994-dfa3-122c-9cc5">2</characteristic>
+        <characteristic name="Abilities" typeId="3c47-c04c-8dfd-a691"/>
       </characteristics>
-      <comment>[Anti-infantry-1]</comment>
+    </profile>
+    <profile name="H-09 Shelltread" typeId="a0cc-e27d-0e47-b400" typeName="Unit" hidden="false" id="1b2c-dc5a-4ca8-51cb">
+      <characteristics>
+        <characteristic name="SV" typeId="24b4-ca44-ffb5-c3f4">3+</characteristic>
+        <characteristic name="DS" typeId="1535-83cf-b8fe-b1ce">0</characteristic>
+        <characteristic name="HP" typeId="a109-7c01-200f-cc2d">6</characteristic>
+        <characteristic name="MV" typeId="6972-eaad-7147-252f">6&quot;</characteristic>
+        <characteristic name="Footprint" typeId="1a99-d265-660f-2eb3">Medium</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="H-09 Artillery Battery" typeId="35f7-4412-69cb-9d6a" typeName="Weapons" hidden="false" id="c3da-8b49-76cd-f25e">
+      <characteristics>
+        <characteristic name="R" typeId="8723-19bb-bcce-5f94">30&quot;</characteristic>
+        <characteristic name="Att" typeId="0a3b-93a6-7ca6-c930">5</characteristic>
+        <characteristic name="Acc" typeId="4bca-fe29-753e-511f">4+</characteristic>
+        <characteristic name="AP" typeId="46da-1060-daef-3f00">+3, +1
++3, +1</characteristic>
+        <characteristic name="D" typeId="f994-dfa3-122c-9cc5">2</characteristic>
+        <characteristic name="Abilities" typeId="3c47-c04c-8dfd-a691">Stationary, Indirect, Area of Effect 3&quot;</characteristic>
+      </characteristics>
+      <comment>[Stationary, Indirect, Area of Effect 3&quot;]</comment>
+    </profile>
+    <profile name="H-05 Rippertread" typeId="a0cc-e27d-0e47-b400" typeName="Unit" hidden="false" id="db02-8b66-9dd1-065e">
+      <characteristics>
+        <characteristic name="SV" typeId="24b4-ca44-ffb5-c3f4">3+</characteristic>
+        <characteristic name="DS" typeId="1535-83cf-b8fe-b1ce">0</characteristic>
+        <characteristic name="HP" typeId="a109-7c01-200f-cc2d">5</characteristic>
+        <characteristic name="MV" typeId="6972-eaad-7147-252f">8&quot;</characteristic>
+        <characteristic name="Footprint" typeId="1a99-d265-660f-2eb3">Large</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="H-05 Cannon" typeId="35f7-4412-69cb-9d6a" typeName="Weapons" hidden="false" id="08ab-5981-2182-ed91">
+      <characteristics>
+        <characteristic name="R" typeId="8723-19bb-bcce-5f94">12&quot;</characteristic>
+        <characteristic name="Att" typeId="0a3b-93a6-7ca6-c930">8</characteristic>
+        <characteristic name="Acc" typeId="4bca-fe29-753e-511f">4+</characteristic>
+        <characteristic name="AP" typeId="46da-1060-daef-3f00">-1, +2
+-1, +2</characteristic>
+        <characteristic name="D" typeId="f994-dfa3-122c-9cc5">1</characteristic>
+        <characteristic name="Abilities" typeId="3c47-c04c-8dfd-a691"/>
+      </characteristics>
     </profile>
   </sharedProfiles>
   <entryLinks>
-    <entryLink import="true" name="F-00 Officer Unit" hidden="false" id="b0d4-108c-4263-55e0" targetId="00b4-fce6-ccc0-663a" type="selectionEntry"/>
+    <entryLink import="true" name="F-00 Admin Unit" hidden="false" id="b0d4-108c-4263-55e0" targetId="00b4-fce6-ccc0-663a" type="selectionEntry"/>
     <entryLink import="true" name="F-12 War-Machine Unit" hidden="false" id="8e8c-2e1e-f209-47bd" targetId="a719-9466-8ee3-5e09" type="selectionEntry"/>
     <entryLink import="true" name="H-03 Helltread Unit" hidden="false" id="404f-6483-3fad-2d93" targetId="bf2a-93d7-a637-0525" type="selectionEntry"/>
     <entryLink import="true" name="F-15 Rocket-Machine Unit" hidden="false" id="4428-262a-93dd-a0ad" targetId="f771-121f-b83e-6a5d" type="selectionEntry"/>
     <entryLink import="true" name="H-02 Darktread Unit" hidden="false" id="fd6d-3196-ecb7-fb63" targetId="5f5f-de29-0e30-2115" type="selectionEntry"/>
-    <entryLink import="true" name="F-77 Scout-Machine Unit" hidden="false" id="8adf-56dc-cecd-443d" targetId="3768-9001-18a1-f2a2" type="selectionEntry"/>
+    <entryLink import="true" name="H-09 Shelltread Unit" hidden="false" id="b22a-b21f-6814-15d8" targetId="729c-50c4-b597-a40a" type="selectionEntry"/>
+    <entryLink import="true" name="T-77 Assimilator Unit" hidden="false" id="e0f5-82f5-85ea-3a08" targetId="2e28-a64a-d1d9-1bef" type="selectionEntry"/>
+    <entryLink import="true" name="H-05 Rippertread Unit" hidden="false" id="deea-500c-16c4-a4a2" targetId="0f73-51fd-8d98-5956" type="selectionEntry"/>
   </entryLinks>
 </catalogue>

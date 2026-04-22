@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="827d-d66f-3aea-6f4a" name="Solar Corps" gameSystemId="sys-4d6c-ac3c-296b-de59" gameSystemRevision="9" revision="1" authorName="SyPhase" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="827d-d66f-3aea-6f4a" name="Solar Corps" gameSystemId="sys-4d6c-ac3c-296b-de59" gameSystemRevision="9" revision="2" authorName="SyPhase" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" hidden="false">
   <sharedProfiles>
     <profile name="Solar Riflemen" typeId="a0cc-e27d-0e47-b400" typeName="Unit" hidden="false" id="87c0-061a-2dd9-d9be">
       <characteristics>
@@ -110,7 +110,7 @@
       <selectionEntries>
         <selectionEntry type="unit" import="true" name="Solar Riflemen Squad" hidden="false" id="c74a-0ecb-bee7-dbde">
           <infoLinks>
-            <infoLink name="Riflemen" id="fd84-55d8-449f-0a52" hidden="false" type="profile" targetId="87c0-061a-2dd9-d9be"/>
+            <infoLink name="Solar Riflemen" id="fd84-55d8-449f-0a52" hidden="false" type="profile" targetId="87c0-061a-2dd9-d9be"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Solar Riflemen" hidden="false" id="cd2e-89d0-3ded-9883">

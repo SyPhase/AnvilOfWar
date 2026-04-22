@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-4d6c-ac3c-296b-de59" name="Anvil Of War" battleScribeVersion="2.03" revision="9" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Pierce Kester" authorContact="bulletgiraffe@gmail.com" authorUrl="bulletgiraffe.com" publicationId="5911-3a66-ec62-32e6">
+<gameSystem id="sys-4d6c-ac3c-296b-de59" name="Anvil Of War" battleScribeVersion="2.03" revision="10" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Pierce Kester" authorContact="bulletgiraffe@gmail.com" authorUrl="bulletgiraffe.com" publicationId="5911-3a66-ec62-32e6">
   <categoryEntries>
     <categoryEntry name="Infantry" id="86d7-e31a-0e12-cc05" hidden="false"/>
     <categoryEntry name="Vehicle" id="892b-3ede-432c-1fff" hidden="false"/>
@@ -7,6 +7,15 @@
     <categoryEntry name="Faction Leader" id="0214-30a6-f341-ee7f" hidden="false"/>
     <categoryEntry name="Light" id="59ea-6f10-a33e-30f1" hidden="false"/>
     <categoryEntry name="Heavy" id="b9c5-1770-e28a-db52" hidden="false"/>
+    <categoryEntry name="Small" id="9398-0362-f8ff-9b2c" hidden="false">
+      <comment>Footprint</comment>
+    </categoryEntry>
+    <categoryEntry name="Medium" id="9dbc-8ba4-9d45-609d" hidden="false">
+      <comment>Footprint</comment>
+    </categoryEntry>
+    <categoryEntry name="Large" id="5436-0243-0990-7af4" hidden="false">
+      <comment>Footprint</comment>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Galactic Conquest" id="2936-ac7b-690d-0867" hidden="false" sortIndex="2">
@@ -72,9 +81,6 @@
     <costType name="Unit Capacity" id="f7d6-c8d5-b008-4866" defaultCostLimit="-1">
       <comment>Maximum Unit Capacity</comment>
     </costType>
-    <costType name="currency" id="2439-1aa3-efd7-29d0" defaultCostLimit="-1">
-      <comment>points</comment>
-    </costType>
   </costTypes>
   <profileTypes>
     <profileType name="Unit" id="a0cc-e27d-0e47-b400" hidden="false" kind="model">
@@ -83,7 +89,6 @@
         <characteristicType name="DS" id="1535-83cf-b8fe-b1ce"/>
         <characteristicType name="HP" id="a109-7c01-200f-cc2d"/>
         <characteristicType name="MV" id="6972-eaad-7147-252f"/>
-        <characteristicType name="Footprint" id="1a99-d265-660f-2eb3"/>
       </characteristicTypes>
     </profileType>
     <profileType name="Weapons" id="35f7-4412-69cb-9d6a" hidden="false" kind="weapon">

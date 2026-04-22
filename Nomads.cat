@@ -1,0 +1,1152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="5baa-f9b1-a199-b07e" name="Nomads" gameSystemId="sys-4d6c-ac3c-296b-de59" gameSystemRevision="9" revision="1" authorName="SyPhase" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <sharedProfiles>
+    <profile name="The Hijacker" typeId="a0cc-e27d-0e47-b400" typeName="Unit" hidden="false" id="224f-893b-3568-904b">
+      <characteristics>
+        <characteristic name="SV" typeId="24b4-ca44-ffb5-c3f4">2+</characteristic>
+        <characteristic name="DS" typeId="1535-83cf-b8fe-b1ce">0</characteristic>
+        <characteristic name="HP" typeId="a109-7c01-200f-cc2d">8</characteristic>
+        <characteristic name="MV" typeId="6972-eaad-7147-252f">9&quot;</characteristic>
+        <characteristic name="Footprint" typeId="1a99-d265-660f-2eb3">Small</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="The Hijacker&apos;s Deconstructor" typeId="35f7-4412-69cb-9d6a" typeName="Weapons" hidden="false" id="4019-a5b1-d7f9-d5d4">
+      <characteristics>
+        <characteristic name="R" typeId="8723-19bb-bcce-5f94">12&quot;</characteristic>
+        <characteristic name="Att" typeId="0a3b-93a6-7ca6-c930">5</characteristic>
+        <characteristic name="Acc" typeId="4bca-fe29-753e-511f">3+</characteristic>
+        <characteristic name="AP" typeId="46da-1060-daef-3f00">+1, +3
++1, +3</characteristic>
+        <characteristic name="D" typeId="f994-dfa3-122c-9cc5">1</characteristic>
+        <characteristic name="Abilities" typeId="3c47-c04c-8dfd-a691"/>
+      </characteristics>
+    </profile>
+    <profile name="Borrow Indefinitely" typeId="7e76-2916-e877-fd40" typeName="Active (Special Abilities)" hidden="false" id="6a66-2ce7-b78c-0747">
+      <characteristics>
+        <characteristic name="Description" typeId="3437-636f-e6aa-d7ea">Once per battle, if a non-hero enemy vehicle model is within 3&quot; of this squad, you may target that vehicle to &apos;borrow.&apos; When you &apos;borrow&apos; a vehicle, that vehicle counts as being destroyed. When it is removed from the battlefield, remove the hijacker from the battlefield, then set up a copy of the destroyed vehicle under your control with the same amount of remaining HP as close as possible to where it was removed from play. That vehicle remains under your control until destroyed. When that vehicle is destroyed, the hijacker is set up on the battlefield as close as possible to where that vehicle was destroyed.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Descender Officer" typeId="a0cc-e27d-0e47-b400" typeName="Unit" hidden="false" id="73c5-7e03-79cd-47c6">
+      <characteristics>
+        <characteristic name="SV" typeId="24b4-ca44-ffb5-c3f4">3+</characteristic>
+        <characteristic name="DS" typeId="1535-83cf-b8fe-b1ce">0</characteristic>
+        <characteristic name="HP" typeId="a109-7c01-200f-cc2d">1</characteristic>
+        <characteristic name="MV" typeId="6972-eaad-7147-252f">9&quot;</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Officer Rifle" typeId="35f7-4412-69cb-9d6a" typeName="Weapons" hidden="false" id="d9ec-2cdd-f9e2-5c6a">
+      <characteristics>
+        <characteristic name="R" typeId="8723-19bb-bcce-5f94">18&quot;</characteristic>
+        <characteristic name="Att" typeId="0a3b-93a6-7ca6-c930">1</characteristic>
+        <characteristic name="Acc" typeId="4bca-fe29-753e-511f">4+</characteristic>
+        <characteristic name="AP" typeId="46da-1060-daef-3f00">+1, -1
++1, -1</characteristic>
+        <characteristic name="D" typeId="f994-dfa3-122c-9cc5">1</characteristic>
+        <characteristic name="Abilities" typeId="3c47-c04c-8dfd-a691"/>
+      </characteristics>
+    </profile>
+    <profile name="Recon Scan Results" typeId="4720-4964-f773-3509" typeName="Passive (Special Abilities)" hidden="false" id="26c3-f475-e0d4-8ed3">
+      <characteristics>
+        <characteristic name="Description" typeId="bc7d-10a5-15e8-e96d">While this squad is on the battlefield, infantry squads in your army have the passive ability stealthy.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Trailblazer" typeId="a0cc-e27d-0e47-b400" typeName="Unit" hidden="false" id="0036-9234-93cf-31d7">
+      <characteristics>
+        <characteristic name="SV" typeId="24b4-ca44-ffb5-c3f4">4+</characteristic>
+        <characteristic name="DS" typeId="1535-83cf-b8fe-b1ce">0</characteristic>
+        <characteristic name="HP" typeId="a109-7c01-200f-cc2d">1</characteristic>
+        <characteristic name="MV" typeId="6972-eaad-7147-252f">9&quot;</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Copter Mounted Repeater" typeId="35f7-4412-69cb-9d6a" typeName="Weapons" hidden="false" id="fb01-79d2-43e5-0974">
+      <characteristics>
+        <characteristic name="R" typeId="8723-19bb-bcce-5f94">12&quot;</characteristic>
+        <characteristic name="Att" typeId="0a3b-93a6-7ca6-c930">5</characteristic>
+        <characteristic name="Acc" typeId="4bca-fe29-753e-511f">4+</characteristic>
+        <characteristic name="AP" typeId="46da-1060-daef-3f00">+1, 0
++1, 0</characteristic>
+        <characteristic name="D" typeId="f994-dfa3-122c-9cc5">1</characteristic>
+        <characteristic name="Abilities" typeId="3c47-c04c-8dfd-a691"/>
+      </characteristics>
+    </profile>
+    <profile name="Redeploy" typeId="7e76-2916-e877-fd40" typeName="Active (Special Abilities)" hidden="false" id="4140-d4b6-34e2-47d3">
+      <characteristics>
+        <characteristic name="Description" typeId="3437-636f-e6aa-d7ea">If this squad is within range of a landing pad under your control, you may remove them from the battlefield then deploy them on any other landing pad under your control.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Rocketeer" typeId="a0cc-e27d-0e47-b400" typeName="Unit" hidden="false" id="0c53-86f6-0e23-1729">
+      <characteristics>
+        <characteristic name="SV" typeId="24b4-ca44-ffb5-c3f4">4+</characteristic>
+        <characteristic name="DS" typeId="1535-83cf-b8fe-b1ce">0</characteristic>
+        <characteristic name="HP" typeId="a109-7c01-200f-cc2d">1</characteristic>
+        <characteristic name="MV" typeId="6972-eaad-7147-252f">9&quot;</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Rocketeer Launcher" typeId="35f7-4412-69cb-9d6a" typeName="Weapons" hidden="false" id="ca6b-b29c-7f8b-7014">
+      <characteristics>
+        <characteristic name="R" typeId="8723-19bb-bcce-5f94">24&quot;</characteristic>
+        <characteristic name="Att" typeId="0a3b-93a6-7ca6-c930">1</characteristic>
+        <characteristic name="Acc" typeId="4bca-fe29-753e-511f">4+</characteristic>
+        <characteristic name="AP" typeId="46da-1060-daef-3f00">-2, +2
+-2, +2</characteristic>
+        <characteristic name="D" typeId="f994-dfa3-122c-9cc5">2</characteristic>
+        <characteristic name="Abilities" typeId="3c47-c04c-8dfd-a691">Anti-Heavy 1</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Dune Buggy" typeId="a0cc-e27d-0e47-b400" typeName="Unit" hidden="false" id="68a7-1b8f-ca85-f04b">
+      <characteristics>
+        <characteristic name="SV" typeId="24b4-ca44-ffb5-c3f4">4+</characteristic>
+        <characteristic name="DS" typeId="1535-83cf-b8fe-b1ce">0</characteristic>
+        <characteristic name="HP" typeId="a109-7c01-200f-cc2d">3</characteristic>
+        <characteristic name="MV" typeId="6972-eaad-7147-252f">18&quot;</characteristic>
+        <characteristic name="Footprint" typeId="1a99-d265-660f-2eb3">Small</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Buggy Mounted Repeater" typeId="35f7-4412-69cb-9d6a" typeName="Weapons" hidden="false" id="dabc-528a-54da-fffb">
+      <characteristics>
+        <characteristic name="R" typeId="8723-19bb-bcce-5f94">12&quot;</characteristic>
+        <characteristic name="Att" typeId="0a3b-93a6-7ca6-c930">3</characteristic>
+        <characteristic name="Acc" typeId="4bca-fe29-753e-511f">4+</characteristic>
+        <characteristic name="AP" typeId="46da-1060-daef-3f00">+2, 0
++2, 0</characteristic>
+        <characteristic name="D" typeId="f994-dfa3-122c-9cc5">1</characteristic>
+        <characteristic name="Abilities" typeId="3c47-c04c-8dfd-a691"/>
+      </characteristics>
+    </profile>
+    <profile name="Hit n&apos; Run" typeId="7e76-2916-e877-fd40" typeName="Active (Special Abilities)" hidden="false" id="6d71-3689-2011-4ff7">
+      <characteristics>
+        <characteristic name="Description" typeId="3437-636f-e6aa-d7ea">This squad may make an attack with the &quot;Buggy Sticky Detonator&quot; weapon. If it does, after the attack sequence is resolved, it may perform a move of 9&quot;.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Buggy Sticky Detonator" typeId="35f7-4412-69cb-9d6a" typeName="Weapons" hidden="false" id="25c2-7bb8-869b-2770">
+      <characteristics>
+        <characteristic name="R" typeId="8723-19bb-bcce-5f94">3&quot;</characteristic>
+        <characteristic name="Att" typeId="0a3b-93a6-7ca6-c930">3</characteristic>
+        <characteristic name="Acc" typeId="4bca-fe29-753e-511f">3+</characteristic>
+        <characteristic name="AP" typeId="46da-1060-daef-3f00">0, +2
+0, +2</characteristic>
+        <characteristic name="D" typeId="f994-dfa3-122c-9cc5">1</characteristic>
+        <characteristic name="Abilities" typeId="3c47-c04c-8dfd-a691">Anti-Vehicle 1</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Mobile Artillery" typeId="a0cc-e27d-0e47-b400" typeName="Unit" hidden="false" id="cf24-083b-1a5b-986f">
+      <characteristics>
+        <characteristic name="SV" typeId="24b4-ca44-ffb5-c3f4">5+</characteristic>
+        <characteristic name="DS" typeId="1535-83cf-b8fe-b1ce">0</characteristic>
+        <characteristic name="HP" typeId="a109-7c01-200f-cc2d">5</characteristic>
+        <characteristic name="MV" typeId="6972-eaad-7147-252f">12&quot;</characteristic>
+        <characteristic name="Footprint" typeId="1a99-d265-660f-2eb3">Small</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Artillery Barrage" typeId="35f7-4412-69cb-9d6a" typeName="Weapons" hidden="false" id="1977-fbc9-1e22-456b">
+      <characteristics>
+        <characteristic name="R" typeId="8723-19bb-bcce-5f94">30&quot;</characteristic>
+        <characteristic name="Att" typeId="0a3b-93a6-7ca6-c930">5</characteristic>
+        <characteristic name="Acc" typeId="4bca-fe29-753e-511f">5+</characteristic>
+        <characteristic name="AP" typeId="46da-1060-daef-3f00">+2, +2
++2, +2</characteristic>
+        <characteristic name="D" typeId="f994-dfa3-122c-9cc5">2</characteristic>
+        <characteristic name="Abilities" typeId="3c47-c04c-8dfd-a691">Steady, Indirect, Area of Effect 3&quot;</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Scout Copter" typeId="a0cc-e27d-0e47-b400" typeName="Unit" hidden="false" id="5385-e1c1-ccc2-e02e">
+      <characteristics>
+        <characteristic name="SV" typeId="24b4-ca44-ffb5-c3f4">3+</characteristic>
+        <characteristic name="DS" typeId="1535-83cf-b8fe-b1ce">0</characteristic>
+        <characteristic name="HP" typeId="a109-7c01-200f-cc2d">3</characteristic>
+        <characteristic name="MV" typeId="6972-eaad-7147-252f">24&quot;</characteristic>
+        <characteristic name="Footprint" typeId="1a99-d265-660f-2eb3">Medium</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Trailblazer Rifle" typeId="35f7-4412-69cb-9d6a" typeName="Weapons" hidden="false" id="37b3-bb2d-e1cc-c8ce">
+      <characteristics>
+        <characteristic name="R" typeId="8723-19bb-bcce-5f94">18&quot;</characteristic>
+        <characteristic name="Att" typeId="0a3b-93a6-7ca6-c930">1</characteristic>
+        <characteristic name="Acc" typeId="4bca-fe29-753e-511f">4+</characteristic>
+        <characteristic name="AP" typeId="46da-1060-daef-3f00">+1, -1
++1, -1</characteristic>
+        <characteristic name="D" typeId="f994-dfa3-122c-9cc5">1</characteristic>
+        <characteristic name="Abilities" typeId="3c47-c04c-8dfd-a691"/>
+      </characteristics>
+    </profile>
+    <profile name="Armor ATV" typeId="a0cc-e27d-0e47-b400" typeName="Unit" hidden="false" id="e69e-6632-3e45-da15">
+      <characteristics>
+        <characteristic name="SV" typeId="24b4-ca44-ffb5-c3f4">3+</characteristic>
+        <characteristic name="DS" typeId="1535-83cf-b8fe-b1ce">0</characteristic>
+        <characteristic name="HP" typeId="a109-7c01-200f-cc2d">6</characteristic>
+        <characteristic name="MV" typeId="6972-eaad-7147-252f">12&quot;</characteristic>
+        <characteristic name="Footprint" typeId="1a99-d265-660f-2eb3">Medium</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="ATV Heavy Rifle" typeId="35f7-4412-69cb-9d6a" typeName="Weapons" hidden="false" id="dcc0-87b2-d39a-9c9a">
+      <characteristics>
+        <characteristic name="R" typeId="8723-19bb-bcce-5f94">18&quot;</characteristic>
+        <characteristic name="Att" typeId="0a3b-93a6-7ca6-c930">2</characteristic>
+        <characteristic name="Acc" typeId="4bca-fe29-753e-511f">4+</characteristic>
+        <characteristic name="AP" typeId="46da-1060-daef-3f00">-3, 0
++2, +2</characteristic>
+        <characteristic name="D" typeId="f994-dfa3-122c-9cc5">2</characteristic>
+        <characteristic name="Abilities" typeId="3c47-c04c-8dfd-a691"/>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+  <sharedSelectionEntries>
+    <selectionEntry type="unit" import="true" name="The Hijacker Unit" hidden="false" id="ff56-d8a4-f839-432e" subType="unit-group">
+      <categoryLinks>
+        <categoryLink name="Hero" hidden="false" id="b7dc-1cab-7cf9-9462" targetId="0a6c-1e81-5f9d-3240" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Unit Capacity" typeId="f7d6-c8d5-b008-4866" value="1"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="unit" import="true" name="The Hijacker Squad" hidden="false" id="b8b6-b2dc-60aa-a02b">
+          <infoLinks>
+            <infoLink name="The Hijacker" id="4145-72f1-fd78-956b" hidden="false" type="profile" targetId="224f-893b-3568-904b"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="The Hijacker" hidden="false" id="4bf7-e11a-1059-7302" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d90f-2eb5-f0a4-98c0"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e6d7-3e25-10a9-c487"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="The Hijacker&apos;s Deconstructor" hidden="false" id="4375-89c9-7cac-e2b2">
+                  <infoLinks>
+                    <infoLink name="The Hijacker&apos;s Deconstructor" id="3910-6239-dd6c-7d59" hidden="false" type="profile" targetId="4019-a5b1-d7f9-d5d4"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b9d0-0fd6-6f2a-275f"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f5fb-ea09-c54e-4db7"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Special Ability (Borrow Indefinitely)" hidden="false" id="8f3f-2c19-94a2-7a74" sortIndex="3">
+              <infoLinks>
+                <infoLink name="Borrow Indefinitely" id="4d80-de5f-26bb-b7fa" hidden="false" type="profile" targetId="6a66-2ce7-b78c-0747"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7df7-5ca6-2dab-38cb"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="8247-0b02-82f0-ec03" targetId="0a6c-1e81-5f9d-3240" primary="false"/>
+            <categoryLink name="Infantry" hidden="false" id="60a7-a3ec-724e-964a" targetId="86d7-e31a-0e12-cc05" primary="false"/>
+            <categoryLink targetId="59ea-6f10-a33e-30f1" id="24d5-e103-6afe-9795" primary="false" name="Light"/>
+            <categoryLink targetId="9398-0362-f8ff-9b2c" id="6fea-81ba-1724-0d8b" primary="false" name="Small"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2c2d-d29d-5c15-2c86"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5fe8-f4a1-4cdd-e707"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <comment>Squads: 1, Models: 1</comment>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Descender Officer Unit" hidden="false" id="5d81-68df-e7e1-a51d" subType="unit-group">
+      <categoryLinks>
+        <categoryLink name="Infantry" hidden="false" id="3683-7dc9-27e0-786e" targetId="86d7-e31a-0e12-cc05" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Unit Capacity" typeId="f7d6-c8d5-b008-4866" value="1"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="unit" import="true" name="Descender Officer Squad" hidden="false" id="1156-7179-822d-8704">
+          <infoLinks>
+            <infoLink name="Descender Officer" id="da00-21a8-d30f-c9e4" hidden="false" type="profile" targetId="73c5-7e03-79cd-47c6"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Descender Officer" hidden="false" id="5b15-8642-ed78-1705" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="22f3-2bd6-8200-bc34"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="272d-2bd8-3899-ae47"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Officer Rifle" hidden="false" id="a961-1b5b-f6b0-3004">
+                  <infoLinks>
+                    <infoLink name="Officer Rifle" id="c55c-70c3-a587-bb5c" hidden="false" type="profile" targetId="d9ec-2cdd-f9e2-5c6a"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c3d9-d660-18ed-2f89"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5777-21b9-713a-693d"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Descender Escort" hidden="false" id="c989-af9a-2364-4884" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="16da-b79a-4af7-95aa"/>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="fd57-655d-5950-a792"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Officer Rifle" hidden="false" id="ae8b-76de-0fce-fc27">
+                  <infoLinks>
+                    <infoLink name="Officer Rifle" id="96d3-1ce9-ec8a-1f66" hidden="false" type="profile" targetId="d9ec-2cdd-f9e2-5c6a"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e1d3-0df9-cae9-96f2"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="24d9-7c4c-c8a1-5c63"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Special Ability (Recon Scan Results)" hidden="false" id="4b28-b303-291c-cae1" sortIndex="3">
+              <infoLinks>
+                <infoLink name="Recon Scan Results" id="28c4-ef04-000c-580f" hidden="false" type="profile" targetId="26c3-f475-e0d4-8ed3"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="09dd-4cb6-8d66-8189"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Infantry" hidden="false" id="e5a1-ec36-8b76-ac29" targetId="86d7-e31a-0e12-cc05" primary="false"/>
+            <categoryLink targetId="59ea-6f10-a33e-30f1" id="a236-17f5-219d-f07d" primary="false" name="Light"/>
+            <categoryLink targetId="9398-0362-f8ff-9b2c" id="7a76-4d0d-5d22-08e4" primary="false" name="Small"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c663-a898-8e4e-1b2b"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2632-b47d-41ba-06d3"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <comment>Squads: 1, Models: 5</comment>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Trailblazer Unit" hidden="false" id="b65d-8914-faae-d700" subType="unit-group">
+      <categoryLinks>
+        <categoryLink name="Infantry" hidden="false" id="2c1a-abe4-ada2-40cb" targetId="86d7-e31a-0e12-cc05" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="unit" import="true" name="Trailblazer Squad" hidden="false" id="5503-95ed-be93-230d">
+          <infoLinks>
+            <infoLink name="Trailblazer" id="0ddc-d41d-f03f-d61b" hidden="false" type="profile" targetId="0036-9234-93cf-31d7"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Trailblazer" hidden="false" id="c558-316b-3fac-7725">
+              <constraints>
+                <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="3e82-b506-1f6e-b2fc"/>
+                <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="c993-48ba-2548-93a1"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Trailblazer Rifle" hidden="false" id="a710-3723-0a19-410f">
+                  <infoLinks>
+                    <infoLink name="Trailblazer Rifle" id="a1f1-f55c-aa59-98ca" hidden="false" type="profile" targetId="37b3-bb2d-e1cc-c8ce"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d0ee-a2b2-1d9f-88f3"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0307-d798-58dc-7f43"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Special Ability (Redeploy)" hidden="false" id="4922-0b14-411f-4f98">
+              <infoLinks>
+                <infoLink name="Redeploy" id="bfe9-2cd6-a828-0657" hidden="false" type="profile" targetId="4140-d4b6-34e2-47d3"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9b73-2003-82ee-efee"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Infantry" hidden="false" id="cbc3-a75f-1a4c-a3fb" targetId="86d7-e31a-0e12-cc05" primary="false"/>
+            <categoryLink targetId="59ea-6f10-a33e-30f1" id="ccbb-2731-e6a6-d2c9" primary="false" name="Light"/>
+            <categoryLink targetId="9398-0362-f8ff-9b2c" id="275c-cb00-995a-7aca" primary="false" name="Small"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e55f-cd5e-0738-e896"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e6ac-6ec9-b9d0-d317"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Trailblazer Squad" hidden="false" id="7b50-bb0e-26e7-6dd2">
+          <infoLinks>
+            <infoLink name="Trailblazer" id="ecbc-f8bc-7a22-9e28" hidden="false" type="profile" targetId="0036-9234-93cf-31d7"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Trailblazer" hidden="false" id="c2d4-3cbc-c852-5e52">
+              <constraints>
+                <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="8b8d-7917-afcc-4619"/>
+                <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="3e50-c97e-baeb-b584"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Trailblazer Rifle" hidden="false" id="f87e-40be-b5c9-8f1b">
+                  <infoLinks>
+                    <infoLink name="Trailblazer Rifle" id="0074-d0bf-e7e7-8cff" hidden="false" type="profile" targetId="37b3-bb2d-e1cc-c8ce"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b0b0-89bc-c37d-35be"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b3d4-b24a-6dc3-d724"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Special Ability (Redeploy)" hidden="false" id="4a82-a293-7f79-2fe7">
+              <infoLinks>
+                <infoLink name="Redeploy" id="c1fa-1b5d-425f-fbe7" hidden="false" type="profile" targetId="4140-d4b6-34e2-47d3"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1057-cf2f-9f6c-4127"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Infantry" hidden="false" id="9f9e-c311-ed3a-21bb" targetId="86d7-e31a-0e12-cc05" primary="false"/>
+            <categoryLink name="Light" hidden="false" id="daab-a8a4-63cd-b893" targetId="59ea-6f10-a33e-30f1" primary="false"/>
+            <categoryLink targetId="9398-0362-f8ff-9b2c" id="85fa-a402-f846-4fa1" primary="false" name="Small"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="65c3-cc14-3b4f-24af"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b90e-fa5c-81a0-251b"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Trailblazer Squad" hidden="false" id="d088-9a6e-1f07-4792">
+          <infoLinks>
+            <infoLink name="Trailblazer" id="bfa4-4f8b-d115-b88f" hidden="false" type="profile" targetId="0036-9234-93cf-31d7"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Trailblazer" hidden="false" id="2860-6bdc-5846-4d2b">
+              <constraints>
+                <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="0b0a-92ff-2403-1e27"/>
+                <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="87aa-675b-37dd-a64a"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Trailblazer Rifle" hidden="false" id="eb25-0435-3ee3-1afa">
+                  <infoLinks>
+                    <infoLink name="Trailblazer Rifle" id="4135-ed6a-f5ef-d76c" hidden="false" type="profile" targetId="37b3-bb2d-e1cc-c8ce"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b0f2-924b-caa0-c36e"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aa87-bc81-82fc-6c0c"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Special Ability (Redeploy)" hidden="false" id="b108-bc30-d037-0454">
+              <infoLinks>
+                <infoLink name="Redeploy" id="4605-521e-b708-b9be" hidden="false" type="profile" targetId="4140-d4b6-34e2-47d3"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="807a-4ea4-1f13-1cf0"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Infantry" hidden="false" id="6563-de9c-28f7-6ece" targetId="86d7-e31a-0e12-cc05" primary="false"/>
+            <categoryLink name="Light" hidden="false" id="4014-3e5c-6715-78e3" targetId="59ea-6f10-a33e-30f1" primary="false"/>
+            <categoryLink targetId="9398-0362-f8ff-9b2c" id="d3ae-241e-778a-1baa" primary="false" name="Small"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fa79-c319-4640-eb4b"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="289b-31e2-5c5f-4035"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Unit Capacity" typeId="f7d6-c8d5-b008-4866" value="1"/>
+      </costs>
+      <comment>Squads: 3, Models: 5</comment>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Rocketeer Unit" hidden="false" id="3404-701a-7d2c-0a5f" subType="unit-group">
+      <categoryLinks>
+        <categoryLink name="Infantry" hidden="false" id="ca56-695e-b2e5-1078" targetId="86d7-e31a-0e12-cc05" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="unit" import="true" name="Rocketeer Squad" hidden="false" id="f36d-e6fa-cf93-0110">
+          <infoLinks>
+            <infoLink name="Rocketeer" id="291b-d72f-d37d-a54b" hidden="false" type="profile" targetId="0c53-86f6-0e23-1729"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Rocketeer" hidden="false" id="398a-9e06-9024-0cc2">
+              <constraints>
+                <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="1eb0-c51b-c611-6cec"/>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="0bc0-334f-708c-ec9e"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Rocketeer Launcher" hidden="false" id="f026-e081-2749-fe64">
+                  <infoLinks>
+                    <infoLink name="Rocketeer Launcher" id="d18e-02d9-9c95-0431" hidden="false" type="profile" targetId="ca6b-b29c-7f8b-7014"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3ba6-da7b-eb82-8902"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="80ab-d3a6-f0de-3d02"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Infantry" hidden="false" id="9375-638a-4479-086d" targetId="86d7-e31a-0e12-cc05" primary="false"/>
+            <categoryLink targetId="59ea-6f10-a33e-30f1" id="1d91-9675-2515-5d98" primary="false" name="Light"/>
+            <categoryLink targetId="9398-0362-f8ff-9b2c" id="ebe9-27c9-6b98-7d82" primary="false" name="Small"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8ad6-4c1c-ea7c-ec78"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="165d-d784-9082-ded8"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Rocketeer Squad" hidden="false" id="05fd-1d3f-69e5-fcd3">
+          <infoLinks>
+            <infoLink name="Rocketeer" id="ad46-f9a4-fdb9-f6e4" hidden="false" type="profile" targetId="0c53-86f6-0e23-1729"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Rocketeer" hidden="false" id="01eb-0cfe-bb7a-9272">
+              <constraints>
+                <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="48f0-7721-c425-ad6e"/>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="adf9-9bba-1dac-4205"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Rocketeer Launcher" hidden="false" id="c62f-b14f-d094-6155">
+                  <infoLinks>
+                    <infoLink name="Rocketeer Launcher" id="cfef-0540-8a39-a5a8" hidden="false" type="profile" targetId="ca6b-b29c-7f8b-7014"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bad2-6125-c7ef-38f4"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5f11-ef3f-4336-409f"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Infantry" hidden="false" id="d0f8-64c1-9503-a2a9" targetId="86d7-e31a-0e12-cc05" primary="false"/>
+            <categoryLink name="Light" hidden="false" id="bd85-201a-5472-188f" targetId="59ea-6f10-a33e-30f1" primary="false"/>
+            <categoryLink targetId="9398-0362-f8ff-9b2c" id="1a20-446e-3c80-ecb2" primary="false" name="Small"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8e9d-d664-6e30-c7d7"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="682d-aaa2-ab8c-85f8"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Unit Capacity" typeId="f7d6-c8d5-b008-4866" value="1"/>
+      </costs>
+      <comment>Squads: 2, Models: 3</comment>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Dune Buggy Unit" hidden="false" id="ef69-7bff-cc1f-24fa" subType="unit-group">
+      <categoryLinks>
+        <categoryLink targetId="892b-3ede-432c-1fff" id="9464-9226-7137-da73" primary="true" name="Vehicle"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="unit" import="true" name="Dune Buggy Squad" hidden="false" id="f9de-78d8-f5f3-b4bf">
+          <infoLinks>
+            <infoLink name="Dune Buggy" id="9292-8b0d-5cd2-6f2d" hidden="false" type="profile" targetId="68a7-1b8f-ca85-f04b"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Dune Buggy" hidden="false" id="d6a7-c601-66b7-260a">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e2f9-f7a2-3bda-66ad"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1db4-0924-29b9-3ef0"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Buggy Mounted Repeater" hidden="false" id="77b6-e68c-4305-2496" sortIndex="1">
+                  <infoLinks>
+                    <infoLink name="Buggy Mounted Repeater" id="239e-fead-f68f-0339" hidden="false" type="profile" targetId="dabc-528a-54da-fffb"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="95dd-2f21-6c7d-968d"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d840-8e31-82b5-3141"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Buggy Sticky Detonator" hidden="false" id="6846-f5a0-4b3b-7c0f" sortIndex="2">
+                  <infoLinks>
+                    <infoLink name="Buggy Sticky Detonator" id="7e94-1c52-b90c-4061" hidden="false" type="profile" targetId="25c2-7bb8-869b-2770"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="923b-acaf-b1c4-16d9"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1096-7dd5-ec68-3e46"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Special Ability (Hit n&apos; Run)" hidden="false" id="5bf1-eadd-2f7f-ebf0">
+              <infoLinks>
+                <infoLink name="Hit n&apos; Run" id="6053-0b7b-a1cc-ec89" hidden="false" type="profile" targetId="6d71-3689-2011-4ff7"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3fc0-c878-a19a-571f"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink targetId="59ea-6f10-a33e-30f1" id="acb9-6afd-0aaf-df16" primary="false" name="Light"/>
+            <categoryLink targetId="892b-3ede-432c-1fff" id="03e4-ae99-6df7-0594" primary="false" name="Vehicle"/>
+            <categoryLink targetId="9398-0362-f8ff-9b2c" id="1d84-bb02-7fb9-078d" primary="false" name="Small"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a2f3-5dd8-0e67-84d3"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d4db-1250-ea18-7ce9"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Dune Buggy Squad" hidden="false" id="1e7b-5e79-7d2b-7e7e">
+          <infoLinks>
+            <infoLink name="Dune Buggy" id="a587-85e0-5dcf-f638" hidden="false" type="profile" targetId="68a7-1b8f-ca85-f04b"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Dune Buggy" hidden="false" id="e35f-2a72-a103-926b">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d3ad-3838-e109-02df"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ffca-be31-31c5-47d9"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Buggy Mounted Repeater" hidden="false" id="0b1d-fa9c-63bb-58d3" sortIndex="1">
+                  <infoLinks>
+                    <infoLink name="Buggy Mounted Repeater" id="94bf-e5d9-92f8-eac5" hidden="false" type="profile" targetId="dabc-528a-54da-fffb"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="188f-d8f7-db28-bd33"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="47db-89fd-3ef3-0b5b"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Buggy Sticky Detonator" hidden="false" id="5302-2863-0b14-e2cd" sortIndex="2">
+                  <infoLinks>
+                    <infoLink name="Buggy Sticky Detonator" id="af84-3dc5-9a60-e81d" hidden="false" type="profile" targetId="25c2-7bb8-869b-2770"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e963-1fdb-4d01-ae04"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1703-a078-74ba-169c"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Special Ability (Hit n&apos; Run)" hidden="false" id="2a58-0cb0-3a6f-78da">
+              <infoLinks>
+                <infoLink name="Hit n&apos; Run" id="6baf-897f-574f-6816" hidden="false" type="profile" targetId="6d71-3689-2011-4ff7"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4ae4-dffd-07c2-e5aa"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Light" hidden="false" id="2bee-2133-ee08-85e3" targetId="59ea-6f10-a33e-30f1" primary="false"/>
+            <categoryLink name="Vehicle" hidden="false" id="55e4-aec7-bdbd-ca4f" targetId="892b-3ede-432c-1fff" primary="false"/>
+            <categoryLink name="Small" hidden="false" id="a435-6a97-f14d-6f55" targetId="9398-0362-f8ff-9b2c" primary="false"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="746a-5eef-c14e-13d0"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="531e-1397-8433-94e9"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Dune Buggy Squad" hidden="false" id="5fdc-3ce2-4fd5-9190">
+          <infoLinks>
+            <infoLink name="Dune Buggy" id="5941-0ec5-c4b7-5d08" hidden="false" type="profile" targetId="68a7-1b8f-ca85-f04b"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Dune Buggy" hidden="false" id="0332-9276-8e3d-0623">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e6db-bba7-de8d-71b9"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a8d0-d3e2-fe0d-bcf7"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Buggy Mounted Repeater" hidden="false" id="2334-7ac5-4049-75cf" sortIndex="1">
+                  <infoLinks>
+                    <infoLink name="Buggy Mounted Repeater" id="4e37-15d8-a183-52ab" hidden="false" type="profile" targetId="dabc-528a-54da-fffb"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5c43-d8f7-d123-5a63"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4361-0009-c9c2-4f5d"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Buggy Sticky Detonator" hidden="false" id="1c63-b171-fadc-c25c" sortIndex="2">
+                  <infoLinks>
+                    <infoLink name="Buggy Sticky Detonator" id="f226-7f79-ed52-b404" hidden="false" type="profile" targetId="25c2-7bb8-869b-2770"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d7db-e532-e73f-8c6c"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e67e-fca4-2978-1e71"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Special Ability (Hit n&apos; Run)" hidden="false" id="e752-f70f-c3de-7b00">
+              <infoLinks>
+                <infoLink name="Hit n&apos; Run" id="412d-e1d0-052f-d835" hidden="false" type="profile" targetId="6d71-3689-2011-4ff7"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="acd3-07eb-6f55-e856"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Light" hidden="false" id="b31c-2bc1-e15d-af31" targetId="59ea-6f10-a33e-30f1" primary="false"/>
+            <categoryLink name="Vehicle" hidden="false" id="a128-0b2b-cf60-9a8b" targetId="892b-3ede-432c-1fff" primary="false"/>
+            <categoryLink name="Small" hidden="false" id="3308-a00a-0c7b-bf06" targetId="9398-0362-f8ff-9b2c" primary="false"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7b62-8963-fa7b-1717"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ce4e-abb0-3e60-1126"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Dune Buggy Squad" hidden="false" id="920d-1f52-c5c6-18d5">
+          <infoLinks>
+            <infoLink name="Dune Buggy" id="f27b-2a75-8449-2c24" hidden="false" type="profile" targetId="68a7-1b8f-ca85-f04b"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Dune Buggy" hidden="false" id="1108-93a4-7849-ab65">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4c0a-5364-3799-58a1"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bdf3-92ae-ff15-2ebe"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Buggy Mounted Repeater" hidden="false" id="485d-2eb3-9ac9-eec2" sortIndex="1">
+                  <infoLinks>
+                    <infoLink name="Buggy Mounted Repeater" id="8ec7-cac0-3fb8-185f" hidden="false" type="profile" targetId="dabc-528a-54da-fffb"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8ea6-cd88-1835-ed70"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="69e7-7745-daec-9569"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Buggy Sticky Detonator" hidden="false" id="0e9b-67d1-6774-f669" sortIndex="2">
+                  <infoLinks>
+                    <infoLink name="Buggy Sticky Detonator" id="a801-a79f-5ce4-c656" hidden="false" type="profile" targetId="25c2-7bb8-869b-2770"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5f65-aa83-f37a-a937"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c8cc-284f-2e4b-a803"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Special Ability (Hit n&apos; Run)" hidden="false" id="ca88-b1e2-8d5c-193a">
+              <infoLinks>
+                <infoLink name="Hit n&apos; Run" id="d1c3-e271-86d9-0551" hidden="false" type="profile" targetId="6d71-3689-2011-4ff7"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7a7a-91ec-ca53-bba0"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Light" hidden="false" id="8ce7-aaef-8f15-e865" targetId="59ea-6f10-a33e-30f1" primary="false"/>
+            <categoryLink name="Vehicle" hidden="false" id="379a-1993-aa78-e3cb" targetId="892b-3ede-432c-1fff" primary="false"/>
+            <categoryLink name="Small" hidden="false" id="bed6-877d-4525-752d" targetId="9398-0362-f8ff-9b2c" primary="false"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3c14-edd3-9095-8291"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a9b9-e24d-1b94-1f6a"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Dune Buggy Squad" hidden="false" id="4076-ef17-993d-b93e">
+          <infoLinks>
+            <infoLink name="Dune Buggy" id="3aa6-0828-4ef8-636f" hidden="false" type="profile" targetId="68a7-1b8f-ca85-f04b"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Dune Buggy" hidden="false" id="a7d8-5fb4-b533-4ab4">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8911-6cc1-b67f-2784"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d983-fe50-de5a-42dd"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Buggy Mounted Repeater" hidden="false" id="5443-9504-f45d-50f6" sortIndex="1">
+                  <infoLinks>
+                    <infoLink name="Buggy Mounted Repeater" id="c783-b3b2-039c-b397" hidden="false" type="profile" targetId="dabc-528a-54da-fffb"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e825-71b5-3b5b-8b26"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d3d5-95fc-f54d-d943"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Buggy Sticky Detonator" hidden="false" id="5032-f3f9-9df6-e7ce" sortIndex="2">
+                  <infoLinks>
+                    <infoLink name="Buggy Sticky Detonator" id="dc87-3d03-eb3b-5297" hidden="false" type="profile" targetId="25c2-7bb8-869b-2770"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="91ef-e4ad-5417-d42d"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7d80-141d-a931-d905"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Special Ability (Hit n&apos; Run)" hidden="false" id="9295-a91f-0ee2-8462">
+              <infoLinks>
+                <infoLink name="Hit n&apos; Run" id="5b95-ce9b-d7cd-c9d4" hidden="false" type="profile" targetId="6d71-3689-2011-4ff7"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="52c2-0e31-fa0f-7458"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Light" hidden="false" id="8457-609c-57f8-4605" targetId="59ea-6f10-a33e-30f1" primary="false"/>
+            <categoryLink name="Vehicle" hidden="false" id="f8fe-1052-2d73-3af0" targetId="892b-3ede-432c-1fff" primary="false"/>
+            <categoryLink name="Small" hidden="false" id="6b72-9f45-5a21-3d5f" targetId="9398-0362-f8ff-9b2c" primary="false"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="275b-7561-8aa4-0403"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fe85-6bce-f688-4207"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Unit Capacity" typeId="f7d6-c8d5-b008-4866" value="1"/>
+      </costs>
+      <comment>Squads: 5, Models: 1</comment>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Mobile Artillery Unit" hidden="false" id="cf6d-d591-52f1-7b33" subType="unit-group">
+      <categoryLinks>
+        <categoryLink targetId="892b-3ede-432c-1fff" id="8a0a-8eba-3d31-58d0" primary="true" name="Vehicle"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="unit" import="true" name="Mobile Artillery Squad" hidden="false" id="c0d7-7e58-193b-e4c2">
+          <infoLinks>
+            <infoLink name="Mobile Artillery" id="fbd4-1190-77d5-8dd4" hidden="false" type="profile" targetId="cf24-083b-1a5b-986f"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Mobile Artillery" hidden="false" id="ccfb-de99-293d-3a59">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="414e-858a-ab83-ba81"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cb73-b6dd-f52e-3d98"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Artillery Barrage" hidden="false" id="5a07-1f68-b81f-6f8a">
+                  <infoLinks>
+                    <infoLink name="Artillery Barrage" id="3012-7b48-ca3b-64f7" hidden="false" type="profile" targetId="1977-fbc9-1e22-456b"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c6cc-44b5-faaa-321c"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d2a8-02d5-e15b-b02f"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink targetId="59ea-6f10-a33e-30f1" id="37c6-1a60-45d3-ec3b" primary="false" name="Light"/>
+            <categoryLink targetId="892b-3ede-432c-1fff" id="8052-d0a9-c1ff-d4d2" primary="false" name="Vehicle"/>
+            <categoryLink targetId="9398-0362-f8ff-9b2c" id="5f62-0b57-df15-ae2d" primary="false" name="Small"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="db12-4999-2f0b-5f2b"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5ce1-bc19-29e2-7890"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Mobile Artillery Squad" hidden="false" id="ee56-e7ba-67ff-920c">
+          <infoLinks>
+            <infoLink name="Mobile Artillery" id="c983-00c3-69e7-20c1" hidden="false" type="profile" targetId="cf24-083b-1a5b-986f"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Mobile Artillery" hidden="false" id="b6a2-b8bf-250c-f174">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7a04-8759-b459-f6ab"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="afe9-ac16-6be2-b42a"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Artillery Barrage" hidden="false" id="87d4-0ec5-61a9-c92a">
+                  <infoLinks>
+                    <infoLink name="Artillery Barrage" id="7804-ef0a-d6d2-10ea" hidden="false" type="profile" targetId="1977-fbc9-1e22-456b"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d67d-39bd-6f8d-1032"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="348c-0bbc-3e1c-79a5"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Light" hidden="false" id="fb88-1753-f4e0-56ed" targetId="59ea-6f10-a33e-30f1" primary="false"/>
+            <categoryLink name="Vehicle" hidden="false" id="4a5a-b7fd-3e20-30f2" targetId="892b-3ede-432c-1fff" primary="false"/>
+            <categoryLink targetId="9398-0362-f8ff-9b2c" id="367c-d91d-4430-ed6b" primary="false" name="Small"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="12c9-78f0-40b5-e401"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ed5a-7b75-7dd9-6751"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Unit Capacity" typeId="f7d6-c8d5-b008-4866" value="1"/>
+      </costs>
+      <comment>Squads: 2, Models: 1</comment>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Scout Copter Unit" hidden="false" id="c6da-3a7b-3fa0-e9e5" subType="unit-group">
+      <categoryLinks>
+        <categoryLink targetId="892b-3ede-432c-1fff" id="9316-f9f8-3db6-9428" primary="true" name="Vehicle"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="unit" import="true" name="Scout Copter Squad" hidden="false" id="aee7-3646-6d1f-e7a3">
+          <infoLinks>
+            <infoLink name="Scout Copter" id="d9c8-fcea-29b1-13d8" hidden="false" type="profile" targetId="5385-e1c1-ccc2-e02e"/>
+            <infoLink name="Fly" id="e63b-86ed-42cc-dd01" hidden="false" type="rule" targetId="6ff7-85fb-9f68-4584"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Scout Copter" hidden="false" id="2b7a-b187-9c26-ed69">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="03e5-d1ca-b9db-6493"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e839-64fd-2d05-e44d"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Copter Mounted Repeater" hidden="false" id="0cb8-6086-ec97-a0eb">
+                  <infoLinks>
+                    <infoLink name="Copter Mounted Repeater" id="f9e0-0297-9b3a-fd3e" hidden="false" type="profile" targetId="fb01-79d2-43e5-0974"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="007d-3ad1-c792-4dca"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="39cc-f455-caf2-7029"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink targetId="59ea-6f10-a33e-30f1" id="ec07-0ad2-1db9-bb22" primary="false" name="Light"/>
+            <categoryLink targetId="892b-3ede-432c-1fff" id="4606-371e-a93c-ebd3" primary="false" name="Vehicle"/>
+            <categoryLink targetId="9dbc-8ba4-9d45-609d" id="219d-5e28-25cc-d8b4" primary="false" name="Medium"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="221c-a475-b368-a868"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="06b6-f992-24c3-f812"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Scout Copter Squad" hidden="false" id="851d-520f-4da8-1628">
+          <infoLinks>
+            <infoLink name="Scout Copter" id="3c15-6e9a-62cb-b9b1" hidden="false" type="profile" targetId="5385-e1c1-ccc2-e02e"/>
+            <infoLink name="Fly" id="ae6d-f7eb-82c2-2da0" hidden="false" type="rule" targetId="6ff7-85fb-9f68-4584"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Scout Copter" hidden="false" id="a945-bc2a-ac18-790b">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6056-ac25-79f8-6a07"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3cfc-248d-fad2-ec12"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Copter Mounted Repeater" hidden="false" id="9fba-4ae0-7d06-5abd">
+                  <infoLinks>
+                    <infoLink name="Copter Mounted Repeater" id="e02f-9cec-cfd5-1611" hidden="false" type="profile" targetId="fb01-79d2-43e5-0974"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="40e2-6a4d-096a-2550"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b994-b52a-539e-d2d0"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Light" hidden="false" id="aed6-9ab4-fd94-51fd" targetId="59ea-6f10-a33e-30f1" primary="false"/>
+            <categoryLink name="Vehicle" hidden="false" id="98bd-eb75-102a-67ac" targetId="892b-3ede-432c-1fff" primary="false"/>
+            <categoryLink targetId="9dbc-8ba4-9d45-609d" id="dedf-6607-67e2-60cc" primary="false" name="Medium"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8f1f-8f2d-160a-37b2"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="94b3-9444-1e9f-6591"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Scout Copter Squad" hidden="false" id="ec77-0f52-1199-be89">
+          <infoLinks>
+            <infoLink name="Scout Copter" id="bf9f-bfb1-35b5-c6a2" hidden="false" type="profile" targetId="5385-e1c1-ccc2-e02e"/>
+            <infoLink name="Fly" id="8c10-f95d-c362-6e19" hidden="false" type="rule" targetId="6ff7-85fb-9f68-4584"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Scout Copter" hidden="false" id="4440-bcf7-77fb-8cba">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c61c-2eb0-8fc1-3499"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fa0e-71e4-208b-302a"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Copter Mounted Repeater" hidden="false" id="c6a2-931c-8ccf-a8cb">
+                  <infoLinks>
+                    <infoLink name="Copter Mounted Repeater" id="7747-53f5-a831-1e47" hidden="false" type="profile" targetId="fb01-79d2-43e5-0974"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aabe-0c3c-4f35-f3d9"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="029f-bc17-101f-68be"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Light" hidden="false" id="32fd-1605-9546-44ee" targetId="59ea-6f10-a33e-30f1" primary="false"/>
+            <categoryLink name="Vehicle" hidden="false" id="1ce5-c8a4-e988-33bb" targetId="892b-3ede-432c-1fff" primary="false"/>
+            <categoryLink targetId="9dbc-8ba4-9d45-609d" id="755b-281c-2639-1bf4" primary="false" name="Medium"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b443-53e0-226f-7e97"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f9dc-aa7b-98a3-f31b"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Unit Capacity" typeId="f7d6-c8d5-b008-4866" value="1"/>
+      </costs>
+      <comment>Squads: 3, Models: 1</comment>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Armor ATV Unit" hidden="false" id="b0b9-5841-9711-ad52" subType="unit-group">
+      <categoryLinks>
+        <categoryLink targetId="892b-3ede-432c-1fff" id="a65c-720c-c2a3-b0f6" primary="true" name="Vehicle"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="unit" import="true" name="Armor ATV Squad" hidden="false" id="3470-f0c4-cb35-a58e">
+          <infoLinks>
+            <infoLink name="Armor ATV" id="5fd7-b002-db9b-7cf7" hidden="false" type="profile" targetId="e69e-6632-3e45-da15"/>
+            <infoLink name="Crush-" id="76ae-13e6-5f0e-e32c" hidden="false" type="rule" targetId="ab49-c483-f2a1-aac8">
+              <modifiers>
+                <modifier type="set" value="Crush 2" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Armor ATV" hidden="false" id="20aa-2bcd-c3f6-f6f3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e20a-f4bd-ced6-5391"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="575b-f669-3e44-4b27"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="ATV Heavy Rifle" hidden="false" id="eb2f-1369-768d-4eb9">
+                  <infoLinks>
+                    <infoLink name="ATV Heavy Rifle" id="3874-7e20-dd3f-1057" hidden="false" type="profile" targetId="dcc0-87b2-d39a-9c9a"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="874f-aa01-cb5f-ee92"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9739-e326-71e8-9da5"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink targetId="892b-3ede-432c-1fff" id="ee70-1dd2-cb0b-316e" primary="false" name="Vehicle"/>
+            <categoryLink targetId="b9c5-1770-e28a-db52" id="8aa2-6662-db17-adb2" primary="false" name="Heavy"/>
+            <categoryLink targetId="9dbc-8ba4-9d45-609d" id="597b-5e5d-f0b4-5033" primary="false" name="Medium"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b717-2c7f-c57d-580d"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2926-eeaf-3436-f19f"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Armor ATV Squad" hidden="false" id="89ea-2bf1-62f6-0bde">
+          <infoLinks>
+            <infoLink name="Armor ATV" id="aa4c-8a3e-55ba-45c9" hidden="false" type="profile" targetId="e69e-6632-3e45-da15"/>
+            <infoLink name="Crush-" id="dc6c-0619-5d6d-08a5" hidden="false" type="rule" targetId="ab49-c483-f2a1-aac8">
+              <modifiers>
+                <modifier type="set" value="Crush 2" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Armor ATV" hidden="false" id="2858-da36-afe2-6d66">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2740-619f-fa4e-9283"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2fe4-850a-3632-1135"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="ATV Heavy Rifle" hidden="false" id="c605-87ca-1759-747d">
+                  <infoLinks>
+                    <infoLink name="ATV Heavy Rifle" id="c9ff-fb05-f0d3-6a47" hidden="false" type="profile" targetId="dcc0-87b2-d39a-9c9a"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e01a-f6cb-aaf2-0d70"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eb6b-b5ae-8e67-204e"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Vehicle" hidden="false" id="c525-351e-298c-8a38" targetId="892b-3ede-432c-1fff" primary="false"/>
+            <categoryLink name="Heavy" hidden="false" id="d1a4-dae5-1b10-a227" targetId="b9c5-1770-e28a-db52" primary="false"/>
+            <categoryLink targetId="9dbc-8ba4-9d45-609d" id="35b5-46e9-d932-2208" primary="false" name="Medium"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="db38-85fb-f913-22bf"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7017-b9a2-fc6f-9435"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Armor ATV Squad" hidden="false" id="de53-0053-1292-bd34">
+          <infoLinks>
+            <infoLink name="Armor ATV" id="8a33-f6d3-f2b7-5c67" hidden="false" type="profile" targetId="e69e-6632-3e45-da15"/>
+            <infoLink name="Crush-" id="4c11-e9e2-0e4f-f0bf" hidden="false" type="rule" targetId="ab49-c483-f2a1-aac8">
+              <modifiers>
+                <modifier type="set" value="Crush 2" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Armor ATV" hidden="false" id="4f89-9da7-1a42-cb60">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0fcf-d05c-9bb9-c2ab"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d4ea-b55a-c018-64b4"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="ATV Heavy Rifle" hidden="false" id="0c1b-08e7-4960-e41a">
+                  <infoLinks>
+                    <infoLink name="ATV Heavy Rifle" id="db07-98e4-1bca-18c4" hidden="false" type="profile" targetId="dcc0-87b2-d39a-9c9a"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ce1d-5433-f3ab-7be9"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ef3e-3eb2-95ee-16a9"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Vehicle" hidden="false" id="a7ab-7d13-0aed-18ea" targetId="892b-3ede-432c-1fff" primary="false"/>
+            <categoryLink name="Heavy" hidden="false" id="3fa6-38e0-40c6-352e" targetId="b9c5-1770-e28a-db52" primary="false"/>
+            <categoryLink targetId="9dbc-8ba4-9d45-609d" id="22a2-2649-0ab5-f61f" primary="false" name="Medium"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="355d-0af9-8acc-e455"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ab2a-52eb-96cc-402b"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Armor ATV Squad" hidden="false" id="5a9b-52d6-9b34-90ad">
+          <infoLinks>
+            <infoLink name="Armor ATV" id="eaa6-9bf1-0da7-b44a" hidden="false" type="profile" targetId="e69e-6632-3e45-da15"/>
+            <infoLink name="Crush-" id="9bc5-dec0-346b-791d" hidden="false" type="rule" targetId="ab49-c483-f2a1-aac8">
+              <modifiers>
+                <modifier type="set" value="Crush 2" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Armor ATV" hidden="false" id="087d-8a89-62ec-a29f">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1a37-64c6-3a35-5637"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1dd1-35a0-3ec7-bc6b"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="ATV Heavy Rifle" hidden="false" id="f9bb-e4a0-9fe9-f970">
+                  <infoLinks>
+                    <infoLink name="ATV Heavy Rifle" id="4bac-da05-0e49-b700" hidden="false" type="profile" targetId="dcc0-87b2-d39a-9c9a"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7e0f-edc0-ee7f-a7e9"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fb6a-72b5-556d-a2b0"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Vehicle" hidden="false" id="bd33-5df8-a2d4-82e0" targetId="892b-3ede-432c-1fff" primary="false"/>
+            <categoryLink name="Heavy" hidden="false" id="5e92-1d25-152d-219c" targetId="b9c5-1770-e28a-db52" primary="false"/>
+            <categoryLink targetId="9dbc-8ba4-9d45-609d" id="0197-7b55-66da-3739" primary="false" name="Medium"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3b04-1650-f396-084b"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="09b5-ed1e-6102-fcd8"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Unit Capacity" typeId="f7d6-c8d5-b008-4866" value="1"/>
+      </costs>
+      <comment>Squads: 4, Models: 1</comment>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <entryLinks>
+    <entryLink import="true" name="The Hijacker Unit" hidden="false" id="5673-8e39-aba7-09aa" targetId="ff56-d8a4-f839-432e" type="selectionEntry"/>
+    <entryLink import="true" name="Descender Officer Unit" hidden="false" id="2617-31a1-7d37-b727" targetId="5d81-68df-e7e1-a51d" type="selectionEntry"/>
+    <entryLink import="true" name="Trailblazer Unit" hidden="false" id="13e3-6ce7-670c-1839" targetId="b65d-8914-faae-d700" type="selectionEntry"/>
+    <entryLink import="true" name="Rocketeer Unit" hidden="false" id="81fa-642f-13cc-a453" targetId="3404-701a-7d2c-0a5f" type="selectionEntry"/>
+    <entryLink import="true" name="Dune Buggy Unit" hidden="false" id="cef4-b356-434e-fed6" targetId="ef69-7bff-cc1f-24fa" type="selectionEntry"/>
+    <entryLink import="true" name="Mobile Artillery Unit" hidden="false" id="3228-52dc-066b-e77d" targetId="cf6d-d591-52f1-7b33" type="selectionEntry"/>
+    <entryLink import="true" name="Scout Copter Unit" hidden="false" id="8015-34c0-4deb-de67" targetId="c6da-3a7b-3fa0-e9e5" type="selectionEntry"/>
+    <entryLink import="true" name="Armor ATV Unit" hidden="false" id="e431-1126-9441-1c43" targetId="b0b9-5841-9711-ad52" type="selectionEntry"/>
+  </entryLinks>
+</catalogue>
