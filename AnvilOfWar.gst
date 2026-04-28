@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-4d6c-ac3c-296b-de59" name="Anvil Of War" battleScribeVersion="2.03" revision="10" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Pierce Kester" authorContact="bulletgiraffe@gmail.com" authorUrl="bulletgiraffe.com" publicationId="5911-3a66-ec62-32e6">
+<gameSystem id="sys-4d6c-ac3c-296b-de59" name="Anvil Of War" battleScribeVersion="2.03" revision="11" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Pierce Kester" authorContact="bulletgiraffe@gmail.com" authorUrl="bulletgiraffe.com" publicationId="5911-3a66-ec62-32e6">
   <categoryEntries>
     <categoryEntry name="Infantry" id="86d7-e31a-0e12-cc05" hidden="false"/>
     <categoryEntry name="Vehicle" id="892b-3ede-432c-1fff" hidden="false"/>
@@ -141,6 +141,15 @@
       <comment>Unit Rule.</comment>
       <alias>Crush</alias>
     </rule>
+    <rule name="Line of sight" id="35ba-67c2-bc74-cda9" hidden="false">
+      <alias>LoS</alias>
+      <description>LoS is determined simply using the model’s bases and an imaginary cylinder straight up from them to the highest point of the model. If a target model’s imaginary cylinder is not visible from the attacking model’s imaginary cylinder, then there is no LoS. If the target is only partially visible from every point, there is partial LoS. If the target is fully visible from any point, there is full LoS.</description>
+    </rule>
+    <rule name="Cover" id="ec73-afe2-5b3e-6dc0" hidden="false">
+      <description>A target model is said to have cover from the attacking squad if the attacking squad has partial LoS on that target model so long as the target model is within 6” of at least one source of its cover.
+A target squad is said to have cover if the attacking squad has full LoS on half or less than half of the models in that target squad or if the attacking squad has partial LoS on all the visible models in the target squad.
+If a target squad has cover from the attacking squad, worsen the accuracy of that attack by 1.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile name="Steady" typeId="ed56-95ac-5582-8023" typeName="Weapon Abilities" hidden="false" id="15ce-b674-f1f2-3638">
@@ -155,7 +164,7 @@
     </profile>
     <profile name="Indirect" typeId="ed56-95ac-5582-8023" typeName="Weapon Abilities" hidden="false" id="f02a-6e30-e223-408e">
       <characteristics>
-        <characteristic name="Description" typeId="c7ce-7c70-361a-78df">This weapon does not require line of sight to target an enemy squad within range.</characteristic>
+        <characteristic name="Description" typeId="c7ce-7c70-361a-78df">This weapon does not require line of sight to target an enemy squad within range so long as at least one squad from your army has LoS and is within range with at least one weapon to that enemy squad.</characteristic>
       </characteristics>
     </profile>
     <profile name="Anti-" typeId="ed56-95ac-5582-8023" typeName="Weapon Abilities" hidden="false" id="3ef8-04c7-6b24-f0ba">

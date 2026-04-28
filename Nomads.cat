@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="5baa-f9b1-a199-b07e" name="Nomads" gameSystemId="sys-4d6c-ac3c-296b-de59" gameSystemRevision="9" revision="1" authorName="SyPhase" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="5baa-f9b1-a199-b07e" name="Nomads" gameSystemId="sys-4d6c-ac3c-296b-de59" gameSystemRevision="9" revision="2" authorName="SyPhase" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedProfiles>
     <profile name="The Hijacker" typeId="a0cc-e27d-0e47-b400" typeName="Unit" hidden="false" id="224f-893b-3568-904b">
       <characteristics>
@@ -23,7 +23,7 @@
     </profile>
     <profile name="Borrow Indefinitely" typeId="7e76-2916-e877-fd40" typeName="Active (Special Abilities)" hidden="false" id="6a66-2ce7-b78c-0747">
       <characteristics>
-        <characteristic name="Description" typeId="3437-636f-e6aa-d7ea">Once per battle, if a non-hero enemy vehicle model is within 3&quot; of this squad, you may target that vehicle to &apos;borrow.&apos; When you &apos;borrow&apos; a vehicle, that vehicle counts as being destroyed. When it is removed from the battlefield, remove the hijacker from the battlefield, then set up a copy of the destroyed vehicle under your control with the same amount of remaining HP as close as possible to where it was removed from play. That vehicle remains under your control until destroyed. When that vehicle is destroyed, the hijacker is set up on the battlefield as close as possible to where that vehicle was destroyed.</characteristic>
+        <characteristic name="Description" typeId="3437-636f-e6aa-d7ea">Once per battle, if a non-hero enemy vehicle model is within 3&quot; of this squad, you may target that vehicle to &apos;borrow.&apos; When you &apos;borrow&apos; a vehicle, that vehicle counts as being destroyed, but it is not removed from the battlefield and is instead under your control. Note how many HP the Hijacker has, then remove the Hijacker from the battlefield. That vehicle remains under your control until destroyed. When that vehicle is destroyed, the Hijacker is set up on the battlefield as close as possible to where that vehicle was destroyed.</characteristic>
       </characteristics>
     </profile>
     <profile name="Descender Officer" typeId="a0cc-e27d-0e47-b400" typeName="Unit" hidden="false" id="73c5-7e03-79cd-47c6">
@@ -36,7 +36,7 @@
     </profile>
     <profile name="Officer Rifle" typeId="35f7-4412-69cb-9d6a" typeName="Weapons" hidden="false" id="d9ec-2cdd-f9e2-5c6a">
       <characteristics>
-        <characteristic name="R" typeId="8723-19bb-bcce-5f94">18&quot;</characteristic>
+        <characteristic name="R" typeId="8723-19bb-bcce-5f94">12&quot;</characteristic>
         <characteristic name="Att" typeId="0a3b-93a6-7ca6-c930">1</characteristic>
         <characteristic name="Acc" typeId="4bca-fe29-753e-511f">4+</characteristic>
         <characteristic name="AP" typeId="46da-1060-daef-3f00">+1, -1
@@ -45,7 +45,7 @@
         <characteristic name="Abilities" typeId="3c47-c04c-8dfd-a691"/>
       </characteristics>
     </profile>
-    <profile name="Recon Scan Results" typeId="4720-4964-f773-3509" typeName="Passive (Special Abilities)" hidden="false" id="26c3-f475-e0d4-8ed3">
+    <profile name="Recon Scanner" typeId="4720-4964-f773-3509" typeName="Passive (Special Abilities)" hidden="false" id="26c3-f475-e0d4-8ed3">
       <characteristics>
         <characteristic name="Description" typeId="bc7d-10a5-15e8-e96d">While this squad is on the battlefield, infantry squads in your army have the passive ability stealthy.</characteristic>
       </characteristics>
@@ -84,7 +84,7 @@
     </profile>
     <profile name="Rocketeer Launcher" typeId="35f7-4412-69cb-9d6a" typeName="Weapons" hidden="false" id="ca6b-b29c-7f8b-7014">
       <characteristics>
-        <characteristic name="R" typeId="8723-19bb-bcce-5f94">24&quot;</characteristic>
+        <characteristic name="R" typeId="8723-19bb-bcce-5f94">18&quot;</characteristic>
         <characteristic name="Att" typeId="0a3b-93a6-7ca6-c930">1</characteristic>
         <characteristic name="Acc" typeId="4bca-fe29-753e-511f">4+</characteristic>
         <characteristic name="AP" typeId="46da-1060-daef-3f00">-2, +2
@@ -133,9 +133,8 @@
       <characteristics>
         <characteristic name="SV" typeId="24b4-ca44-ffb5-c3f4">5+</characteristic>
         <characteristic name="DS" typeId="1535-83cf-b8fe-b1ce">0</characteristic>
-        <characteristic name="HP" typeId="a109-7c01-200f-cc2d">5</characteristic>
-        <characteristic name="MV" typeId="6972-eaad-7147-252f">12&quot;</characteristic>
-        <characteristic name="Footprint" typeId="1a99-d265-660f-2eb3">Small</characteristic>
+        <characteristic name="HP" typeId="a109-7c01-200f-cc2d">4</characteristic>
+        <characteristic name="MV" typeId="6972-eaad-7147-252f">9&quot;</characteristic>
       </characteristics>
     </profile>
     <profile name="Artillery Barrage" typeId="35f7-4412-69cb-9d6a" typeName="Weapons" hidden="false" id="1977-fbc9-1e22-456b">
@@ -151,16 +150,15 @@
     </profile>
     <profile name="Scout Copter" typeId="a0cc-e27d-0e47-b400" typeName="Unit" hidden="false" id="5385-e1c1-ccc2-e02e">
       <characteristics>
-        <characteristic name="SV" typeId="24b4-ca44-ffb5-c3f4">3+</characteristic>
+        <characteristic name="SV" typeId="24b4-ca44-ffb5-c3f4">4+</characteristic>
         <characteristic name="DS" typeId="1535-83cf-b8fe-b1ce">0</characteristic>
         <characteristic name="HP" typeId="a109-7c01-200f-cc2d">3</characteristic>
-        <characteristic name="MV" typeId="6972-eaad-7147-252f">24&quot;</characteristic>
-        <characteristic name="Footprint" typeId="1a99-d265-660f-2eb3">Medium</characteristic>
+        <characteristic name="MV" typeId="6972-eaad-7147-252f">18&quot;</characteristic>
       </characteristics>
     </profile>
     <profile name="Trailblazer Rifle" typeId="35f7-4412-69cb-9d6a" typeName="Weapons" hidden="false" id="37b3-bb2d-e1cc-c8ce">
       <characteristics>
-        <characteristic name="R" typeId="8723-19bb-bcce-5f94">18&quot;</characteristic>
+        <characteristic name="R" typeId="8723-19bb-bcce-5f94">12&quot;</characteristic>
         <characteristic name="Att" typeId="0a3b-93a6-7ca6-c930">1</characteristic>
         <characteristic name="Acc" typeId="4bca-fe29-753e-511f">4+</characteristic>
         <characteristic name="AP" typeId="46da-1060-daef-3f00">+1, -1

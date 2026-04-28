@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="28e4-ed51-3991-19d2" name="Cybernetica" gameSystemId="sys-4d6c-ac3c-296b-de59" gameSystemRevision="1" revision="13" authorName="SyPhase" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="28e4-ed51-3991-19d2" name="Cybernetica" gameSystemId="sys-4d6c-ac3c-296b-de59" gameSystemRevision="1" revision="14" authorName="SyPhase" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="F-00 Admin Unit" hidden="false" id="00b4-fce6-ccc0-663a" subType="unit-group">
       <categoryLinks>
@@ -61,6 +61,14 @@
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6904-fffb-9e7a-010c"/>
               </constraints>
             </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Ability (Sprint)" hidden="false" id="dc33-0b2d-e4bf-533b" sortIndex="4">
+              <infoLinks>
+                <infoLink name="Accelerated Mobility" id="9365-c5ce-610f-7a0c" hidden="false" type="profile" targetId="3c57-28ef-7c2f-93f8"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5557-3bb1-840a-c03e"/>
+              </constraints>
+            </selectionEntry>
           </selectionEntries>
           <categoryLinks>
             <categoryLink name="Infantry" hidden="false" id="3d77-00cf-602d-9427" targetId="86d7-e31a-0e12-cc05" primary="false"/>
@@ -85,7 +93,7 @@
             <infoLink name="F-12 War-Machine" id="b396-15e7-88e9-f52a" hidden="false" type="profile" targetId="bcb9-8613-bada-5d6d"/>
           </infoLinks>
           <selectionEntries>
-            <selectionEntry type="model" import="true" name="F-12 War-Machine" hidden="false" id="86fa-e876-c529-1852">
+            <selectionEntry type="model" import="true" name="F-12 War-Machine" hidden="false" id="86fa-e876-c529-1852" sortIndex="1">
               <constraints>
                 <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="7c42-4142-e69c-1dfa-min"/>
                 <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="7c42-4142-e69c-1dfa-max"/>
@@ -101,6 +109,14 @@
                   </constraints>
                 </selectionEntry>
               </selectionEntries>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Ability (Sprint)" hidden="false" id="6ee6-cccd-0299-3ca0">
+              <infoLinks>
+                <infoLink name="Accelerated Mobility" id="4877-519c-ef14-454e" hidden="false" type="profile" targetId="3c57-28ef-7c2f-93f8"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="50f8-e97c-0586-d7b6"/>
+              </constraints>
             </selectionEntry>
           </selectionEntries>
           <categoryLinks>
@@ -118,7 +134,7 @@
             <infoLink name="F-12 War-Machine" id="a8f3-d899-4f7e-7f9f" hidden="false" type="profile" targetId="bcb9-8613-bada-5d6d"/>
           </infoLinks>
           <selectionEntries>
-            <selectionEntry type="model" import="true" name="F-12 War-Machine" hidden="false" id="0a35-ddae-1f6f-92a1">
+            <selectionEntry type="model" import="true" name="F-12 War-Machine" hidden="false" id="0a35-ddae-1f6f-92a1" sortIndex="1">
               <constraints>
                 <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="6deb-ed2d-50c3-a634"/>
                 <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="67b2-cf53-84de-a921"/>
@@ -134,6 +150,14 @@
                   </constraints>
                 </selectionEntry>
               </selectionEntries>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Ability (Sprint)" hidden="false" id="5ede-bc0c-8e16-b18f">
+              <infoLinks>
+                <infoLink name="Accelerated Mobility" id="b4f3-f44f-020b-6b05" hidden="false" type="profile" targetId="3c57-28ef-7c2f-93f8"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f11c-d882-3bab-cefd"/>
+              </constraints>
             </selectionEntry>
           </selectionEntries>
           <categoryLinks>
@@ -409,7 +433,7 @@
             <infoLink name="F-15 Rocket-Machine" id="4874-2d3b-5f20-9f92" hidden="false" type="profile" targetId="a244-bb5e-536b-7e9a"/>
           </infoLinks>
           <selectionEntries>
-            <selectionEntry type="model" import="true" name="F-15 Rocket-Machine" hidden="false" id="0b63-69a5-2a36-8fdb">
+            <selectionEntry type="model" import="true" name="F-15 Rocket-Machine" hidden="false" id="0b63-69a5-2a36-8fdb" sortIndex="1">
               <constraints>
                 <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="1a86-96d8-bc64-42ae"/>
                 <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="ab83-c5b8-6a5f-2f96"/>
@@ -425,6 +449,14 @@
                   </constraints>
                 </selectionEntry>
               </selectionEntries>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Ability (Sprint)" hidden="false" id="c793-59b1-1d8c-eaf1">
+              <infoLinks>
+                <infoLink name="Accelerated Mobility" id="d6c2-9b2e-32f5-f43f" hidden="false" type="profile" targetId="3c57-28ef-7c2f-93f8"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e9d9-01a8-3ebd-ce28"/>
+              </constraints>
             </selectionEntry>
           </selectionEntries>
           <categoryLinks>
@@ -442,7 +474,7 @@
             <infoLink name="F-15 Rocket-Machine" id="7e76-b800-97a6-2751" hidden="false" type="profile" targetId="a244-bb5e-536b-7e9a"/>
           </infoLinks>
           <selectionEntries>
-            <selectionEntry type="model" import="true" name="F-15 Rocket-Machine" hidden="false" id="844c-b86f-f315-735f">
+            <selectionEntry type="model" import="true" name="F-15 Rocket-Machine" hidden="false" id="844c-b86f-f315-735f" sortIndex="1">
               <constraints>
                 <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="9496-adba-9209-d1c6"/>
                 <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="99d2-ce17-3b8f-9258"/>
@@ -458,6 +490,14 @@
                   </constraints>
                 </selectionEntry>
               </selectionEntries>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Ability (Sprint)" hidden="false" id="da11-7187-6ea0-ef76">
+              <infoLinks>
+                <infoLink name="Accelerated Mobility" id="0b57-f13f-8473-eb99" hidden="false" type="profile" targetId="3c57-28ef-7c2f-93f8"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a10c-c6e2-e1ec-df66"/>
+              </constraints>
             </selectionEntry>
           </selectionEntries>
           <categoryLinks>
@@ -809,10 +849,10 @@
         <characteristic name="R" typeId="8723-19bb-bcce-5f94">18&quot;</characteristic>
         <characteristic name="Att" typeId="0a3b-93a6-7ca6-c930">1</characteristic>
         <characteristic name="Acc" typeId="4bca-fe29-753e-511f">4+</characteristic>
-        <characteristic name="AP" typeId="46da-1060-daef-3f00">-1, +2
--1, +2</characteristic>
-        <characteristic name="D" typeId="f994-dfa3-122c-9cc5">1</characteristic>
-        <characteristic name="Abilities" typeId="3c47-c04c-8dfd-a691">Explosive 1</characteristic>
+        <characteristic name="AP" typeId="46da-1060-daef-3f00">-1, +3
+-1, +3</characteristic>
+        <characteristic name="D" typeId="f994-dfa3-122c-9cc5">2</characteristic>
+        <characteristic name="Abilities" typeId="3c47-c04c-8dfd-a691">Explosive 2</characteristic>
       </characteristics>
       <comment>[Explosive 1]</comment>
     </profile>
@@ -821,8 +861,7 @@
         <characteristic name="SV" typeId="24b4-ca44-ffb5-c3f4">3+</characteristic>
         <characteristic name="DS" typeId="1535-83cf-b8fe-b1ce">0</characteristic>
         <characteristic name="HP" typeId="a109-7c01-200f-cc2d">3</characteristic>
-        <characteristic name="MV" typeId="6972-eaad-7147-252f">12&quot;</characteristic>
-        <characteristic name="Footprint" typeId="1a99-d265-660f-2eb3">Medium</characteristic>
+        <characteristic name="MV" typeId="6972-eaad-7147-252f">14&quot;</characteristic>
       </characteristics>
     </profile>
     <profile name="H-03 Twin-Blasters" typeId="35f7-4412-69cb-9d6a" typeName="Weapons" hidden="false" id="2b25-7867-3ab6-536e">
@@ -870,12 +909,12 @@
     </profile>
     <profile name="Self-Destruct" typeId="7e76-2916-e877-fd40" typeName="Active (Special Abilities)" hidden="false" id="621a-ca31-1eda-c8f4">
       <characteristics>
-        <characteristic name="Description" typeId="3437-636f-e6aa-d7ea">Reduce this squad&apos;s MV characteristic to 0&quot;.  At the beginning of your next Attacking Phase, this unit is targeted by the weapon profile &quot;H-03 Explosion,&quot; then is destroyed.  (Note: the Area of Effect ability of that weapon means you will be targeting all enemies in range of the area of effect.  Because this unit will be destroyed anyway, you may skip attacking itself.)</characteristic>
+        <characteristic name="Description" typeId="3437-636f-e6aa-d7ea">Reduce this squad&apos;s MV characteristic to 0&quot;. This unit is targeted by the weapon profile &quot;H-03 Explosion,&quot; then is destroyed. (Note: the Area of Effect ability of that weapon means you will be targeting all enemies in range of the area of effect. Because this unit will be destroyed anyway, you may skip attacking itself.)</characteristic>
       </characteristics>
     </profile>
     <profile name="Biological Reprogramming" typeId="7e76-2916-e877-fd40" typeName="Active (Special Abilities)" hidden="false" id="e39a-2a59-97b9-8afe">
       <characteristics>
-        <characteristic name="Description" typeId="3437-636f-e6aa-d7ea">Once per battle, if a non-hero enemy infantry squad is within 3&quot; of this squad, you may target that infantry squad to &apos;reprogram.&apos; When you &apos;reprogram&apos; an infantry squad, that squad counts as being destroyed. When it is removed from the battlefield set up a copy of the destroyed infantry squad under your control with the same amount of remaining HP as close as possible to where it was removed from play. That squad remains under your control until destroyed.</characteristic>
+        <characteristic name="Description" typeId="3437-636f-e6aa-d7ea">Once per battle, if a non-hero enemy infantry squad is within 3&quot; of this squad, you may target that infantry squad to &apos;reprogram.&apos; When you &apos;reprogram&apos; an infantry squad, that squad counts as being destroyed, but it is not removed from the battlefield and is instead under your control. That squad remains under your control until destroyed.</characteristic>
       </characteristics>
     </profile>
     <profile name="Cyber-Command" typeId="4720-4964-f773-3509" typeName="Passive (Special Abilities)" hidden="false" id="3e96-5bbe-6070-660b">
@@ -903,8 +942,8 @@
     </profile>
     <profile name="H-02 Twin-Cannon" typeId="35f7-4412-69cb-9d6a" typeName="Weapons" hidden="false" id="41eb-7bf8-47e4-743f">
       <characteristics>
-        <characteristic name="R" typeId="8723-19bb-bcce-5f94">18&quot;</characteristic>
-        <characteristic name="Att" typeId="0a3b-93a6-7ca6-c930">4</characteristic>
+        <characteristic name="R" typeId="8723-19bb-bcce-5f94">24&quot;</characteristic>
+        <characteristic name="Att" typeId="0a3b-93a6-7ca6-c930">5</characteristic>
         <characteristic name="Acc" typeId="4bca-fe29-753e-511f">3+</characteristic>
         <characteristic name="AP" typeId="46da-1060-daef-3f00">-3, +3
 -3, +3</characteristic>
@@ -934,11 +973,10 @@
     </profile>
     <profile name="H-09 Shelltread" typeId="a0cc-e27d-0e47-b400" typeName="Unit" hidden="false" id="1b2c-dc5a-4ca8-51cb">
       <characteristics>
-        <characteristic name="SV" typeId="24b4-ca44-ffb5-c3f4">3+</characteristic>
+        <characteristic name="SV" typeId="24b4-ca44-ffb5-c3f4">4+</characteristic>
         <characteristic name="DS" typeId="1535-83cf-b8fe-b1ce">0</characteristic>
-        <characteristic name="HP" typeId="a109-7c01-200f-cc2d">6</characteristic>
+        <characteristic name="HP" typeId="a109-7c01-200f-cc2d">4</characteristic>
         <characteristic name="MV" typeId="6972-eaad-7147-252f">6&quot;</characteristic>
-        <characteristic name="Footprint" typeId="1a99-d265-660f-2eb3">Medium</characteristic>
       </characteristics>
     </profile>
     <profile name="H-09 Artillery Battery" typeId="35f7-4412-69cb-9d6a" typeName="Weapons" hidden="false" id="c3da-8b49-76cd-f25e">
@@ -957,20 +995,24 @@
       <characteristics>
         <characteristic name="SV" typeId="24b4-ca44-ffb5-c3f4">3+</characteristic>
         <characteristic name="DS" typeId="1535-83cf-b8fe-b1ce">0</characteristic>
-        <characteristic name="HP" typeId="a109-7c01-200f-cc2d">5</characteristic>
+        <characteristic name="HP" typeId="a109-7c01-200f-cc2d">10</characteristic>
         <characteristic name="MV" typeId="6972-eaad-7147-252f">8&quot;</characteristic>
-        <characteristic name="Footprint" typeId="1a99-d265-660f-2eb3">Large</characteristic>
       </characteristics>
     </profile>
     <profile name="H-05 Cannon" typeId="35f7-4412-69cb-9d6a" typeName="Weapons" hidden="false" id="08ab-5981-2182-ed91">
       <characteristics>
         <characteristic name="R" typeId="8723-19bb-bcce-5f94">12&quot;</characteristic>
-        <characteristic name="Att" typeId="0a3b-93a6-7ca6-c930">8</characteristic>
+        <characteristic name="Att" typeId="0a3b-93a6-7ca6-c930">10</characteristic>
         <characteristic name="Acc" typeId="4bca-fe29-753e-511f">4+</characteristic>
         <characteristic name="AP" typeId="46da-1060-daef-3f00">-1, +2
 -1, +2</characteristic>
         <characteristic name="D" typeId="f994-dfa3-122c-9cc5">1</characteristic>
         <characteristic name="Abilities" typeId="3c47-c04c-8dfd-a691"/>
+      </characteristics>
+    </profile>
+    <profile name="Accelerated Mobility" typeId="7e76-2916-e877-fd40" typeName="Active (Special Abilities)" hidden="false" id="3c57-28ef-7c2f-93f8">
+      <characteristics>
+        <characteristic name="Description" typeId="3437-636f-e6aa-d7ea">This squad may perform a 2&quot; move.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
