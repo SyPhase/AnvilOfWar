@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="e48c-ab19-6449-78c7" name="Coalition of Engineers" gameSystemId="sys-4d6c-ac3c-296b-de59" gameSystemRevision="2" revision="10" authorName="SyPhase" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" hidden="false">
+<catalogue library="false" id="e48c-ab19-6449-78c7" name="Coalition of Engineers" gameSystemId="sys-4d6c-ac3c-296b-de59" gameSystemRevision="2" revision="11" authorName="Pierce Kester" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" hidden="false">
   <sharedProfiles>
     <profile name="Energy Shields" typeId="4720-4964-f773-3509" typeName="Passive (Special Abilities)" hidden="false" id="e9ec-6737-15af-faa3">
       <characteristics>
@@ -278,6 +278,9 @@
       <categoryLinks>
         <categoryLink targetId="86d7-e31a-0e12-cc05" id="86f3-d779-c7f6-c26d" primary="true" name="Infantry"/>
       </categoryLinks>
+      <costs>
+        <cost name="Unit Capacity" typeId="f7d6-c8d5-b008-4866" value="1"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Trace and Spot, the Walker Unit" hidden="false" id="26fc-68d9-edac-f5d3" subType="unit-group">
       <selectionEntries>
@@ -332,6 +335,9 @@
       <categoryLinks>
         <categoryLink targetId="892b-3ede-432c-1fff" id="1ad5-b858-66e7-c388" primary="true" name="Vehicle"/>
       </categoryLinks>
+      <costs>
+        <cost name="Unit Capacity" typeId="f7d6-c8d5-b008-4866" value="1"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Veteran Walker Unit" hidden="false" id="a1cf-e5ff-3522-e87e" subType="unit-group">
       <selectionEntries>
@@ -386,6 +392,9 @@
       <categoryLinks>
         <categoryLink targetId="892b-3ede-432c-1fff" id="1d9c-715d-12d9-d58b" primary="true" name="Vehicle"/>
       </categoryLinks>
+      <costs>
+        <cost name="Unit Capacity" typeId="f7d6-c8d5-b008-4866" value="1"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Combat Engineer Unit" hidden="false" id="52eb-8bf0-985c-5047" subType="unit-group">
       <selectionEntries>
@@ -477,6 +486,9 @@
       <categoryLinks>
         <categoryLink targetId="86d7-e31a-0e12-cc05" id="f3cf-a243-6efc-5c8c" primary="true" name="Infantry"/>
       </categoryLinks>
+      <costs>
+        <cost name="Unit Capacity" typeId="f7d6-c8d5-b008-4866" value="1"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Gatling Walker Unit" hidden="false" id="9b7d-9617-e21f-1ce4" subType="unit-group">
       <selectionEntries>
@@ -583,6 +595,9 @@
       <categoryLinks>
         <categoryLink targetId="892b-3ede-432c-1fff" id="545c-6af6-ed06-6eaf" primary="true" name="Vehicle"/>
       </categoryLinks>
+      <costs>
+        <cost name="Unit Capacity" typeId="f7d6-c8d5-b008-4866" value="1"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Artillery Walker Unit" hidden="false" id="76a0-94a1-2c1d-d019" subType="unit-group">
       <selectionEntries>
@@ -666,6 +681,9 @@
       <categoryLinks>
         <categoryLink targetId="892b-3ede-432c-1fff" id="eb8c-13d2-7e6f-37e3" primary="true" name="Vehicle"/>
       </categoryLinks>
+      <costs>
+        <cost name="Unit Capacity" typeId="f7d6-c8d5-b008-4866" value="1"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Battle Walker Unit" hidden="false" id="2d6c-a9e7-9c38-cbdf" subType="unit-group">
       <selectionEntries>
@@ -767,6 +785,9 @@
       <categoryLinks>
         <categoryLink targetId="892b-3ede-432c-1fff" id="bd03-9b1f-1a82-d925" primary="true" name="Vehicle"/>
       </categoryLinks>
+      <costs>
+        <cost name="Unit Capacity" typeId="f7d6-c8d5-b008-4866" value="1"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Rhinoceros Longhaul Walker Unit" hidden="false" id="8edf-3f1d-bb20-088b" subType="unit-group">
       <selectionEntries>
@@ -830,6 +851,9 @@
       <categoryLinks>
         <categoryLink targetId="892b-3ede-432c-1fff" id="b132-3cbe-8706-40c6" primary="true" name="Vehicle"/>
       </categoryLinks>
+      <costs>
+        <cost name="Unit Capacity" typeId="f7d6-c8d5-b008-4866" value="1"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>

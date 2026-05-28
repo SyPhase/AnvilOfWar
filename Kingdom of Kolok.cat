@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="d739-96af-a669-641a" name="Kingdom of Kolok" gameSystemId="sys-4d6c-ac3c-296b-de59" gameSystemRevision="12" revision="1" authorName="SyPhase" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="d739-96af-a669-641a" name="Kingdom of Kolok" gameSystemId="sys-4d6c-ac3c-296b-de59" gameSystemRevision="12" revision="2" authorName="Pierce Kester" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Alexander Unit" hidden="false" id="6396-c9e8-119d-68b7" subType="unit-group">
       <categoryLinks>
@@ -20,7 +20,7 @@
             <infoLink name="Stealthy" id="1690-de29-f6aa-5fed" hidden="false" type="rule" targetId="99b4-c1b6-4f40-4104"/>
           </infoLinks>
           <selectionEntries>
-            <selectionEntry type="model" import="true" name="Alexander, Blessed with the Gift of Foresight" hidden="false" id="5c07-ca3d-1447-11a5" sortIndex="">
+            <selectionEntry type="model" import="true" name="Alexander, Blessed with the Gift of Foresight" hidden="false" id="5c07-ca3d-1447-11a5">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c538-991c-40b0-7fdb"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cb20-97ea-e25d-9af3"/>
@@ -37,7 +37,7 @@
                 </selectionEntry>
               </selectionEntries>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Special Ability (Prescient Warning)" hidden="false" id="ccb4-695f-4ab4-9853" sortIndex="">
+            <selectionEntry type="upgrade" import="true" name="Special Ability (Prescient Warning)" hidden="false" id="ccb4-695f-4ab4-9853">
               <infoLinks>
                 <infoLink name="Prescient Warning" id="431c-71ff-89bf-f606" hidden="false" type="profile" targetId="4556-2a02-3c47-2a0b"/>
               </infoLinks>
@@ -46,7 +46,7 @@
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="114a-aadf-ced8-8fa8"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Ability (Charge)" hidden="false" id="3987-4fa1-c92a-17b2" sortIndex="">
+            <selectionEntry type="upgrade" import="true" name="Ability (Charge)" hidden="false" id="3987-4fa1-c92a-17b2">
               <infoLinks>
                 <infoLink name="Charge" id="3870-52d3-8237-44f0" hidden="false" type="profile" targetId="da7d-932f-71c1-2be3"/>
               </infoLinks>
@@ -82,7 +82,7 @@
             <infoLink name="Lord of Battle and Entourage" id="83b6-1e30-feb6-4a52" hidden="false" type="profile" targetId="e104-a1b5-d861-5ab0"/>
           </infoLinks>
           <selectionEntries>
-            <selectionEntry type="model" import="true" name="Lord of Battle" hidden="false" id="332d-820b-e6b9-7eda" sortIndex="">
+            <selectionEntry type="model" import="true" name="Lord of Battle" hidden="false" id="332d-820b-e6b9-7eda">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1741-b960-3f25-9161"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5dee-fbf7-5a23-948e"/>
@@ -99,7 +99,7 @@
                 </selectionEntry>
               </selectionEntries>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Special Ability (Longarm Discipline)" hidden="false" id="77a4-a615-ed24-6019" sortIndex="">
+            <selectionEntry type="upgrade" import="true" name="Special Ability (Longarm Discipline)" hidden="false" id="77a4-a615-ed24-6019">
               <infoLinks>
                 <infoLink name="Longarm Discipline" id="5509-2360-038b-d0bb" hidden="false" type="profile" targetId="b1c7-8310-824d-d1cb"/>
               </infoLinks>
@@ -108,7 +108,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3cca-6115-a936-464f"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Ability (Charge)" hidden="false" id="159b-540f-ca29-7f03" sortIndex="">
+            <selectionEntry type="upgrade" import="true" name="Ability (Charge)" hidden="false" id="159b-540f-ca29-7f03">
               <infoLinks>
                 <infoLink name="Charge" id="789b-4e08-9ab0-2c39" hidden="false" type="profile" targetId="da7d-932f-71c1-2be3"/>
               </infoLinks>
@@ -117,7 +117,7 @@
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6ef4-12e8-6360-b504"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Entourage" hidden="false" id="063a-33c3-8ca3-6e35" sortIndex="">
+            <selectionEntry type="model" import="true" name="Entourage" hidden="false" id="063a-33c3-8ca3-6e35">
               <constraints>
                 <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="fe3b-d6dd-186a-d542"/>
                 <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="5f7b-bf4d-93ef-76d3"/>
@@ -160,7 +160,7 @@
             <infoLink name="Spear Brutes" id="9841-6395-7c4c-3b29" hidden="false" type="profile" targetId="e48c-4b3e-d89b-600e"/>
           </infoLinks>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Ability (Charge)" hidden="false" id="d8be-ae1f-7533-04cf" sortIndex="">
+            <selectionEntry type="upgrade" import="true" name="Ability (Charge)" hidden="false" id="d8be-ae1f-7533-04cf">
               <infoLinks>
                 <infoLink name="Charge" id="3e5e-5577-da8d-8320" hidden="false" type="profile" targetId="da7d-932f-71c1-2be3"/>
               </infoLinks>
@@ -169,7 +169,7 @@
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bbfb-d957-3803-1dfc"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Spear Brute" hidden="false" id="6b36-e511-4327-d8d7" sortIndex="">
+            <selectionEntry type="model" import="true" name="Spear Brute" hidden="false" id="6b36-e511-4327-d8d7">
               <constraints>
                 <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="e204-d82f-7107-f2bb"/>
                 <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="61fc-4508-4880-64b5"/>
@@ -202,7 +202,7 @@
             <infoLink name="Spear Brutes" id="d399-f324-34f3-4008" hidden="false" type="profile" targetId="e48c-4b3e-d89b-600e"/>
           </infoLinks>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Ability (Charge)" hidden="false" id="b321-3adc-22f0-0d88" sortIndex="">
+            <selectionEntry type="upgrade" import="true" name="Ability (Charge)" hidden="false" id="b321-3adc-22f0-0d88">
               <infoLinks>
                 <infoLink name="Charge" id="d421-dfe9-9632-2559" hidden="false" type="profile" targetId="da7d-932f-71c1-2be3"/>
               </infoLinks>
@@ -211,7 +211,7 @@
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ce65-6f02-2847-b065"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Spear Brute" hidden="false" id="a102-8ee4-d456-5169" sortIndex="">
+            <selectionEntry type="model" import="true" name="Spear Brute" hidden="false" id="a102-8ee4-d456-5169">
               <constraints>
                 <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="59a4-2a6e-3744-df82"/>
                 <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="069a-fc30-8501-99d0"/>
@@ -244,7 +244,7 @@
             <infoLink name="Spear Brutes" id="26b4-c87b-54c6-3755" hidden="false" type="profile" targetId="e48c-4b3e-d89b-600e"/>
           </infoLinks>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Ability (Charge)" hidden="false" id="ccd6-cc30-601d-8ce3" sortIndex="">
+            <selectionEntry type="upgrade" import="true" name="Ability (Charge)" hidden="false" id="ccd6-cc30-601d-8ce3">
               <infoLinks>
                 <infoLink name="Charge" id="7465-ebb0-52d2-3ac8" hidden="false" type="profile" targetId="da7d-932f-71c1-2be3"/>
               </infoLinks>
@@ -253,7 +253,7 @@
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="342c-92aa-429d-35e5"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Spear Brute" hidden="false" id="3195-de44-e5bb-69d1" sortIndex="">
+            <selectionEntry type="model" import="true" name="Spear Brute" hidden="false" id="3195-de44-e5bb-69d1">
               <constraints>
                 <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="4076-718f-d9b8-081a"/>
                 <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="88d4-0da7-93c3-312a"/>
@@ -296,7 +296,7 @@
             <infoLink name="Heavy Brutes" id="dff2-6784-2fcd-4eea" hidden="false" type="profile" targetId="5d5a-8a40-9200-433c"/>
           </infoLinks>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Ability (Charge)" hidden="false" id="128e-765e-6098-c3e9" sortIndex="">
+            <selectionEntry type="upgrade" import="true" name="Ability (Charge)" hidden="false" id="128e-765e-6098-c3e9">
               <infoLinks>
                 <infoLink name="Charge" id="8224-1b7a-e66d-64ce" hidden="false" type="profile" targetId="da7d-932f-71c1-2be3"/>
               </infoLinks>
@@ -305,7 +305,7 @@
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c56b-480b-d628-fb76"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Heavy Brutes" hidden="false" id="a316-ecae-3aae-e99b" sortIndex="">
+            <selectionEntry type="model" import="true" name="Heavy Brutes" hidden="false" id="a316-ecae-3aae-e99b">
               <constraints>
                 <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="89fb-388a-702b-2dea"/>
                 <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="1a23-b060-6cae-c32d"/>
@@ -338,7 +338,7 @@
             <infoLink name="Heavy Brutes" id="4c4f-fb34-5923-377d" hidden="false" type="profile" targetId="5d5a-8a40-9200-433c"/>
           </infoLinks>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Ability (Charge)" hidden="false" id="f80a-25c6-6829-b04b" sortIndex="">
+            <selectionEntry type="upgrade" import="true" name="Ability (Charge)" hidden="false" id="f80a-25c6-6829-b04b">
               <infoLinks>
                 <infoLink name="Charge" id="1103-4ef9-505d-4a6a" hidden="false" type="profile" targetId="da7d-932f-71c1-2be3"/>
               </infoLinks>
@@ -347,7 +347,7 @@
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9058-3903-e165-1d0d"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Heavy Brutes" hidden="false" id="eaf3-3548-896c-026c" sortIndex="">
+            <selectionEntry type="model" import="true" name="Heavy Brutes" hidden="false" id="eaf3-3548-896c-026c">
               <constraints>
                 <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="5ee1-2d47-70ec-3ac0"/>
                 <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="ed16-ddc1-092d-6c08"/>
@@ -380,7 +380,7 @@
             <infoLink name="Heavy Brutes" id="ffd5-b05e-b2d0-0054" hidden="false" type="profile" targetId="5d5a-8a40-9200-433c"/>
           </infoLinks>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Ability (Charge)" hidden="false" id="ef9d-5b5e-5c36-0be2" sortIndex="">
+            <selectionEntry type="upgrade" import="true" name="Ability (Charge)" hidden="false" id="ef9d-5b5e-5c36-0be2">
               <infoLinks>
                 <infoLink name="Charge" id="c69d-e37c-b24f-550d" hidden="false" type="profile" targetId="da7d-932f-71c1-2be3"/>
               </infoLinks>
@@ -389,7 +389,7 @@
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7c67-e5db-b515-384d"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Heavy Brutes" hidden="false" id="79c6-c194-2939-73c4" sortIndex="">
+            <selectionEntry type="model" import="true" name="Heavy Brutes" hidden="false" id="79c6-c194-2939-73c4">
               <constraints>
                 <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="d8ac-8175-cc53-aa60"/>
                 <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="5299-c738-1b76-42d4"/>
@@ -432,7 +432,7 @@
             <infoLink name="Chariot Men" id="17ac-dc90-1be2-0f9a" hidden="false" type="profile" targetId="9247-50d2-77e9-9f20"/>
           </infoLinks>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Ability (Charge)" hidden="false" id="235b-61b5-f5af-37d1" sortIndex="">
+            <selectionEntry type="upgrade" import="true" name="Ability (Charge)" hidden="false" id="235b-61b5-f5af-37d1">
               <infoLinks>
                 <infoLink name="Charge" id="3bcd-7c05-315a-42a2" hidden="false" type="profile" targetId="da7d-932f-71c1-2be3"/>
               </infoLinks>
@@ -441,7 +441,7 @@
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5ad9-8812-fa3f-6e3c"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Chariot Men" hidden="false" id="cb58-a34b-9530-9360" sortIndex="">
+            <selectionEntry type="model" import="true" name="Chariot Men" hidden="false" id="cb58-a34b-9530-9360">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f5c0-89e8-35f4-414b"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="99e3-ddef-d3c5-56f5"/>
@@ -483,7 +483,7 @@
             <infoLink name="Chariot Men" id="3f9d-7a2f-fdd3-0d4c" hidden="false" type="profile" targetId="9247-50d2-77e9-9f20"/>
           </infoLinks>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Ability (Charge)" hidden="false" id="eca3-589f-ab01-dab9" sortIndex="">
+            <selectionEntry type="upgrade" import="true" name="Ability (Charge)" hidden="false" id="eca3-589f-ab01-dab9">
               <infoLinks>
                 <infoLink name="Charge" id="f940-c884-a772-f4ab" hidden="false" type="profile" targetId="da7d-932f-71c1-2be3"/>
               </infoLinks>
@@ -492,7 +492,7 @@
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b235-c067-674c-2fa6"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Chariot Men" hidden="false" id="96cc-5cf8-9aa6-0c2c" sortIndex="">
+            <selectionEntry type="model" import="true" name="Chariot Men" hidden="false" id="96cc-5cf8-9aa6-0c2c">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7e00-e18b-24d5-5960"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="794d-a431-6828-5083"/>
@@ -534,7 +534,7 @@
             <infoLink name="Chariot Men" id="30c0-9138-85a8-45bc" hidden="false" type="profile" targetId="9247-50d2-77e9-9f20"/>
           </infoLinks>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Ability (Charge)" hidden="false" id="0447-0c32-55b7-96b8" sortIndex="">
+            <selectionEntry type="upgrade" import="true" name="Ability (Charge)" hidden="false" id="0447-0c32-55b7-96b8">
               <infoLinks>
                 <infoLink name="Charge" id="1c11-3a61-1db6-6a5b" hidden="false" type="profile" targetId="da7d-932f-71c1-2be3"/>
               </infoLinks>
@@ -543,7 +543,7 @@
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4690-bdff-2677-da76"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Chariot Men" hidden="false" id="bdc9-b7bf-8126-4c2f" sortIndex="">
+            <selectionEntry type="model" import="true" name="Chariot Men" hidden="false" id="bdc9-b7bf-8126-4c2f">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="205c-1a3d-4899-dc40"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c23b-107f-e09f-ee65"/>
@@ -585,7 +585,7 @@
             <infoLink name="Chariot Men" id="664f-3d5b-2540-51c2" hidden="false" type="profile" targetId="9247-50d2-77e9-9f20"/>
           </infoLinks>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Ability (Charge)" hidden="false" id="e444-590b-70ae-cf47" sortIndex="">
+            <selectionEntry type="upgrade" import="true" name="Ability (Charge)" hidden="false" id="e444-590b-70ae-cf47">
               <infoLinks>
                 <infoLink name="Charge" id="ed0d-eac5-2527-79b2" hidden="false" type="profile" targetId="da7d-932f-71c1-2be3"/>
               </infoLinks>
@@ -594,7 +594,7 @@
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a54d-1c68-67fa-417c"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Chariot Men" hidden="false" id="562e-a5e9-2f7d-903b" sortIndex="">
+            <selectionEntry type="model" import="true" name="Chariot Men" hidden="false" id="562e-a5e9-2f7d-903b">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8088-c20c-fb21-fbeb"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dd14-73b4-3404-7d1e"/>
@@ -636,7 +636,7 @@
             <infoLink name="Chariot Men" id="aa00-81f8-c812-f0ae" hidden="false" type="profile" targetId="9247-50d2-77e9-9f20"/>
           </infoLinks>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Ability (Charge)" hidden="false" id="069c-3d04-703e-7942" sortIndex="">
+            <selectionEntry type="upgrade" import="true" name="Ability (Charge)" hidden="false" id="069c-3d04-703e-7942">
               <infoLinks>
                 <infoLink name="Charge" id="9a10-ae64-ada4-793b" hidden="false" type="profile" targetId="da7d-932f-71c1-2be3"/>
               </infoLinks>
@@ -645,7 +645,7 @@
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cf1a-a20c-f523-6ac0"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Chariot Men" hidden="false" id="f146-545e-7ee4-4f6d" sortIndex="">
+            <selectionEntry type="model" import="true" name="Chariot Men" hidden="false" id="f146-545e-7ee4-4f6d">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c56a-80d0-af99-dc73"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5368-6e57-d490-4b7d"/>
@@ -697,7 +697,7 @@
             <infoLink name="Blast Trebuchet" id="03d2-63e1-794f-e41d" hidden="false" type="profile" targetId="e027-1937-9b2c-ef4e"/>
           </infoLinks>
           <selectionEntries>
-            <selectionEntry type="model" import="true" name="Blast Trebuchet" hidden="false" id="3c8e-8a2b-0e54-3884" sortIndex="">
+            <selectionEntry type="model" import="true" name="Blast Trebuchet" hidden="false" id="3c8e-8a2b-0e54-3884">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f377-e5c4-c627-a6bc"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fc71-9283-3154-a15e"/>
@@ -730,7 +730,7 @@
             <infoLink name="Blast Trebuchet" id="8cb0-ae39-b767-74a8" hidden="false" type="profile" targetId="e027-1937-9b2c-ef4e"/>
           </infoLinks>
           <selectionEntries>
-            <selectionEntry type="model" import="true" name="Blast Trebuchet" hidden="false" id="f52a-6463-6907-f5a7" sortIndex="">
+            <selectionEntry type="model" import="true" name="Blast Trebuchet" hidden="false" id="f52a-6463-6907-f5a7">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4a74-4a43-3e8c-2a61"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6a49-db04-dff8-94e8"/>
@@ -773,7 +773,7 @@
             <infoLink name="Cyber-horseback Heavy Knights" id="0854-2032-814e-39c7" hidden="false" type="profile" targetId="fefd-199b-814c-057b"/>
           </infoLinks>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Ability (Charge)" hidden="false" id="b54a-8b4b-fd74-faed" sortIndex="">
+            <selectionEntry type="upgrade" import="true" name="Ability (Charge)" hidden="false" id="b54a-8b4b-fd74-faed">
               <infoLinks>
                 <infoLink name="Charge" id="41cf-cbe7-c132-7978" hidden="false" type="profile" targetId="da7d-932f-71c1-2be3"/>
               </infoLinks>
@@ -782,7 +782,7 @@
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="eb85-7c0b-e8f8-15fa"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Cyber-horseback Heavy Knight" hidden="false" id="9687-c0a7-2fc0-8145" sortIndex="">
+            <selectionEntry type="model" import="true" name="Cyber-horseback Heavy Knight" hidden="false" id="9687-c0a7-2fc0-8145">
               <constraints>
                 <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="7bb7-86b1-05b2-fe00"/>
                 <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="80d9-2d49-de7c-e2ed"/>
@@ -815,7 +815,7 @@
             <infoLink name="Cyber-horseback Heavy Knights" id="97e7-8150-5bab-2a97" hidden="false" type="profile" targetId="fefd-199b-814c-057b"/>
           </infoLinks>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Ability (Charge)" hidden="false" id="4d46-47b3-7494-f6be" sortIndex="">
+            <selectionEntry type="upgrade" import="true" name="Ability (Charge)" hidden="false" id="4d46-47b3-7494-f6be">
               <infoLinks>
                 <infoLink name="Charge" id="d266-adfe-dd3a-dc34" hidden="false" type="profile" targetId="da7d-932f-71c1-2be3"/>
               </infoLinks>
@@ -824,7 +824,7 @@
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="26fd-cb91-3500-74d6"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Cyber-horseback Heavy Knight" hidden="false" id="a97a-4e82-ffb4-3fbd" sortIndex="">
+            <selectionEntry type="model" import="true" name="Cyber-horseback Heavy Knight" hidden="false" id="a97a-4e82-ffb4-3fbd">
               <constraints>
                 <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="6109-3226-d28b-55b8"/>
                 <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="e82a-b676-8d4e-a8f2"/>
@@ -857,7 +857,7 @@
             <infoLink name="Cyber-horseback Heavy Knights" id="79b6-bd47-267f-876e" hidden="false" type="profile" targetId="fefd-199b-814c-057b"/>
           </infoLinks>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Ability (Charge)" hidden="false" id="1619-6b86-5586-549f" sortIndex="">
+            <selectionEntry type="upgrade" import="true" name="Ability (Charge)" hidden="false" id="1619-6b86-5586-549f">
               <infoLinks>
                 <infoLink name="Charge" id="c3af-9d47-90ab-7794" hidden="false" type="profile" targetId="da7d-932f-71c1-2be3"/>
               </infoLinks>
@@ -866,7 +866,7 @@
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7e27-d8ef-737e-b8e2"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Cyber-horseback Heavy Knight" hidden="false" id="5236-fcc5-d400-af4d" sortIndex="">
+            <selectionEntry type="model" import="true" name="Cyber-horseback Heavy Knight" hidden="false" id="5236-fcc5-d400-af4d">
               <constraints>
                 <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="c87a-268f-3606-3617"/>
                 <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="190b-d7e2-736a-1f86"/>
@@ -909,7 +909,7 @@
             <infoLink name="Armored Land-Ship" id="3cbb-2b27-d52d-ac93" hidden="false" type="profile" targetId="5950-8619-5aa1-bbac"/>
           </infoLinks>
           <selectionEntries>
-            <selectionEntry type="model" import="true" name="Armored Land-Ship" hidden="false" id="34bf-ce4c-604b-0ba3" sortIndex="">
+            <selectionEntry type="model" import="true" name="Armored Land-Ship" hidden="false" id="34bf-ce4c-604b-0ba3">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bd04-fc91-e0c4-e549"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d5a1-4f4a-df51-aaa4"/>
@@ -942,7 +942,7 @@
             <infoLink name="Armored Land-Ship" id="31bc-5225-1c62-f978" hidden="false" type="profile" targetId="5950-8619-5aa1-bbac"/>
           </infoLinks>
           <selectionEntries>
-            <selectionEntry type="model" import="true" name="Armored Land-Ship" hidden="false" id="b89a-67ac-c426-e8ee" sortIndex="">
+            <selectionEntry type="model" import="true" name="Armored Land-Ship" hidden="false" id="b89a-67ac-c426-e8ee">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e9ed-6b58-c497-5215"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="26ad-df72-84d5-1918"/>

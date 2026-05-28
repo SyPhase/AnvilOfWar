@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="827d-d66f-3aea-6f4a" name="Solar Corps" gameSystemId="sys-4d6c-ac3c-296b-de59" gameSystemRevision="9" revision="3" authorName="SyPhase" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" hidden="false">
+<catalogue library="false" id="827d-d66f-3aea-6f4a" name="Solar Corps" gameSystemId="sys-4d6c-ac3c-296b-de59" gameSystemRevision="9" revision="4" authorName="Pierce Kester" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" hidden="false">
   <sharedProfiles>
     <profile name="Solar Hero Cyrus Lucien" typeId="a0cc-e27d-0e47-b400" typeName="Unit" hidden="false" id="69a2-1c0a-9f62-3a4f">
       <characteristics>
@@ -316,7 +316,7 @@
       <selectionEntries>
         <selectionEntry type="unit" import="true" name="Solar Heavy Blaster Platforms Squad" hidden="false" id="6e2e-9c99-3106-5a1c">
           <infoLinks>
-            <infoLink name="Solar Heavy Troopers" id="9421-1374-0dc8-cef1" hidden="false" type="profile" targetId="2233-062d-a2d9-ce42"/>
+            <infoLink name="Solar Heavy Blaster Platforms" id="9421-1374-0dc8-cef1" hidden="false" type="profile" targetId="2233-062d-a2d9-ce42"/>
             <infoLink name="Crush-" id="84e0-32db-b2ba-3f99" hidden="false" type="rule" targetId="ab49-c483-f2a1-aac8">
               <modifiers>
                 <modifier type="set" value="Crush 1" field="name"/>
@@ -332,7 +332,7 @@
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Platform Blaster Cannon (standard)" hidden="false" id="a358-ff2c-b253-ff7d">
                   <infoLinks>
-                    <infoLink name="Solar Blaster Cannon (standard)" id="3347-335f-b4a0-2631" hidden="false" type="profile" targetId="40ee-6fa6-05a3-0703"/>
+                    <infoLink name="Platform Blaster Cannon (standard)" id="3347-335f-b4a0-2631" hidden="false" type="profile" targetId="40ee-6fa6-05a3-0703"/>
                   </infoLinks>
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4097-2979-ecb3-f94b"/>
@@ -341,7 +341,7 @@
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Platform Blaster Cannon (focused)" hidden="false" id="454e-f043-8c11-8471">
                   <infoLinks>
-                    <infoLink name="Solar Blaster Cannon (focused)" id="d973-6493-48f1-42a6" hidden="false" type="profile" targetId="fc7c-be4c-04c1-720f"/>
+                    <infoLink name="Platform Blaster Cannon (focused)" id="d973-6493-48f1-42a6" hidden="false" type="profile" targetId="fc7c-be4c-04c1-720f"/>
                   </infoLinks>
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c865-1bf2-5f0c-2fe1"/>
@@ -1004,7 +1004,7 @@
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Solar Carbine Troopers Unit" hidden="false" id="2972-a416-92ab-3da9" targetId="7731-eafa-6cf6-24fb" type="selectionEntry"/>
-    <entryLink import="true" name="Solar Heavy Troopers Unit" hidden="false" id="b860-1f6c-4503-a238" targetId="d55c-a4bf-41e9-ed1c" type="selectionEntry"/>
+    <entryLink import="true" name="Solar Heavy Blaster Platforms Unit" hidden="false" id="b860-1f6c-4503-a238" targetId="d55c-a4bf-41e9-ed1c" type="selectionEntry"/>
     <entryLink import="true" name="Solar Hero Unit" hidden="false" id="4ca8-888d-eb42-31fa" targetId="68f3-dca3-8611-36f9" type="selectionEntry"/>
     <entryLink import="true" name="Solar Officer Unit" hidden="false" id="d8dc-192d-c3f5-3e86" targetId="fe86-d9f0-6a49-df99" type="selectionEntry"/>
     <entryLink import="true" name="Solar Bikes Unit" hidden="false" id="9a93-c087-5193-7485" targetId="ffd5-8828-537f-9057" type="selectionEntry"/>
