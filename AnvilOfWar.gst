@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-4d6c-ac3c-296b-de59" name="Anvil Of War" battleScribeVersion="2.03" revision="11" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Pierce Kester" authorContact="bulletgiraffe@gmail.com" authorUrl="bulletgiraffe.com" publicationId="5911-3a66-ec62-32e6">
+<gameSystem id="sys-4d6c-ac3c-296b-de59" name="Anvil Of War" battleScribeVersion="2.03" revision="12" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Pierce Kester" authorContact="bulletgiraffe@gmail.com" authorUrl="bulletgiraffe.com" publicationId="5911-3a66-ec62-32e6">
   <categoryEntries>
     <categoryEntry name="Infantry" id="86d7-e31a-0e12-cc05" hidden="false"/>
     <categoryEntry name="Vehicle" id="892b-3ede-432c-1fff" hidden="false"/>
@@ -54,7 +54,7 @@
         <constraint type="max" value="1" field="forces" scope="parent" shared="true" id="327f-c1d6-fe69-33da-max" includeChildSelections="false"/>
       </constraints>
     </forceEntry>
-    <forceEntry name="Planetary Battle" id="b29e-7c80-963e-ca97" hidden="false" sortIndex="1">
+    <forceEntry name="Planetary Battle" id="b29e-7c80-963e-ca97" hidden="true" sortIndex="1">
       <costs>
         <cost name="Unit Capacity" typeId="f7d6-c8d5-b008-4866" value="0"/>
         <cost name="points" typeId="b94c-fcb8-4a07-acd7" value="0"/>
@@ -67,7 +67,7 @@
       </categoryLinks>
       <comment>Single fleet force for planetary battle</comment>
     </forceEntry>
-    <forceEntry name="Planetary Fleet" id="f4f6-3a2d-b765-7af6" hidden="false" sortIndex="4">
+    <forceEntry name="Planetary Fleet" id="f4f6-3a2d-b765-7af6" hidden="true" sortIndex="4">
       <comment>Whole fleet over one planet</comment>
       <categoryLinks>
         <categoryLink name="Faction Leader" hidden="false" id="edec-e4d6-c5b7-1e8e" targetId="0214-30a6-f341-ee7f"/>
@@ -86,7 +86,6 @@
     <profileType name="Unit" id="a0cc-e27d-0e47-b400" hidden="false" kind="model">
       <characteristicTypes>
         <characteristicType name="SV" id="24b4-ca44-ffb5-c3f4"/>
-        <characteristicType name="DS" id="1535-83cf-b8fe-b1ce"/>
         <characteristicType name="HP" id="a109-7c01-200f-cc2d"/>
         <characteristicType name="MV" id="6972-eaad-7147-252f"/>
       </characteristicTypes>
@@ -128,7 +127,7 @@
       <alias>Resist</alias>
     </rule>
     <rule name="Presence-" id="c94f-5f31-a078-81ee" hidden="false">
-      <description>In the securing phase, when counting infantry models within range of points, count models in this squad ‘x’ times instead of once.</description>
+      <description>In the securing phase, when counting infantry models within range of points, count models in this squad ‘x’ times.</description>
       <comment>Unit Rule.</comment>
       <alias>Presence</alias>
     </rule>
@@ -146,9 +145,7 @@
       <description>LoS is determined simply using the model’s bases and an imaginary cylinder straight up from them to the highest point of the model. If a target model’s imaginary cylinder is not visible from the attacking model’s imaginary cylinder, then there is no LoS. If the target is only partially visible from every point, there is partial LoS. If the target is fully visible from any point, there is full LoS.</description>
     </rule>
     <rule name="Cover" id="ec73-afe2-5b3e-6dc0" hidden="false">
-      <description>A target model is said to have cover from the attacking squad if the attacking squad has partial LoS on that target model so long as the target model is within 6” of at least one source of its cover.
-A target squad is said to have cover if the attacking squad has full LoS on half or less than half of the models in that target squad or if the attacking squad has partial LoS on all the visible models in the target squad.
-If a target squad has cover from the attacking squad, worsen the accuracy of that attack by 1.</description>
+      <description>A target infantry squad is said to have cover from the attacking squad if each model is within a cover zone. If a target squad has cover from the attacking squad, worsen the accuracy of that attack by 1.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -195,7 +192,12 @@ If a target squad has cover from the attacking squad, worsen the accuracy of th
     </profile>
     <profile name="Dangerous" typeId="ed56-95ac-5582-8023" typeName="Weapon Abilities" hidden="false" id="426f-ee4f-6590-abf1">
       <characteristics>
-        <characteristic name="Description" typeId="c7ce-7c70-361a-78df">After this weapon resolves the attack sequence, resolve the attack sequence again but targeting its own unit in which the total number of attacks to roll is equal to the number of misses made against the enemy unit in the original attack sequence.</characteristic>
+        <characteristic name="Description" typeId="c7ce-7c70-361a-78df">For each hit roll that misses, you must roll to save as though those hit rolls successfully hit your own squad.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Melee" typeId="ed56-95ac-5582-8023" typeName="Weapon Abilities" hidden="false" id="2b37-978b-d403-a2ee">
+      <characteristics>
+        <characteristic name="Description" typeId="c7ce-7c70-361a-78df">If this weapon is in range of an enemy squad, if that enemy squad moves out of range of this weapon, you may select one melee weapon and perform an attack sequence against that squad.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

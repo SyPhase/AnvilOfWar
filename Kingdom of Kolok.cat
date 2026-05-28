@@ -1,0 +1,1158 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="d739-96af-a669-641a" name="Kingdom of Kolok" gameSystemId="sys-4d6c-ac3c-296b-de59" gameSystemRevision="12" revision="1" authorName="SyPhase" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <sharedSelectionEntries>
+    <selectionEntry type="unit" import="true" name="Alexander Unit" hidden="false" id="6396-c9e8-119d-68b7" subType="unit-group">
+      <categoryLinks>
+        <categoryLink targetId="0a6c-1e81-5f9d-3240" id="a584-e2db-74bb-19a1" primary="true" name="Hero"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Unit Capacity" typeId="f7d6-c8d5-b008-4866" value="1"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="unit" import="true" name="Alexander Squad" hidden="false" id="449b-37ac-4ded-9e18">
+          <infoLinks>
+            <infoLink name="Alexander, Blessed with the Gift of Foresight" id="1c15-09c4-b28c-6ea6" hidden="false" type="profile" targetId="5c46-f625-887b-3ad4"/>
+            <infoLink name="Presence-" id="e8b1-51d1-33c6-7811" hidden="false" type="rule" targetId="c94f-5f31-a078-81ee">
+              <modifiers>
+                <modifier type="set" value="Presence 6" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Stealthy" id="1690-de29-f6aa-5fed" hidden="false" type="rule" targetId="99b4-c1b6-4f40-4104"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Alexander, Blessed with the Gift of Foresight" hidden="false" id="5c07-ca3d-1447-11a5" sortIndex="">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c538-991c-40b0-7fdb"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cb20-97ea-e25d-9af3"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Alexander&apos;s Crusher Mace" hidden="false" id="2655-139c-1972-26c1">
+                  <infoLinks>
+                    <infoLink name="Alexander&apos;s Crusher Mace" id="6960-ee80-0656-199f" hidden="false" type="profile" targetId="f28f-04de-bb21-5bbe"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8f82-d760-be05-6a4d"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ccb1-fc03-7983-1a4d"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Special Ability (Prescient Warning)" hidden="false" id="ccb4-695f-4ab4-9853" sortIndex="">
+              <infoLinks>
+                <infoLink name="Prescient Warning" id="431c-71ff-89bf-f606" hidden="false" type="profile" targetId="4556-2a02-3c47-2a0b"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="232a-efc3-f156-ff4f"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="114a-aadf-ced8-8fa8"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Ability (Charge)" hidden="false" id="3987-4fa1-c92a-17b2" sortIndex="">
+              <infoLinks>
+                <infoLink name="Charge" id="3870-52d3-8237-44f0" hidden="false" type="profile" targetId="da7d-932f-71c1-2be3"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eef5-0e4f-d96c-a022"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aa0a-fc09-c6a5-d5b7"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Infantry" hidden="false" id="292a-addc-6717-a708" targetId="86d7-e31a-0e12-cc05" primary="false"/>
+            <categoryLink name="Heavy" hidden="false" id="41ac-e395-6053-afbc" targetId="b9c5-1770-e28a-db52" primary="false"/>
+            <categoryLink name="Small" hidden="false" id="3ea5-a7be-7327-511c" targetId="9398-0362-f8ff-9b2c" primary="false"/>
+            <categoryLink targetId="0a6c-1e81-5f9d-3240" id="8e27-a5ff-1fa1-73a2" primary="false" name="Hero"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7a5c-896d-bdc2-d0cb"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d6a7-91af-b7db-4562"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Lord of Battle and Entourage Unit" hidden="false" id="b3ca-3778-ee2a-79f3" subType="unit-group">
+      <categoryLinks>
+        <categoryLink targetId="86d7-e31a-0e12-cc05" id="b38e-4216-182d-a08b" primary="true" name="Infantry"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Unit Capacity" typeId="f7d6-c8d5-b008-4866" value="1"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="unit" import="true" name="Lord of Battle and Entourage Squad" hidden="false" id="eddd-181e-926f-3a9f">
+          <infoLinks>
+            <infoLink name="Lord of Battle and Entourage" id="83b6-1e30-feb6-4a52" hidden="false" type="profile" targetId="e104-a1b5-d861-5ab0"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Lord of Battle" hidden="false" id="332d-820b-e6b9-7eda" sortIndex="">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1741-b960-3f25-9161"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5dee-fbf7-5a23-948e"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Lord of Battle Weaponry" hidden="false" id="4cb0-58d0-8a4c-0b06">
+                  <infoLinks>
+                    <infoLink name="Lord of Battle Weaponry" id="02d7-285f-d9c3-b5c5" hidden="false" type="profile" targetId="401a-f2c1-d494-4399"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ff3d-59ff-f39e-2b2d"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6c37-e8aa-7e4c-23b3"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Special Ability (Longarm Discipline)" hidden="false" id="77a4-a615-ed24-6019" sortIndex="">
+              <infoLinks>
+                <infoLink name="Longarm Discipline" id="5509-2360-038b-d0bb" hidden="false" type="profile" targetId="b1c7-8310-824d-d1cb"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aaa9-843f-7b74-dc00"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3cca-6115-a936-464f"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Ability (Charge)" hidden="false" id="159b-540f-ca29-7f03" sortIndex="">
+              <infoLinks>
+                <infoLink name="Charge" id="789b-4e08-9ab0-2c39" hidden="false" type="profile" targetId="da7d-932f-71c1-2be3"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6854-e981-6c0f-6b09"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6ef4-12e8-6360-b504"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Entourage" hidden="false" id="063a-33c3-8ca3-6e35" sortIndex="">
+              <constraints>
+                <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="fe3b-d6dd-186a-d542"/>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="5f7b-bf4d-93ef-76d3"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Lord of Battle Weaponry" hidden="false" id="ad37-66cf-e249-da1b">
+                  <infoLinks>
+                    <infoLink name="Lord of Battle Weaponry" id="e1c5-719e-3852-21e0" hidden="false" type="profile" targetId="401a-f2c1-d494-4399"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9e56-377d-4691-2d8a"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5393-51e0-4998-dec9"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Infantry" hidden="false" id="d926-90e6-bd8c-fdab" targetId="86d7-e31a-0e12-cc05" primary="false"/>
+            <categoryLink name="Heavy" hidden="false" id="a65b-2de0-4d5f-19d2" targetId="b9c5-1770-e28a-db52" primary="false"/>
+            <categoryLink name="Small" hidden="false" id="eaf5-0213-d352-9345" targetId="9398-0362-f8ff-9b2c" primary="false"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b72b-e90f-f4ec-be63"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ad1e-8f62-2edc-695c"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Spear Brutes Unit" hidden="false" id="6622-3782-af49-ee10" subType="unit-group">
+      <categoryLinks>
+        <categoryLink targetId="86d7-e31a-0e12-cc05" id="257f-9270-b07f-736e" primary="true" name="Infantry"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Unit Capacity" typeId="f7d6-c8d5-b008-4866" value="1"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="unit" import="true" name="Spear Brutes Squad" hidden="false" id="2966-7e5a-6a95-f135">
+          <infoLinks>
+            <infoLink name="Spear Brutes" id="9841-6395-7c4c-3b29" hidden="false" type="profile" targetId="e48c-4b3e-d89b-600e"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Ability (Charge)" hidden="false" id="d8be-ae1f-7533-04cf" sortIndex="">
+              <infoLinks>
+                <infoLink name="Charge" id="3e5e-5577-da8d-8320" hidden="false" type="profile" targetId="da7d-932f-71c1-2be3"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0401-983d-643c-b8ac"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bbfb-d957-3803-1dfc"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Spear Brute" hidden="false" id="6b36-e511-4327-d8d7" sortIndex="">
+              <constraints>
+                <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="e204-d82f-7107-f2bb"/>
+                <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="61fc-4508-4880-64b5"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Brute&apos;s Spear" hidden="false" id="516d-e78a-52e6-cca9">
+                  <infoLinks>
+                    <infoLink name="Brute&apos;s Spear" id="e074-fc46-e4e2-5e02" hidden="false" type="profile" targetId="c9ab-1102-668d-3d38"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8b06-9c3b-8a97-6f59"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7a3c-8db1-854a-7a27"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Infantry" hidden="false" id="8f38-8d37-3921-044a" targetId="86d7-e31a-0e12-cc05" primary="false"/>
+            <categoryLink name="Small" hidden="false" id="411c-860f-2fcc-a590" targetId="9398-0362-f8ff-9b2c" primary="false"/>
+            <categoryLink targetId="59ea-6f10-a33e-30f1" id="876e-37a6-8faa-da66" primary="false" name="Light"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ec32-9d53-d8e5-5189"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="46fe-a5aa-19f5-7e4b"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Spear Brutes Squad" hidden="false" id="bb6e-69ff-049d-34eb">
+          <infoLinks>
+            <infoLink name="Spear Brutes" id="d399-f324-34f3-4008" hidden="false" type="profile" targetId="e48c-4b3e-d89b-600e"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Ability (Charge)" hidden="false" id="b321-3adc-22f0-0d88" sortIndex="">
+              <infoLinks>
+                <infoLink name="Charge" id="d421-dfe9-9632-2559" hidden="false" type="profile" targetId="da7d-932f-71c1-2be3"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="116d-57bd-3c66-95d5"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ce65-6f02-2847-b065"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Spear Brute" hidden="false" id="a102-8ee4-d456-5169" sortIndex="">
+              <constraints>
+                <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="59a4-2a6e-3744-df82"/>
+                <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="069a-fc30-8501-99d0"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Brute&apos;s Spear" hidden="false" id="c4fe-f0da-7a55-8b11">
+                  <infoLinks>
+                    <infoLink name="Brute&apos;s Spear" id="a7aa-2f2c-2d9f-40c6" hidden="false" type="profile" targetId="c9ab-1102-668d-3d38"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="896d-5224-1823-e7f8"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f44e-dff4-c789-bd4d"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Infantry" hidden="false" id="49ff-b862-1306-d3fc" targetId="86d7-e31a-0e12-cc05" primary="false"/>
+            <categoryLink name="Small" hidden="false" id="44c7-60fb-1c14-be23" targetId="9398-0362-f8ff-9b2c" primary="false"/>
+            <categoryLink targetId="59ea-6f10-a33e-30f1" id="7de1-e3d7-08db-7c9d" primary="false" name="Light"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5ed1-dcf9-31b1-7134"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d727-06d6-ea88-90ed"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Spear Brutes Squad" hidden="false" id="a357-2fae-8607-70e7">
+          <infoLinks>
+            <infoLink name="Spear Brutes" id="26b4-c87b-54c6-3755" hidden="false" type="profile" targetId="e48c-4b3e-d89b-600e"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Ability (Charge)" hidden="false" id="ccd6-cc30-601d-8ce3" sortIndex="">
+              <infoLinks>
+                <infoLink name="Charge" id="7465-ebb0-52d2-3ac8" hidden="false" type="profile" targetId="da7d-932f-71c1-2be3"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5cd7-c73e-3fc3-a212"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="342c-92aa-429d-35e5"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Spear Brute" hidden="false" id="3195-de44-e5bb-69d1" sortIndex="">
+              <constraints>
+                <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="4076-718f-d9b8-081a"/>
+                <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="88d4-0da7-93c3-312a"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Brute&apos;s Spear" hidden="false" id="a86c-c5a1-8ce2-9b86">
+                  <infoLinks>
+                    <infoLink name="Brute&apos;s Spear" id="2010-fe6a-386e-d668" hidden="false" type="profile" targetId="c9ab-1102-668d-3d38"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="094b-01f7-80bd-248f"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0e33-82c0-0b61-8487"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Infantry" hidden="false" id="8e78-caf4-1e54-386c" targetId="86d7-e31a-0e12-cc05" primary="false"/>
+            <categoryLink name="Small" hidden="false" id="e010-8637-fcd3-2160" targetId="9398-0362-f8ff-9b2c" primary="false"/>
+            <categoryLink targetId="59ea-6f10-a33e-30f1" id="24ad-9bd2-6c00-abae" primary="false" name="Light"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3728-2b84-8219-4990"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9a56-a483-0e0e-cf3e"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Heavy Brutes Unit" hidden="false" id="a966-6626-fdb3-d93f" subType="unit-group">
+      <categoryLinks>
+        <categoryLink targetId="86d7-e31a-0e12-cc05" id="d2c2-863a-aae3-9cdf" primary="true" name="Infantry"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Unit Capacity" typeId="f7d6-c8d5-b008-4866" value="1"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="unit" import="true" name="Heavy Brutes Squad" hidden="false" id="07d0-3da8-1512-f49d">
+          <infoLinks>
+            <infoLink name="Heavy Brutes" id="dff2-6784-2fcd-4eea" hidden="false" type="profile" targetId="5d5a-8a40-9200-433c"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Ability (Charge)" hidden="false" id="128e-765e-6098-c3e9" sortIndex="">
+              <infoLinks>
+                <infoLink name="Charge" id="8224-1b7a-e66d-64ce" hidden="false" type="profile" targetId="da7d-932f-71c1-2be3"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="506b-67c9-77e3-5d62"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c56b-480b-d628-fb76"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Heavy Brutes" hidden="false" id="a316-ecae-3aae-e99b" sortIndex="">
+              <constraints>
+                <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="89fb-388a-702b-2dea"/>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="1a23-b060-6cae-c32d"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Heavy Brute Mace" hidden="false" id="fc2d-4e09-8607-0fda">
+                  <infoLinks>
+                    <infoLink name="Heavy Brute Mace" id="5da6-cfe1-07c4-6cf8" hidden="false" type="profile" targetId="9a17-8900-4154-8c7e"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c1bd-152a-2cbf-1c3e"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="24e8-19d3-e3aa-0b7a"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Infantry" hidden="false" id="86cb-f79c-456f-d54d" targetId="86d7-e31a-0e12-cc05" primary="false"/>
+            <categoryLink name="Heavy" hidden="false" id="e069-ce4d-3b63-8bcc" targetId="b9c5-1770-e28a-db52" primary="false"/>
+            <categoryLink name="Small" hidden="false" id="e635-2c66-e2b1-b4a3" targetId="9398-0362-f8ff-9b2c" primary="false"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="04c6-7a45-c43c-cfb3"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ac4d-61a8-cfd1-ff93"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Heavy Brutes Squad" hidden="false" id="14dc-9594-7338-7dac">
+          <infoLinks>
+            <infoLink name="Heavy Brutes" id="4c4f-fb34-5923-377d" hidden="false" type="profile" targetId="5d5a-8a40-9200-433c"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Ability (Charge)" hidden="false" id="f80a-25c6-6829-b04b" sortIndex="">
+              <infoLinks>
+                <infoLink name="Charge" id="1103-4ef9-505d-4a6a" hidden="false" type="profile" targetId="da7d-932f-71c1-2be3"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fd34-5289-1018-023a"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9058-3903-e165-1d0d"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Heavy Brutes" hidden="false" id="eaf3-3548-896c-026c" sortIndex="">
+              <constraints>
+                <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="5ee1-2d47-70ec-3ac0"/>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="ed16-ddc1-092d-6c08"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Heavy Brute Mace" hidden="false" id="c4f0-2554-4aff-bc2e">
+                  <infoLinks>
+                    <infoLink name="Heavy Brute Mace" id="9e01-9856-b66b-6817" hidden="false" type="profile" targetId="9a17-8900-4154-8c7e"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3639-3b5c-75e3-9a83"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5cd0-02f2-3237-cdd1"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Infantry" hidden="false" id="e854-21ba-8fba-0a4b" targetId="86d7-e31a-0e12-cc05" primary="false"/>
+            <categoryLink name="Heavy" hidden="false" id="6ca7-1d9a-3f1e-81b7" targetId="b9c5-1770-e28a-db52" primary="false"/>
+            <categoryLink name="Small" hidden="false" id="e63c-6c20-aa2a-1ceb" targetId="9398-0362-f8ff-9b2c" primary="false"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9ca1-8b1e-2ca7-e6dd"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9c31-9cf6-4031-2b7d"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Heavy Brutes Squad" hidden="false" id="4e58-f3a1-8fd1-4afe">
+          <infoLinks>
+            <infoLink name="Heavy Brutes" id="ffd5-b05e-b2d0-0054" hidden="false" type="profile" targetId="5d5a-8a40-9200-433c"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Ability (Charge)" hidden="false" id="ef9d-5b5e-5c36-0be2" sortIndex="">
+              <infoLinks>
+                <infoLink name="Charge" id="c69d-e37c-b24f-550d" hidden="false" type="profile" targetId="da7d-932f-71c1-2be3"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8681-88a6-4102-62e0"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7c67-e5db-b515-384d"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Heavy Brutes" hidden="false" id="79c6-c194-2939-73c4" sortIndex="">
+              <constraints>
+                <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="d8ac-8175-cc53-aa60"/>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="5299-c738-1b76-42d4"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Heavy Brute Mace" hidden="false" id="9698-82a1-6873-e12b">
+                  <infoLinks>
+                    <infoLink name="Heavy Brute Mace" id="b3f8-7b3d-1b07-4667" hidden="false" type="profile" targetId="9a17-8900-4154-8c7e"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c5c1-963b-a679-8fd5"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1e65-4d78-a01d-08dc"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Infantry" hidden="false" id="f192-272f-e0e7-d7ff" targetId="86d7-e31a-0e12-cc05" primary="false"/>
+            <categoryLink name="Heavy" hidden="false" id="e1a7-68e6-21bd-567d" targetId="b9c5-1770-e28a-db52" primary="false"/>
+            <categoryLink name="Small" hidden="false" id="d0bb-a9a2-bcd8-cae5" targetId="9398-0362-f8ff-9b2c" primary="false"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f7e7-9a16-1a3a-8816"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f06b-455f-f91c-0368"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Chariot Men Unit" hidden="false" id="a168-c267-10fe-d4b6" subType="unit-group">
+      <categoryLinks>
+        <categoryLink targetId="892b-3ede-432c-1fff" id="6feb-4e5b-5935-fbae" primary="true" name="Vehicle"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Unit Capacity" typeId="f7d6-c8d5-b008-4866" value="1"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="unit" import="true" name="Chariot Men Squad" hidden="false" id="b104-5a69-dcd8-7027">
+          <infoLinks>
+            <infoLink name="Chariot Men" id="17ac-dc90-1be2-0f9a" hidden="false" type="profile" targetId="9247-50d2-77e9-9f20"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Ability (Charge)" hidden="false" id="235b-61b5-f5af-37d1" sortIndex="">
+              <infoLinks>
+                <infoLink name="Charge" id="3bcd-7c05-315a-42a2" hidden="false" type="profile" targetId="da7d-932f-71c1-2be3"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7c53-e9ec-55cb-7168"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5ad9-8812-fa3f-6e3c"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Chariot Men" hidden="false" id="cb58-a34b-9530-9360" sortIndex="">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f5c0-89e8-35f4-414b"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="99e3-ddef-d3c5-56f5"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Chariot Longbow" hidden="false" id="a9b6-812b-5199-bda7">
+                  <infoLinks>
+                    <infoLink name="Chariot Longbow" id="c8ee-1421-e78b-8cc1" hidden="false" type="profile" targetId="8bee-2485-a19c-20e7"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4cbe-b595-e514-9fc7"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="68c3-7591-04a8-efbb"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Chariot Spear" hidden="false" id="9b15-809c-ccbb-0a45">
+                  <infoLinks>
+                    <infoLink name="Chariot Spear" id="fed1-c0bf-1c9d-9a9a" hidden="false" type="profile" targetId="13b4-9e65-9980-b619"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a0d4-ce4c-99ac-b075"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="51c6-bd53-efe5-b623"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink targetId="892b-3ede-432c-1fff" id="93f2-8ebd-db27-ce67" primary="false" name="Vehicle"/>
+            <categoryLink targetId="9dbc-8ba4-9d45-609d" id="8f78-0e25-2dc4-c607" primary="false" name="Medium"/>
+            <categoryLink targetId="59ea-6f10-a33e-30f1" id="97b0-42d8-1845-1f83" primary="false" name="Light"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="704f-59f8-d381-c061"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4c7a-6af3-64a4-cce5"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Chariot Men Squad" hidden="false" id="59d6-61cf-22b7-738f">
+          <infoLinks>
+            <infoLink name="Chariot Men" id="3f9d-7a2f-fdd3-0d4c" hidden="false" type="profile" targetId="9247-50d2-77e9-9f20"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Ability (Charge)" hidden="false" id="eca3-589f-ab01-dab9" sortIndex="">
+              <infoLinks>
+                <infoLink name="Charge" id="f940-c884-a772-f4ab" hidden="false" type="profile" targetId="da7d-932f-71c1-2be3"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6ff5-d830-f830-d23b"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b235-c067-674c-2fa6"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Chariot Men" hidden="false" id="96cc-5cf8-9aa6-0c2c" sortIndex="">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7e00-e18b-24d5-5960"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="794d-a431-6828-5083"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Chariot Longbow" hidden="false" id="4503-6450-c41f-233b">
+                  <infoLinks>
+                    <infoLink name="Chariot Longbow" id="d80d-7038-516b-7c61" hidden="false" type="profile" targetId="8bee-2485-a19c-20e7"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="420d-1c25-ef4c-d90b"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9edf-3705-500c-28c7"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Chariot Spear" hidden="false" id="d96f-9a68-fe93-64e6">
+                  <infoLinks>
+                    <infoLink name="Chariot Spear" id="74d4-d473-a4a4-673a" hidden="false" type="profile" targetId="13b4-9e65-9980-b619"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5bcf-6c73-900b-048e"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bb0b-6181-8eee-9a52"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink targetId="892b-3ede-432c-1fff" id="5bdc-339e-eee7-4743" primary="false" name="Vehicle"/>
+            <categoryLink targetId="9dbc-8ba4-9d45-609d" id="ecb1-c10b-0ce2-9869" primary="false" name="Medium"/>
+            <categoryLink targetId="59ea-6f10-a33e-30f1" id="3584-0d9b-1cb5-334f" primary="false" name="Light"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bc8b-48c1-9d15-5e1b"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cb03-24fe-dda9-ceeb"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Chariot Men Squad" hidden="false" id="1d0b-06ba-f1df-af94">
+          <infoLinks>
+            <infoLink name="Chariot Men" id="30c0-9138-85a8-45bc" hidden="false" type="profile" targetId="9247-50d2-77e9-9f20"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Ability (Charge)" hidden="false" id="0447-0c32-55b7-96b8" sortIndex="">
+              <infoLinks>
+                <infoLink name="Charge" id="1c11-3a61-1db6-6a5b" hidden="false" type="profile" targetId="da7d-932f-71c1-2be3"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="52ef-cf82-50b3-4b7b"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4690-bdff-2677-da76"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Chariot Men" hidden="false" id="bdc9-b7bf-8126-4c2f" sortIndex="">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="205c-1a3d-4899-dc40"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c23b-107f-e09f-ee65"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Chariot Longbow" hidden="false" id="de40-cbcb-bb84-13b7">
+                  <infoLinks>
+                    <infoLink name="Chariot Longbow" id="3829-0e3b-626a-d474" hidden="false" type="profile" targetId="8bee-2485-a19c-20e7"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b11b-7208-2265-f49a"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ce3a-1fcb-16ae-c9bb"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Chariot Spear" hidden="false" id="03ee-4b84-a780-30ca">
+                  <infoLinks>
+                    <infoLink name="Chariot Spear" id="4baa-f414-157b-ddfa" hidden="false" type="profile" targetId="13b4-9e65-9980-b619"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f4b3-0c26-0669-f3b0"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a78b-75af-52d5-e46f"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink targetId="892b-3ede-432c-1fff" id="acd2-2ee7-b088-e248" primary="false" name="Vehicle"/>
+            <categoryLink targetId="9dbc-8ba4-9d45-609d" id="d018-4da9-bae5-604e" primary="false" name="Medium"/>
+            <categoryLink targetId="59ea-6f10-a33e-30f1" id="0de4-b41b-a1fa-04dc" primary="false" name="Light"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="74d3-ceea-a559-1e3c"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="65b6-87be-dbaa-534b"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Chariot Men Squad" hidden="false" id="ffc5-4b6e-1182-3841">
+          <infoLinks>
+            <infoLink name="Chariot Men" id="664f-3d5b-2540-51c2" hidden="false" type="profile" targetId="9247-50d2-77e9-9f20"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Ability (Charge)" hidden="false" id="e444-590b-70ae-cf47" sortIndex="">
+              <infoLinks>
+                <infoLink name="Charge" id="ed0d-eac5-2527-79b2" hidden="false" type="profile" targetId="da7d-932f-71c1-2be3"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fe96-a725-3e98-f2de"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a54d-1c68-67fa-417c"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Chariot Men" hidden="false" id="562e-a5e9-2f7d-903b" sortIndex="">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8088-c20c-fb21-fbeb"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dd14-73b4-3404-7d1e"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Chariot Longbow" hidden="false" id="2f10-2b3c-d324-25c6">
+                  <infoLinks>
+                    <infoLink name="Chariot Longbow" id="e820-dc92-a1d2-66de" hidden="false" type="profile" targetId="8bee-2485-a19c-20e7"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0e14-1451-5612-e067"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="514e-0b33-03ea-c8cf"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Chariot Spear" hidden="false" id="6337-72b7-c4f9-2f39">
+                  <infoLinks>
+                    <infoLink name="Chariot Spear" id="7fd5-5efd-fff2-cbf5" hidden="false" type="profile" targetId="13b4-9e65-9980-b619"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fbac-f508-3aec-2353"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ae75-323b-743b-08e6"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink targetId="892b-3ede-432c-1fff" id="54de-7670-bc9c-78b9" primary="false" name="Vehicle"/>
+            <categoryLink targetId="9dbc-8ba4-9d45-609d" id="3860-a9b8-83da-2b04" primary="false" name="Medium"/>
+            <categoryLink targetId="59ea-6f10-a33e-30f1" id="432f-2da0-8392-5b3a" primary="false" name="Light"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9fc0-b1d4-0876-1fe3"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1fac-3d73-768c-ca91"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Chariot Men Squad" hidden="false" id="fc97-a913-ece7-3251">
+          <infoLinks>
+            <infoLink name="Chariot Men" id="aa00-81f8-c812-f0ae" hidden="false" type="profile" targetId="9247-50d2-77e9-9f20"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Ability (Charge)" hidden="false" id="069c-3d04-703e-7942" sortIndex="">
+              <infoLinks>
+                <infoLink name="Charge" id="9a10-ae64-ada4-793b" hidden="false" type="profile" targetId="da7d-932f-71c1-2be3"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6203-0492-bc81-2231"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cf1a-a20c-f523-6ac0"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Chariot Men" hidden="false" id="f146-545e-7ee4-4f6d" sortIndex="">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c56a-80d0-af99-dc73"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5368-6e57-d490-4b7d"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Chariot Longbow" hidden="false" id="d5d9-3828-3980-183b">
+                  <infoLinks>
+                    <infoLink name="Chariot Longbow" id="9a79-918b-639d-20ed" hidden="false" type="profile" targetId="8bee-2485-a19c-20e7"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a707-0cbc-e845-d32e"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5a0a-c302-021f-efbb"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Chariot Spear" hidden="false" id="ee12-56d9-7224-52d4">
+                  <infoLinks>
+                    <infoLink name="Chariot Spear" id="8aaa-399d-392e-83a3" hidden="false" type="profile" targetId="13b4-9e65-9980-b619"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="09e9-f716-9b4c-0ff1"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f0b6-2bc8-2238-9b3b"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink targetId="892b-3ede-432c-1fff" id="78fe-46fb-d883-407a" primary="false" name="Vehicle"/>
+            <categoryLink targetId="9dbc-8ba4-9d45-609d" id="effc-89b8-5d64-791c" primary="false" name="Medium"/>
+            <categoryLink targetId="59ea-6f10-a33e-30f1" id="1564-af3c-3353-7f54" primary="false" name="Light"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3a7e-69d3-2ce6-cd87"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e093-cf83-8fc6-e779"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Blast Trebuchet Unit" hidden="false" id="01c1-f18e-9d46-5a2a" subType="unit-group">
+      <categoryLinks>
+        <categoryLink targetId="892b-3ede-432c-1fff" id="e042-c7f7-898b-4d27" primary="true" name="Vehicle"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Unit Capacity" typeId="f7d6-c8d5-b008-4866" value="1"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="unit" import="true" name="Blast Trebuchet Squad" hidden="false" id="3e46-4d1d-9b21-6972">
+          <infoLinks>
+            <infoLink name="Blast Trebuchet" id="03d2-63e1-794f-e41d" hidden="false" type="profile" targetId="e027-1937-9b2c-ef4e"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Blast Trebuchet" hidden="false" id="3c8e-8a2b-0e54-3884" sortIndex="">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f377-e5c4-c627-a6bc"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fc71-9283-3154-a15e"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Trebuchet Fire" hidden="false" id="0d24-1e33-8946-d2e4">
+                  <infoLinks>
+                    <infoLink name="Trebuchet Fire" id="b224-9ff8-ad0a-6dfa" hidden="false" type="profile" targetId="2586-bad6-a2b1-a256"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f0f0-6204-cb5a-ee27"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e515-7858-a22e-7eb2"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Heavy" hidden="false" id="b100-f41d-b1ee-005e" targetId="b9c5-1770-e28a-db52" primary="false"/>
+            <categoryLink targetId="892b-3ede-432c-1fff" id="302f-1cc3-130b-53b0" primary="false" name="Vehicle"/>
+            <categoryLink targetId="9dbc-8ba4-9d45-609d" id="3e86-0ac8-0f31-5191" primary="false" name="Medium"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="02a1-cd1a-ac21-7596"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="abbf-2bd2-8d48-3705"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Blast Trebuchet Squad" hidden="false" id="f576-04d6-d956-4cbe">
+          <infoLinks>
+            <infoLink name="Blast Trebuchet" id="8cb0-ae39-b767-74a8" hidden="false" type="profile" targetId="e027-1937-9b2c-ef4e"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Blast Trebuchet" hidden="false" id="f52a-6463-6907-f5a7" sortIndex="">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4a74-4a43-3e8c-2a61"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6a49-db04-dff8-94e8"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Trebuchet Fire" hidden="false" id="2fa9-bb43-38bb-832e">
+                  <infoLinks>
+                    <infoLink name="Trebuchet Fire" id="6a3e-9d12-0578-3c5f" hidden="false" type="profile" targetId="2586-bad6-a2b1-a256"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4d60-403b-5bac-fbb0"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4b45-06f4-cfb3-130c"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Heavy" hidden="false" id="a519-f8e6-f40c-d8b7" targetId="b9c5-1770-e28a-db52" primary="false"/>
+            <categoryLink targetId="892b-3ede-432c-1fff" id="699e-e919-46be-edc8" primary="false" name="Vehicle"/>
+            <categoryLink targetId="9dbc-8ba4-9d45-609d" id="49b6-e538-94fe-8212" primary="false" name="Medium"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0a59-1c4d-260b-a8b2"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c604-7788-c0d9-1188"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Cyber-horseback Heavy Knights Unit" hidden="false" id="fe6f-11f4-e19c-439e" subType="unit-group">
+      <categoryLinks>
+        <categoryLink targetId="892b-3ede-432c-1fff" id="8e15-86e8-e8d0-dfc8" primary="true" name="Vehicle"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Unit Capacity" typeId="f7d6-c8d5-b008-4866" value="1"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="unit" import="true" name="Cyber-horseback Heavy Knights Squad" hidden="false" id="32f2-a37b-2819-d973">
+          <infoLinks>
+            <infoLink name="Cyber-horseback Heavy Knights" id="0854-2032-814e-39c7" hidden="false" type="profile" targetId="fefd-199b-814c-057b"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Ability (Charge)" hidden="false" id="b54a-8b4b-fd74-faed" sortIndex="">
+              <infoLinks>
+                <infoLink name="Charge" id="41cf-cbe7-c132-7978" hidden="false" type="profile" targetId="da7d-932f-71c1-2be3"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5445-0630-1574-0afe"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="eb85-7c0b-e8f8-15fa"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Cyber-horseback Heavy Knight" hidden="false" id="9687-c0a7-2fc0-8145" sortIndex="">
+              <constraints>
+                <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="7bb7-86b1-05b2-fe00"/>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="80d9-2d49-de7c-e2ed"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Heavy Knight Blades" hidden="false" id="9289-a123-44ed-e505">
+                  <infoLinks>
+                    <infoLink name="Heavy Knight Blades" id="038c-93c2-1ea6-d0fe" hidden="false" type="profile" targetId="e196-94fb-1f3e-cdc5"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="518e-5d53-de67-1d6f"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b393-80b4-ed1d-3b85"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink targetId="892b-3ede-432c-1fff" id="39a6-4039-7bb0-7fb3" primary="false" name="Vehicle"/>
+            <categoryLink targetId="9dbc-8ba4-9d45-609d" id="433a-a2fa-0707-0a9f" primary="false" name="Medium"/>
+            <categoryLink targetId="59ea-6f10-a33e-30f1" id="b5b9-51e9-4bad-e4bc" primary="false" name="Light"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7c04-9ffb-7753-c9c6"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="38c0-adae-d04e-c43c"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Cyber-horseback Heavy Knights Squad" hidden="false" id="ac61-0431-1546-170e">
+          <infoLinks>
+            <infoLink name="Cyber-horseback Heavy Knights" id="97e7-8150-5bab-2a97" hidden="false" type="profile" targetId="fefd-199b-814c-057b"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Ability (Charge)" hidden="false" id="4d46-47b3-7494-f6be" sortIndex="">
+              <infoLinks>
+                <infoLink name="Charge" id="d266-adfe-dd3a-dc34" hidden="false" type="profile" targetId="da7d-932f-71c1-2be3"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b29c-dfe5-5b9b-f03c"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="26fd-cb91-3500-74d6"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Cyber-horseback Heavy Knight" hidden="false" id="a97a-4e82-ffb4-3fbd" sortIndex="">
+              <constraints>
+                <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="6109-3226-d28b-55b8"/>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="e82a-b676-8d4e-a8f2"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Heavy Knight Blades" hidden="false" id="02c7-b6b6-5c71-adb4">
+                  <infoLinks>
+                    <infoLink name="Heavy Knight Blades" id="e53e-8f22-dd55-4c7a" hidden="false" type="profile" targetId="e196-94fb-1f3e-cdc5"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8480-ab1b-5887-06b0"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="69df-8c75-3266-9f35"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink targetId="892b-3ede-432c-1fff" id="c371-ef5b-6e38-1646" primary="false" name="Vehicle"/>
+            <categoryLink targetId="9dbc-8ba4-9d45-609d" id="9c34-3824-a6db-8524" primary="false" name="Medium"/>
+            <categoryLink targetId="59ea-6f10-a33e-30f1" id="61cc-841b-143e-069b" primary="false" name="Light"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="811e-325d-abb3-e4f9"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="596c-89a6-33fc-32a4"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Cyber-horseback Heavy Knights Squad" hidden="false" id="927b-5665-a0b9-6b51">
+          <infoLinks>
+            <infoLink name="Cyber-horseback Heavy Knights" id="79b6-bd47-267f-876e" hidden="false" type="profile" targetId="fefd-199b-814c-057b"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Ability (Charge)" hidden="false" id="1619-6b86-5586-549f" sortIndex="">
+              <infoLinks>
+                <infoLink name="Charge" id="c3af-9d47-90ab-7794" hidden="false" type="profile" targetId="da7d-932f-71c1-2be3"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b2b7-5abb-624c-e3f3"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7e27-d8ef-737e-b8e2"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Cyber-horseback Heavy Knight" hidden="false" id="5236-fcc5-d400-af4d" sortIndex="">
+              <constraints>
+                <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="c87a-268f-3606-3617"/>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="190b-d7e2-736a-1f86"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Heavy Knight Blades" hidden="false" id="c018-ea72-76ea-e0bc">
+                  <infoLinks>
+                    <infoLink name="Heavy Knight Blades" id="decc-62a4-4d22-3c40" hidden="false" type="profile" targetId="e196-94fb-1f3e-cdc5"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dbc8-0fc2-2ec8-fc40"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6d03-15f1-37a7-18d8"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink targetId="892b-3ede-432c-1fff" id="dfeb-e9cf-bdbe-d1e1" primary="false" name="Vehicle"/>
+            <categoryLink targetId="9dbc-8ba4-9d45-609d" id="d743-6b2d-f247-25dd" primary="false" name="Medium"/>
+            <categoryLink targetId="59ea-6f10-a33e-30f1" id="5e5d-b168-8f7b-5e5c" primary="false" name="Light"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="241a-669d-3a5a-c383"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e2ef-7192-7724-7755"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Armored Land-Ship Unit" hidden="false" id="b38b-7258-1e06-3729" subType="unit-group">
+      <categoryLinks>
+        <categoryLink targetId="892b-3ede-432c-1fff" id="df30-a6b2-320e-7761" primary="true" name="Vehicle"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Unit Capacity" typeId="f7d6-c8d5-b008-4866" value="1"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="unit" import="true" name="Armored Land-Ship Squad" hidden="false" id="c7ff-9c16-56cb-15f3">
+          <infoLinks>
+            <infoLink name="Armored Land-Ship" id="3cbb-2b27-d52d-ac93" hidden="false" type="profile" targetId="5950-8619-5aa1-bbac"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Armored Land-Ship" hidden="false" id="34bf-ce4c-604b-0ba3" sortIndex="">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bd04-fc91-e0c4-e549"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d5a1-4f4a-df51-aaa4"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Land-Ship Cannon" hidden="false" id="06df-83e3-6a38-7ebf">
+                  <infoLinks>
+                    <infoLink name="Land-Ship Cannon" id="af3a-c22c-b47c-4430" hidden="false" type="profile" targetId="8668-b154-825b-c32d"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9e0c-726e-e9fa-3784"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4bf2-19a8-0c6e-833b"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink targetId="892b-3ede-432c-1fff" id="194b-bc73-fac1-927e" primary="false" name="Vehicle"/>
+            <categoryLink targetId="b9c5-1770-e28a-db52" id="496b-7db6-7481-18e0" primary="false" name="Heavy"/>
+            <categoryLink targetId="5436-0243-0990-7af4" id="b1a5-17c3-85cc-2309" primary="false" name="Large"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4fbf-64ed-b5fb-0ec2"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="16f4-db42-99b0-68df"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Armored Land-Ship Squad" hidden="false" id="fdf1-c4bd-e3e2-81a5">
+          <infoLinks>
+            <infoLink name="Armored Land-Ship" id="31bc-5225-1c62-f978" hidden="false" type="profile" targetId="5950-8619-5aa1-bbac"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Armored Land-Ship" hidden="false" id="b89a-67ac-c426-e8ee" sortIndex="">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e9ed-6b58-c497-5215"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="26ad-df72-84d5-1918"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Land-Ship Cannon" hidden="false" id="e83a-21fd-85f4-3765">
+                  <infoLinks>
+                    <infoLink name="Land-Ship Cannon" id="5a22-e889-6007-003e" hidden="false" type="profile" targetId="8668-b154-825b-c32d"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1375-4b6e-0727-192d"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f0f2-acf6-a5fc-d07f"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink targetId="892b-3ede-432c-1fff" id="65cf-2a2f-8ac2-4ccc" primary="false" name="Vehicle"/>
+            <categoryLink targetId="b9c5-1770-e28a-db52" id="370e-9687-61f7-d47a" primary="false" name="Heavy"/>
+            <categoryLink targetId="5436-0243-0990-7af4" id="1aa4-aa40-2450-c5b9" primary="false" name="Large"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="28df-e088-7a5c-4829"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6dbb-ba43-d564-9b86"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedProfiles>
+    <profile name="Alexander, Blessed with the Gift of Foresight" typeId="a0cc-e27d-0e47-b400" typeName="Unit" hidden="false" id="5c46-f625-887b-3ad4">
+      <characteristics>
+        <characteristic name="SV" typeId="24b4-ca44-ffb5-c3f4">2+</characteristic>
+        <characteristic name="HP" typeId="a109-7c01-200f-cc2d">10</characteristic>
+        <characteristic name="MV" typeId="6972-eaad-7147-252f">6&quot;</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Alexander&apos;s Crusher Mace" typeId="35f7-4412-69cb-9d6a" typeName="Weapons" hidden="false" id="f28f-04de-bb21-5bbe">
+      <characteristics>
+        <characteristic name="R" typeId="8723-19bb-bcce-5f94">3&quot;</characteristic>
+        <characteristic name="Att" typeId="0a3b-93a6-7ca6-c930">5</characteristic>
+        <characteristic name="Acc" typeId="4bca-fe29-753e-511f">3+</characteristic>
+        <characteristic name="AP" typeId="46da-1060-daef-3f00">+1, +3
++1, +3</characteristic>
+        <characteristic name="D" typeId="f994-dfa3-122c-9cc5">2</characteristic>
+        <characteristic name="Abilities" typeId="3c47-c04c-8dfd-a691">Explosive 1, Melee</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Charge" typeId="7e76-2916-e877-fd40" typeName="Active (Special Abilities)" hidden="false" id="da7d-932f-71c1-2be3">
+      <characteristics>
+        <characteristic name="Description" typeId="3437-636f-e6aa-d7ea">You may only use this ability if no enemy squads are within range of melee weapons in this squad and at least one enemy squad is within 9”. Roll a D6. If performing a move of that many inches would put this squad within range of an enemy squad with a melee weapon, you may perform a move of that many inches ending within range of that enemy squad with a melee weapon. Then, make an attack with one of this squad’s melee weapon profiles.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Prescient Warning" typeId="4720-4964-f773-3509" typeName="Passive (Special Abilities)" hidden="false" id="4556-2a02-3c47-2a0b">
+      <characteristics>
+        <characteristic name="Description" typeId="bc7d-10a5-15e8-e96d">Friendly squads within 12” of this squad have the passive ability stealthy.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Lord of Battle and Entourage" typeId="a0cc-e27d-0e47-b400" typeName="Unit" hidden="false" id="e104-a1b5-d861-5ab0">
+      <characteristics>
+        <characteristic name="SV" typeId="24b4-ca44-ffb5-c3f4">3+</characteristic>
+        <characteristic name="HP" typeId="a109-7c01-200f-cc2d">1</characteristic>
+        <characteristic name="MV" typeId="6972-eaad-7147-252f">6&quot;</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Lord of Battle Weaponry" typeId="35f7-4412-69cb-9d6a" typeName="Weapons" hidden="false" id="401a-f2c1-d494-4399">
+      <characteristics>
+        <characteristic name="R" typeId="8723-19bb-bcce-5f94">3&quot;</characteristic>
+        <characteristic name="Att" typeId="0a3b-93a6-7ca6-c930">1</characteristic>
+        <characteristic name="Acc" typeId="4bca-fe29-753e-511f">4+</characteristic>
+        <characteristic name="AP" typeId="46da-1060-daef-3f00">+2, -1
++2, -1</characteristic>
+        <characteristic name="D" typeId="f994-dfa3-122c-9cc5">1</characteristic>
+        <characteristic name="Abilities" typeId="3c47-c04c-8dfd-a691">Explosive 1, Melee</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Longarm Discipline" typeId="4720-4964-f773-3509" typeName="Passive (Special Abilities)" hidden="false" id="b1c7-8310-824d-d1cb">
+      <characteristics>
+        <characteristic name="Description" typeId="bc7d-10a5-15e8-e96d">While this squad is on the battlefield, friendly squads melee weapons range is increased by 3”.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Spear Brutes" typeId="a0cc-e27d-0e47-b400" typeName="Unit" hidden="false" id="e48c-4b3e-d89b-600e">
+      <characteristics>
+        <characteristic name="SV" typeId="24b4-ca44-ffb5-c3f4">4+</characteristic>
+        <characteristic name="HP" typeId="a109-7c01-200f-cc2d">1</characteristic>
+        <characteristic name="MV" typeId="6972-eaad-7147-252f">6&quot;</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Brute&apos;s Spear" typeId="35f7-4412-69cb-9d6a" typeName="Weapons" hidden="false" id="c9ab-1102-668d-3d38">
+      <characteristics>
+        <characteristic name="R" typeId="8723-19bb-bcce-5f94">3&quot;</characteristic>
+        <characteristic name="Att" typeId="0a3b-93a6-7ca6-c930">1</characteristic>
+        <characteristic name="Acc" typeId="4bca-fe29-753e-511f">4+</characteristic>
+        <characteristic name="AP" typeId="46da-1060-daef-3f00">+2, -1
++2, -1</characteristic>
+        <characteristic name="D" typeId="f994-dfa3-122c-9cc5">1</characteristic>
+        <characteristic name="Abilities" typeId="3c47-c04c-8dfd-a691">Explosive 1, Melee</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Heavy Brutes" typeId="a0cc-e27d-0e47-b400" typeName="Unit" hidden="false" id="5d5a-8a40-9200-433c">
+      <characteristics>
+        <characteristic name="SV" typeId="24b4-ca44-ffb5-c3f4">4+</characteristic>
+        <characteristic name="HP" typeId="a109-7c01-200f-cc2d">2</characteristic>
+        <characteristic name="MV" typeId="6972-eaad-7147-252f">6&quot;</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Heavy Brute Mace" typeId="35f7-4412-69cb-9d6a" typeName="Weapons" hidden="false" id="9a17-8900-4154-8c7e">
+      <characteristics>
+        <characteristic name="R" typeId="8723-19bb-bcce-5f94">3&quot;</characteristic>
+        <characteristic name="Att" typeId="0a3b-93a6-7ca6-c930">1</characteristic>
+        <characteristic name="Acc" typeId="4bca-fe29-753e-511f">4+</characteristic>
+        <characteristic name="AP" typeId="46da-1060-daef-3f00">+3, +1
++3, +1</characteristic>
+        <characteristic name="D" typeId="f994-dfa3-122c-9cc5">2</characteristic>
+        <characteristic name="Abilities" typeId="3c47-c04c-8dfd-a691">Explosive 2, Melee</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Chariot Men" typeId="a0cc-e27d-0e47-b400" typeName="Unit" hidden="false" id="9247-50d2-77e9-9f20">
+      <characteristics>
+        <characteristic name="SV" typeId="24b4-ca44-ffb5-c3f4">4+</characteristic>
+        <characteristic name="HP" typeId="a109-7c01-200f-cc2d">3</characteristic>
+        <characteristic name="MV" typeId="6972-eaad-7147-252f">14&quot;</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Chariot Spear" typeId="35f7-4412-69cb-9d6a" typeName="Weapons" hidden="false" id="13b4-9e65-9980-b619">
+      <characteristics>
+        <characteristic name="R" typeId="8723-19bb-bcce-5f94">6&quot;</characteristic>
+        <characteristic name="Att" typeId="0a3b-93a6-7ca6-c930">6</characteristic>
+        <characteristic name="Acc" typeId="4bca-fe29-753e-511f">4+</characteristic>
+        <characteristic name="AP" typeId="46da-1060-daef-3f00">+1, 0
++1, 0</characteristic>
+        <characteristic name="D" typeId="f994-dfa3-122c-9cc5">1</characteristic>
+        <characteristic name="Abilities" typeId="3c47-c04c-8dfd-a691">Explosive 1, Melee</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Chariot Longbow" typeId="35f7-4412-69cb-9d6a" typeName="Weapons" hidden="false" id="8bee-2485-a19c-20e7">
+      <characteristics>
+        <characteristic name="R" typeId="8723-19bb-bcce-5f94">18&quot;</characteristic>
+        <characteristic name="Att" typeId="0a3b-93a6-7ca6-c930">1</characteristic>
+        <characteristic name="Acc" typeId="4bca-fe29-753e-511f">4+</characteristic>
+        <characteristic name="AP" typeId="46da-1060-daef-3f00">+1, +1
++1, +1</characteristic>
+        <characteristic name="D" typeId="f994-dfa3-122c-9cc5">1</characteristic>
+        <characteristic name="Abilities" typeId="3c47-c04c-8dfd-a691"/>
+      </characteristics>
+    </profile>
+    <profile name="Blast Trebuchet" typeId="a0cc-e27d-0e47-b400" typeName="Unit" hidden="false" id="e027-1937-9b2c-ef4e">
+      <characteristics>
+        <characteristic name="SV" typeId="24b4-ca44-ffb5-c3f4">5+</characteristic>
+        <characteristic name="HP" typeId="a109-7c01-200f-cc2d">5</characteristic>
+        <characteristic name="MV" typeId="6972-eaad-7147-252f">8&quot;</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Trebuchet Fire" typeId="35f7-4412-69cb-9d6a" typeName="Weapons" hidden="false" id="2586-bad6-a2b1-a256">
+      <characteristics>
+        <characteristic name="R" typeId="8723-19bb-bcce-5f94">30&quot;</characteristic>
+        <characteristic name="Att" typeId="0a3b-93a6-7ca6-c930">6</characteristic>
+        <characteristic name="Acc" typeId="4bca-fe29-753e-511f">4+</characteristic>
+        <characteristic name="AP" typeId="46da-1060-daef-3f00">+1, +1
++1, +1</characteristic>
+        <characteristic name="D" typeId="f994-dfa3-122c-9cc5">3</characteristic>
+        <characteristic name="Abilities" typeId="3c47-c04c-8dfd-a691">Stationary, Indirect, Area of Effect 3&quot;</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Cyber-horseback Heavy Knights" typeId="a0cc-e27d-0e47-b400" typeName="Unit" hidden="false" id="fefd-199b-814c-057b">
+      <characteristics>
+        <characteristic name="SV" typeId="24b4-ca44-ffb5-c3f4">3+</characteristic>
+        <characteristic name="HP" typeId="a109-7c01-200f-cc2d">2</characteristic>
+        <characteristic name="MV" typeId="6972-eaad-7147-252f">12&quot;</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Heavy Knight Blades" typeId="35f7-4412-69cb-9d6a" typeName="Weapons" hidden="false" id="e196-94fb-1f3e-cdc5">
+      <characteristics>
+        <characteristic name="R" typeId="8723-19bb-bcce-5f94">3&quot;</characteristic>
+        <characteristic name="Att" typeId="0a3b-93a6-7ca6-c930">2</characteristic>
+        <characteristic name="Acc" typeId="4bca-fe29-753e-511f">4+</characteristic>
+        <characteristic name="AP" typeId="46da-1060-daef-3f00">+1, 0
++1, 0</characteristic>
+        <characteristic name="D" typeId="f994-dfa3-122c-9cc5">1</characteristic>
+        <characteristic name="Abilities" typeId="3c47-c04c-8dfd-a691">Explosive 2, Melee</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Armored Land-Ship" typeId="a0cc-e27d-0e47-b400" typeName="Unit" hidden="false" id="5950-8619-5aa1-bbac">
+      <characteristics>
+        <characteristic name="SV" typeId="24b4-ca44-ffb5-c3f4">3+</characteristic>
+        <characteristic name="HP" typeId="a109-7c01-200f-cc2d">18</characteristic>
+        <characteristic name="MV" typeId="6972-eaad-7147-252f">10&quot;</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Land-Ship Cannon" typeId="35f7-4412-69cb-9d6a" typeName="Weapons" hidden="false" id="8668-b154-825b-c32d">
+      <characteristics>
+        <characteristic name="R" typeId="8723-19bb-bcce-5f94">24&quot;</characteristic>
+        <characteristic name="Att" typeId="0a3b-93a6-7ca6-c930">2</characteristic>
+        <characteristic name="Acc" typeId="4bca-fe29-753e-511f">3+</characteristic>
+        <characteristic name="AP" typeId="46da-1060-daef-3f00">0, 0
++2, +2</characteristic>
+        <characteristic name="D" typeId="f994-dfa3-122c-9cc5">4</characteristic>
+        <characteristic name="Abilities" typeId="3c47-c04c-8dfd-a691">Explosive 4, Anti-Medium</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+  <entryLinks>
+    <entryLink import="true" name="Spear Brutes Unit" hidden="false" id="1922-94d3-9eee-4225" targetId="6622-3782-af49-ee10" type="selectionEntry"/>
+    <entryLink import="true" name="Lord of Battle and Entourage Unit" hidden="false" id="73b0-1c63-7649-71d4" targetId="b3ca-3778-ee2a-79f3" type="selectionEntry"/>
+    <entryLink import="true" name="Heavy Brutes Unit" hidden="false" id="93ea-b11b-c776-dd47" targetId="a966-6626-fdb3-d93f" type="selectionEntry"/>
+    <entryLink import="true" name="Cyber-horseback Heavy Knights Unit" hidden="false" id="4e80-6c9d-b97b-8287" targetId="fe6f-11f4-e19c-439e" type="selectionEntry"/>
+    <entryLink import="true" name="Chariot Men Unit" hidden="false" id="ab44-d648-5ffd-b291" targetId="a168-c267-10fe-d4b6" type="selectionEntry"/>
+    <entryLink import="true" name="Blast Trebuchet Unit" hidden="false" id="9a4b-5076-92b5-79b4" targetId="01c1-f18e-9d46-5a2a" type="selectionEntry"/>
+    <entryLink import="true" name="Armored Land-Ship Unit" hidden="false" id="2030-1bd5-24fe-4b02" targetId="b38b-7258-1e06-3729" type="selectionEntry"/>
+    <entryLink import="true" name="Alexander Unit" hidden="false" id="5ddc-f151-314a-c0b2" targetId="6396-c9e8-119d-68b7" type="selectionEntry"/>
+  </entryLinks>
+</catalogue>

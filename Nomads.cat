@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="5baa-f9b1-a199-b07e" name="Nomads" gameSystemId="sys-4d6c-ac3c-296b-de59" gameSystemRevision="9" revision="2" authorName="SyPhase" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="5baa-f9b1-a199-b07e" name="Nomads" gameSystemId="sys-4d6c-ac3c-296b-de59" gameSystemRevision="9" revision="3" authorName="SyPhase" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedProfiles>
     <profile name="The Hijacker" typeId="a0cc-e27d-0e47-b400" typeName="Unit" hidden="false" id="224f-893b-3568-904b">
       <characteristics>
         <characteristic name="SV" typeId="24b4-ca44-ffb5-c3f4">2+</characteristic>
-        <characteristic name="DS" typeId="1535-83cf-b8fe-b1ce">0</characteristic>
-        <characteristic name="HP" typeId="a109-7c01-200f-cc2d">8</characteristic>
+        <characteristic name="HP" typeId="a109-7c01-200f-cc2d">10</characteristic>
         <characteristic name="MV" typeId="6972-eaad-7147-252f">9&quot;</characteristic>
-        <characteristic name="Footprint" typeId="1a99-d265-660f-2eb3">Small</characteristic>
       </characteristics>
     </profile>
     <profile name="The Hijacker&apos;s Deconstructor" typeId="35f7-4412-69cb-9d6a" typeName="Weapons" hidden="false" id="4019-a5b1-d7f9-d5d4">
@@ -17,7 +15,7 @@
         <characteristic name="Acc" typeId="4bca-fe29-753e-511f">3+</characteristic>
         <characteristic name="AP" typeId="46da-1060-daef-3f00">+1, +3
 +1, +3</characteristic>
-        <characteristic name="D" typeId="f994-dfa3-122c-9cc5">1</characteristic>
+        <characteristic name="D" typeId="f994-dfa3-122c-9cc5">2</characteristic>
         <characteristic name="Abilities" typeId="3c47-c04c-8dfd-a691"/>
       </characteristics>
     </profile>
@@ -47,7 +45,7 @@
     </profile>
     <profile name="Recon Scanner" typeId="4720-4964-f773-3509" typeName="Passive (Special Abilities)" hidden="false" id="26c3-f475-e0d4-8ed3">
       <characteristics>
-        <characteristic name="Description" typeId="bc7d-10a5-15e8-e96d">While this squad is on the battlefield, infantry squads in your army have the passive ability stealthy.</characteristic>
+        <characteristic name="Description" typeId="bc7d-10a5-15e8-e96d">While this squad is on the battlefield, infantry squads in your army have the passive ability &quot;Stealthy&quot;.</characteristic>
       </characteristics>
     </profile>
     <profile name="Trailblazer" typeId="a0cc-e27d-0e47-b400" typeName="Unit" hidden="false" id="0036-9234-93cf-31d7">
@@ -87,8 +85,8 @@
         <characteristic name="R" typeId="8723-19bb-bcce-5f94">18&quot;</characteristic>
         <characteristic name="Att" typeId="0a3b-93a6-7ca6-c930">1</characteristic>
         <characteristic name="Acc" typeId="4bca-fe29-753e-511f">4+</characteristic>
-        <characteristic name="AP" typeId="46da-1060-daef-3f00">-2, +2
--2, +2</characteristic>
+        <characteristic name="AP" typeId="46da-1060-daef-3f00">-2, +3
+-2, +3</characteristic>
         <characteristic name="D" typeId="f994-dfa3-122c-9cc5">2</characteristic>
         <characteristic name="Abilities" typeId="3c47-c04c-8dfd-a691">Anti-Heavy 1</characteristic>
       </characteristics>
@@ -120,7 +118,7 @@
     </profile>
     <profile name="Buggy Sticky Detonator" typeId="35f7-4412-69cb-9d6a" typeName="Weapons" hidden="false" id="25c2-7bb8-869b-2770">
       <characteristics>
-        <characteristic name="R" typeId="8723-19bb-bcce-5f94">3&quot;</characteristic>
+        <characteristic name="R" typeId="8723-19bb-bcce-5f94">4&quot;</characteristic>
         <characteristic name="Att" typeId="0a3b-93a6-7ca6-c930">3</characteristic>
         <characteristic name="Acc" typeId="4bca-fe29-753e-511f">3+</characteristic>
         <characteristic name="AP" typeId="46da-1060-daef-3f00">0, +2
@@ -170,16 +168,14 @@
     <profile name="Armor ATV" typeId="a0cc-e27d-0e47-b400" typeName="Unit" hidden="false" id="e69e-6632-3e45-da15">
       <characteristics>
         <characteristic name="SV" typeId="24b4-ca44-ffb5-c3f4">3+</characteristic>
-        <characteristic name="DS" typeId="1535-83cf-b8fe-b1ce">0</characteristic>
-        <characteristic name="HP" typeId="a109-7c01-200f-cc2d">6</characteristic>
+        <characteristic name="HP" typeId="a109-7c01-200f-cc2d">7</characteristic>
         <characteristic name="MV" typeId="6972-eaad-7147-252f">12&quot;</characteristic>
-        <characteristic name="Footprint" typeId="1a99-d265-660f-2eb3">Medium</characteristic>
       </characteristics>
     </profile>
     <profile name="ATV Heavy Rifle" typeId="35f7-4412-69cb-9d6a" typeName="Weapons" hidden="false" id="dcc0-87b2-d39a-9c9a">
       <characteristics>
         <characteristic name="R" typeId="8723-19bb-bcce-5f94">18&quot;</characteristic>
-        <characteristic name="Att" typeId="0a3b-93a6-7ca6-c930">2</characteristic>
+        <characteristic name="Att" typeId="0a3b-93a6-7ca6-c930">3</characteristic>
         <characteristic name="Acc" typeId="4bca-fe29-753e-511f">4+</characteristic>
         <characteristic name="AP" typeId="46da-1060-daef-3f00">-3, 0
 +2, +2</characteristic>
@@ -291,7 +287,7 @@
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Special Ability (Recon Scan Results)" hidden="false" id="4b28-b303-291c-cae1" sortIndex="3">
               <infoLinks>
-                <infoLink name="Recon Scan Results" id="28c4-ef04-000c-580f" hidden="false" type="profile" targetId="26c3-f475-e0d4-8ed3"/>
+                <infoLink name="Recon Scanner" id="28c4-ef04-000c-580f" hidden="false" type="profile" targetId="26c3-f475-e0d4-8ed3"/>
               </infoLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="09dd-4cb6-8d66-8189"/>
@@ -472,6 +468,14 @@
                 </selectionEntry>
               </selectionEntries>
             </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Special Ability (Redeploy)" hidden="false" id="0a72-48ae-2255-3dcf">
+              <infoLinks>
+                <infoLink name="Redeploy" id="5c4f-6970-9dad-91c4" hidden="false" type="profile" targetId="4140-d4b6-34e2-47d3"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7dfc-564a-4367-05a8"/>
+              </constraints>
+            </selectionEntry>
           </selectionEntries>
           <categoryLinks>
             <categoryLink name="Infantry" hidden="false" id="9375-638a-4479-086d" targetId="86d7-e31a-0e12-cc05" primary="false"/>
@@ -504,6 +508,14 @@
                   </constraints>
                 </selectionEntry>
               </selectionEntries>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Special Ability (Redeploy)" hidden="false" id="9dd5-5673-7d6c-e9e5">
+              <infoLinks>
+                <infoLink name="Redeploy" id="fb29-56b8-28a4-b452" hidden="false" type="profile" targetId="4140-d4b6-34e2-47d3"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c4a6-46c0-26ed-3843"/>
+              </constraints>
             </selectionEntry>
           </selectionEntries>
           <categoryLinks>

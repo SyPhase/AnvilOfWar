@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="28e4-ed51-3991-19d2" name="Cybernetica" gameSystemId="sys-4d6c-ac3c-296b-de59" gameSystemRevision="1" revision="14" authorName="SyPhase" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="28e4-ed51-3991-19d2" name="Cybernetica" gameSystemId="sys-4d6c-ac3c-296b-de59" gameSystemRevision="1" revision="15" authorName="SyPhase" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="F-00 Admin Unit" hidden="false" id="00b4-fce6-ccc0-663a" subType="unit-group">
       <categoryLinks>
@@ -110,14 +110,6 @@
                 </selectionEntry>
               </selectionEntries>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Ability (Sprint)" hidden="false" id="6ee6-cccd-0299-3ca0">
-              <infoLinks>
-                <infoLink name="Accelerated Mobility" id="4877-519c-ef14-454e" hidden="false" type="profile" targetId="3c57-28ef-7c2f-93f8"/>
-              </infoLinks>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="50f8-e97c-0586-d7b6"/>
-              </constraints>
-            </selectionEntry>
           </selectionEntries>
           <categoryLinks>
             <categoryLink name="Infantry" hidden="false" id="6470-7419-17a2-f7b0" targetId="86d7-e31a-0e12-cc05" primary="false"/>
@@ -150,14 +142,6 @@
                   </constraints>
                 </selectionEntry>
               </selectionEntries>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Ability (Sprint)" hidden="false" id="5ede-bc0c-8e16-b18f">
-              <infoLinks>
-                <infoLink name="Accelerated Mobility" id="b4f3-f44f-020b-6b05" hidden="false" type="profile" targetId="3c57-28ef-7c2f-93f8"/>
-              </infoLinks>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f11c-d882-3bab-cefd"/>
-              </constraints>
             </selectionEntry>
           </selectionEntries>
           <categoryLinks>
@@ -450,14 +434,6 @@
                 </selectionEntry>
               </selectionEntries>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Ability (Sprint)" hidden="false" id="c793-59b1-1d8c-eaf1">
-              <infoLinks>
-                <infoLink name="Accelerated Mobility" id="d6c2-9b2e-32f5-f43f" hidden="false" type="profile" targetId="3c57-28ef-7c2f-93f8"/>
-              </infoLinks>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e9d9-01a8-3ebd-ce28"/>
-              </constraints>
-            </selectionEntry>
           </selectionEntries>
           <categoryLinks>
             <categoryLink name="Infantry" hidden="false" id="5a8c-2c89-0d82-c463" targetId="86d7-e31a-0e12-cc05" primary="false"/>
@@ -490,14 +466,6 @@
                   </constraints>
                 </selectionEntry>
               </selectionEntries>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Ability (Sprint)" hidden="false" id="da11-7187-6ea0-ef76">
-              <infoLinks>
-                <infoLink name="Accelerated Mobility" id="0b57-f13f-8473-eb99" hidden="false" type="profile" targetId="3c57-28ef-7c2f-93f8"/>
-              </infoLinks>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a10c-c6e2-e1ec-df66"/>
-              </constraints>
             </selectionEntry>
           </selectionEntries>
           <categoryLinks>
@@ -639,7 +607,7 @@
             <infoLink name="H-09 Shelltread" id="0b67-fcf7-6a7f-e72b" hidden="false" type="profile" targetId="1b2c-dc5a-4ca8-51cb"/>
             <infoLink name="Crush-" id="d553-55f3-ecb3-8d59" hidden="false" type="rule" targetId="ab49-c483-f2a1-aac8">
               <modifiers>
-                <modifier type="set" value="Crush 3" field="name"/>
+                <modifier type="set" value="Crush 2" field="name"/>
               </modifiers>
             </infoLink>
           </infoLinks>
@@ -856,7 +824,7 @@
       </characteristics>
       <comment>[Explosive 1]</comment>
     </profile>
-    <profile name="H-03 Helltread" typeId="a0cc-e27d-0e47-b400" typeName="Unit" hidden="false" id="74c0-7fb5-4562-7f4c">
+    <profile name="H-03 Hell-tread" typeId="a0cc-e27d-0e47-b400" typeName="Unit" hidden="false" id="74c0-7fb5-4562-7f4c">
       <characteristics>
         <characteristic name="SV" typeId="24b4-ca44-ffb5-c3f4">3+</characteristic>
         <characteristic name="DS" typeId="1535-83cf-b8fe-b1ce">0</characteristic>
@@ -880,14 +848,14 @@
         <characteristic name="R" typeId="8723-19bb-bcce-5f94">0&quot;</characteristic>
         <characteristic name="Att" typeId="0a3b-93a6-7ca6-c930">6</characteristic>
         <characteristic name="Acc" typeId="4bca-fe29-753e-511f">4+</characteristic>
-        <characteristic name="AP" typeId="46da-1060-daef-3f00">+3, +1
-+3, +1</characteristic>
+        <characteristic name="AP" typeId="46da-1060-daef-3f00">+3, +3
++1, +1</characteristic>
         <characteristic name="D" typeId="f994-dfa3-122c-9cc5">1</characteristic>
-        <characteristic name="Abilities" typeId="3c47-c04c-8dfd-a691">Area of Effect 8&quot;</characteristic>
+        <characteristic name="Abilities" typeId="3c47-c04c-8dfd-a691"/>
       </characteristics>
       <comment>[Area of Effect 8&quot;]</comment>
     </profile>
-    <profile name="F-00 Admin" typeId="a0cc-e27d-0e47-b400" typeName="Unit" hidden="false" id="dff9-f94a-90e7-afeb">
+    <profile name="F-00 Admin-Machine" typeId="a0cc-e27d-0e47-b400" typeName="Unit" hidden="false" id="dff9-f94a-90e7-afeb">
       <characteristics>
         <characteristic name="SV" typeId="24b4-ca44-ffb5-c3f4">2+</characteristic>
         <characteristic name="DS" typeId="1535-83cf-b8fe-b1ce">0</characteristic>
@@ -909,7 +877,7 @@
     </profile>
     <profile name="Self-Destruct" typeId="7e76-2916-e877-fd40" typeName="Active (Special Abilities)" hidden="false" id="621a-ca31-1eda-c8f4">
       <characteristics>
-        <characteristic name="Description" typeId="3437-636f-e6aa-d7ea">Reduce this squad&apos;s MV characteristic to 0&quot;. This unit is targeted by the weapon profile &quot;H-03 Explosion,&quot; then is destroyed. (Note: the Area of Effect ability of that weapon means you will be targeting all enemies in range of the area of effect. Because this unit will be destroyed anyway, you may skip attacking itself.)</characteristic>
+        <characteristic name="Description" typeId="3437-636f-e6aa-d7ea">Reduce this squad&apos;s MV characteristic to 0&quot;. For each enemy squad within 3&quot;, make an attack with the &quot;H-03 Explosion&quot; weapon. Then, this squad is destroyed.</characteristic>
       </characteristics>
     </profile>
     <profile name="Biological Reprogramming" typeId="7e76-2916-e877-fd40" typeName="Active (Special Abilities)" hidden="false" id="e39a-2a59-97b9-8afe">
@@ -919,7 +887,7 @@
     </profile>
     <profile name="Cyber-Command" typeId="4720-4964-f773-3509" typeName="Passive (Special Abilities)" hidden="false" id="3e96-5bbe-6070-660b">
       <characteristics>
-        <characteristic name="Description" typeId="bc7d-10a5-15e8-e96d">While this squad is on the battlefield, worsen the AP of attacks targeting squads in your army by 1 to a minimum of 0.</characteristic>
+        <characteristic name="Description" typeId="bc7d-10a5-15e8-e96d">While this squad is on the battlefield, squads in your army have the &quot;Accelerated Mobility&quot; active ability which states: this squad may perform a 2&quot; move.</characteristic>
       </characteristics>
     </profile>
     <profile name="F-15 Rocket-Machine" typeId="a0cc-e27d-0e47-b400" typeName="Unit" hidden="false" id="a244-bb5e-536b-7e9a">
@@ -931,7 +899,7 @@
         <characteristic name="Footprint" typeId="1a99-d265-660f-2eb3">Small</characteristic>
       </characteristics>
     </profile>
-    <profile name="H-02 Darktread" typeId="a0cc-e27d-0e47-b400" typeName="Unit" hidden="false" id="94be-a4c1-36be-0455">
+    <profile name="H-02 Dark-tread" typeId="a0cc-e27d-0e47-b400" typeName="Unit" hidden="false" id="94be-a4c1-36be-0455">
       <characteristics>
         <characteristic name="SV" typeId="24b4-ca44-ffb5-c3f4">2+</characteristic>
         <characteristic name="DS" typeId="1535-83cf-b8fe-b1ce">0</characteristic>
@@ -954,13 +922,11 @@
     <profile name="T-77 Assimilator" typeId="a0cc-e27d-0e47-b400" typeName="Unit" hidden="false" id="6d4b-45fd-7be0-77c0">
       <characteristics>
         <characteristic name="SV" typeId="24b4-ca44-ffb5-c3f4">2+</characteristic>
-        <characteristic name="DS" typeId="1535-83cf-b8fe-b1ce">0</characteristic>
-        <characteristic name="HP" typeId="a109-7c01-200f-cc2d">10</characteristic>
+        <characteristic name="HP" typeId="a109-7c01-200f-cc2d">12</characteristic>
         <characteristic name="MV" typeId="6972-eaad-7147-252f">6&quot;</characteristic>
-        <characteristic name="Footprint" typeId="1a99-d265-660f-2eb3">Small</characteristic>
       </characteristics>
     </profile>
-    <profile name="T-77 Focus Blaster" typeId="35f7-4412-69cb-9d6a" typeName="Weapons" hidden="false" id="35e5-ef05-d37b-e1b5">
+    <profile name="T-77 Focused Blaster" typeId="35f7-4412-69cb-9d6a" typeName="Weapons" hidden="false" id="35e5-ef05-d37b-e1b5">
       <characteristics>
         <characteristic name="R" typeId="8723-19bb-bcce-5f94">12&quot;</characteristic>
         <characteristic name="Att" typeId="0a3b-93a6-7ca6-c930">4</characteristic>
@@ -971,12 +937,11 @@
         <characteristic name="Abilities" typeId="3c47-c04c-8dfd-a691"/>
       </characteristics>
     </profile>
-    <profile name="H-09 Shelltread" typeId="a0cc-e27d-0e47-b400" typeName="Unit" hidden="false" id="1b2c-dc5a-4ca8-51cb">
+    <profile name="H-09 Mortar-tread" typeId="a0cc-e27d-0e47-b400" typeName="Unit" hidden="false" id="1b2c-dc5a-4ca8-51cb">
       <characteristics>
         <characteristic name="SV" typeId="24b4-ca44-ffb5-c3f4">4+</characteristic>
-        <characteristic name="DS" typeId="1535-83cf-b8fe-b1ce">0</characteristic>
         <characteristic name="HP" typeId="a109-7c01-200f-cc2d">4</characteristic>
-        <characteristic name="MV" typeId="6972-eaad-7147-252f">6&quot;</characteristic>
+        <characteristic name="MV" typeId="6972-eaad-7147-252f">8&quot;</characteristic>
       </characteristics>
     </profile>
     <profile name="H-09 Artillery Battery" typeId="35f7-4412-69cb-9d6a" typeName="Weapons" hidden="false" id="c3da-8b49-76cd-f25e">
@@ -991,7 +956,7 @@
       </characteristics>
       <comment>[Stationary, Indirect, Area of Effect 3&quot;]</comment>
     </profile>
-    <profile name="H-05 Rippertread" typeId="a0cc-e27d-0e47-b400" typeName="Unit" hidden="false" id="db02-8b66-9dd1-065e">
+    <profile name="H-05 Ripper-tread" typeId="a0cc-e27d-0e47-b400" typeName="Unit" hidden="false" id="db02-8b66-9dd1-065e">
       <characteristics>
         <characteristic name="SV" typeId="24b4-ca44-ffb5-c3f4">3+</characteristic>
         <characteristic name="DS" typeId="1535-83cf-b8fe-b1ce">0</characteristic>
